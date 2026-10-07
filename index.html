@@ -30,9 +30,9 @@
       "areaServed": "BR",
       "knowsAbout": ["Estratégia de redes sociais", "Instagram", "LinkedIn", "Produção de vídeo", "Tráfego pago", "Treinamento comercial", "Criação de sites", "SEO", "Otimização para buscas com IA"],
       "founder": [
-        {"@type": "Person", "name": "Amanda Takahashi", "jobTitle": "Estrategista de redes sociais"},
-        {"@type": "Person", "name": "Bianca Fortes", "jobTitle": "Direção de imagem, tráfego e treinamento comercial"},
-        {"@type": "Person", "name": "João Dini", "jobTitle": "Sites e tecnologia"}
+        {"@type": "Person", "name": "Amanda Takahashi", "jobTitle": "Estratégia e growth"},
+        {"@type": "Person", "name": "Bianca Fortes", "jobTitle": "Arte, tráfego e receita"},
+        {"@type": "Person", "name": "João Dini", "jobTitle": "Site, tecnologia e automações"}
       ]
     },
     {
@@ -235,7 +235,7 @@
           <div class="ph ph--4x5 ph--claro" role="img" aria-label="Espaço reservado para foto da Amanda Takahashi">
             <span class="ph__txt"><b>Foto 4:5</b>Amanda Takahashi</span>
           </div>
-          <p class="pessoa__area">Estratégia e redes</p>
+          <p class="pessoa__area">Estratégia e growth</p>
           <h3>Amanda Takahashi</h3>
           <p>Define o que a sua empresa fala, para quem e em qual formato: posts, stories, reels e LinkedIn, num calendário pensado para gerar lead. Já trabalhou com Raphael Mattos, na Scale Club, e com Marcus Marques, no Acelerador Empresarial.</p>
         </article>
@@ -243,15 +243,15 @@
           <div class="ph ph--4x5 ph--claro" role="img" aria-label="Espaço reservado para foto da Bianca Fortes">
             <span class="ph__txt"><b>Foto 4:5</b>Bianca Fortes</span>
           </div>
-          <p class="pessoa__area">Imagem, tráfego e comercial</p>
+          <p class="pessoa__area">Arte, tráfego e receita</p>
           <h3>Bianca Fortes</h3>
-          <p>Capta e edita foto e vídeo com olhar de estratégia, cuida do tráfego pago e treina o seu comercial para atender o lead que chega. Fez isso em grandes clínicas odontológicas, onde cada agendamento perdido custa caro.</p>
+          <p>Especialista em tráfego pago. Capta e edita foto e vídeo com olhar de estratégia, monta as campanhas e treina o seu comercial para atender o lead que chega. Fez isso em grandes clínicas odontológicas, onde cada agendamento perdido custa caro.</p>
         </article>
         <article class="pessoa" style="--fio:var(--celeste)" data-reveal>
           <div class="ph ph--4x5 ph--claro" role="img" aria-label="Espaço reservado para foto do João Dini">
             <span class="ph__txt"><b>Foto 4:5</b>João Dini</span>
           </div>
-          <p class="pessoa__area">Site e tecnologia</p>
+          <p class="pessoa__area">Site, tecnologia e automações</p>
           <h3>João Dini</h3>
           <p>Vem da TI e constrói o site que recebe todo esse tráfego: rápido no celular, feito para o Google e organizado para ser citado por ChatGPT, Gemini e Perplexity.</p>
         </article>
@@ -273,6 +273,50 @@
         <li class="passo"><span class="passo__no"></span><span class="passo__n">3</span><h3>Plano</h3><p>Posicionamento, linha editorial, roteiro de captação e estrutura do site num documento só.</p></li>
         <li class="passo"><span class="passo__no"></span><span class="passo__n">4</span><h3>Execução mensal</h3><p>Produção, publicação, tráfego e ajustes guiados pelos números de cada mês.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- TRÁFEGO PAGO -->
+  <section class="trafego" id="trafego" aria-labelledby="trafego-titulo">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="rotulo">Tráfego pago · Bianca Fortes</p>
+        <h2 id="trafego-titulo" class="titulo">O mesmo investimento, outro resultado.</h2>
+        <p class="cabeca__apoio">Anúncio sozinho não vende. O resultado muda no caminho depois do clique: para quem o anúncio aparece, para onde a pessoa vai e quanto tempo o comercial leva para responder.</p>
+      </div>
+
+      <div class="trafego__abas" role="tablist" aria-label="Comparar os dois caminhos">
+        <button type="button" role="tab" id="aba-comum" aria-controls="fluxo" aria-selected="true" data-modo="comum">Do jeito comum</button>
+        <button type="button" role="tab" id="aba-halo" aria-controls="fluxo" aria-selected="false" data-modo="halo" tabindex="-1">Do jeito Halo</button>
+      </div>
+
+      <div class="fluxo" id="fluxo" role="tabpanel" aria-labelledby="aba-comum" data-modo="comum">
+        <canvas class="fluxo__luz" id="fluxo-canvas" aria-hidden="true"></canvas>
+        <ol class="fluxo__etapas">
+          <li class="etapa"><span class="etapa__no"></span><b>Anúncio</b><span class="etapa__txt" data-comum="Post impulsionado para um público amplo" data-halo="Campanha com objetivo e público certo">Post impulsionado para um público amplo</span></li>
+          <li class="etapa"><span class="etapa__no"></span><b>Clique</b><span class="etapa__txt" data-comum="Curiosos, curtidas e pouca intenção" data-halo="Quem tem o problema que você resolve">Curiosos, curtidas e pouca intenção</span></li>
+          <li class="etapa"><span class="etapa__no"></span><b>Página</b><span class="etapa__txt" data-comum="Perfil ou site lento, sem um próximo passo" data-halo="Página rápida com uma ação clara">Perfil ou site lento, sem um próximo passo</span></li>
+          <li class="etapa"><span class="etapa__no"></span><b>Lead</b><span class="etapa__txt" data-comum="Resposta no dia seguinte, quando ele já esfriou" data-halo="Comercial treinado responde em minutos">Resposta no dia seguinte, quando ele já esfriou</span></li>
+          <li class="etapa"><span class="etapa__no"></span><b>Venda</b><span class="etapa__txt" data-comum="Poucas vendas e custo alto por cliente" data-halo="Mais vendas e custo previsível">Poucas vendas e custo alto por cliente</span></li>
+        </ol>
+      </div>
+
+      <div class="comparativo__caixa">
+        <table class="comparativo" id="comparativo" data-modo="comum">
+          <caption class="sr">Exemplo ilustrativo com R$ 5 mil de investimento por mês nos dois caminhos</caption>
+          <thead>
+            <tr><th scope="col">Com R$ 5 mil por mês</th><th scope="col" class="col-comum">Jeito comum</th><th scope="col" class="col-halo">Jeito Halo</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Cliques</th><td class="col-comum" data-n="2500">2.500</td><td class="col-halo" data-n="1800">1.800</td></tr>
+            <tr><th scope="row">Leads</th><td class="col-comum" data-n="40">40</td><td class="col-halo" data-n="110">110</td></tr>
+            <tr><th scope="row">Respondidos em até 5 minutos</th><td class="col-comum" data-n="8">8</td><td class="col-halo" data-n="104">104</td></tr>
+            <tr><th scope="row">Vendas</th><td class="col-comum" data-n="2">2</td><td class="col-halo" data-n="15">15</td></tr>
+            <tr class="comparativo__total"><th scope="row">Custo por venda</th><td class="col-comum" data-n="2500" data-pre="R$ ">R$ 2.500</td><td class="col-halo" data-n="333" data-pre="R$ ">R$ 333</td></tr>
+          </tbody>
+        </table>
+        <p class="trafego__nota">Exemplo ilustrativo para mostrar a lógica. Não é o resultado de um cliente específico. Repare que o jeito Halo tem menos cliques: o anúncio para de atrair curiosos e passa a atrair quem compra.</p>
+      </div>
     </div>
   </section>
 

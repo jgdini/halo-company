@@ -351,6 +351,125 @@
     desenhar();
   }
 
+  /* ---------- Tráfego pago: jeito comum x jeito Halo ---------- */
+  (function trafego() {
+    const fluxo = document.getElementById('fluxo');
+    const tabela = document.getElementById('comparativo');
+    const abas = [...document.querySelectorAll('.trafego__abas [role="tab"]')];
+    const textos = [...fluxo.querySelectorAll('.etapa__txt')];
+    const formata = (n, pre = '') => pre + Math.round(n).toLocaleString('pt-BR');
+    let modo = 'comum';
+
+    function contar(modoAtivo) {
+      if (!mov) return;
+      tabela.querySelectorAll(`td.col-${modoAtivo}`).forEach((td) => {
+        const alvo = +td.dataset.n, pre = td.dataset.pre || '', o = { v: 0 };
+        window.gsap.to(o, { v: alvo, duration: 1.2, ease: 'power2.out', onUpdate: () => { td.textContent = formata(o.v, pre); } });
+      });
+    }
+
+    function escolher(novo, foco) {
+      if (novo === modo) return;
+      modo = novo;
+      abas.forEach((a) => {
+        const ativa = a.dataset.modo === modo;
+        a.setAttribute('aria-selected', String(ativa));
+        a.tabIndex = ativa ? 0 : -1;
+        if (ativa && foco) a.focus();
+      });
+      fluxo.setAttribute('aria-labelledby', 'aba-' + modo);
+      fluxo.dataset.modo = modo; tabela.dataset.modo = modo;
+      textos.forEach((t) => { t.classList.add('troca'); setTimeout(() => { t.textContent = t.dataset[modo]; t.classList.remove('troca'); }, 260); });
+      contar(modo);
+    }
+    abas.forEach((a) => a.addEventListener('click', () => escolher(a.dataset.modo)));
+    // Setas do teclado alternam as abas, como manda o padrão de tabs.
+    document.querySelector('.trafego__abas').addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { e.preventDefault(); escolher(modo === 'comum' ? 'halo' : 'comum', true); }
+    });
+
+    if (!mov) return;
+    window.ScrollTrigger.create({ trigger: tabela, start: 'top 85%', once: true, onEnter: () => contar(modo) });
+
+    // Partículas: cada ponto é um potencial cliente andando pelas etapas.
+    // No jeito comum, muitos escapam em cada etapa e caem; no jeito Halo, a maioria chega à venda.
+    const canvas = document.getElementById('fluxo-canvas');
+    const ctx = canvas.getContext('2d');
+    const nos = [...fluxo.querySelectorAll('.etapa__no')];
+    const FICA = { comum: [1, .55, .45, .35, 1], halo: [1, .88, .85, .9, 1] };
+    let W = 0, H = 0, dpr = 1, pts = [], vertical = false, visivel = false, ultimo = 0, acumulado = 0, brilhoFim = 0;
+    const parts = [];
+
+    function medir() {
+      const r = fluxo.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+      W = r.width; H = r.height;
+      canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+      pts = nos.map((n) => { const b = n.getBoundingClientRect(); return [b.left - r.left + b.width / 2, b.top - r.top + b.height / 2]; });
+      vertical = Math.abs(pts[1][0] - pts[0][0]) < 4;
+    }
+
+    function passo(dt) {
+      acumulado += dt;
+      while (acumulado > 140) { acumulado -= 140; if (parts.length < 70) parts.push({ seg: 0, t: 0, vel: .75 + Math.random() * .3, viva: true, x: 0, y: 0, vx: 0, vy: 0, a: 1, d: (Math.random() - .5) * 8 }); }
+      for (const p of parts) {
+        if (p.viva) {
+          p.t += dt / 1000 * p.vel;
+          if (p.t >= 1) {
+            p.seg++; p.t = 0;
+            if (p.seg >= pts.length - 1) { p.a = 0; brilhoFim = 1; continue; }
+            if (Math.random() > FICA[modo][p.seg]) {
+              // Escapou: sai do caminho e cai.
+              p.viva = false;
+              p.vx = vertical ? -(.4 + Math.random() * .6) : (Math.random() - .5) * .5;
+              p.vy = vertical ? (Math.random() - .5) * .3 : .2 + Math.random() * .4;
+            }
+          }
+          const [x0, y0] = pts[p.seg], [x1, y1] = pts[p.seg + 1];
+          p.x = x0 + (x1 - x0) * p.t + (vertical ? p.d : 0);
+          p.y = y0 + (y1 - y0) * p.t + (vertical ? 0 : p.d);
+        } else {
+          // Queda lenta e longa, para o vazamento ser visto.
+          p.x += p.vx * dt * .08; p.y += p.vy * dt * .08; p.vy += vertical ? 0 : dt * .00035;
+          p.a -= dt / 1800;
+        }
+      }
+      for (let i = parts.length - 1; i >= 0; i--) if (parts[i].a <= 0) parts.splice(i, 1);
+      brilhoFim = Math.max(0, brilhoFim - dt / 500);
+    }
+
+    function desenhar() {
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, H);
+      // Linha do caminho
+      ctx.strokeStyle = modo === 'halo' ? 'rgba(231, 196, 147, .35)' : 'rgba(245, 239, 230, .14)';
+      ctx.lineWidth = 2; ctx.beginPath();
+      pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y))); ctx.stroke();
+      ctx.globalCompositeOperation = 'lighter';
+      for (const p of parts) {
+        const cor = p.viva ? (modo === 'halo' ? '231, 196, 147' : '245, 239, 230') : '224, 80, 111';
+        const r = p.viva ? 2.4 : 3.2;
+        ctx.fillStyle = `rgba(${cor}, ${(p.viva ? .18 : .3) * p.a})`; ctx.beginPath(); ctx.arc(p.x, p.y, r * 3.2, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = `rgba(${cor}, ${.95 * p.a})`; ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2); ctx.fill();
+      }
+      if (brilhoFim > 0) {
+        const [fx, fy] = pts[pts.length - 1], g = ctx.createRadialGradient(fx, fy, 0, fx, fy, 46);
+        g.addColorStop(0, `rgba(231, 196, 147, ${.55 * brilhoFim})`); g.addColorStop(1, 'rgba(231, 196, 147, 0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(fx, fy, 46, 0, Math.PI * 2); ctx.fill();
+      }
+      ctx.globalCompositeOperation = 'source-over';
+    }
+
+    medir();
+    if ('ResizeObserver' in window) new ResizeObserver(medir).observe(fluxo);
+    new IntersectionObserver(([en]) => { visivel = en.isIntersecting; ultimo = performance.now(); }).observe(fluxo);
+    window.gsap.ticker.add(() => {
+      if (!visivel) return;
+      const agora = performance.now(), dt = Math.min(agora - ultimo, 60); ultimo = agora;
+      passo(dt); desenhar();
+    });
+  })();
+
   /* ---------- Antes e depois ---------- */
   const palco = document.getElementById('ad-palco');
   document.getElementById('ad-range').addEventListener('input', (e) => palco.style.setProperty('--pos', e.target.value + '%'));

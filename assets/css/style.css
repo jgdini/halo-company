@@ -475,3 +475,50 @@ section { position: relative; }
   .js-mov .cenas__frases { top: 13svh; }
   .cenas__no { font-size: .8rem; padding: 7px 12px; }
 }
+
+/* Tráfego pago: o mesmo dinheiro em dois caminhos */
+.trafego { padding: clamp(88px, 12vw, 160px) 0; background: var(--anil-fundo); }
+.trafego__abas { display: inline-flex; gap: 4px; padding: 4px; margin-bottom: 28px; border-radius: 999px; border: 1px solid var(--linha); background: rgba(245, 239, 230, .04); }
+.trafego__abas button { min-height: 46px; padding: 0 22px; border: 0; border-radius: 999px; background: none; color: var(--texto-2); font-weight: 620; cursor: pointer; white-space: nowrap; transition: background-color .4s, color .4s; }
+.trafego__abas button[aria-selected="true"] { background: var(--algodao); color: var(--anil-fundo); }
+.trafego__abas button[data-modo="halo"][aria-selected="false"] { animation: chama 2.4s ease-in-out infinite; }
+@keyframes chama { 50% { box-shadow: 0 0 0 1px var(--acafrao), 0 0 22px rgba(231, 196, 147, .35); color: var(--texto); } }
+
+.fluxo { position: relative; padding: 36px 0 12px; }
+.fluxo__luz { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.fluxo__etapas { position: relative; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 20px; }
+.etapa { display: grid; justify-items: center; text-align: center; gap: 10px; }
+.etapa__no { width: 22px; height: 22px; border-radius: 50%; background: var(--anil-fundo); border: 2px solid rgba(245, 239, 230, .35); margin-bottom: 10px; transition: border-color .5s, box-shadow .5s, background-color .5s; }
+.etapa b { font-size: 1.2rem; font-weight: 700; font-stretch: 108%; }
+.etapa__txt { max-width: 20ch; min-height: 3em; font-size: .95rem; line-height: 1.45; color: var(--texto-2); transition: opacity .3s; }
+.etapa__txt.troca { opacity: 0; }
+.fluxo[data-modo="halo"] .etapa__no { border-color: var(--acafrao); background: color-mix(in srgb, var(--acafrao) 25%, var(--anil-fundo)); box-shadow: 0 0 18px rgba(231, 196, 147, .45); }
+.fluxo[data-modo="comum"] .etapa:last-child .etapa__no { border-color: var(--garanca); }
+
+.comparativo__caixa { margin-top: clamp(40px, 6vw, 64px); max-width: 860px; }
+.comparativo { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.comparativo th, .comparativo td { padding: 16px 18px; text-align: right; border-bottom: 1px solid var(--linha); }
+.comparativo th:first-child { text-align: left; font-weight: 500; color: var(--texto-2); }
+.comparativo thead th { font-size: .78rem; font-weight: 600; font-stretch: 80%; letter-spacing: .14em; text-transform: uppercase; color: var(--texto-2); }
+.comparativo td { font-size: 1.25rem; font-weight: 680; font-stretch: 108%; transition: color .5s, background-color .5s, opacity .5s; }
+.comparativo .col-comum, .comparativo .col-halo { width: 26%; }
+.comparativo[data-modo="comum"] .col-halo, .comparativo[data-modo="halo"] .col-comum { opacity: .45; }
+.comparativo[data-modo="comum"] .col-comum { color: var(--garanca); }
+.comparativo[data-modo="halo"] .col-halo { color: var(--acafrao); background: rgba(231, 196, 147, .06); }
+.comparativo__total th, .comparativo__total td { border-bottom: 0; font-size: 1.5rem; }
+.comparativo__total th:first-child { font-size: 1rem; color: var(--texto); font-weight: 650; }
+.trafego__nota { margin-top: 18px; max-width: 70ch; font-size: .88rem; color: var(--texto-2); }
+
+@media (max-width: 760px) {
+  .trafego__abas { display: flex; }
+  .trafego__abas button { flex: 1; padding: 0 12px; }
+  .fluxo { padding: 8px 0; }
+  .fluxo__etapas { grid-template-columns: 1fr; gap: 26px; padding-left: 44px; }
+  .etapa { justify-items: start; text-align: left; gap: 4px; position: relative; }
+  .etapa__no { position: absolute; left: -44px; top: 2px; margin: 0; }
+  .etapa__txt { max-width: none; min-height: 0; }
+  .comparativo th, .comparativo td { padding: 12px 8px; }
+  .comparativo td { font-size: 1.05rem; }
+  .comparativo__total td { font-size: 1.2rem; }
+  .comparativo thead th { font-size: .68rem; letter-spacing: .08em; }
+}
