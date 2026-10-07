@@ -1,0 +1,27 @@
+// Percorre as 4 etapas da aplicação e confere validação e envio.
+import puppeteer from 'puppeteer-core';
+const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
+const p = await b.newPage();
+await p.setViewport({ width: 1280, height: 900 });
+const logs = [];
+p.on('console', (m) => logs.push(m.type() + ': ' + m.text().slice(0, 80)));
+await p.goto('http://localhost:5610/', { waitUntil: 'networkidle0' });
+await p.evaluate(() => document.getElementById('aplicar').scrollIntoView());
+await new Promise((r) => setTimeout(r, 800));
+const etapa = () => p.$eval('#form-etapa', (e) => e.textContent);
+await p.click('#form-avancar');
+console.log('vazio ->', await etapa(), '|', await p.$eval('#form-erro', (e) => e.textContent));
+await p.type('[name=nome]', 'Teste'); await p.type('[name=whatsapp]', '11999998888'); await p.type('[name=email]', 'teste@exemplo.com');
+console.log('mascara ->', await p.$eval('[name=whatsapp]', (e) => e.value));
+await p.click('#form-avancar'); console.log('->', await etapa());
+await p.type('[name=empresa]', 'Empresa X'); await p.select('[name=segmento]', 'Indústria'); await p.type('[name=perfil]', '@empresax');
+await p.click('#form-avancar'); console.log('->', await etapa());
+await p.click('#form-avancar'); console.log('sem radio ->', await etapa());
+await p.click('input[value="Acima de R$ 1 milhão"] + span'); await p.click('input[value="R$ 5 a 15 mil"] + span');
+await p.click('#form-avancar'); console.log('->', await etapa(), '| enviar visivel:', await p.$eval('#form-enviar', (e) => !e.hidden));
+await p.type('[name=objetivo]', 'Crescer.');
+await p.click('#form-enviar');
+await new Promise((r) => setTimeout(r, 400));
+console.log('ok visivel:', await p.$eval('#form-ok', (e) => !e.hidden && getComputedStyle(e).display !== 'none'));
+console.log(logs.join('\n'));
+await b.close();

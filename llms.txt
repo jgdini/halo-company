@@ -1,0 +1,25 @@
+# Halo Company
+
+> A Halo Company é um time de três sócios que cuida da presença digital de empresas premium: estratégia de redes sociais, captação de foto e vídeo, tráfego pago, treinamento comercial e criação de sites. Atendimento mediante aplicação.
+
+O nome vem do efeito halo (Edward Thorndike, 1920): uma ótima impressão da marca em um ponto se estende para todo o resto.
+
+## Sócios
+- Amanda Takahashi: estratégia e gestão de Instagram, Facebook e LinkedIn. Já trabalhou com Raphael Mattos (Scale Club) e Marcus Marques (Acelerador Empresarial); gravou entrevistas com Joel Jota e Graciane Barbosa. Embaixadora da Community, escola de creators.
+- Bianca Fortes: captação e edição de foto e vídeo, tráfego pago e treinamento do time comercial, com experiência em grandes clínicas odontológicas.
+- João Dini: sites sob medida, rápidos, com SEO e preparados para assistentes de IA.
+
+## Como funciona
+1. Aplicação: a empresa conta sobre o negócio.
+2. Diagnóstico com os três sócios: redes, site, anúncios e atendimento comercial.
+3. Plano: posicionamento, linha editorial, roteiro de captação e estrutura do site.
+4. Execução mensal: produção, publicação, tráfego e ajustes pelos números.
+
+## Cases
+- Hanaoka Soluções Químicas: fabricante de ácidos e sais de alta pureza desde 1985. Estratégia de Instagram e LinkedIn, captação de foto e vídeo e site novo em português e inglês.
+- [Veículo Judicial](https://veiculojudicial.com.br/): plataforma que reúne veículos de leilão judicial de leiloeiros oficiais. O Instagram @rubensleilao ganhou mais de 6 mil seguidores depois do lançamento.
+- [Austrália Sem Fronteiras](https://jgdini.github.io/nosofaraway/new/index.html) e [landing page do ecossistema](https://jgdini.github.io/nosofaraway/new/ecossistema-australia-blocks.html): projeto internacional (Brasil e Austrália) para Marcelo Lusardo, com 23 anos de mercado.
+- [DRLSYS](https://drlsys.com/): site da empresa de infraestrutura de TI de João Dini, feito em menos de uma semana.
+
+## Página
+- [Página da Halo Company](https://jgdini.github.io/halo-company/): sócios, método, case, perguntas frequentes e aplicação
