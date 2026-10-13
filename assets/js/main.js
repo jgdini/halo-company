@@ -669,4 +669,23 @@
       bEnviar.disabled = false;
     }
   });
+
+  /* ---------- Cookies ---------- */
+  // Guarda a escolha e avisa a página. Quando entrar medição (Google Analytics, pixel da Meta),
+  // carregue esses scripts só dentro de "se aceitou", aqui embaixo.
+  (function cookies() {
+    const aviso = document.getElementById('cookies');
+    let escolha = null;
+    try { escolha = localStorage.getItem('halo-cookies'); } catch {}
+    const aplicar = (v) => { if (v === 'aceito') { /* carregar aqui os scripts de medição */ } };
+    if (escolha) return aplicar(escolha);
+    aviso.hidden = false;
+    aviso.addEventListener('click', (e) => {
+      const b = e.target.closest('[data-cookies]');
+      if (!b) return;
+      try { localStorage.setItem('halo-cookies', b.dataset.cookies); } catch {}
+      aviso.hidden = true;
+      aplicar(b.dataset.cookies);
+    });
+  })();
 })();
