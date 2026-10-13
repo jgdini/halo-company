@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Proposta comercial · Aclaris e Stella Resinas · Halo Company</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#3A0D18">
+<meta name="description" content="Escopo, resultados medidos e investimento para os sites Aclaris e Stella Resinas, Portal do Cliente e migração para WordPress.">
+<style>
+@font-face{font-family:'Archivo';font-style:normal;font-weight:100 900;font-stretch:62% 125%;font-display:swap;src:url(../assets/fonts/archivo.woff2) format('woff2')}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;font-display:swap;src:url(../assets/fonts/newsreader-italic.woff2) format('woff2')}
+:root{
+  /* Halo Company: bordô e off-white. Aclaris em cereja e Stella em bordô claro, para as duas marcas continuarem distintas nos gráficos. */
+  --paper:#F5EFE6; --paper-2:#EADFD3; --ink:#3A0D18; --ink-2:#4A1424;
+  --steel:#6B4A50; --steel-light:#80595F; --line:#DDCFC2;
+  --aclaris:#C93A5B; --aclaris-tint:#F7DCE2;
+  --stella:#7A2338; --stella-tint:#EBD3D8;
+  --gold:#8F5F22; --gold-dark:#6F4817; --gold-bg:#F3E3C8; --ok:#2E7D4F; --ok-bg:#E1EFE4; --bad:#B4432B;
+  --white:#FFFBF5; --track:#EADFD3;
+  --font-display:'Archivo',-apple-system,sans-serif;
+  --font-mono:'Archivo',-apple-system,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#2A0811; --paper-2:#3A0D18; --ink:#F5EFE6; --ink-2:#EADFD3;
+    --steel:#CDB9B5; --steel-light:#A99090; --line:#55202E;
+    --aclaris:#E0506F; --aclaris-tint:#4A1424; --stella:#E7C493; --stella-tint:#4A2A1C;
+    --gold:#E7C493; --gold-dark:#F1D9B4; --gold-bg:#4A2A1C; --ok:#6CC58A; --ok-bg:#1F3324; --bad:#E89A85;
+    --white:#3A0D18; --track:#4A1424;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#2A0811; --paper-2:#3A0D18; --ink:#F5EFE6; --ink-2:#EADFD3;
+    --steel:#CDB9B5; --steel-light:#A99090; --line:#55202E;
+    --aclaris:#E0506F; --aclaris-tint:#4A1424; --stella:#E7C493; --stella-tint:#4A2A1C;
+    --gold:#E7C493; --gold-dark:#F1D9B4; --gold-bg:#4A2A1C; --ok:#6CC58A; --ok-bg:#1F3324; --bad:#E89A85;
+    --white:#3A0D18; --track:#4A1424;
+    color-scheme:dark;
+}
+*{box-sizing:border-box;}
+body{
+  background:var(--paper); color:var(--ink); font-family:var(--font-display);
+  margin:0; padding-inline:20px; padding-block:36px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{ max-width:820px; margin:0 auto; }
+
+.top{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:36px; }
+.brands{ display:flex; align-items:center; gap:10px; font-family:var(--font-mono); font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:var(--steel); }
+.brands b{ color:var(--aclaris); } .brands b.stella{ color:var(--stella); }
+.brands .dot{ width:4px; height:4px; border-radius:50%; background:var(--steel-light); }
+.date-tag{ font-family:var(--font-mono); font-size:11.5px; color:var(--steel-light); }
+
+h1{ font-size:clamp(28px,4vw,38px); font-weight:800; letter-spacing:-0.02em; margin:0 0 10px; text-wrap:balance; }
+.lede{ font-size:16px; line-height:1.6; color:var(--steel); max-width:62ch; margin:0 0 40px; }
+
+h2{ font-size:12px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.08em; color:var(--steel); margin:0 0 16px; display:flex; align-items:center; gap:10px; }
+h2::after{ content:""; flex:1; height:1px; background:var(--line); }
+section{ margin-bottom:52px; }
+.sub{ font-size:14px; line-height:1.6; color:var(--steel); margin:0 0 18px; max-width:66ch; }
+.method{ font-family:var(--font-mono); font-size:11px; color:var(--steel-light); line-height:1.6; margin-top:12px; }
+
+/* números de abertura */
+.kpis{ display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.kpi{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:16px 16px 14px; }
+.kpi__label{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--steel-light); margin-bottom:8px; }
+.kpi__flow{ display:flex; align-items:baseline; gap:7px; flex-wrap:wrap; font-variant-numeric:tabular-nums; }
+.kpi__old{ font-size:15px; color:var(--steel-light); text-decoration:line-through; text-decoration-thickness:1px; }
+.kpi__new{ font-size:26px; font-weight:800; letter-spacing:-0.02em; color:var(--gold); }
+.kpi__note{ font-size:12px; color:var(--steel); margin-top:6px; line-height:1.4; }
+@media (max-width:640px){ .kpis{ grid-template-columns:1fr 1fr; } }
+
+/* gráficos de barras */
+.chart{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:18px 20px; margin-bottom:14px; }
+.chart__head{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:6px; }
+.chart__title{ font-size:15px; font-weight:700; display:flex; align-items:center; gap:8px; }
+.chart__title i{ width:8px; height:8px; border-radius:2px; display:inline-block; }
+.legend{ display:flex; gap:14px; font-family:var(--font-mono); font-size:10.5px; color:var(--steel); text-transform:uppercase; letter-spacing:.04em; }
+.legend span{ display:inline-flex; align-items:center; gap:6px; }
+.legend i{ width:10px; height:10px; border-radius:2px; display:inline-block; }
+.legend .l-old i{ background:var(--steel-light); opacity:.6; }
+.legend .l-new i{ background:var(--gold); }
+.cmp-row{ display:grid; grid-template-columns:128px 1fr; gap:14px; align-items:center; padding-block:11px; }
+.cmp-row + .cmp-row{ border-top:1px solid var(--line); }
+.cmp-label{ font-size:13px; font-weight:600; line-height:1.3; }
+.cmp-label span{ display:block; font-family:var(--font-mono); font-weight:400; font-size:10.5px; color:var(--steel-light); margin-top:2px; }
+.bars{ display:grid; gap:6px; }
+.bar{ display:grid; grid-template-columns:1fr 64px; gap:8px; align-items:center; }
+.bar__track{ height:12px; background:var(--track); border-radius:0 4px 4px 0; overflow:hidden; }
+.bar__fill{ display:block; height:100%; border-radius:0 4px 4px 0; }
+.bar.old .bar__fill{ background:var(--steel-light); opacity:.6; }
+.bar.new .bar__fill{ background:var(--gold); }
+.bar__val{ font-family:var(--font-mono); font-size:12px; font-variant-numeric:tabular-nums; color:var(--steel); text-align:right; white-space:nowrap; }
+.bar.new .bar__val{ color:var(--gold); font-weight:700; }
+@media (max-width:520px){ .cmp-row{ grid-template-columns:1fr; gap:8px; } }
+
+/* tabela de comparação */
+.table-wrap{ overflow-x:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
+table.cmp{ width:100%; border-collapse:collapse; font-size:13.5px; min-width:520px; }
+table.cmp th, table.cmp td{ padding:12px 16px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); line-height:1.45; }
+table.cmp tr:last-child td{ border-bottom:0; }
+table.cmp thead th{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--steel-light); font-weight:500; background:var(--paper-2); }
+table.cmp td:first-child{ font-weight:600; width:38%; }
+.no{ color:var(--bad); } .yes{ color:var(--ok); font-weight:600; }
+td .tag{ font-family:var(--font-mono); font-size:11px; color:var(--steel); display:block; margin-top:2px; font-weight:400; }
+
+/* fluxo do blog */
+.pipe{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; margin-bottom:14px; }
+.pipe li{ list-style:none; background:var(--white); border:1px solid var(--line); margin:-1px 0 0 -1px; padding:16px 14px 14px; position:relative; font-size:13px; line-height:1.5; color:var(--steel); }
+.pipe li b{ display:block; color:var(--ink); font-size:13.5px; margin-bottom:4px; }
+.pipe li .n{ font-family:var(--font-mono); font-size:11px; color:var(--gold); font-weight:700; display:block; margin-bottom:6px; }
+.pipe li.auto{ background:var(--gold-bg); }
+.pipe-ul{ padding:0; margin:0; }
+@media (max-width:640px){ .pipe{ grid-template-columns:1fr 1fr; } }
+.answer{ background:var(--white); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:3px; padding:16px 20px; font-size:14px; line-height:1.6; color:var(--steel); }
+.answer b{ color:var(--ink); }
+
+/* escopo */
+.modules{ display:grid; gap:12px; }
+.module{
+  background:var(--white); border:1px solid var(--line); border-radius:3px;
+  padding:18px 20px; display:grid; grid-template-columns:auto 1fr auto; gap:16px; align-items:start;
+}
+.module__brand{ width:8px; align-self:stretch; border-radius:2px; flex:none; }
+.module__brand.aclaris{ background:var(--aclaris); }
+.module__brand.stella{ background:var(--stella); }
+.module__brand.both{ background:linear-gradient(180deg,var(--aclaris),var(--stella)); }
+.module__body h3{ font-size:16.5px; font-weight:700; margin:0 0 6px; }
+.module__body p{ font-size:14px; line-height:1.55; color:var(--steel); margin:0; }
+.module__body b{ color:var(--ink); }
+.status{
+  font-family:var(--font-mono); font-size:10.5px; letter-spacing:.05em; text-transform:uppercase;
+  padding:4px 9px; border-radius:20px; white-space:nowrap; display:inline-flex; align-items:center; gap:5px;
+}
+.status i{ width:6px; height:6px; border-radius:50%; background:currentColor; flex:none; }
+.status.done{ background:var(--ok-bg); color:var(--ok); }
+.status.next{ background:var(--gold-bg); color:var(--gold); }
+@media (max-width:560px){ .module{ grid-template-columns:auto 1fr; } .module .status{ grid-column:2; justify-self:start; } }
+
+.market-intro{ font-size:13.5px; color:var(--steel); margin:0 0 18px; line-height:1.6; }
+.market-note{ font-family:var(--font-mono); font-size:11.5px; color:var(--gold); margin-top:10px; line-height:1.6; }
+.market-chart{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:20px 20px 12px; margin-bottom:32px; }
+.market-chart__row{ display:grid; grid-template-columns:132px 1fr; gap:14px; align-items:center; padding-block:9px; }
+.market-chart__row + .market-chart__row{ border-top:1px solid var(--line); }
+.market-chart__label{ font-size:12.5px; font-weight:600; color:var(--ink); line-height:1.3; }
+.market-chart__label span{ display:block; font-family:var(--font-mono); font-weight:400; font-size:10.5px; color:var(--steel-light); text-transform:uppercase; letter-spacing:.03em; margin-top:2px; }
+.market-chart__track{ display:flex; align-items:center; height:24px; }
+.market-chart__bar{ height:14px; border-radius:0 4px 4px 0; flex:none; background:var(--steel-light); opacity:.55; }
+.market-chart__tip-value{ margin-left:9px; font-family:var(--font-mono); font-size:11.5px; color:var(--steel); white-space:nowrap; }
+.market-chart__row.is-us{ padding-top:12px; }
+.market-chart__row.is-us .market-chart__bar{ background:var(--gold); opacity:1; }
+.market-chart__row.is-us .market-chart__tip-value{ color:var(--gold); font-weight:700; font-size:13px; }
+.market-chart__row.is-us .market-chart__label{ color:var(--ink); font-weight:800; }
+.market-chart__axis{ display:grid; grid-template-columns:132px 1fr; gap:14px; margin-top:4px; padding-top:8px; border-top:1px solid var(--line); }
+.market-chart__axis-track{ display:flex; justify-content:space-between; font-family:var(--font-mono); font-size:10px; color:var(--steel-light); }
+.market-chart__track{ min-width:0; }
+@media (max-width:640px){
+  .market-chart__row{ grid-template-columns:1fr; gap:6px; }
+  .market-chart__track{ flex-direction:column; align-items:flex-start; height:auto; gap:4px; }
+  .market-chart__tip-value{ margin-left:0; }
+  .market-chart__axis{ grid-template-columns:1fr; }
+  .market-chart__axis > .market-chart__label{ display:none; }
+}
+
+.invest-card{
+  background:var(--ink); color:var(--paper); border-radius:4px; padding:28px 28px 24px;
+  text-align:center; margin-bottom:20px;
+}
+:root[data-theme="dark"] .invest-card{ background:#1E050B; color:#F5EFE6; }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .invest-card{ background:#1E050B; color:#F5EFE6; } }
+.invest-card__label{ font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#C9B3B0; margin-bottom:10px; }
+.invest-card__amount{ display:flex; align-items:baseline; justify-content:center; gap:6px; }
+.invest-card__amount .prefix{ font-family:var(--font-mono); font-size:20px; color:#E7C493; font-weight:600; }
+.invest-card__amount input{
+  background:transparent; border:none; color:#E7C493; font-family:var(--font-display); font-weight:800;
+  font-size:clamp(32px,6vw,44px); text-align:center; width:9.5ch; max-width:100%; letter-spacing:-0.01em;
+  font-variant-numeric:tabular-nums;
+}
+.invest-card__amount input:focus{ outline:none; border-bottom:2px solid #E7C493; }
+.invest-card__installment{ font-family:var(--font-mono); font-size:13px; color:#C9B3B0; margin-top:6px; }
+.invest-card__installment span{ color:#F5EFE6; font-weight:600; }
+
+.included-list{ list-style:none; margin:0 0 14px; padding:0; display:grid; gap:9px; }
+.included-list li{
+  background:var(--white); border:1px solid var(--line); border-radius:3px; padding:12px 16px;
+  font-size:13.5px; line-height:1.5; color:var(--steel); position:relative; padding-left:34px;
+}
+.included-list li::before{ content:"✓"; position:absolute; left:14px; top:12px; color:var(--ok); font-weight:700; font-size:13px; }
+.included-list li b{ color:var(--ink); font-weight:700; }
+.invest-note{ font-family:var(--font-mono); font-size:11.5px; color:var(--steel-light); margin-top:10px; line-height:1.6; }
+
+.flow{ display:flex; flex-wrap:wrap; gap:0; counter-reset:step; padding:0; margin:0; }
+.flow li{
+  list-style:none; flex:1; min-width:140px; background:var(--white); border:1px solid var(--line);
+  padding:16px 16px 16px 44px; position:relative; font-size:13.5px; line-height:1.5; color:var(--steel);
+  margin:-1px 0 0 -1px;
+}
+.flow li::before{ counter-increment:step; content:counter(step); position:absolute; left:14px; top:16px; font-family:var(--font-mono); font-weight:700; font-size:14px; color:var(--gold); }
+.flow li b{ display:block; color:var(--ink); font-size:14px; margin-bottom:3px; }
+
+.why{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:560px){ .why{ grid-template-columns:1fr; } .flow li{ flex:1 1 100%; } }
+.why div{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:16px 18px; }
+.why div b{ display:block; font-size:14px; margin-bottom:5px; }
+.why div p{ margin:0; font-size:13px; line-height:1.55; color:var(--steel); }
+
+
+.split-cols{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.split-cols > div{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:18px 18px 16px; }
+.split-cols h3{ font-size:14.5px; font-weight:700; margin:0 0 10px; color:var(--ink); }
+.split-cols ol, .split-cols ul{ margin:0; padding-left:18px; }
+.split-cols li{ font-size:13px; line-height:1.55; color:var(--steel); margin-bottom:8px; }
+.split-cols li b{ color:var(--ink); }
+.path{ background:var(--white); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:3px; padding:16px 20px; font-size:14px; line-height:1.6; color:var(--steel); margin-top:12px; }
+.path b{ color:var(--ink); }
+.compare{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+.compare div{ background:var(--paper-2); border-radius:3px; padding:14px 16px; font-size:13px; line-height:1.55; color:var(--steel); }
+.compare b{ display:block; color:var(--ink); font-size:13.5px; margin-bottom:4px; }
+@media (max-width:760px){ .split-cols, .compare{ grid-template-columns:1fr; } }
+.schedule{ display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin-top:14px; }
+.schedule > div{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:10px 12px; font-size:12.5px; color:var(--steel); font-variant-numeric:tabular-nums; }
+.schedule b{ display:block; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.04em; text-transform:uppercase; color:var(--steel-light); font-weight:500; margin-bottom:3px; }
+@media (max-width:700px){ .schedule{ grid-template-columns:repeat(2,1fr); } }
+.invest-card__value{ font-family:var(--font-display); font-weight:800; font-size:clamp(32px,6vw,44px); color:#E7C493; letter-spacing:-0.01em; font-variant-numeric:tabular-nums; }
+.pay-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
+.pay{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:20px 20px 18px; }
+.pay__tag{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--steel-light); }
+.pay h3{ font-size:17px; font-weight:700; margin:6px 0 4px; color:var(--ink); }
+.pay__total{ font-family:var(--font-display); font-size:22px; font-weight:800; color:var(--gold-dark); margin-bottom:12px; font-variant-numeric:tabular-nums; }
+.pay-list{ list-style:none; margin:0; padding:0; display:grid; gap:0; }
+.pay-list li{ font-size:13px; color:var(--steel); line-height:1.4; padding:8px 0; border-top:1px solid var(--line); }
+.pay-list li:first-child{ border-top:0; }
+.pay-list li b{ display:block; color:var(--ink); font-weight:600; font-size:13.5px; }
+@media (max-width:700px){ .pay-grid{ grid-template-columns:1fr; } }
+footer{ padding-top:28px; border-top:1px solid var(--line); }
+footer p{ font-size:13px; color:var(--steel-light); line-height:1.6; max-width:56ch; }
+@page{ size:A4; margin:12mm; }
+.pdf-link{ font-family:var(--font-mono); font-size:12px; color:var(--ink); border:1px solid var(--line); padding:6px 12px; text-decoration:none; background:var(--white); }
+.pdf-link:hover{ border-color:var(--gold-dark); color:var(--gold-dark); }
+@media print{ .no-print{ display:none !important; } }
+@media print{ *{ box-sizing:border-box; } .wrap{ max-width:none; width:100%; } .kpi, .chart, .cmp-row, .bars, .bar, .bar__track{ min-width:0; max-width:100%; } body{ padding-inline:0 !important; padding-block:0 !important; } .kpis{ grid-template-columns:repeat(4,1fr); } body{ -webkit-print-color-adjust:exact; print-color-adjust:exact; } .chart, .kpi, .module, .split-cols > div, .path, .compare > div, .included-list li, .why > div, .market-chart{ break-inside:avoid; } h2{ break-after:avoid; } }
+.halo{ display:inline-flex; align-items:center; gap:9px; text-decoration:none; color:var(--ink); font-size:22px; font-weight:750; font-stretch:118%; letter-spacing:-.03em; line-height:1; }
+.halo svg{ width:26px; height:26px; fill:none; stroke-width:3; stroke-linecap:round; overflow:visible; }
+.halo small{ margin-left:.35em; font-size:.46em; font-weight:600; font-stretch:82%; letter-spacing:.24em; text-transform:uppercase; color:var(--steel); }
+.brands{ margin-bottom:14px; }
+h1{ font-stretch:110%; letter-spacing:-.03em; }
+h1 em{ font-family:'Newsreader',Georgia,serif; font-style:italic; font-weight:400; font-size:1.06em; letter-spacing:-.01em; color:var(--aclaris); }
+h1 em + em, h1 em:last-of-type{ color:var(--stella); }
+h2, .date-tag, .brands, .kpi__label, .legend, .status{ font-stretch:84%; font-weight:600; }
+</style>
+
+
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <a class="halo" href="../"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--aclaris)" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--gold)" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span>halo <small>company</small></span></a>
+    <a class="pdf-link no-print" href="proposta-comercial.pdf">Baixar em PDF ↓</a>
+    <span class="date-tag">PROPOSTA · OUTUBRO 2026</span>
+  </div>
+
+  <div class="brands"><span>Para</span><b>ACLARIS</b><span class="dot"></span><b class="stella">STELLA RESINAS</b></div>
+  <h1>Presença digital completa para <em>Aclaris</em> e <em>Stella Resinas</em>.</h1>
+  <p class="lede">Dois sites novos, um portal de clientes compartilhado e a migração para um tema WordPress próprio, sem Elementor. Os protótipos já estão no ar para teste e as medições abaixo vêm deles.</p>
+
+  <section>
+    <h2>O resultado em quatro números</h2>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="kpi__label">Conteúdo na tela</div>
+        <div class="kpi__flow"><span class="kpi__old">19,5 s</span><span class="kpi__new">2,3 s</span></div>
+        <div class="kpi__note">Aclaris, no celular</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Peso da home</div>
+        <div class="kpi__flow"><span class="kpi__old">12,3 MB</span><span class="kpi__new">0,3 MB</span></div>
+        <div class="kpi__note">Stella, mais de 40 vezes menor</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Nota de velocidade</div>
+        <div class="kpi__flow"><span class="kpi__old">27</span><span class="kpi__new">95</span></div>
+        <div class="kpi__note">Aclaris, de 0 a 100</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi__label">Páginas com conteúdo</div>
+        <div class="kpi__flow"><span class="kpi__old">15</span><span class="kpi__new">30</span></div>
+        <div class="kpi__note">Aclaris e Stella juntas, protótipo</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Notas do Google, antes e depois</h2>
+    <p class="sub">O Lighthouse é a ferramenta do próprio Google que mede velocidade, acessibilidade, boas práticas e SEO técnico. Quanto mais perto de 100, melhor.</p>
+
+    <div class="chart">
+      <div class="chart__head">
+        <div class="chart__title"><i style="background:var(--aclaris)"></i>Aclaris</div>
+        <div class="legend"><span class="l-old"><i></i>Site atual</span><span class="l-new"><i></i>Site novo</span></div>
+      </div>
+      <div class="cmp-row"><div class="cmp-label">Velocidade</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:27%"></span></div><span class="bar__val">27</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:95%"></span></div><span class="bar__val">95</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Acessibilidade</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:91%"></span></div><span class="bar__val">91</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Boas práticas</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:75%"></span></div><span class="bar__val">75</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">SEO técnico</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:85%"></span></div><span class="bar__val">85</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+    </div>
+
+    <div class="chart">
+      <div class="chart__head">
+        <div class="chart__title"><i style="background:var(--stella)"></i>Stella Resinas</div>
+        <div class="legend"><span class="l-old"><i></i>Site atual</span><span class="l-new"><i></i>Site novo</span></div>
+      </div>
+      <div class="cmp-row"><div class="cmp-label">Velocidade</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:28%"></span></div><span class="bar__val">28</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:92%"></span></div><span class="bar__val">92</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Acessibilidade</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90%"></span></div><span class="bar__val">90</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Boas práticas</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:75%"></span></div><span class="bar__val">75</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">SEO técnico</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:92%"></span></div><span class="bar__val">92</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
+    </div>
+    <p class="method">Medição no celular, com rede lenta simulada, em 06/10/2026. Site atual: aclaris.com.br e stellaresinas.com.br, uma medição. Site novo: mediana de 3 medições da home do protótipo publicado.</p>
+  </section>
+
+  <section>
+    <h2>Velocidade e peso, antes e depois</h2>
+    <p class="sub">Menos coisa para baixar significa página que abre rápido em 4G e menos desistência do visitante.</p>
+
+    <div class="chart">
+      <div class="chart__head"><div class="chart__title">Tempo até o conteúdo principal aparecer</div><div class="legend"><span class="l-old"><i></i>Atual</span><span class="l-new"><i></i>Novo</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">Aclaris<span>segundos</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">19,5 s</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:11.8%"></span></div><span class="bar__val">2,3 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Stella<span>segundos</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">20,2 s</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:9.9%"></span></div><span class="bar__val">2,0 s</span></div></div></div>
+    </div>
+
+    <div class="chart">
+      <div class="chart__head"><div class="chart__title">Peso da página inicial</div><div class="legend"><span class="l-old"><i></i>Atual</span><span class="l-new"><i></i>Novo</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">Aclaris<span>megabytes</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">6,6 MB</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:6%"></span></div><span class="bar__val">0,4 MB</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Stella<span>megabytes</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">12,3 MB</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:2.4%"></span></div><span class="bar__val">0,3 MB</span></div></div></div>
+    </div>
+
+    <div class="chart">
+      <div class="chart__head"><div class="chart__title">Arquivos pedidos ao servidor</div><div class="legend"><span class="l-old"><i></i>Atual</span><span class="l-new"><i></i>Novo</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">Aclaris<span>requisições</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:81.7%"></span></div><span class="bar__val">107</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:13.7%"></span></div><span class="bar__val">18</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Stella<span>requisições</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">131</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:12.2%"></span></div><span class="bar__val">16</span></div></div></div>
+    </div>
+    <p class="method">Mesmas medições do gráfico anterior. O site novo não faz nenhuma requisição a terceiros ao abrir (fontes, mapas e vídeos só carregam quando necessário).</p>
+  </section>
+
+  <section>
+    <h2>O que criamos</h2>
+    <p class="sub">Além de mais rápido, o site novo responde às perguntas que o cliente digita no Google e pergunta às ferramentas de IA, e cada resposta fica numa página própria.</p>
+
+    <div class="chart">
+      <div class="chart__head"><div class="chart__title">Páginas com conteúdo por site</div><div class="legend"><span class="l-old"><i></i>Escopo anterior</span><span class="l-new"><i></i>Protótipo hoje</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">Aclaris<span>páginas</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:52.9%"></span></div><span class="bar__val">9</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">17</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Stella<span>páginas</span></div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:35.3%"></span></div><span class="bar__val">6</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:76.5%"></span></div><span class="bar__val">13</span></div></div></div>
+    </div>
+
+    <div class="table-wrap">
+      <table class="cmp">
+        <thead><tr><th>O que o Google e as IAs encontram</th><th>Site atual</th><th>Site novo</th></tr></thead>
+        <tbody>
+          <tr><td>Resposta direta e perguntas frequentes em cada tecnologia e serviço</td><td class="no">Sem perguntas frequentes<span class="tag">verificado na home</span></td><td class="yes">Sim<span class="tag">Aclaris: 5 páginas · Stella: 3 páginas · 44 perguntas respondidas</span></td></tr>
+          <tr><td>Dados estruturados (a “etiqueta” que o Google lê)</td><td>Um bloco padrão na home (Yoast)</td><td class="yes">Empresa, serviço, produto, artigo e perguntas<span class="tag">em cada página</span></td></tr>
+          <tr><td>Arquivo <code>llms.txt</code> para assistentes de IA</td><td class="no">Não tem</td><td class="yes">Sim<span class="tag">com endereço, horário, tecnologias e fatos da empresa</span></td></tr>
+          <tr><td>Cada artigo do blog com endereço próprio</td><td>Sim, 24 e 14 artigos</td><td class="yes">Sim, mantendo os endereços atuais<span class="tag">com marcação de artigo e os posts do LinkedIn de cada empresa</span></td></tr>
+          <tr><td>Ocorrências de “elementor” no código da home</td><td class="no">1.134 (Aclaris) · 1.266 (Stella)</td><td class="yes">Zero</td></tr>
+          <tr><td>Mapa do site e robots.txt</td><td>Sim, via Yoast</td><td>Sim, liberando também os buscadores de IA</td></tr>
+          <tr><td>Redirecionamentos para não perder o ranqueamento na troca</td><td>Não se aplica</td><td class="yes">Mapa pronto<span class="tag">77 endereços antigos mapeados</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Blog e vagas: cada texto vira uma página?</h2>
+    <p class="sub">Sim. No WordPress, tudo que a empresa publicar no painel ganha endereço próprio sozinho, sem pedir nada para a gente.</p>
+    <ol class="pipe pipe-ul">
+      <li><span class="n">1</span><b>A equipe escreve</b>No painel do blog, com título, texto e imagem.</li>
+      <li><span class="n">2</span><b>Clica em publicar</b>Rascunhos ficam escondidos até esse clique.</li>
+      <li class="auto"><span class="n">3 · automático</span><b>A página nasce</b>Com endereço próprio e os dados estruturados de artigo, já preenchidos.</li>
+      <li class="auto"><span class="n">4 · automático</span><b>O Google é avisado</b>O artigo entra na lista do blog e no mapa do site.</li>
+    </ol>
+    <div class="answer">
+      <b>As vagas funcionam do mesmo jeito.</b> Ao publicar uma vaga, ela ganha página própria com a marcação que o Google Vagas lê. Ao encerrar, a página sai do ar ou aparece como encerrada. Nos protótipos de hoje, as páginas dos artigos foram geradas por nós para você ver o resultado final. Com o painel no WordPress, esse passo deixa de existir.
+    </div>
+  </section>
+
+  <section>
+    <h2>Escopo do projeto</h2>
+    <div class="modules">
+
+      <div class="module">
+        <div class="module__brand aclaris"></div>
+        <div class="module__body">
+          <h3>Site institucional Aclaris</h3>
+          <p>17 páginas: home, soluções, produtos, diagnóstico 360°, como trabalhamos, blog, trabalhe conosco, contato, quem somos e uma página para cada tecnologia (osmose reversa, desmineralização, abrandamento, ultrafiltração) e para água de hemodiálise. Identidade visual própria, vídeos e fotos reais.</p>
+        </div>
+        <span class="status done"><i></i>Protótipo pronto</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand stella"></div>
+        <div class="module__body">
+          <h3>Site institucional Stella Resinas</h3>
+          <p>13 páginas: home, quem somos, serviços, blog, trabalhe conosco, contato, regeneração de resinas, Sistema Leva e Traz e manutenção, mais 4 artigos com as publicações reais do LinkedIn da empresa.</p>
+        </div>
+        <span class="status done"><i></i>Protótipo pronto</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand both"></div>
+        <div class="module__body">
+          <h3>SEO técnico, buscadores de IA e desempenho</h3>
+          <p>Dados estruturados, perguntas e respostas, <code>llms.txt</code>, sitemap, fontes e imagens otimizadas, acessibilidade nota 100 e mapa de redirecionamentos dos endereços atuais.</p>
+        </div>
+        <span class="status done"><i></i>Pronto no protótipo</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand both"></div>
+        <div class="module__body">
+          <h3>Portal do Cliente</h3>
+          <p>Login por CNPJ com definição de senha por e-mail no primeiro acesso (o CNPJ nunca é senha). Documentos e fotos organizados por data, compartilhados entre as duas empresas. <b>Painel administrativo próprio</b>: a equipe cadastra clientes e envia, edita e exclui documentos sem depender de programador.</p>
+        </div>
+        <span class="status done"><i></i>Maquete pronta</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand both"></div>
+        <div class="module__body">
+          <h3>Módulo de RH: vagas</h3>
+          <p>Publicação de vagas direto no site, com formulário de candidatura e página própria para cada vaga. <b>Painel próprio</b>: a empresa publica, edita e encerra vagas quando quiser.</p>
+        </div>
+        <span class="status next"><i></i>Próxima etapa</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand both"></div>
+        <div class="module__body">
+          <h3>Blog com painel de redação</h3>
+          <p>Login próprio e <b>autonomia total</b> para publicar a partir do que já sai no LinkedIn e no Instagram. Não há sincronização automática, porque nem todo post cabe no site. Cada artigo publicado vira uma página.</p>
+        </div>
+        <span class="status next"><i></i>Próxima etapa</span>
+      </div>
+
+      <div class="module">
+        <div class="module__brand both"></div>
+        <div class="module__body">
+          <h3>Migração para WordPress</h3>
+          <p>Tema próprio, sem Elementor: backup do site e do banco atual, ambiente de teste e troca só depois de tudo validado, com os mesmos endereços e redirecionamentos. É o processo que usamos na Hanaoka.</p>
+        </div>
+        <span class="status next"><i></i>Após aprovação</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Por que sair do Elementor</h2>
+    <div class="why">
+      <div><b>Velocidade</b><p>O tema próprio carrega só o essencial. Um construtor de páginas carrega o editor visual inteiro, mesmo para o visitante.</p></div>
+      <div><b>Sem mensalidade de plugin</b><p>Layout, formulário e portfólio ficam no código do tema, e não em plugins pagos que expiram.</p></div>
+      <div><b>Segurança</b><p>Menos plugins de terceiros ativos significa menos superfície de ataque e menos atualização quebrando o site.</p></div>
+      <div><b>Manutenção</b><p>Trocar um texto ou uma cor não depende de reaprender a lógica de um construtor visual a cada atualização.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Referência de mercado</h2>
+    <p class="market-intro">Faixas praticadas por agências e freelancers no Brasil em 2026. As três primeiras são intervalos de mercado; a última é o valor fechado do projeto.</p>
+    <div class="market-chart">
+      <div class="market-chart__row">
+        <div class="market-chart__label">Site simples<span>tema pronto</span></div>
+        <div class="market-chart__track"><div class="market-chart__bar" style="width:8.3%"></div><span class="market-chart__tip-value">R$1.500–5.000</span></div>
+      </div>
+      <div class="market-chart__row">
+        <div class="market-chart__label">Site personalizado<span>freelancer/agência</span></div>
+        <div class="market-chart__track"><div class="market-chart__bar" style="width:25%"></div><span class="market-chart__tip-value">R$3.000–15.000</span></div>
+      </div>
+      <div class="market-chart__row">
+        <div class="market-chart__label">Portal com área logada<span>isolado, mercado</span></div>
+        <div class="market-chart__track"><div class="market-chart__bar" style="width:83.3%"></div><span class="market-chart__tip-value">R$20.000–50.000</span></div>
+      </div>
+      <div class="market-chart__row is-us">
+        <div class="market-chart__label">Aclaris + Stella<span>2 sites + SEO + Portal + Blog e RH</span></div>
+        <div class="market-chart__track"><div class="market-chart__bar" style="width:36.7%"></div><span class="market-chart__tip-value">R$22.000</span></div>
+      </div>
+      <div class="market-chart__axis">
+        <div class="market-chart__label"></div>
+        <div class="market-chart__axis-track"><span>R$0</span><span>15k</span><span>30k</span><span>45k</span><span>60k</span></div>
+      </div>
+    </div>
+    <p class="market-note">Um portal com área logada, sozinho, já custa R$20–50 mil no mercado. O valor abaixo cobre os dois sites, o SEO, o portal, o blog e o módulo de RH.</p>
+  </section>
+
+  <section>
+    <h2>Dois domínios, um painel: o que é difícil e o que precisamos fazer</h2>
+    <p class="sub">Aclaris (aclaris.com.br) e Stella Resinas (stellaresinas.com.br) são dois sites com endereços diferentes, e hoje cada um roda o próprio WordPress. Para o blog, as vagas e o portal ficarem em um painel só, a equipe precisa de uma ligação segura entre eles. Abaixo, a dificuldade de cada parte e o que cada lado precisa fazer.</p>
+    <div class="split-cols">
+      <div>
+        <h3>Dificuldades</h3>
+        <ol>
+          <li><b>Um WordPress não publica no outro sozinho.</b> O artigo ou a vaga precisa chegar por uma conexão segura (API), e isso depende de como cada site está hospedado.</li>
+          <li><b>Servidores diferentes.</b> Se cada site estiver em uma hospedagem, a conexão passa pela internet e precisa ser aceita pelos dois lados.</li>
+          <li><b>Permissão por empresa.</b> Um login único não pode permitir que a equipe de uma empresa altere o site da outra por engano.</li>
+          <li><b>Não criar um terceiro site.</b> O painel precisa ficar fora do Google, para não duplicar o conteúdo dos sites.</li>
+        </ol>
+      </div>
+      <div>
+        <h3>O que fazemos</h3>
+        <ul>
+          <li>Montar o painel em um endereço próprio, sem indexação (por exemplo, painel.aclaris.com.br).</li>
+          <li>Instalar um plugin pequeno em cada WordPress, para receber artigos e vagas.</li>
+          <li>Criar uma senha de aplicativo para cada site, guardada só dentro do painel.</li>
+          <li>Configurar um login único, com permissão separada por empresa.</li>
+          <li>Testar tudo em ambiente de teste antes de ligar nos sites de verdade.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>O que precisamos de vocês</h3>
+        <ul>
+          <li>Confirmar onde está hospedado cada WordPress: na mesma conta de hospedagem ou em contas diferentes.</li>
+          <li>Confirmar que temos acesso de administrador aos dois sites.</li>
+          <li>Escolher o endereço do painel. Sugerimos painel.aclaris.com.br.</li>
+          <li>Autorizar a instalação do plugin nos dois sites.</li>
+          <li>Indicar quem da equipe vai usar o painel e com qual permissão.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="path">
+      <b>Caminho recomendado:</b> um painel central, em um endereço próprio, que publica nos dois WordPress pela conexão padrão de API. Funciona com servidores e WordPress diferentes e mantém um login só. Se os dois sites estiverem na mesma conta de hospedagem, existe uma alternativa mais simples (uma única instalação com dois sites), mas nem toda hospedagem aceita esse modelo, então isso se confirma antes.
+    </div>
+    <div class="compare">
+      <div><b>Por que não um painel para cada site</b>Dois logins, duas formas de publicar e mais chance de a equipe publicar no lugar errado.</div>
+      <div><b>Por que os domínios continuam separados</b>Cada empresa mantém a autoridade do próprio endereço no Google. Juntar os dois em um domínio só mudaria os endereços que já ranqueiam.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Investimento</h2>
+    <div class="invest-card">
+      <div class="invest-card__label">Investimento total do projeto</div>
+      <div class="invest-card__amount"><span class="prefix">R$</span><span class="invest-card__value">22.000,00</span></div>
+      <div class="invest-card__installment">escolha uma das duas formas de pagamento abaixo</div>
+    </div>
+
+    <div class="pay-grid">
+      <div class="pay">
+        <div class="pay__tag">Forma 1</div>
+        <h3>Entrada + 5 parcelas</h3>
+        <div class="pay__total">R$ 22.000,00</div>
+        <ul class="pay-list">
+          <li><b>Entrada: R$ 10.000,00</b>no ato da assinatura do contrato</li>
+          <li><b>1ª parcela: R$ 2.400,00</b>15/11/2026</li>
+          <li><b>2ª parcela: R$ 2.400,00</b>15/12/2026</li>
+          <li><b>3ª parcela: R$ 2.400,00</b>15/01/2027</li>
+          <li><b>4ª parcela: R$ 2.400,00</b>15/02/2027</li>
+          <li><b>5ª parcela: R$ 2.400,00</b>15/03/2027</li>
+        </ul>
+      </div>
+      <div class="pay">
+        <div class="pay__tag">Forma 2</div>
+        <h3>10 parcelas</h3>
+        <div class="pay__total">R$ 26.500,00</div>
+        <ul class="pay-list">
+          <li><b>1ª parcela: R$ 2.650,00</b>15/11/2026</li>
+          <li><b>2ª parcela: R$ 2.650,00</b>15/12/2026</li>
+          <li><b>3ª parcela: R$ 2.650,00</b>15/01/2027</li>
+          <li><b>4ª parcela: R$ 2.650,00</b>15/02/2027</li>
+          <li><b>5ª parcela: R$ 2.650,00</b>15/03/2027</li>
+          <li><b>6ª parcela: R$ 2.650,00</b>15/04/2027</li>
+          <li><b>7ª parcela: R$ 2.650,00</b>15/05/2027</li>
+          <li><b>8ª parcela: R$ 2.650,00</b>15/06/2027</li>
+          <li><b>9ª parcela: R$ 2.650,00</b>15/07/2027</li>
+          <li><b>10ª parcela: R$ 2.650,00</b>15/08/2027</li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="included-list">
+      <li><b>Site institucional Aclaris</b>: 17 páginas, uma para cada tecnologia, com identidade visual própria, vídeos e fotos reais</li>
+      <li><b>Site institucional Stella Resinas</b>: 13 páginas, uma para cada serviço, com o conteúdo real do LinkedIn</li>
+      <li><b>SEO técnico, buscadores de IA e desempenho</b>: dados estruturados, perguntas e respostas, <code>llms.txt</code>, acessibilidade e mapa de redirecionamentos</li>
+      <li><b>Portal do Cliente</b>: login seguro por CNPJ, documentos e fotos por data, compartilhados entre as duas empresas, com painel próprio para a equipe</li>
+      <li><b>Módulo de RH</b>: vagas com página própria, publicadas, editadas e encerradas pela empresa</li>
+      <li><b>Blog com painel de redação</b>: cada artigo publicado vira uma página</li>
+      <li><b>Migração completa para WordPress</b>: tema próprio, sem Elementor, validado em ambiente de teste antes de ir ao ar</li>
+    </ul>
+    <p class="invest-note">Valor fechado, sem divisão por serviço. Cobre o desenvolvimento de todos os itens acima e a migração segura para produção, com backup e homologação antes da troca.</p>
+  </section>
+
+  <section>
+    <h2>Como funciona daqui pra frente</h2>
+    <ul class="flow">
+      <li><b>Aprovação</b>Validação final do protótipo de cada módulo.</li>
+      <li><b>Migração</b>Tema WordPress próprio, construído em ambiente de teste.</li>
+      <li><b>Validação</b>Conferência lado a lado com o site atual antes da troca.</li>
+      <li><b>No ar</b>Publicação em produção e acompanhamento depois do lançamento.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Proposta preparada pela Halo Company para Aclaris, soluções para tratamento de água, e Stella Resinas, regeneração de resinas · Taboão da Serra, SP</p>
+  </footer>
+
+</div>
+
+
+
+</body>
+</html>
