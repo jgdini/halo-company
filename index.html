@@ -97,6 +97,72 @@
         </div>
         <p class="hero__nota">Atendemos poucas empresas por vez. Toda aplicação é analisada.</p>
       </div>
+      <!-- PAINEL: o processo em 26 segundos, sincronizado com a narração (assets/audio/narracao.mp3). Roteiro e tempos em painel() no main.js. -->
+      <div class="painel" id="painel">
+        <div class="painel__tela" aria-hidden="true">
+          <div class="painel__topo"><span>Como trabalhamos</span><span id="painel-passo">Halo</span></div>
+
+          <div class="cn cn1">
+            <svg class="anel cn1__anel" viewBox="0 0 32 32"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--garanca)" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--acafrao)" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--celeste)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg>
+            <p class="kt"><span class="kt__l"><span>Toda empresa boa</span></span><span class="kt__l"><span>merece ser <em>vista</em>.</span></span></p>
+          </div>
+
+          <div class="cn cn2">
+            <span class="cn__n">01</span><p class="cn__t">Aplicação</p>
+            <div class="campos">
+              <div class="campo"><small>Empresa</small><i></i></div>
+              <div class="campo"><small>Segmento</small><i></i></div>
+              <div class="campo"><small>Objetivo</small><i></i></div>
+            </div>
+          </div>
+
+          <div class="cn cn3">
+            <span class="cn__n">02</span><p class="cn__t">Diagnóstico</p>
+            <ul class="alvos"><li>Redes</li><li>Site</li><li>Anúncios</li><li>Comercial</li></ul>
+            <div class="socios"><i style="--cor:var(--garanca)"></i><i style="--cor:var(--acafrao)"></i><i style="--cor:var(--celeste)"></i></div>
+          </div>
+
+          <div class="cn cn4">
+            <span class="cn__n">03</span><p class="cn__t">Plano</p>
+            <ol class="plano"><li>Posicionamento</li><li>Conteúdo</li><li>Captação</li><li>Site</li></ol>
+          </div>
+
+          <div class="cn cn5">
+            <span class="cn__n">04</span><p class="cn__t">Execução</p>
+            <div class="ciclo">
+              <svg viewBox="0 0 100 100"><circle class="ciclo__volta" cx="50" cy="50" r="38" pathLength="1"/><g class="ciclo__ponto"><circle cx="50" cy="12" r="3.2"/></g></svg>
+              <span class="ciclo__r ciclo__r1">Produz</span><span class="ciclo__r ciclo__r2">Mede</span><span class="ciclo__r ciclo__r3">Ajusta</span>
+            </div>
+          </div>
+
+          <div class="cn cn6">
+            <p class="trio"><span style="--cor:var(--garanca)">Estratégia</span><span style="--cor:var(--acafrao)">Imagem</span><span style="--cor:var(--celeste)">Site</span></p>
+            <p class="trio__fim">no mesmo <em>time</em>.</p>
+          </div>
+
+          <div class="cn cn7">
+            <svg class="anel cn7__anel" viewBox="0 0 32 32"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--garanca)" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--acafrao)" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--celeste)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg>
+            <p class="cn7__nome">halo <small>company</small></p>
+            <p class="cn7__frase">O efeito halo da sua marca.</p>
+          </div>
+
+          <p class="painel__legenda" id="painel-legenda"></p>
+          <span class="painel__barra"><i id="painel-barra"></i></span>
+        </div>
+
+        <ol class="painel__resumo">
+          <li><b>Aplicação</b>Você conta sobre o seu negócio.</li>
+          <li><b>Diagnóstico</b>Os três sócios olham redes, site, anúncios e comercial.</li>
+          <li><b>Plano</b>Posicionamento, conteúdo, captação e site num plano só.</li>
+          <li><b>Execução</b>Todo mês a gente produz, mede e ajusta.</li>
+        </ol>
+
+        <div class="painel__controles">
+          <button type="button" id="painel-pausa" aria-pressed="false">Pausar</button>
+          <button type="button" id="painel-som" aria-pressed="false">Ouvir a narração</button>
+        </div>
+        <audio id="painel-audio" preload="none" src="assets/audio/narracao.mp3"></audio>
+      </div>
     </div>
     <div class="hero__fios"><canvas class="faixa-fios" id="fios-hero" aria-hidden="true"></canvas></div>
   </section>

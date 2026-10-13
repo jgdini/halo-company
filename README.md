@@ -10,6 +10,11 @@ Página única para a Halo Company (Amanda Takahashi, Bianca Fortes e João Dini
 ## Assinatura visual
 Paleta bordô e off-white. Três fios: cereja = estratégia/Amanda, champanhe = imagem/Bia, pérola = site/João (no CSS os tokens ainda se chamam --garanca, --acafrao e --celeste, da primeira paleta). O logo é um halo formado pelos três fios, e um anel de luz gira atrás do vídeo do topo. No topo eles giram trançados; na seção "Três fornecedores são três fios soltos" começam separados e a rolagem os trança. Tudo em `Fios()` dentro de `assets/js/main.js`. Com `prefers-reduced-motion` a página fica estática e completa.
 
+## Painel do topo (ao lado do título)
+O processo em 26 segundos, no estilo "planta técnica": Aplicação, Diagnóstico, Plano, Execução e o logo. Toca sozinho e sem som; o botão "Ouvir a narração" liga a voz e o painel passa a seguir o relógio do áudio. Há botão de pausa, legenda com a frase falada e uma lista estática das quatro etapas para quem desliga animações.
+- Voz: `assets/audio/narracao.mp3` (23,2 s), sintética, gerada com `hyperframes tts --voice pf_dora --lang pt-br` a partir de `motion/voz/roteiro.txt`, com "Halo" escrito "Rêilou" para sair a pronúncia em inglês. O ambiente Python fica em `motion/.venv` (fora do git).
+- Para trocar pela gravação da Amanda: salvar o MP3 no mesmo caminho e ajustar os tempos em `FALAS` e nas cenas de `painel()` em `assets/js/main.js`. As pausas entre as frases saem de `ffmpeg -af silencedetect=noise=-38dB:d=0.18`.
+
 ## Cenas (logo depois da faixa de nomes)
 Seis cenas de "fios de luz" que avançam com o scroll: faísca, direção (estratégia), parar o scroll (imagem), audiência (ritmo), conecta (site) e do post ao cliente (comercial). Inspiradas na linguagem do reel do louis_rlee, com a paleta e as frases da Halo. Tudo em canvas, função `cenas()` em `assets/js/main.js`; as frases ficam no HTML (`.cena`) e podem ser trocadas sem mexer no desenho. A seção só é montada quando chega perto da tela.
 

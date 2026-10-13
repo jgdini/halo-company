@@ -351,6 +351,125 @@
     desenhar();
   }
 
+  /* ---------- Painel do topo: o processo em 26 s, no ritmo da narração ---------- */
+  if (mov) (function painel() {
+    const { gsap } = window;
+    const raizP = document.getElementById('painel');
+    const audio = document.getElementById('painel-audio');
+    const legenda = document.getElementById('painel-legenda');
+    const passo = document.getElementById('painel-passo');
+    const barra = document.getElementById('painel-barra');
+    const bPausa = document.getElementById('painel-pausa');
+    const bSom = document.getElementById('painel-som');
+    const q = (s) => raizP.querySelector(s), qa = (s) => [...raizP.querySelectorAll(s)];
+    const DUR = 26; // a narração tem 23,2 s; o logo segura a tela até fechar o ciclo
+
+    // Início de cada frase na narração (medido pelas pausas do áudio) e o rótulo do canto.
+    const FALAS = [
+      [0, 'Toda empresa boa merece ser vista.', 'Halo'],
+      [2.15, 'Na Halo, tudo começa com uma aplicação: você conta sobre o seu negócio.', '01 / 04'],
+      [5.84, 'Depois vem o diagnóstico.', '02 / 04'],
+      [7.47, 'Os três sócios olham as suas redes, o seu site, os seus anúncios e o seu comercial.', '02 / 04'],
+      [11.9, 'Daí nasce um plano só: posicionamento, conteúdo, captação e site.', '03 / 04'],
+      [15.46, 'E todo mês a gente produz, mede e ajusta.', '04 / 04'],
+      [17.98, 'Estratégia, imagem e site, no mesmo time.', 'Halo'],
+      [20.6, 'Halo Company.', 'Halo'],
+      [21.69, 'O efeito halo da sua marca.', 'Halo']
+    ];
+
+    const tl = gsap.timeline({ paused: true });
+    const cena = (sel, ini, fim) => {
+      tl.fromTo(sel, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: .35, ease: 'power2.out' }, ini);
+      tl.to(sel, { autoAlpha: 0, y: -10, duration: .25, ease: 'power2.in' }, fim - .25);
+    };
+    // Acende um item no momento em que a voz fala dele (tween, e não callback, para funcionar ao voltar o tempo).
+    const liga = (el, t) => tl.to(el, { backgroundColor: '#F5EFE6', color: '#2A0811', borderColor: '#F5EFE6', duration: .2 }, t);
+
+    // 1. Toda empresa boa merece ser vista.
+    cena('.cn1', 0, 2.1);
+    tl.from(qa('.cn1 .kt__l > span'), { yPercent: 115, duration: .6, stagger: .45, ease: 'power4.out' }, .05);
+    tl.fromTo('.cn1__anel', { rotate: -90, scale: .7 }, { rotate: 40, scale: 1, duration: 2.1, ease: 'power2.out' }, 0);
+
+    // 2. Aplicação: os campos se preenchem.
+    cena('.cn2', 2.1, 5.8);
+    tl.from('.cn2 .cn__t', { xPercent: -8, duration: .5, ease: 'power3.out' }, 2.15);
+    qa('.campo i').forEach((el, i) => tl.fromTo(el, { '--cheio': '0%' }, { '--cheio': ['78%', '54%', '92%'][i], duration: .7, ease: 'power2.out' }, 3.3 + i * .6));
+
+    // 3. Diagnóstico: os três sócios olham os quatro pontos.
+    cena('.cn3', 5.8, 11.85);
+    tl.from('.cn3 .cn__t', { xPercent: -8, duration: .5, ease: 'power3.out' }, 5.85);
+    tl.from(qa('.socios i'), { scaleX: 0, duration: .6, stagger: .15, ease: 'power3.out' }, 7.5);
+    tl.from(qa('.alvos li'), { autoAlpha: 0, y: 10, duration: .3, stagger: .08 }, 6.1);
+    [8.8, 9.4, 10.0, 10.86].forEach((t, i) => liga(qa('.alvos li')[i], t));
+
+    // 4. Plano: um documento só, com quatro linhas.
+    cena('.cn4', 11.85, 15.4);
+    tl.from('.cn4 .cn__t', { xPercent: -8, duration: .5, ease: 'power3.out' }, 11.9);
+    [12.96, 13.75, 14.3, 14.9].forEach((t, i) => tl.from(qa('.plano li')[i], { autoAlpha: 0, x: -14, duration: .3, ease: 'power2.out' }, t));
+
+    // 5. Execução: o ciclo do mês.
+    cena('.cn5', 15.4, 17.95);
+    tl.fromTo('.ciclo__volta', { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: .9, ease: 'power2.inOut' }, 15.45);
+    tl.fromTo('.ciclo__ponto', { rotation: 0, svgOrigin: '50 50' }, { rotation: 360, svgOrigin: '50 50', duration: 2.4, ease: 'none' }, 15.5);
+    [16.36, 16.78, 17.2].forEach((t, i) => tl.from(qa('.ciclo__r')[i], { autoAlpha: 0, scale: .8, duration: .25 }, t));
+
+    // 6. Estratégia, imagem e site, no mesmo time.
+    cena('.cn6', 17.95, 20.55);
+    [18.0, 18.7, 19.25].forEach((t, i) => tl.from(qa('.trio span')[i], { xPercent: -12, autoAlpha: 0, duration: .35, ease: 'power3.out' }, t));
+    tl.from('.trio__fim', { autoAlpha: 0, y: 12, duration: .35 }, 19.7);
+
+    // 7. Halo Company. O efeito halo da sua marca.
+    cena('.cn7', 20.55, DUR);
+    tl.fromTo('.cn7__anel', { rotate: -120, scale: .5 }, { rotate: 0, scale: 1, duration: 1, ease: 'back.out(1.4)' }, 20.55);
+    tl.from('.cn7__nome', { autoAlpha: 0, y: 14, duration: .45 }, 20.7);
+    tl.from('.cn7__frase', { autoAlpha: 0, y: 10, duration: .5 }, 21.7);
+    tl.to('.cn7__anel', { rotate: 120, duration: DUR - 21.6, ease: 'none' }, 21.6);
+    tl.to({}, { duration: 0 }, DUR);
+
+    let t = 0, tocando = true, som = false, visivel = false, falaAtual = -1, ultimo = performance.now();
+
+    function pintar() {
+      tl.time(t);
+      barra.style.transform = `scaleX(${t / DUR})`;
+      let i = 0; while (i + 1 < FALAS.length && t >= FALAS[i + 1][0]) i++;
+      if (i !== falaAtual) { falaAtual = i; legenda.textContent = FALAS[i][1]; passo.textContent = FALAS[i][2]; }
+    }
+
+    function reiniciar() {
+      t = 0;
+      if (som) { audio.currentTime = 0; audio.play().catch(() => desligarSom()); }
+    }
+
+    gsap.ticker.add(() => {
+      const agora = performance.now(), dt = Math.min((agora - ultimo) / 1000, .1); ultimo = agora;
+      if (!tocando || !visivel) return;
+      // Com som, o relógio é o do áudio; sem som (ou depois que a fala termina), o relógio é o da página.
+      if (som && !audio.paused && !audio.ended) t = audio.currentTime; else t += dt;
+      if (t >= DUR) reiniciar();
+      pintar();
+    });
+
+    function desligarSom() { som = false; audio.pause(); bSom.setAttribute('aria-pressed', 'false'); bSom.textContent = 'Ouvir a narração'; }
+    bSom.addEventListener('click', () => {
+      if (som) return desligarSom();
+      som = true; tocando = true; bPausa.setAttribute('aria-pressed', 'false'); bPausa.textContent = 'Pausar';
+      bSom.setAttribute('aria-pressed', 'true'); bSom.textContent = 'Desligar o som';
+      reiniciar(); pintar();
+    });
+    bPausa.addEventListener('click', () => {
+      tocando = !tocando;
+      bPausa.setAttribute('aria-pressed', String(!tocando)); bPausa.textContent = tocando ? 'Pausar' : 'Continuar';
+      if (som) { if (tocando && !audio.ended && t < audio.duration) audio.play().catch(() => {}); else audio.pause(); }
+    });
+    // Fora da tela, tudo para (inclusive a voz).
+    new IntersectionObserver(([en]) => {
+      visivel = en.isIntersecting; ultimo = performance.now();
+      if (som) { if (visivel && tocando && !audio.ended && t < 23) audio.play().catch(() => {}); else audio.pause(); }
+    }, { threshold: .25 }).observe(raizP);
+
+    pintar();
+  })();
+
   /* ---------- Tráfego pago: jeito comum x jeito Halo ---------- */
   (function trafego() {
     const fluxo = document.getElementById('fluxo');

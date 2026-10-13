@@ -490,7 +490,7 @@ section { position: relative; }
 .comparativo thead th { font-size: .78rem; font-weight: 600; font-stretch: 80%; letter-spacing: .14em; text-transform: uppercase; color: var(--texto-2); }
 .comparativo td { font-size: 1.25rem; font-weight: 680; font-stretch: 108%; transition: color .5s, background-color .5s, opacity .5s; }
 .comparativo .col-comum, .comparativo .col-halo { width: 26%; }
-.comparativo[data-modo="comum"] .col-halo, .comparativo[data-modo="halo"] .col-comum { opacity: .45; }
+.comparativo[data-modo="comum"] .col-halo, .comparativo[data-modo="halo"] .col-comum { opacity: .66; }
 .comparativo[data-modo="comum"] .col-comum { color: var(--garanca); }
 .comparativo[data-modo="halo"] .col-halo { color: var(--acafrao); background: rgba(231, 196, 147, .06); }
 .comparativo__total th, .comparativo__total td { border-bottom: 0; font-size: 1.5rem; }
@@ -520,3 +520,79 @@ section { position: relative; }
 .ig:hover, .ig:focus-visible { transform: translateY(-4px); border-color: rgba(245, 239, 230, .35); }
 .ig:hover .ig__selo, .ig:focus-visible .ig__selo { background: var(--algodao); color: var(--anil-fundo); }
 .selo__img.ig { max-width: 360px; }
+
+/* Painel do topo: o processo em motion, no estilo "planta técnica" (grade, molduras e texto no ritmo da voz) */
+.hero__grid { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
+.painel { justify-self: end; width: 100%; max-width: calc(64svh * .8); animation: aparece 1.2s .35s var(--ease) both; }
+.painel__tela, .painel__controles { display: none; }
+.painel__resumo { list-style: none; margin: 0; padding: 22px; display: grid; gap: 14px; border: 1px solid var(--linha); border-radius: var(--raio); counter-reset: p; }
+.painel__resumo li { counter-increment: p; font-size: .95rem; color: var(--texto-2); }
+.painel__resumo b { display: block; color: var(--texto); font-size: 1.05rem; }
+.painel__resumo b::before { content: "0" counter(p) "  "; color: var(--acafrao); font-stretch: 80%; }
+
+.js-mov .painel__resumo { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); padding: 0; border: 0; }
+.js-mov .painel__tela { display: block; position: relative; aspect-ratio: 4 / 5; container-type: inline-size; overflow: hidden; border-radius: var(--raio);
+  border: 1px solid rgba(245, 239, 230, .22); background-color: var(--anil-fundo);
+  background-image: linear-gradient(rgba(245, 239, 230, .055) 1px, transparent 1px), linear-gradient(90deg, rgba(245, 239, 230, .055) 1px, transparent 1px);
+  background-size: 8cqw 8cqw; background-position: -1px -1px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .7); }
+.painel__topo { position: absolute; left: 5cqw; right: 5cqw; top: 4.5cqw; display: flex; justify-content: space-between; font-size: 2.6cqw; font-weight: 600; font-stretch: 80%; letter-spacing: .18em; text-transform: uppercase; color: var(--texto-2); }
+.painel__topo span:last-child { color: var(--acafrao); }
+.cn { position: absolute; inset: 13cqw 6cqw 22cqw; display: flex; flex-direction: column; justify-content: center; opacity: 0; visibility: hidden; }
+.cn__n { font-size: 3.2cqw; font-weight: 600; font-stretch: 80%; letter-spacing: .2em; color: var(--acafrao); }
+.cn__t { margin: 1cqw 0 5cqw; font-size: 11cqw; font-weight: 760; font-stretch: 112%; letter-spacing: -.035em; line-height: 1; }
+.anel { fill: none; stroke-width: 3; stroke-linecap: round; overflow: visible; }
+
+.kt { margin: 0; font-size: 10.4cqw; font-weight: 760; font-stretch: 110%; letter-spacing: -.035em; line-height: 1.04; }
+.kt__l { display: block; overflow: hidden; padding-bottom: .12em; }
+.kt__l > span { display: inline-block; }
+.kt em, .trio__fim em { font: italic 400 1.08em/1 "Newsreader", Georgia, serif; letter-spacing: -.01em; color: var(--acafrao); }
+.cn1__anel { position: absolute; right: -20cqw; bottom: -16cqw; width: 58cqw; height: 58cqw; opacity: .32; }
+
+.campos { display: grid; gap: 3.4cqw; }
+.campo small { display: block; margin-bottom: 1.2cqw; font-size: 2.7cqw; font-stretch: 80%; letter-spacing: .16em; text-transform: uppercase; color: var(--texto-2); }
+.campo i { display: block; height: 8.5cqw; border-radius: 1.6cqw; border: 1px solid rgba(245, 239, 230, .3); background: linear-gradient(90deg, rgba(231, 196, 147, .35), rgba(231, 196, 147, .12)) no-repeat left / var(--cheio, 0%) 100%; }
+
+.alvos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2.6cqw; }
+.alvos li { padding: 3.6cqw 3cqw; border-radius: 1.6cqw; border: 1px solid rgba(245, 239, 230, .22); font-size: 4.4cqw; font-weight: 650; color: var(--texto-2); }
+.socios { display: flex; gap: 2cqw; margin-top: 5cqw; }
+.socios i { flex: 1; height: .9cqw; border-radius: 1cqw; background: var(--cor); box-shadow: 0 0 3cqw var(--cor); transform-origin: left; }
+
+.plano { list-style: none; margin: 0; padding: 4cqw; display: grid; gap: 2.4cqw; border: 1px solid rgba(245, 239, 230, .3); border-radius: 2cqw; counter-reset: pl; }
+.plano li { counter-increment: pl; display: flex; align-items: baseline; gap: 3cqw; padding-bottom: 2.4cqw; border-bottom: 1px solid rgba(245, 239, 230, .14); font-size: 5cqw; font-weight: 650; }
+.plano li:last-child { border: 0; padding-bottom: 0; }
+.plano li::before { content: "0" counter(pl); font-size: 2.8cqw; font-stretch: 80%; letter-spacing: .14em; color: var(--acafrao); }
+
+.ciclo { position: relative; width: 44cqw; height: 44cqw; align-self: center; }
+.ciclo svg { width: 100%; height: 100%; overflow: visible; }
+.ciclo__volta { fill: none; stroke: rgba(245, 239, 230, .4); stroke-width: 1; stroke-dasharray: 1; }
+.ciclo__ponto { transform-origin: 50px 50px; }
+.ciclo__ponto circle { fill: var(--acafrao); filter: drop-shadow(0 0 3px var(--acafrao)); }
+.ciclo__r { position: absolute; font-size: 5cqw; font-weight: 700; white-space: nowrap; }
+.ciclo__r1 { left: 50%; top: -1cqw; translate: -50% -100%; }
+.ciclo__r2 { right: -3cqw; bottom: 4cqw; translate: 100% 0; }
+.ciclo__r3 { left: -3cqw; bottom: 4cqw; translate: -100% 0; }
+.cn5 .cn__t { margin-bottom: 14cqw; }
+
+.trio { margin: 0; display: grid; gap: 1cqw; font-size: 12cqw; font-weight: 760; font-stretch: 110%; letter-spacing: -.035em; line-height: 1; }
+.trio span { display: block; color: var(--cor); }
+.trio__fim { margin: 5cqw 0 0; font-size: 8cqw; font-weight: 700; font-stretch: 108%; letter-spacing: -.03em; }
+
+.cn7 { align-items: center; text-align: center; }
+.cn7__anel { width: 30cqw; height: 30cqw; filter: drop-shadow(0 0 4cqw rgba(224, 80, 111, .55)); }
+.cn7__nome { margin: 5cqw 0 0; font-size: 13cqw; font-weight: 750; font-stretch: 118%; letter-spacing: -.03em; line-height: 1; }
+.cn7__nome small { display: block; margin-top: 1.6cqw; font-size: .3em; font-weight: 600; font-stretch: 82%; letter-spacing: .34em; text-transform: uppercase; color: var(--texto-2); }
+.cn7__frase { margin: 6cqw 0 0; font: italic 400 5.6cqw/1.2 "Newsreader", Georgia, serif; color: var(--acafrao); }
+
+.painel__legenda { position: absolute; left: 6cqw; right: 6cqw; bottom: 6.5cqw; margin: 0; min-height: 2.9em; display: flex; align-items: flex-end; font-size: 3.5cqw; line-height: 1.4; color: var(--texto-2); }
+.painel__barra { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: rgba(245, 239, 230, .1); }
+.painel__barra i { display: block; height: 100%; background: linear-gradient(90deg, var(--garanca), var(--acafrao), var(--celeste)); transform-origin: left; transform: scaleX(0); }
+
+.js-mov .painel__controles { display: flex; gap: 10px; margin-top: 14px; }
+.painel__controles button { min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--linha); background: rgba(245, 239, 230, .05); color: var(--texto); font-weight: 600; font-size: .92rem; cursor: pointer; white-space: nowrap; transition: background-color .3s, color .3s, border-color .3s; }
+.painel__controles button:hover { border-color: rgba(245, 239, 230, .4); }
+#painel-som { flex: 1; }
+#painel-som[aria-pressed="true"] { background: var(--algodao); color: var(--anil-fundo); border-color: var(--algodao); }
+
+@media (max-width: 980px) {
+  .painel { order: 3; align-self: flex-start; justify-self: start; max-width: 440px; width: calc(100% - var(--gutter) * 2); margin: 28px var(--gutter) 0; }
+}
