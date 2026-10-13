@@ -1,5 +1,5 @@
 {
-  "coletadoEm": "2026-10-13T20:03:45.379Z",
+  "coletadoEm": "2026-10-13T20:35:17.027Z",
   "estrutura": {
     "Minerthal": {
       "servidor": "Microsoft-IIS/10.0",
@@ -51,8 +51,12 @@
         "geradoPor": "Free Online Sitemap Generator www.xml-sitemaps.com"
       },
       "blog": {
-        "textosNoFeed": 10,
-        "ultimo": "2025-08-18"
+        "ultimo": "2025-08-18",
+        "fonte": "/feed",
+        "secoes": [
+          "/noticias",
+          "/noticias/blog"
+        ]
       },
       "redes": {
         "instagram": "http://www.instagram.com/minerthal",
@@ -91,14 +95,17 @@
         "geradoPor": null
       },
       "blog": {
-        "textosNoFeed": 0,
-        "ultimo": null
+        "ultimo": "2026-06-27",
+        "fonte": "/noticias",
+        "secoes": [
+          "/noticias"
+        ]
       },
       "redes": {
-        "instagram": null,
-        "facebook": null,
-        "linkedin": null,
-        "youtube": null,
+        "instagram": "//www.instagram.com/grupomatsuda",
+        "facebook": "//www.facebook.com/grupomatsuda",
+        "linkedin": "//www.linkedin.com/company/matsuda-group",
+        "youtube": "//www.youtube.com/user/matsudamk",
         "tiktok": null
       }
     },
@@ -140,14 +147,15 @@
         "Contato"
       ],
       "mapaDoSite": {
-        "enderecos": 6,
+        "enderecos": 0,
         "emHttp": 0,
-        "ultimaAtualizacao": "2026-09-24T20:29:20+00:00",
+        "ultimaAtualizacao": null,
         "geradoPor": null
       },
       "blog": {
-        "textosNoFeed": 10,
-        "ultimo": "2026-09-24"
+        "ultimo": "2026-09-24",
+        "fonte": "/feed",
+        "secoes": []
       },
       "redes": {
         "instagram": "https://www.instagram.com/connan.oficial/",
@@ -213,8 +221,11 @@
         "geradoPor": null
       },
       "blog": {
-        "textosNoFeed": 10,
-        "ultimo": "2023-05-04"
+        "ultimo": "2026-09-28",
+        "fonte": "/blog/feed",
+        "secoes": [
+          "/blog"
+        ]
       },
       "redes": {
         "instagram": "https://www.instagram.com/premix_nutri/",
@@ -235,7 +246,15 @@
       "posts": 2007,
       "descricaoPublica": "6,691 Followers, 512 Following, 2,007 Posts - See Instagram photos and videos from Minerthal | Suplementação Animal de Precisão (&#064;minerthal)"
     },
-    "Matsuda": null,
+    "Matsuda": {
+      "usuario": "grupomatsuda",
+      "status": 200,
+      "nome": "Grupo Matsuda (&#064;grupomatsuda) • Instagram photos and videos",
+      "seguidores": 58000,
+      "seguindo": 216,
+      "posts": 1399,
+      "descricaoPublica": "58K Followers, 216 Following, 1,399 Posts - See Instagram photos and videos from Grupo Matsuda (&#064;grupomatsuda)"
+    },
     "Connan": {
       "usuario": "connan.oficial",
       "status": 200,
@@ -376,14 +395,11 @@
     }
   ],
   "buscaPelaMarca": [
-    "minerthal produtos agro pecuarios ltda",
     "minerthal produtos agropecuários ltda",
-    "minerthal produtos agropecuários",
     "minerthal produtos",
     "minerthal 160 md",
     "minerthal 80",
     "minerthal extra",
-    "minerthal fotos",
-    "minerthal nutrição animal"
+    "minerthal fotos"
   ]
 }

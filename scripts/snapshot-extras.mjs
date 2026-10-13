@@ -17,6 +17,33 @@ const pegar = async (url, opt = {}) => {
 };
 const limpa = (s) => s.replace(/<[^>]+>/g, ' ').replace(/&#?[a-z0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
 
+// Data do conteúdo mais recente (blog ou notícias). Um site pode guardar o blog em outro lugar que não o feed principal
+// (a Premix tem um WordPress separado em /blog/; a Matsuda não usa WordPress), então olhamos várias fontes e ficamos com a data mais nova.
+async function conteudoRecente(origem, home) {
+  const hoje = Date.now() + 86400000, achados = [];
+  const guarda = (d, fonte) => { const t = d instanceof Date ? d : new Date(d); if (!isNaN(t) && t.getTime() <= hoje && t.getFullYear() >= 2005) achados.push({ data: t, fonte }); };
+  // Seções que o próprio site chama de blog, notícias ou artigos.
+  const secoes = new Set(['']);
+  for (const m of home.matchAll(/href=["']([^"'#?]+)["']/gi)) {
+    let caminho; try { const x = new URL(m[1], origem + '/'); if (x.origin !== origem) continue; caminho = x.pathname; } catch { continue; }
+    const s = caminho.match(/^(\/(?:[^/]+\/)?(?:blog|noticias|not%C3%ADcias|artigos|novidades|conteudos?|imprensa))(?:\/|$)/i);
+    if (s) secoes.add(s[1]);
+  }
+  for (const sec of [...secoes].slice(0, 5)) {
+    const feed = await pegar(`${origem}${sec}/feed/`);
+    if (feed.status === 200 && /<rss|<feed/i.test(feed.corpo.slice(0, 600))) for (const m of feed.corpo.matchAll(/<(?:pubDate|updated|published)>([^<]+)</g)) guarda(m[1], `${sec}/feed`);
+    const api = await pegar(`${origem}${sec}/wp-json/wp/v2/posts?per_page=5&_fields=date`);
+    try { for (const p of JSON.parse(api.corpo)) guarda(p.date, `${sec || '/'} (WordPress)`); } catch {}
+    if (sec) {
+      const pg = await pegar(origem + sec);
+      for (const m of pg.corpo.matchAll(/datetime=["'](\d{4}-\d{2}-\d{2})/g)) guarda(m[1], sec);
+      for (const m of pg.corpo.matchAll(/\b(\d{2})\/(\d{2})\/(20\d{2})\b/g)) guarda(`${m[3]}-${m[2]}-${m[1]}`, sec);
+    }
+  }
+  achados.sort((a, b) => b.data - a.data);
+  return { ultimo: achados[0]?.data.toISOString().slice(0, 10) || null, fonte: achados[0]?.fonte || null, secoes: [...secoes].filter(Boolean) };
+}
+
 async function estrutura(url) {
   const u = new URL(url), raizDom = u.hostname.replace(/^www\./, '');
   const p = await pegar(url), h = p.corpo;
@@ -25,8 +52,7 @@ async function estrutura(url) {
   const sm = await pegar(u.origin + '/sitemap.xml');
   const locs = [...sm.corpo.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   const datas = [...sm.corpo.matchAll(/<lastmod>([^<]+)<\/lastmod>/g)].map((m) => m[1]).sort();
-  const feed = await pegar(u.origin + '/feed/');
-  const posts = [...feed.corpo.matchAll(/<pubDate>([^<]+)<\/pubDate>/g)].map((m) => new Date(m[1])).filter((d) => !isNaN(d)).sort((a, b) => b - a);
+  const blog = await conteudoRecente(u.origin, h);
   const semWww = await pegar(`https://${raizDom}/`, { semCorpo: true });
   const http = await pegar(`http://${u.hostname}/`, { manual: true, semCorpo: true });
   return {
@@ -41,8 +67,8 @@ async function estrutura(url) {
     carrossel: /revslider|meteor-slides|owl-carousel|swiper|slick/i.test(h), jquery: /jquery/i.test(h),
     menu: [...new Set([...h.matchAll(/<li[^>]*menu-item[^>]*>\s*<a[^>]*>([\s\S]*?)<\/a>/gi)].map((m) => limpa(m[1])).filter(Boolean))].slice(0, 14),
     mapaDoSite: { enderecos: locs.length, emHttp: locs.filter((l) => l.startsWith('http://')).length, ultimaAtualizacao: datas.at(-1) || null, geradoPor: (sm.corpo.match(/created with ([^<\n]+?)\s*-->/i) || [])[1] || null },
-    blog: { textosNoFeed: posts.length, ultimo: posts[0]?.toISOString().slice(0, 10) || null },
-    redes: Object.fromEntries(['instagram', 'facebook', 'linkedin', 'youtube', 'tiktok'].map((r) => [r, (h.match(new RegExp(`https?://(?:www\\.)?${r}\\.com/[^"'\\s<>]+`, 'i')) || [])[0] || null]))
+    blog,
+    redes: Object.fromEntries(['instagram', 'facebook', 'linkedin', 'youtube', 'tiktok'].map((r) => [r, (h.match(new RegExp(`(?:https?:)?(?://)?(?:www\\.)?${r}\\.com/[^"'\\s<>]+`, 'i')) || [])[0] || null])) // o link pode vir sem "https://"
   };
 }
 
@@ -66,21 +92,26 @@ async function sugestoes(termo) {
 }
 
 const empresas = [alvos.empresa, ...(alvos.concorrentes || [])];
-const out = { coletadoEm: new Date().toISOString(), estrutura: {}, instagram: {}, buscas: [] };
-for (const e of empresas) {
+// SO_CAPTURA=1 refaz só as capturas de tela e mantém o resto do extras.json.
+const soCaptura = !!process.env.SO_CAPTURA;
+let out = { coletadoEm: new Date().toISOString(), estrutura: {}, instagram: {}, buscas: [] };
+if (soCaptura) out = JSON.parse(await readFile(`${pasta}/extras.json`, 'utf8'));
+for (const e of soCaptura ? [] : empresas) {
   console.error('estrutura:', e.nome);
   out.estrutura[e.nome] = await estrutura(e.url);
   out.instagram[e.nome] = await instagram(e.instagram || out.estrutura[e.nome].redes.instagram);
 }
 const marcas = empresas.map((e) => e.nome.toLowerCase());
-for (const termo of alvos.buscas || []) {
+for (const termo of soCaptura ? [] : alvos.buscas || []) {
   const lista = await sugestoes(termo);
   out.buscas.push({ termo, sugestoes: lista, marcasQueAparecem: [...new Set(lista.flatMap((s) => marcas.filter((m) => s.toLowerCase().includes(m))))] });
 }
-out.buscaPelaMarca = await sugestoes(alvos.empresa.nome.toLowerCase() + ' ');
+if (!soCaptura) out.buscaPelaMarca = await sugestoes(alvos.empresa.nome.toLowerCase() + ' ');
 
 // Capturas de tela da página inicial (computador e celular) da empresa e do modelo.
 await mkdir(`${pasta}/img`, { recursive: true });
+// SEM_CAPTURA=1 pula as capturas de tela (mantém as que já existem).
+if (!process.env.SEM_CAPTURA) {
 const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
 for (const [nome, alvo] of [['atual', alvos.empresa], ...(alvos.modelo ? [['modelo', alvos.modelo]] : [])]) {
   for (const [tipo, w, h] of [['computador', 1440, 900], ['celular', 390, 844]]) {
@@ -97,5 +128,6 @@ for (const [nome, alvo] of [['atual', alvos.empresa], ...(alvos.modelo ? [['mode
   }
 }
 await b.close();
+}
 await writeFile(`${pasta}/extras.json`, JSON.stringify(out, null, 2));
 console.log('extras gravados');

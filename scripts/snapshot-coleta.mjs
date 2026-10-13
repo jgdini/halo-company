@@ -49,9 +49,20 @@ async function texto(url) {
   } catch (e) { return { status: 0, tipo: '', final: url, corpo: '', erro: e.message }; }
 }
 
+// Formulário de contato de verdade: tem campo de e-mail, telefone ou mensagem, ou envia para o WhatsApp. Caixa de busca e filtro não contam.
+const ehContato = (html) => [...html.matchAll(/<form[\s\S]*?<\/form>/gi)].some((m) => /type=["'](email|tel)["']|<textarea|name=["'][^"']*(e-?mail|telefone|phone|mensagem|message)|whatsapp/i.test(m[0]));
+async function temFormularioDeContato(home, base) {
+  if (ehContato(home)) return true;
+  for (const c of ['/contato/', '/fale-conosco/', '/contact/']) { const r = await texto(base + c); if (r.status === 200 && ehContato(r.corpo)) return true; }
+  return false;
+}
+
 async function sinais(url) {
   const t0 = Date.now();
-  const p = await texto(url);
+  // Tenta até 3 vezes. Se o site não responder, a leitura fica marcada como falha (vira "sem dado" no relatório, nunca "Não").
+  let p = await texto(url);
+  for (let t = 0; t < 2 && (p.status !== 200 || p.corpo.length < 500); t++) { await espera(4000); p = await texto(url); }
+  const falhou = p.status !== 200 || p.corpo.length < 500;
   const h = p.corpo, base = new URL(p.final || url).origin;
   const tag = (re) => (h.match(re) || [])[1]?.trim() ?? null;
   const tipos = new Set();
@@ -61,7 +72,7 @@ async function sinais(url) {
   const arquivo = async (caminho, ehTexto) => { const r = await texto(base + caminho); return r.status === 200 && (!ehTexto || !/<html/i.test(r.corpo.slice(0, 600))) && r.corpo.trim().length > 0; };
   const robots = await texto(base + '/robots.txt');
   return {
-    status: p.status, enderecoFinal: p.final, respostaHtmlSeg: +((Date.now() - t0) / 1000).toFixed(1), htmlKB: Math.round(h.length / 1024),
+    falhou, status: p.status, enderecoFinal: p.final, respostaHtmlSeg: +((Date.now() - t0) / 1000).toFixed(1), htmlKB: Math.round(h.length / 1024),
     titulo: tag(/<title[^>]*>([\s\S]*?)<\/title>/i),
     descricao: tag(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["']/i) ?? tag(/<meta[^>]+content=["']([^"']*)["'][^>]+name=["']description["']/i),
     h1: [...h.matchAll(/<h1[^>]*>([\s\S]*?)<\/h1>/gi)].map((m) => m[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim()).slice(0, 3),
@@ -75,16 +86,21 @@ async function sinais(url) {
     elementor: (h.match(/elementor/gi) || []).length,
     jquery: /jquery/i.test(h),
     whatsapp: /wa\.me|api\.whatsapp\.com/i.test(h),
-    formulario: /<form/i.test(h)
+    formulario: await temFormularioDeContato(h, base)
   };
 }
 
 const lista = [['empresa', alvos.empresa], ...(alvos.concorrentes || []).map((c) => ['concorrente', c]), ...(alvos.modelo ? [['modelo', alvos.modelo]] : [])];
+// Leitura anterior, se houver: quando um site falha agora, mantemos a última leitura válida dele.
+let anterior = null; try { anterior = JSON.parse(await readFile(`${pasta}/coleta.json`, 'utf8')); } catch {}
 const saida = { coletadoEm: new Date().toISOString(), itens: [] };
 for (const [papel, alvo] of lista) {
   console.error(`${alvo.nome} (${alvo.url})`);
-  const item = { papel, nome: alvo.nome, url: alvo.url, sinais: await sinais(alvo.url), celular: await pagespeed(alvo.url, 'mobile') };
-  if (papel !== 'concorrente') item.computador = await pagespeed(alvo.url, 'desktop');
+  // SEM_PSI=1 pula o PageSpeed (use quando a API está sem cota; as notas vêm de snapshot-lighthouse.mjs).
+  const psi = !process.env.SEM_PSI;
+  const item = { papel, nome: alvo.nome, url: alvo.url, sinais: await sinais(alvo.url), celular: psi ? await pagespeed(alvo.url, 'mobile') : null };
+  if (item.sinais.falhou) { const velho = anterior?.itens?.find((x) => x.nome === alvo.nome)?.sinais; if (velho && !velho.falhou) { item.sinais = { ...velho, reaproveitado: velho.reaproveitado || anterior.coletadoEm }; console.error('   falhou agora; mantida a leitura de', item.sinais.reaproveitado); } }
+  if (papel !== 'concorrente') item.computador = psi ? await pagespeed(alvo.url, 'desktop') : null;
   saida.itens.push(item);
   await writeFile(`${pasta}/coleta.json`, JSON.stringify(saida, null, 2));
 }

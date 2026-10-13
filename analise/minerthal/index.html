@@ -10,46 +10,70 @@
 <meta name="theme-color" content="#3A0D18">
 <link rel="stylesheet" href="../estilo.css">
 <style>
-.placar{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:12px; }
-.pilar{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:16px 18px; }
-.pilar__topo{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid var(--line); }
-.pilar__topo b{ font-size:15px; }
-.pilar__nota{ font-size:26px; font-weight:800; font-stretch:110%; color:var(--gold); white-space:nowrap; }
-.pilar__nota small{ font-size:12px; font-weight:600; color:var(--steel); }
-.pilar ul{ list-style:none; margin:0; padding:0; display:grid; gap:7px; }
-.pilar li{ position:relative; padding-left:22px; font-size:13px; line-height:1.4; color:var(--steel); }
-.pilar li::before{ position:absolute; left:0; top:0; font-weight:700; }
-.pilar li.ok::before{ content:"✓"; color:var(--ok); }
-.pilar li.falta::before{ content:"✕"; color:var(--bad); }
-.pilar li.ok{ color:var(--ink); }
+section{ margin-bottom:60px; }
+.sub{ margin-bottom:16px; }
+.leitura{ margin:14px 0 0; padding:14px 18px; border-left:4px solid var(--gold); background:var(--white); border-radius:3px; font-size:15px; line-height:1.55; color:var(--steel); }
+.leitura b{ color:var(--ink); }
+.cmp-row.foco .cmp-label{ color:var(--gold); }
+.chart .legend span:only-child{ text-transform:none; letter-spacing:0; font-size:11.5px; }
+.linha-negocio{ display:flex; flex-wrap:wrap; gap:10px; margin:-18px 0 44px; }
+.linha-negocio span{ background:var(--white); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font-size:13px; color:var(--steel); }
+.linha-negocio b{ color:var(--ink); margin-right:6px; }
+.placar{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.pilar{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:18px; text-align:center; }
+.pilar h3{ margin:0 0 6px; font-size:15px; }
+.rosca{ width:118px; height:118px; display:block; margin:0 auto 10px; }
+.rosca__fundo{ fill:none; stroke:var(--track); stroke-width:11; }
+.rosca__ok{ fill:none; stroke:var(--gold); stroke-width:11; stroke-linecap:round; }
+.rosca__n{ font-size:30px; font-weight:800; text-anchor:middle; fill:var(--ink); font-family:var(--font-display); }
+.rosca__de{ font-size:11px; font-weight:600; text-anchor:middle; fill:var(--steel); font-family:var(--font-display); }
+.itens{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:5px; }
+.itens li{ font-size:11.5px; line-height:1.2; padding:5px 9px; border-radius:999px; }
+.itens li.ok{ background:var(--ok-bg); color:var(--ok); font-weight:600; }
+.itens li.falta{ background:var(--paper-2); color:var(--steel); }
+.itens li::before{ font-weight:800; margin-right:5px; }
+.itens li.ok::before{ content:"✓"; }
+.itens li.falta::before{ content:"✕"; color:var(--bad); }
+.kpis{ margin-top:12px; }
 .telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
 .telas figure{ margin:0; }
 .telas img{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
-.telas .cel img{ width:170px; }
-.telas figcaption{ font-size:11.5px; color:var(--steel-light); margin-top:6px; font-stretch:84%; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
-.moderno{ display:grid; gap:10px; }
-.moderno div{ background:var(--white); border:1px solid var(--line); border-left:4px solid var(--gold); border-radius:3px; padding:14px 18px; }
-.moderno b{ display:block; font-size:14.5px; margin-bottom:3px; }
-.moderno p{ margin:0; font-size:13.5px; line-height:1.55; color:var(--steel); }
-.moderno p span{ color:var(--ink); font-weight:600; }
-.opp{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:20px 22px; margin-bottom:12px; display:grid; grid-template-columns:auto 1fr; gap:6px 18px; }
-.opp__n{ grid-row:span 4; font-size:34px; font-weight:800; font-stretch:110%; color:var(--gold); line-height:1; }
-.opp > :not(.opp__n){ grid-column:2; }
-.opp h3{ margin:0; font-size:17px; font-weight:700; }
-.opp p{ margin:0; font-size:14px; line-height:1.6; color:var(--steel); }
-.opp p b{ color:var(--ink); }
-.opp__meta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
-table.cmp.sinais td:first-child{ width:34%; } table.cmp.sinais td, table.cmp.sinais th{ text-align:center; } table.cmp.sinais td:first-child, table.cmp.sinais th:first-child{ text-align:left; }
-table.cmp.buscas td:first-child{ width:24%; } table.cmp.buscas td:last-child{ width:20%; }
-.limites{ font-size:13px; line-height:1.65; color:var(--steel); padding-left:18px; margin:0; }
-.limites li{ margin-bottom:6px; }
+.telas .cel img{ width:168px; }
+.telas figcaption{ font-size:11px; color:var(--steel-light); margin-top:6px; font-stretch:84%; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+.achados{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.achado{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px 14px 44px; position:relative; }
+.achado::before{ content:"✕"; position:absolute; left:16px; top:13px; font-weight:800; color:var(--bad); }
+.achado b{ display:block; font-size:14.5px; margin-bottom:2px; }
+.achado span{ font-size:13px; line-height:1.45; color:var(--steel); }
+table.cmp.troca td{ width:auto; font-weight:400; } table.cmp.troca td:first-child{ width:18%; font-weight:700; } table.cmp.troca td:nth-child(2){ color:var(--steel); } table.cmp.troca td:last-child{ font-weight:600; }
+.dupla{ display:grid; grid-template-columns:1fr 1fr; gap:12px; } .dupla .chart{ margin-bottom:0; }
+table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-align:center; padding:9px 10px; } table.cmp.matriz td:first-child, table.cmp.matriz th:first-child{ text-align:left; width:46%; font-weight:600; }
+.m{ display:inline-grid; place-items:center; width:24px; height:24px; border-radius:50%; font-size:13px; font-weight:800; }
+.m--ok{ background:var(--ok-bg); color:var(--ok); } .m--nao{ background:var(--paper-2); color:var(--bad); } .m--sd{ color:var(--steel-light); }
+.buscas{ display:grid; gap:10px; }
+.busca{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:12px 16px; display:grid; grid-template-columns:200px 1fr; gap:14px; align-items:baseline; }
+.busca b{ font-size:14px; }
+.busca div{ display:flex; flex-wrap:wrap; gap:5px; }
+.busca span{ font-size:12px; padding:4px 9px; border-radius:999px; background:var(--paper-2); color:var(--steel); }
+.busca mark{ background:none; color:var(--bad); font-weight:700; } .busca mark.nossa{ color:var(--ok); }
+.opps{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.opp{ background:var(--white); border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:3px; padding:18px; display:flex; flex-direction:column; gap:8px; }
+.opp__n{ font-size:30px; font-weight:800; font-stretch:110%; color:var(--gold); line-height:1; }
+.opp h3{ margin:0; font-size:16.5px; line-height:1.25; }
+.opp p{ margin:0; font-size:13.5px; line-height:1.5; color:var(--steel); flex:1; }
+.opp__meta{ display:flex; flex-wrap:wrap; gap:6px; }
+.perguntas{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.perguntas li{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px; font-size:14.5px; font-weight:600; }
+.metodo{ font-size:12.5px; line-height:1.6; color:var(--steel); }
+.metodo summary{ cursor:pointer; font-weight:700; color:var(--ink); font-size:13px; }
+.metodo ul{ padding-left:18px; margin:10px 0 0; } .metodo li{ margin-bottom:5px; }
 .cta{ background:var(--ink); color:var(--paper); border-radius:4px; padding:26px 28px; }
 .cta h3{ margin:0 0 8px; font-size:22px; font-stretch:108%; }
 .cta p{ margin:0; font-size:14.5px; line-height:1.6; opacity:.85; max-width:60ch; }
 :root[data-theme="dark"] .cta{ background:#1E050B; color:#F5EFE6; }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cta{ background:#1E050B; color:#F5EFE6; } }
-@media (max-width:700px){ .placar{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img{ width:150px; } }
-@media print{ .opp, .cta, .pilar, .moderno div, .telas figure{ break-inside:avoid; } .placar{ grid-template-columns:repeat(3,1fr); } }
+@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
+@media print{ section{ margin-bottom:34px; } .opp, .cta, .pilar, .achado, .telas figure, .chart, .busca, .perguntas li{ break-inside:avoid; } .placar, .opps{ grid-template-columns:repeat(3,1fr); } .achados, .dupla, .perguntas{ grid-template-columns:1fr 1fr; } h2{ break-after:avoid; } }
 </style>
 </head>
 <body>
@@ -63,209 +87,155 @@ table.cmp.buscas td:first-child{ width:24%; } table.cmp.buscas td:last-child{ wi
 
   <div class="brands"><span>Para</span><b>MINERTHAL</b></div>
   <h1>O que o pecuarista encontra quando procura a <em>Minerthal</em>.</h1>
-  <p class="lede">Uma leitura da presença digital da Minerthal feita só com informação pública: o site, o que o Google lê nele e três empresas do mesmo setor. Não usamos nenhum dado interno da empresa.</p>
+  <p class="lede">Uma leitura feita só com informação pública: o site, o Google e três empresas do setor.</p>
+  <div class="linha-negocio"><span><b>Vende</b>suplementos minerais e proteicos para bovinos, com mais de 40 produtos</span><span><b>Para</b>pecuaristas de corte e de leite</span><span><b>Posição</b>“suplementação de precisão”</span></div>
 
   <section>
-    <h2>O que entendemos do negócio</h2>
-    <div class="why">
-      <div><b>O que vende</b><p>Suplementos minerais e proteicos para bovinos de corte e de leite. São mais de 40 produtos, em linhas como MinerBlock, Engorda MD e Núcleo Leite MD.</p></div>
-      <div><b>Para quem</b><p>Pecuaristas de corte e de leite. O site não deixa claro se a venda é direta, por representante ou por revenda. É a primeira pergunta para a nossa conversa.</p></div>
-      <div><b>Como se posiciona</b><p>“Suplementação de precisão”: nutrientes de qualidade, na quantidade certa, o ano todo.</p></div>
-      <div><b>O que já tem de conteúdo</b><p>Blog técnico, o informativo Resulthal, ferramentas de cálculo e um canal no YouTube.</p></div>
-    </div>
-    <p class="method">Leitura feita a partir do que o próprio site diz. Se algo estiver errado, corrigimos.</p>
-  </section>
-
-  <section>
-    <h2>O resumo em quatro números</h2>
-    <div class="kpis">
-      <div class="kpi"><div class="kpi__label">Velocidade no celular</div><div class="kpi__flow"><span class="kpi__new">34<small style="font-size:.5em">/100</small></span></div><div class="kpi__note">Nota do Lighthouse, do Google. Abaixo de 50 é ruim.</div></div>
-      <div class="kpi"><div class="kpi__label">Até o conteúdo aparecer</div><div class="kpi__flow"><span class="kpi__new">10,8 s</span></div><div class="kpi__note">No celular. O Google considera bom até 2,5 s.</div></div>
-      <div class="kpi"><div class="kpi__label">Linguagem do servidor</div><div class="kpi__flow"><span class="kpi__new">PHP 5.6</span></div><div class="kpi__note">Sem correções de segurança desde dezembro de 2018.</div></div>
-      <div class="kpi"><div class="kpi__label">Último texto do blog</div><div class="kpi__flow"><span class="kpi__new">ago/2025</span></div><div class="kpi__note">14 meses sem publicação.</div></div>
-    </div>
+    <h2>O placar</h2>
     <div class="placar">
-      <div class="pilar"><div class="pilar__topo"><b>Base técnica</b><span class="pilar__nota">0<small> de 7</small></span></div><ul><li class="falta">Nota de velocidade no celular de 50 ou mais</li><li class="falta">Conteúdo na tela em até 2,5 segundos</li><li class="falta">O endereço sem “www” abre</li><li class="falta">O endereço http leva para o https</li><li class="falta">Sistema do site em versão atual</li><li class="falta">Linguagem do servidor com suporte de segurança</li><li class="falta">Imagens em formato leve (WebP ou AVIF)</li></ul></div>
-      <div class="pilar"><div class="pilar__topo"><b>Ser encontrado</b><span class="pilar__nota">0<small> de 7</small></span></div><ul><li class="falta">O título no Google diz o que a empresa faz</li><li class="falta">A página inicial tem descrição para o Google</li><li class="falta">Dados estruturados da empresa</li><li class="falta">Perguntas e respostas marcadas</li><li class="falta">Arquivo para assistentes de IA (llms.txt)</li><li class="falta">Mapa do site atualizado nos últimos 12 meses</li><li class="falta">Blog com texto novo nos últimos 3 meses</li></ul></div>
-      <div class="pilar"><div class="pilar__topo"><b>Converter</b><span class="pilar__nota">2<small> de 5</small></span></div><ul><li class="ok">WhatsApp na página inicial</li><li class="ok">Formulário de contato</li><li class="falta">Botão de contato nas páginas de produto</li><li class="falta">Página de “onde comprar” ou de representantes</li><li class="falta">Formulário que pergunta o que o cliente precisa</li></ul></div>
+      <div class="pilar"><h3>Base técnica</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="0 de 7"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><text x="55" y="53" class="rosca__n">0</text><text x="55" y="72" class="rosca__de">de 7</text></svg><ul class="itens"><li class="falta">Velocidade no celular ≥ 50</li><li class="falta">Conteúdo em até 2,5 s</li><li class="falta">Endereço sem “www” abre</li><li class="falta">http leva para https</li><li class="falta">Sistema atualizado</li><li class="falta">Servidor com suporte</li><li class="falta">Imagens leves</li></ul></div>
+      <div class="pilar"><h3>Ser encontrado</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="0 de 7"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><text x="55" y="53" class="rosca__n">0</text><text x="55" y="72" class="rosca__de">de 7</text></svg><ul class="itens"><li class="falta">Título diz o que faz</li><li class="falta">Descrição no Google</li><li class="falta">Dados da empresa</li><li class="falta">Perguntas e respostas</li><li class="falta">Arquivo para IAs</li><li class="falta">Mapa do site em dia</li><li class="falta">Blog em dia</li></ul></div>
+      <div class="pilar"><h3>Converter</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="2 de 5"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="110.6 165.9" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">2</text><text x="55" y="72" class="rosca__de">de 5</text></svg><ul class="itens"><li class="ok">WhatsApp na página inicial</li><li class="ok">Formulário de contato</li><li class="falta">Contato em cada produto</li><li class="falta">Onde comprar</li><li class="falta">Formulário que qualifica</li></ul></div>
     </div>
-    <p class="method">Placar: itens objetivos, que qualquer pessoa pode conferir no site. Não é uma nota de qualidade da empresa.</p>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi__label">Velocidade no celular</div><div class="kpi__flow"><span class="kpi__new">34<small style="font-size:.5em">/100</small></span></div><div class="kpi__note">Abaixo de 50 é ruim.</div></div>
+      <div class="kpi"><div class="kpi__label">Até o conteúdo aparecer</div><div class="kpi__flow"><span class="kpi__new">10,8 s</span></div><div class="kpi__note">O Google considera bom até 2,5 s.</div></div>
+      <div class="kpi"><div class="kpi__label">Linguagem do servidor</div><div class="kpi__flow"><span class="kpi__new">PHP 5.6</span></div><div class="kpi__note">Sem correções de segurança desde 2018.</div></div>
+      <div class="kpi"><div class="kpi__label">Último texto do blog</div><div class="kpi__flow"><span class="kpi__new">ago/2025</span></div><div class="kpi__note">14 meses sem publicar.</div></div>
+    </div>
   </section>
 
   <section>
     <h2>1 · Como a Minerthal aparece hoje</h2>
-    <p class="sub">O que um visitante, o Google ou um assistente de IA encontra hoje em www.minerthal.com.br.</p>
-    <div class="table-wrap"><table class="cmp">
-      <thead><tr><th>O que olhamos</th><th>O que encontramos</th><th>Por que importa</th></tr></thead>
-      <tbody>
-        <tr><td>Endereço sem “www”</td><td><span class="no">minerthal.com.br não abre.</span> O domínio sem “www” não tem endereço configurado. Só www.minerthal.com.br funciona.</td><td>Quem digita o nome direto, ou clica num link antigo sem “www”, recebe erro e pode achar que o site saiu do ar.</td></tr>
-        <tr><td>Conexão segura</td><td>http://www.minerthal.com.br abre sem levar o visitante para a versão https.</td><td>Quem chega por um link antigo vê o aviso de “não seguro” do navegador.</td></tr>
-        <tr><td>Servidor</td><td>PHP 5.6.40 e WordPress 5.2.21, informados pelo próprio site.</td><td>O PHP 5.6 deixou de receber correções de segurança em dezembro de 2018. O WordPress 5.2 é uma linha de 2019. Duas das três concorrentes usam WordPress 7.1.</td></tr>
-        <tr><td>Título que aparece no Google</td><td>“Minerthal Home - Minerthal”</td><td>É o texto azul da busca. Não diz o que a empresa faz.</td></tr>
-        <tr><td>Descrição que aparece no Google</td><td><span class="no">Não existe</span> na página inicial, na lista de produtos nem na página de produto que abrimos.</td><td>Sem ela, o Google escolhe sozinho um trecho qualquer da página para mostrar.</td></tr>
-        <tr><td>Título principal da página inicial</td><td>“NOSSOS PRODUTOS”</td><td>É o que o Google e as IAs tomam como assunto da página. Não cita suplemento mineral, bovinos nem a marca.</td></tr>
-        <tr><td>Imagens</td><td>36 das 44 imagens da página inicial estão sem descrição.</td><td>Leitores de tela e a busca de imagens do Google não sabem o que elas mostram.</td></tr>
-        <tr><td>Resposta do servidor</td><td>Nas nossas consultas, o servidor levou de 3 a 9 segundos para entregar a página.</td><td>O visitante espera esse tempo antes de qualquer imagem começar a carregar.</td></tr>
-        <tr><td>Caminho de compra</td><td>Na página de produto que abrimos (MinerBlock Cria MD), o único botão é “Fazer download”. Não achamos “onde comprar”, “representante” nem “revenda” na página inicial, na lista de produtos e no contato.</td><td>Quem se interessou por um produto precisa procurar sozinho como falar com a empresa.</td></tr>
-        <tr><td>Blog</td><td>10 textos técnicos no arquivo do blog. O mais recente é de 18/08/2025.</td><td>O conteúdo é bom e responde dúvidas reais do pecuarista (seca, desmame, pré-parto), mas parou.</td></tr>
-      </tbody>
-    </table></div>
-    <div style="height:14px"></div>
-    <div class="chart">
-      <div class="chart__head"><div class="chart__title">Notas do Google para o site atual</div><div class="legend"><span class="l-old"><i></i>Celular</span><span class="l-new"><i></i>Computador</span></div></div>
-      <div class="cmp-row"><div class="cmp-label">Velocidade</div><div class="bars">
+    <div class="telas">
+      <figure><img src="img/atual-computador.webp" alt="Página inicial atual da Minerthal no computador" loading="lazy"><figcaption>Site atual · computador</figcaption></figure>
+      <figure class="cel"><img src="img/atual-celular.webp" alt="Página inicial atual da Minerthal no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
+    </div>
+    <div class="achados">
+      <div class="achado"><b>O endereço sem “www” não abre</b><span>Quem digita minerthal.com.br recebe erro.</span></div>
+      <div class="achado"><b>Servidor sem suporte de segurança</b><span>PHP 5.6, sem correções desde 2018, e WordPress 5.2, de 2019.</span></div>
+      <div class="achado"><b>O Google não sabe o que a empresa faz</b><span>Título “Minerthal Home”, nenhuma descrição, e a página abre com “Nossos produtos”.</span></div>
+      <div class="achado"><b>Produto sem próximo passo</b><span>Na página de produto que abrimos, o único botão é “Fazer download”.</span></div>
+      <div class="achado"><b>Imagens pesadas e sem descrição</b><span>38 PNG e 6 JPG na página inicial. 36 estão sem texto alternativo.</span></div>
+      <div class="achado"><b>Blog bom, mas parado</b><span>Textos técnicos sobre seca, desmame e pré-parto. O último é de 18/08/2025.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2 · Velocidade</h2>
+    <div class="dupla">
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Nota do Google, de 0 a 100</div><div class="legend"><span class="l-old"><i></i>Celular</span><span class="l-new"><i></i>Computador</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Minerthal</div><div class="bars">
         <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:34%"></span></div><span class="bar__val">34</span></div>
         <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:47%"></span></div><span class="bar__val">47</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Acessibilidade</div><div class="bars">
-        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:63%"></span></div><span class="bar__val">63</span></div>
-        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:52%"></span></div><span class="bar__val">52</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Boas práticas</div><div class="bars">
-        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:88%"></span></div><span class="bar__val">88</span></div>
-        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:73%"></span></div><span class="bar__val">73</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">SEO técnico</div><div class="bars">
-        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:77%"></span></div><span class="bar__val">77</span></div>
-        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:77%"></span></div><span class="bar__val">77</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:36%"></span></div><span class="bar__val">36</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:63%"></span></div><span class="bar__val">63</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:35%"></span></div><span class="bar__val">35</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:56.00000000000001%"></span></div><span class="bar__val">56</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:21%"></span></div><span class="bar__val">21</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:51%"></span></div><span class="bar__val">51</span></div></div></div>
     </div>
-    <p class="method">Lighthouse, ferramenta do Google, rodado em nosso computador em 13/10/2026: 3 rodadas, valor do meio. Notas de 0 a 100: acima de 90 é bom, abaixo de 50 é ruim. O PageSpeed Insights on-line (pagespeed.web.dev) usa a mesma ferramenta e pode dar alguns pontos de diferença.</p>
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Até o conteúdo aparecer</div><div class="legend"><span>No celular. Bom: até 2,5 s</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:35.6%"></span></div><span class="bar__val">10,8 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">27,6 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:86.3%"></span></div><span class="bar__val">26,2 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:51.7%"></span></div><span class="bar__val">15,7 s</span></div></div></div>
+    </div>
+    </div>
+    <p class="leitura"><b>No celular, as quatro são lentas.</b> No computador, a Minerthal tem a menor nota das quatro.</p>
   </section>
 
   <section>
-    <h2>2 · Estrutura do site e o que modernizar</h2>
-    <p class="sub">Olhamos como o site é construído e como ele se apresenta. Abaixo, o que o código mostra e o que mudaríamos.</p>
+    <h2>3 · Conteúdo e redes</h2>
+    <div class="dupla">
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Último texto publicado</div><div class="legend"><span>Meses sem publicar</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">08/2025</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:23.5%"></span></div><span class="bar__val">06/2026</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:4.3%"></span></div><span class="bar__val">09/2026</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:3.4%"></span></div><span class="bar__val">09/2026</span></div></div></div>
+    </div>
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Seguidores no Instagram</div><div class="legend"><span>Número público do perfil</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:10.5%"></span></div><span class="bar__val">6.691</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">58 mil</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:0%"></span></div><span class="bar__val">s/d</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:58.0%"></span></div><span class="bar__val">37 mil</span></div></div></div>
+    </div>
+    </div>
+    <p class="leitura"><b>A Minerthal é a única sem texto novo em 2026.</b> No Instagram, publicou tanto quanto a Premix e tem menos de um quinto dos seguidores.</p>
+  </section>
+
+  <section>
+    <h2>4 · O que o Google e as IAs leem</h2>
+    <div class="table-wrap"><table class="cmp matriz">
+      <thead><tr><th></th><th>Minerthal</th><th>Matsuda</th><th>Connan</th><th>Premix</th></tr></thead>
+      <tbody>
+        <tr><td>Título diz o que a empresa faz</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Descrição da página</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Dados estruturados da empresa</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+        <tr><td>Perguntas e respostas marcadas</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Arquivo para assistentes de IA</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Endereço sem “www” abre</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+        <tr><td>http leva para https</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+        <tr><td>Imagens em formato leve</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Texto novo em 2026</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="leitura"><b>Nenhuma das quatro responde perguntas para o Google nem para as IAs.</b> Quem fizer primeiro ocupa esse espaço.</p>
+  </section>
+
+  <section>
+    <h2>5 · O que o mercado pesquisa</h2>
+    <div class="buscas">
+      <div class="busca"><b>sal mineral para gado…</b><div><span>sal mineral para gado 25 kg preço</span><span>sal mineral para gado pode ser consumido por humanos</span><span>sal mineral para gado 25 kg</span><span>sal mineral para gado de leite</span><span>sal mineral para gado preço</span><span>sal mineral para gado de corte</span><span>sal mineral para gado qual o melhor</span><span>sal mineral para gado <mark class="">matsuda</mark></span><span>sal mineral para gado 50 kg</span></div></div>
+      <div class="busca"><b>proteinado para…</b><div><span>proteinado para gado</span><span>proteinado para bezerros</span><span>proteinado para bovinos</span><span>proteinado para vaca de leite</span><span>proteinado para cavalo</span><span>proteinado para gado na seca</span><span>proteinado para bezerros desmamados</span><span>proteinado para seca</span><span>proteinado para gado de corte</span></div></div>
+      <div class="busca"><b>suplemento para gado…</b><div><span>suplemento para gado de corte</span><span>suplemento para gado engorda</span><span>suplemento para gado de leite</span><span>suplemento para gado na seca</span><span>suplemento para gado ade</span><span>suplemento para gado magro</span><span>suplemento mineral para gado</span><span>mub suplemento para gado</span><span>suplemento mineral para gado de corte</span></div></div>
+      <div class="busca"><b>sal mineral…</b><div><span>sal mineral integral</span><span>sal mineral para cavalo</span><span>sal mineral para gado</span><span>sal mineral para humanos</span><span>sal mineral para ovinos</span><span>sal mineral para equinos</span><span>sal mineral <mark class="">tortuga</mark></span><span>sal mineral para vaca de leite</span><span>sal mineral <mark class="">matsuda</mark></span></div></div>
+    </div>
+    <p class="leitura"><b>Na busca pela categoria, o Google sugere Matsuda e Tortuga.</b> Quem digita “minerthal” procura o produto pelo nome: 160 MD, 80, Extra.</p>
+  </section>
+
+  <section>
+    <h2>6 · O que modernizar</h2>
+    <div class="table-wrap"><table class="cmp troca">
+      <thead><tr><th></th><th>Hoje</th><th>Proposta</th></tr></thead>
+      <tbody>
+        <tr><td>Primeira tela</td><td>Título “Nossos produtos” e dois cartões</td><td>Uma frase que diz o que a empresa faz, foto do campo e dois botões</td></tr>
+        <tr><td>Imagens</td><td>PNG e JPG, todas baixadas de uma vez</td><td>WebP, carregando só quando aparecem</td></tr>
+        <tr><td>Construção</td><td>WordPress 5.2, 10 plugins e 33 scripts</td><td>Tema próprio, com um CSS e um JS</td></tr>
+        <tr><td>Catálogo</td><td>Lista em páginas e ficha para download</td><td>Filtro por fase e época, com contato em cada produto</td></tr>
+        <tr><td>Endereços</td><td>Mapa de 2018, todo em http</td><td>Mapa automático, tudo em https</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>7 · Três oportunidades</h2>
+    <div class="opps">
+      <div class="opp"><div class="opp__n">1</div><h3>Arrumar a base</h3><p>Servidor atual, os mesmos endereços e o domínio sem “www” funcionando.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço médio</span></div></div>
+      <div class="opp"><div class="opp__n">2</div><h3>Dar um próximo passo no produto</h3><p>Botão de contato em cada produto e um formulário que pergunta rebanho, fase e região.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço baixo</span></div></div>
+      <div class="opp"><div class="opp__n">3</div><h3>Virar a resposta do setor</h3><p>Retomar o blog e responder as dúvidas mais comuns em cada página de produto.</p><div class="opp__meta"><span class="status next"><i></i>Impacto crescente</span><span class="status done"><i></i>Esforço contínuo</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>8 · O que já preparamos</h2>
+    <p class="sub">Um modelo da nova página inicial, com o conteúdo e o catálogo reais: <a href="https://jgdini.github.io/minerthal/" style="color:inherit">jgdini.github.io/minerthal</a></p>
     <div class="telas">
-      <figure><img class="" src="img/atual-computador.webp" alt="Página inicial atual da Minerthal no computador" loading="lazy"><figcaption>Site atual · computador</figcaption></figure>
-      <figure class="cel"><img class="" src="img/atual-celular.webp" alt="Página inicial atual da Minerthal no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
-    </div>
-    <div class="table-wrap"><table class="cmp">
-      <thead><tr><th>Por dentro</th><th>O que o código mostra</th></tr></thead>
-      <tbody>
-        <tr><td>Sistema e linguagem</td><td>WordPress 5.2.21 · PHP/5.6.40</td></tr>
-        <tr><td>Peças carregadas na página inicial</td><td>33 scripts e 21 folhas de estilo</td></tr>
-        <tr><td>Extensões instaladas (plugins)</td><td>10: contact-form-7, siteorigin-panels, so-widgets-bundle, youtube-channel, testimonial-rotator, instagram-slider-widget, wp-social-sharing, wp-paginate, meteor-slides, autoptimize</td></tr>
-        <tr><td>Imagens</td><td>44 na página inicial: 38 PNG, 6 JPG. 0 carregam só quando aparecem na tela.</td></tr>
-        <tr><td>Mapa do site</td><td>106 endereços, todos em http. Última atualização: 20/03/2018. Gerado por uma ferramenta on-line gratuita.</td></tr>
-        <tr><td>Menu principal</td><td>A Minerthal · Produtos · Resulthal · Ferramentas · Imprensa · Blog · Contato · Trabalhe Conosco</td></tr>
-      </tbody>
-    </table></div>
-    <div style="height:14px"></div>
-    <div class="moderno">
-      <div><b>Primeira tela</b><p><span>Hoje:</span> abre com o título “Nossos produtos” e dois cartões de linha. Não diz quem é a empresa nem para quem ela fabrica, e não mostra o campo. Na captura do celular, a faixa do topo aparece vazia.</p><p><span>Proposta:</span> uma frase que diga o que a Minerthal faz e para quem, uma foto real de rebanho e dois botões: encontrar o suplemento e falar com um técnico.</p></div>
-      <div><b>Imagens</b><p><span>Hoje:</span> 38 PNG e 6 JPG na página inicial, todas baixadas de uma vez.</p><p><span>Proposta:</span> imagens em WebP, no tamanho de cada tela, carregando só quando aparecem.</p></div>
-      <div><b>Construção</b><p><span>Hoje:</span> WordPress 5.2 com 10 plugins, carrossel, 33 scripts e 21 folhas de estilo.</p><p><span>Proposta:</span> um tema próprio, com um CSS e um JS, em WordPress e PHP atuais. Menos peças para carregar e para manter.</p></div>
-      <div><b>Catálogo</b><p><span>Hoje:</span> lista de produtos dividida em páginas, e cada produto com uma ficha para download.</p><p><span>Proposta:</span> filtro por linha, fase do animal e época do ano, e cada produto com dose, dúvidas respondidas e um botão de contato.</p></div>
-      <div><b>Endereços</b><p><span>Hoje:</span> o mapa do site é de 2018, com 106 endereços em http, e o domínio sem “www” não abre.</p><p><span>Proposta:</span> mapa gerado sozinho a cada publicação, tudo em https e o domínio sem “www” levando para o site.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>3 · O que o mercado pesquisa</h2>
-    <p class="sub">Usamos as sugestões do próprio Google: o que ele completa quando alguém começa a digitar. Elas mostram o que as pessoas procuram de verdade, mas não dizem quantas buscas cada termo tem.</p>
-    <div class="table-wrap"><table class="cmp buscas">
-      <thead><tr><th>Quando alguém digita</th><th>O Google sugere</th><th>Marcas que aparecem</th></tr></thead>
-      <tbody>
-        <tr><td>suplemento mineral para…</td><td>suplemento mineral para bovinos · suplemento mineral para equinos · suplemento mineral para ovinos · suplemento mineral para caes · suplemento mineral para bovinos de corte · suplemento mineral para gado · suplemento mineral para humanos · suplemento mineral para cavalo · suplemento mineral para gatos</td><td>—</td></tr>
-        <tr><td>sal mineral para gado…</td><td>sal mineral para gado 25 kg preço · sal mineral para gado pode ser consumido por humanos · sal mineral para gado 25 kg · sal mineral para gado de leite · sal mineral para gado preço · sal mineral para gado de corte · sal mineral para gado qual o melhor · sal mineral para gado matsuda · sal mineral para gado 50 kg</td><td><span class="no">Matsuda</span></td></tr>
-        <tr><td>proteinado para…</td><td>proteinado para gado · proteinado para bezerros · proteinado para bovinos · proteinado para vaca de leite · proteinado para cavalo · proteinado para gado na seca · proteinado para bezerros desmamados · proteinado para seca · proteinado para gado de corte</td><td>—</td></tr>
-        <tr><td>suplemento para gado…</td><td>suplemento para gado de corte · suplemento para gado engorda · suplemento para gado de leite · suplemento para gado na seca · suplemento para gado ade · suplemento para gado magro · suplemento mineral para gado · mub suplemento para gado · suplemento mineral para gado de corte</td><td>—</td></tr>
-        <tr><td>sal mineral…</td><td>sal mineral integral · sal mineral para cavalo · sal mineral para gado · sal mineral para humanos · sal mineral para ovinos · sal mineral para equinos · sal mineral tortuga · sal mineral para vaca de leite · sal mineral matsuda</td><td><span class="no">Matsuda</span></td></tr>
-        <tr><td>ração para gado de corte…</td><td>ração para gado de corte confinado · ração para gado de corte engorda · ração para gado de corte terminação · ração para gado de corte preço · melhor ração para gado de corte · ração pronta para gado de corte · racao concentrada para gado de corte · formula ração para gado de corte · ração balanceada para gado de corte</td><td>—</td></tr>
-        <tr><td>suplementação mineral bovinos…</td><td>suplementação mineral para bovinos de corte · suplementação mineral para bovinos de corte pdf · suplementação mineral para bovinos de leite</td><td>—</td></tr>
-        <tr><td>bloco mineral para gado…</td><td>bloco de sal mineral para gado</td><td>—</td></tr>
-      </tbody>
-    </table></div>
-    <p class="method">Sugestões do Google para o Brasil, em português, consultadas em 13/10/2026. Não medimos o volume de buscas nem a posição de cada site nos resultados.</p>
-    <div class="answer" style="margin-top:14px"><b>Quem pesquisa a categoria encontra o nome de concorrentes.</b> Em “sal mineral”, o Google sugere “sal mineral matsuda” e “sal mineral tortuga”. A Minerthal não aparece em nenhuma das buscas de categoria que testamos. Já quem digita “minerthal” recebe sugestões de produto, como “minerthal 160 md”, “minerthal 80” e “minerthal extra”. <b>Quem já conhece a marca procura o produto pelo nome</b>, e é justamente na página de produto que faltam descrição, dúvidas respondidas e botão de contato.</div>
-  </section>
-
-  <section>
-    <h2>4 · Radar competitivo</h2>
-    <p class="sub">Comparamos a página inicial da Minerthal com as de três empresas de nutrição animal: Matsuda, Connan e Premix. A escolha das concorrentes é nossa e pode ser ajustada com vocês.</p>
-    <div class="chart">
-      <div class="chart__head"><div class="chart__title">Nota de velocidade no celular</div><div class="legend"><span class="l-new"><i></i>Minerthal</span><span class="l-old"><i></i>Concorrentes</span></div></div>
-      <div class="cmp-row"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:34.0%"></span></div><span class="bar__val">34</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:36.0%"></span></div><span class="bar__val">36</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:35.0%"></span></div><span class="bar__val">35</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:21.0%"></span></div><span class="bar__val">21</span></div></div></div>
-      <p class="method">De 0 a 100. Quanto maior, melhor.</p>
-    </div>
-    <div class="chart">
-      <div class="chart__head"><div class="chart__title">Tempo até o conteúdo principal aparecer, no celular</div><div class="legend"><span class="l-new"><i></i>Minerthal</span><span class="l-old"><i></i>Concorrentes</span></div></div>
-      <div class="cmp-row"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:36.2%"></span></div><span class="bar__val">10,8 s</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:92.6%"></span></div><span class="bar__val">27,6 s</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:87.9%"></span></div><span class="bar__val">26,2 s</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:52.7%"></span></div><span class="bar__val">15,7 s</span></div></div></div>
-      <p class="method">Em segundos. Quanto menor, melhor. O Google considera bom até 2,5 s.</p>
-    </div>
-    <div class="chart">
-      <div class="chart__head"><div class="chart__title">Nota de SEO técnico no celular</div><div class="legend"><span class="l-new"><i></i>Minerthal</span><span class="l-old"><i></i>Concorrentes</span></div></div>
-      <div class="cmp-row"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:77.0%"></span></div><span class="bar__val">77</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:82.0%"></span></div><span class="bar__val">82</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:92.0%"></span></div><span class="bar__val">92</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:85.0%"></span></div><span class="bar__val">85</span></div></div></div>
-      <p class="method">De 0 a 100. Mede se a página está preparada para o Google ler: título, descrição, links e textos alternativos.</p>
-    </div>
-    <div class="chart">
-      <div class="chart__head"><div class="chart__title">Peso da página inicial</div><div class="legend"><span class="l-new"><i></i>Minerthal</span><span class="l-old"><i></i>Concorrentes</span></div></div>
-      <div class="cmp-row"><div class="cmp-label">Minerthal</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:25.9%"></span></div><span class="bar__val">3,3 MB</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:46.3%"></span></div><span class="bar__val">5,9 MB</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:62.0%"></span></div><span class="bar__val">7,9 MB</span></div></div></div>
-      <div class="cmp-row"><div class="cmp-label">Premix</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:92.6%"></span></div><span class="bar__val">11,8 MB</span></div></div></div>
-      <p class="method">Em megabytes. Quanto menor, mais rápido abre em 4G.</p>
-    </div>
-    <div class="table-wrap"><table class="cmp sinais">
-      <thead><tr><th>Sinais lidos em cada site</th><th>Minerthal</th><th>Matsuda</th><th>Connan</th><th>Premix</th></tr></thead>
-      <tbody>
-        <tr><td>O endereço sem “www” abre</td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td></tr>
-        <tr><td>O http leva para o https</td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td></tr>
-        <tr><td>Imagens em formato leve</td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td><td><span class="no">Não</span></td></tr>
-        <tr><td>Descrição da página para o Google</td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="no">Não</span></td><td><span class="no">Não</span></td></tr>
-        <tr><td>Dados estruturados da empresa</td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td></tr>
-        <tr><td>Perguntas e respostas marcadas (FAQ)</td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="no">Não</span></td></tr>
-        <tr><td>Arquivo llms.txt para assistentes de IA</td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="no">Não</span></td></tr>
-        <tr><td>Blog com texto novo em 2026</td><td><span class="no">Não</span></td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="no">Não</span></td></tr>
-        <tr><td>WhatsApp na página inicial</td><td><span class="yes">Sim</span></td><td><span class="no">Não</span></td><td><span class="yes">Sim</span></td><td><span class="yes">Sim</span></td></tr>
-      </tbody>
-    </table></div>
-    <p class="method">Página inicial de cada empresa, medida no celular com o Lighthouse (3 rodadas, valor do meio) em 13/10/2026. Os sinais foram lidos no código público de cada página.</p>
-    <div class="answer" style="margin-top:14px"><b>O setor inteiro é lento no celular.</b> Nenhuma das quatro passa de 36 em 100. A Minerthal é a que mostra o conteúdo mais rápido (10,8 s) e a mais leve (3,3 MB), mas ainda leva quatro vezes o tempo que o Google considera bom. Ela fica atrás em SEO técnico (77, a menor nota das quatro) e em acessibilidade (63, também a menor), e é a única em que o endereço sem “www” não abre e o http não leva para o https. Nenhuma das quatro tem perguntas e respostas marcadas nem arquivo para assistentes de IA. <b>Quem arrumar primeiro ocupa esse espaço.</b></div>
-  </section>
-
-  <section>
-    <h2>5 · Redes sociais</h2>
-    <p class="sub">Só o que o Instagram mostra a qualquer visitante, sem login.</p>
-    <div class="table-wrap"><table class="cmp sinais">
-      <thead><tr><th>Instagram</th><th>Minerthal</th><th>Matsuda</th><th>Connan</th><th>Premix</th></tr></thead>
-      <tbody>
-        <tr><td>Perfil</td><td>@minerthal</td><td><span class="tag" style="display:inline">s/d</span></td><td>@connan.oficial</td><td>@premix_nutri</td></tr>
-        <tr><td>Seguidores</td><td><b>6.691</b></td><td><span class="tag" style="display:inline">s/d</span></td><td><span class="tag" style="display:inline">s/d</span></td><td><b>37.000</b></td></tr>
-        <tr><td>Publicações</td><td>2.007</td><td><span class="tag" style="display:inline">s/d</span></td><td><span class="tag" style="display:inline">s/d</span></td><td>2.075</td></tr>
-        <tr><td>Seguidores por publicação</td><td>3,3</td><td><span class="tag" style="display:inline">s/d</span></td><td><span class="tag" style="display:inline">s/d</span></td><td>17,8</td></tr>
-      </tbody>
-    </table></div>
-    <p class="method">Números públicos de cada perfil em 13/10/2026. O Instagram arredonda perfis grandes. “s/d”: não achamos o perfil no site da empresa ou o Instagram não mostrou os números. A leitura do conteúdo (bio, destaques, formatos e frequência) entra no diagnóstico completo, feita pela estrategista da Halo.</p>
-    <div class="answer" style="margin-top:14px"><b>Volume de publicações parecido, alcance bem diferente.</b> A Minerthal e a Premix publicaram cerca de 2 mil vezes cada uma. A Premix tem 37 mil seguidores e a Minerthal, 6,7 mil. Os números não dizem o porquê, porque tamanho da empresa e anúncios também pesam. Mas mostram que quantidade de publicação não é o que falta: vale olhar o que se publica, para quem e com qual chamada.</div>
-  </section>
-
-  <section>
-    <h2>6 · Três oportunidades</h2>
-    <p class="sub">Em ordem de prioridade. Cada uma parte de uma evidência pública e pode ser conferida.</p>
-    <div class="opp"><div class="opp__n">1</div><h3>Arrumar a base antes de investir em divulgação</h3><p><b>Evidência:</b> o endereço sem “www” está fora do ar, o servidor usa PHP 5.6 (sem suporte desde 2018) com WordPress 5.2, e a nota de velocidade no celular é 34 em 100.</p><p><b>O que fazer:</b> migrar para um tema próprio em servidor atualizado, mantendo os mesmos endereços e redirecionando o domínio sem “www” e o http.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço médio</span></div></div>
-    <div class="opp"><div class="opp__n">2</div><h3>Dar um próximo passo a quem chega no produto</h3><p><b>Evidência:</b> o catálogo tem mais de 40 produtos, e a página de produto que abrimos só oferece “Fazer download”. O contato é um formulário único, com nome, e-mail, telefone e mensagem.</p><p><b>O que fazer:</b> um botão para falar com um técnico em cada produto, já com o produto e a região preenchidos, e uma página de representantes por estado.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço baixo</span></div></div>
-    <div class="opp"><div class="opp__n">3</div><h3>Virar a resposta do setor no Google e nas IAs</h3><p><b>Evidência:</b> nas buscas de categoria, o Google sugere marcas concorrentes e não a Minerthal. O blog tem textos técnicos bons e está parado desde agosto de 2025. O título e a descrição da página inicial não dizem o que a empresa faz. Nenhuma das quatro empresas marca perguntas e respostas nem tem arquivo para IAs.</p><p><b>O que fazer:</b> retomar o blog com calendário, responder as dúvidas mais comuns em cada página de produto e descrever cada página para o Google.</p><div class="opp__meta"><span class="status next"><i></i>Impacto médio, crescente</span><span class="status done"><i></i>Esforço contínuo</span></div></div>
-  </section>
-
-  <section>
-    <h2>O que já preparamos</h2>
-    <p class="sub">Antes desta conversa, montamos um modelo da nova página inicial da Minerthal com o conteúdo e o catálogo reais do site. Ele está no ar para teste em <a href="https://jgdini.github.io/minerthal/" style="color:inherit">jgdini.github.io/minerthal</a>. Abaixo, as mesmas medições lado a lado.</p>
-    <div class="telas">
-      <figure><img class="" src="img/modelo-computador.webp" alt="Modelo da nova página inicial da Minerthal no computador" loading="lazy"><figcaption>Modelo · computador</figcaption></figure>
-      <figure class="cel"><img class="" src="img/modelo-celular.webp" alt="Modelo da nova página inicial da Minerthal no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
+      <figure><img src="img/modelo-computador.webp" alt="Modelo da nova página inicial da Minerthal no computador" loading="lazy"><figcaption>Modelo · computador</figcaption></figure>
+      <figure class="cel"><img src="img/modelo-celular.webp" alt="Modelo da nova página inicial da Minerthal no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
     </div>
     <div class="chart">
       <div class="chart__head"><div class="chart__title">Notas do Google no celular</div><div class="legend"><span class="l-old"><i></i>Site atual</span><span class="l-new"><i></i>Modelo</span></div></div>
       <div class="cmp-row"><div class="cmp-label">Velocidade</div><div class="bars">
         <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:34%"></span></div><span class="bar__val">34</span></div>
-        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:88%"></span></div><span class="bar__val">88</span></div></div></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:89%"></span></div><span class="bar__val">89</span></div></div></div>
       <div class="cmp-row"><div class="cmp-label">Acessibilidade</div><div class="bars">
         <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:63%"></span></div><span class="bar__val">63</span></div>
         <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
@@ -280,37 +250,39 @@ table.cmp.buscas td:first-child{ width:24%; } table.cmp.buscas td:last-child{ wi
       <div class="kpi"><div class="kpi__label">Conteúdo na tela</div><div class="kpi__flow"><span class="kpi__old">10,8 s</span><span class="kpi__new">2,7 s</span></div><div class="kpi__note">No celular</div></div>
       <div class="kpi"><div class="kpi__label">Peso da página</div><div class="kpi__flow"><span class="kpi__old">3,3 MB</span><span class="kpi__new">0,4 MB</span></div><div class="kpi__note">Oito vezes menor</div></div>
       <div class="kpi"><div class="kpi__label">Arquivos pedidos</div><div class="kpi__flow"><span class="kpi__old">104</span><span class="kpi__new">22</span></div><div class="kpi__note">Ao abrir a página</div></div>
-      <div class="kpi"><div class="kpi__label">Serviços de terceiros</div><div class="kpi__flow"><span class="kpi__old">9</span><span class="kpi__new">0</span></div><div class="kpi__note">Endereços externos chamados</div></div>
+      <div class="kpi"><div class="kpi__label">Serviços de terceiros</div><div class="kpi__flow"><span class="kpi__old">9</span><span class="kpi__new">0</span></div><div class="kpi__note">Endereços externos</div></div>
     </div>
-    <p class="method">O modelo tem a página inicial e três páginas internas. Não é o site completo. Mesma medição: Lighthouse no celular, 3 rodadas, valor do meio, em 13/10/2026.</p>
   </section>
 
   <section>
     <h2>O que só os dados de vocês respondem</h2>
-    <p class="sub">Tudo acima foi visto de fora. Quanto isso pesa no negócio, só os números de vocês mostram.</p>
-    <div class="why">
-      <div><b>Quem chega ao site, e por qual busca?</b><p>O Google Analytics e o Search Console mostram em quais buscas a Minerthal já aparece e em quais deveria aparecer.</p></div>
-      <div><b>Quantos contatos viram venda?</b><p>Os envios do formulário, as ligações no 0800 e as conversas no WhatsApp, cruzados com o que o comercial fechou.</p></div>
-      <div><b>Quais produtos e regiões puxam a procura?</b><p>Com isso dá para decidir quais páginas e quais conteúdos fazer primeiro.</p></div>
-      <div><b>Quanto tempo leva a primeira resposta?</b><p>O intervalo entre o contato do produtor e o retorno do técnico costuma decidir a venda.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Limites desta análise</h2>
-    <ul class="limites">
-      <li>Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da Minerthal.</li>
-      <li>As notas vêm do Lighthouse, ferramenta do Google, rodado em nosso computador em 13/10/2026 (3 rodadas, valor do meio). O PageSpeed Insights on-line pode dar alguns pontos de diferença.</li>
-      <li>A comparação olha só a página inicial de cada empresa, não o site inteiro. No caso da Matsuda, a página inicial é a do grupo.</li>
-      <li>As buscas mostram o que o Google sugere. Não medimos o volume de buscas nem a posição de cada site nos resultados.</li>
-      <li>Do Instagram, usamos só os números públicos de cada perfil. Não analisamos as publicações.</li>
-      <li>As concorrentes foram escolhidas por nós. Se houver outras mais próximas, refazemos a comparação.</li>
-      <li>As versões de PHP e WordPress são as que o próprio site informa publicamente.</li>
+    <ul class="perguntas">
+      <li>Quem chega ao site, e por qual busca?</li>
+      <li>Quantos contatos viram venda?</li>
+      <li>Quais produtos e regiões puxam a procura?</li>
+      <li>Quanto tempo leva a primeira resposta?</li>
     </ul>
   </section>
 
   <section>
-    <div class="cta"><h3>Próximo passo: uma conversa de 30 minutos.</h3><p>Apresentamos estes achados, vocês nos contam o que querem vender mais e para quem, e decidimos juntos se faz sentido abrir os dados para um diagnóstico completo.</p></div>
+    <div class="cta"><h3>Próximo passo: uma conversa de 30 minutos.</h3><p>Vocês nos contam o que querem vender mais e para quem. Decidimos juntos se faz sentido abrir os dados para um diagnóstico completo.</p></div>
+  </section>
+
+  <section>
+    <details class="metodo">
+      <summary>Como medimos e os limites desta análise</summary>
+      <ul>
+        <li>Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da Minerthal.</li>
+        <li>Notas: Lighthouse, ferramenta do Google, rodado em nosso computador em 13/10/2026, com 3 rodadas e o valor do meio. O PageSpeed Insights on-line usa a mesma ferramenta e pode dar alguns pontos de diferença.</li>
+        <li>A comparação olha só a página inicial de cada empresa. A da Matsuda é a página do grupo.</li>
+        <li>Concorrentes escolhidas por nós: Matsuda, Connan e Premix. Se houver outras mais próximas, refazemos.</li>
+        <li>Último texto publicado: a data mais recente encontrada no blog ou na área de notícias de cada site.</li>
+        <li>Instagram: números públicos de cada perfil. “s/d” quer dizer que o Instagram não mostrou o número. Não analisamos as publicações.</li>
+        <li>Buscas: o que o Google sugere ao digitar, no Brasil. Não medimos o volume de buscas nem a posição de cada site.</li>
+        <li>Versões de PHP e WordPress: as que o próprio site informa. Lemos uma página de produto (MinerBlock Cria MD).</li>
+        <li>O modelo tem a página inicial e três páginas internas. Não é o site completo.</li>
+      </ul>
+    </details>
   </section>
 
   <footer>

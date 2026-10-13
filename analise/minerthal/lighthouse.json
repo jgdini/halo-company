@@ -66,6 +66,49 @@
         ],
         "fonte": "lighthouse local",
         "medidoEm": "2026-10-13T19:36:47.748Z"
+      },
+      "computador": {
+        "desempenho": 63,
+        "acessibilidade": 84,
+        "boasPraticas": 58,
+        "seo": 82,
+        "lcpSeg": 2.6,
+        "pesoMB": 5.9,
+        "requisicoes": 64,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          61,
+          63,
+          90
+        ],
+        "pesados": [
+          [
+            "580 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ],
+          [
+            "580 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ],
+          [
+            "568 KB",
+            "ps://horizon.matsuda.com.br/imagens/publicacoes/lg/11112024102409.webp"
+          ],
+          [
+            "445 KB",
+            "orizon.matsuda.com.br/imagens/banners-dinamicos/lg/20012024073214.webp"
+          ],
+          [
+            "434 KB",
+            "https://www.googletagmanager.com/gtm.js"
+          ],
+          [
+            "426 KB",
+            "https://connect.facebook.net/en_US/fbevents.js"
+          ]
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-13T20:33:47.180Z"
       }
     },
     "Connan": {
@@ -89,6 +132,49 @@
         ],
         "fonte": "lighthouse local",
         "medidoEm": "2026-10-13T19:38:57.933Z"
+      },
+      "computador": {
+        "desempenho": 56,
+        "acessibilidade": 89,
+        "boasPraticas": 73,
+        "seo": 92,
+        "lcpSeg": 6,
+        "pesoMB": 7.9,
+        "requisicoes": 156,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          56,
+          58,
+          49
+        ],
+        "pesados": [
+          [
+            "1937 KB",
+            "om.br/wp-content/uploads/2026/01/banner_site_swot_connan_banner_03.png"
+          ],
+          [
+            "626 KB",
+            "n.com.br/wp-content/litespeed/css/51677df7b4fd47a9b509fdaee0242a65.css"
+          ],
+          [
+            "512 KB",
+            "ent/uploads/2026/07/Banner-site_Suplementacao-proteica-seca-Connan.jpg"
+          ],
+          [
+            "486 KB",
+            "://connan.com.br/wp-content/uploads/2026/07/banner-site_TIP-Connan.jpg"
+          ],
+          [
+            "478 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ],
+          [
+            "454 KB",
+            "tskit-lite/modules/elementskit-icon-pack/assets/fonts/elementskit.woff"
+          ]
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-13T20:36:29.743Z"
       }
     },
     "Premix": {
@@ -112,29 +198,72 @@
         ],
         "fonte": "lighthouse local",
         "medidoEm": "2026-10-13T19:40:36.637Z"
+      },
+      "computador": {
+        "desempenho": 51,
+        "acessibilidade": 76,
+        "boasPraticas": 77,
+        "seo": 85,
+        "lcpSeg": 2.6,
+        "pesoMB": 11.8,
+        "requisicoes": 228,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          56,
+          51,
+          49
+        ],
+        "pesados": [
+          [
+            "606 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ],
+          [
+            "606 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ],
+          [
+            "524 KB",
+            "ix.com.br/wp-content/uploads/2026/09/48-anos-Premix-Banner-Site-v6.png"
+          ],
+          [
+            "518 KB",
+            "https://www.googletagmanager.com/gtm.js"
+          ],
+          [
+            "426 KB",
+            "https://connect.facebook.net/en_US/fbevents.js"
+          ],
+          [
+            "424 KB",
+            "x.com.br/blog/wp-content/uploads/2026/08/CAPA-DO-BLOG-BEEFDAY-2026.png"
+          ]
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-13T20:38:45.516Z"
       }
     },
     "Modelo Halo": {
       "celular": {
-        "desempenho": 88,
+        "desempenho": 89,
         "acessibilidade": 100,
         "boasPraticas": 100,
         "seo": 100,
         "lcpSeg": 2.7,
-        "fcpSeg": 2.1,
-        "tbtMs": 210,
+        "fcpSeg": 2.6,
+        "tbtMs": 174,
         "cls": 0,
         "pesoMB": 0.4,
         "requisicoes": 22,
         "terceiros": 0,
         "rodadas": 3,
         "desempenhoRodadas": [
-          88,
-          91,
-          81
+          84,
+          89,
+          94
         ],
         "fonte": "lighthouse local",
-        "medidoEm": "2026-10-13T19:41:49.470Z"
+        "medidoEm": "2026-10-13T20:47:06.476Z"
       },
       "computador": {
         "desempenho": 98,
@@ -142,20 +271,111 @@
         "boasPraticas": 100,
         "seo": 100,
         "lcpSeg": 0.7,
-        "fcpSeg": 0.7,
-        "tbtMs": 0,
+        "fcpSeg": 0.6,
+        "tbtMs": 14,
         "cls": 0,
         "pesoMB": 0.4,
         "requisicoes": 23,
         "terceiros": 0,
         "rodadas": 3,
         "desempenhoRodadas": [
+          97,
           98,
-          96,
-          99
+          98
         ],
         "fonte": "lighthouse local",
-        "medidoEm": "2026-10-13T19:43:15.502Z"
+        "medidoEm": "2026-10-13T20:48:06.317Z"
+      }
+    }
+  },
+  "extra": {
+    "premixPost": {
+      "url": "https://premix.com.br/blog/premix-48-anos-alta-performance-sempre-em-cena/",
+      "celular": {
+        "desempenho": 29,
+        "acessibilidade": 84,
+        "boasPraticas": 73,
+        "seo": 100,
+        "lcpSeg": 13.5,
+        "pesoMB": 11.3,
+        "requisicoes": 122,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          26,
+          30,
+          29
+        ],
+        "pesados": [
+          [
+            "1581 KB",
+            "https://premix.com.br/blog/wp-content/themes/ceris/css/style.css"
+          ],
+          [
+            "833 KB",
+            "ic.com/recaptcha/releases/nY0xPItgwtlvjEjk2TqdwOQz/recaptcha__pt_br.js"
+          ],
+          [
+            "666 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/CONF.png"
+          ],
+          [
+            "665 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/MANEJO.png"
+          ],
+          [
+            "615 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/PASTO.png"
+          ],
+          [
+            "606 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ]
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-13T20:40:26.042Z"
+      },
+      "computador": {
+        "desempenho": 64,
+        "acessibilidade": 87,
+        "boasPraticas": 73,
+        "seo": 100,
+        "lcpSeg": 3.5,
+        "pesoMB": 11.3,
+        "requisicoes": 125,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          64,
+          40,
+          64
+        ],
+        "pesados": [
+          [
+            "1581 KB",
+            "https://premix.com.br/blog/wp-content/themes/ceris/css/style.css"
+          ],
+          [
+            "833 KB",
+            "ic.com/recaptcha/releases/nY0xPItgwtlvjEjk2TqdwOQz/recaptcha__pt_br.js"
+          ],
+          [
+            "666 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/CONF.png"
+          ],
+          [
+            "665 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/MANEJO.png"
+          ],
+          [
+            "615 KB",
+            "https://premix.com.br/blog/wp-content/uploads/2021/09/PASTO.png"
+          ],
+          [
+            "606 KB",
+            "https://www.googletagmanager.com/gtag/js"
+          ]
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-13T20:41:59.260Z"
       }
     }
   }

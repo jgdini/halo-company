@@ -34,8 +34,12 @@ async function medir(url, desktop) {
     cls: m('cls', 3), pesoMB: m('pesoMB', 1), requisicoes: m('requisicoes'), terceiros: m('terceiros'), rodadas: r.length, desempenhoRodadas: r.map((x) => x.desempenho), fonte: 'lighthouse local', medidoEm: new Date().toISOString() };
 }
 
-const out = { medidoEm: new Date().toISOString(), itens: {} };
+// Com nomes depois da pasta, mede só esses e mantém o resto do arquivo. Ex.: node scripts/snapshot-lighthouse.mjs analise/minerthal "Modelo Halo"
+const so = process.argv.slice(3);
+let out = { medidoEm: new Date().toISOString(), itens: {} };
+if (so.length) { try { out = JSON.parse(await readFile(`${pasta}/lighthouse.json`, 'utf8')); } catch {} }
 for (const [papel, alvo] of lista) {
+  if (so.length && !so.includes(alvo.nome)) continue;
   console.error(alvo.nome);
   out.itens[alvo.nome] = { celular: await medir(alvo.url, false) };
   if (papel !== 'concorrente') out.itens[alvo.nome].computador = await medir(alvo.url, true);
