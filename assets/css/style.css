@@ -134,21 +134,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .hero__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 30px; animation: aparece 1s .55s var(--ease) both; }
 .hero__nota { margin-top: 22px; font-size: .88rem; color: var(--texto-2); animation: aparece 1s .65s var(--ease) both; }
 @keyframes aparece { from { opacity: 0; transform: translateY(14px); } }
-.hero__midia { margin: 0; justify-self: end; width: 100%; max-width: calc(54svh * 9 / 16); animation: aparece 1.2s .35s var(--ease) both; }
-.hero__midia .ph { box-shadow: 0 40px 80px -30px rgba(0,0,0,.6); }
-/* O halo: anel de luz com os três fios girando atrás do vídeo, mais um brilho difuso. */
-.hero__midia { position: relative; isolation: isolate; }
-.hero__midia::before, .hero__midia::after { content: ""; position: absolute; left: 50%; top: 46%; width: 165%; aspect-ratio: 1; border-radius: 50%; z-index: -1; pointer-events: none; translate: -50% -50%; }
-.hero__midia::before {
   background: conic-gradient(from 0deg, var(--garanca), var(--acafrao) 33%, var(--celeste) 55%, var(--garanca) 75%, var(--acafrao));
   -webkit-mask: radial-gradient(closest-side, transparent 88%, #000 89.5%, #000 91%, transparent 92.5%);
   mask: radial-gradient(closest-side, transparent 88%, #000 89.5%, #000 91%, transparent 92.5%);
   opacity: .85; animation: halo-gira 24s linear infinite;
 }
-.hero__midia::after { width: 130%; background: radial-gradient(closest-side, rgba(224, 80, 111, .28), rgba(231, 196, 147, .1) 55%, transparent 75%); animation: halo-pulsa 6s ease-in-out infinite; }
-@keyframes halo-gira { to { rotate: 360deg; } }
-@keyframes halo-pulsa { 50% { opacity: .6; scale: .94; } }
-.hero__legenda { display: flex; align-items: center; gap: 10px; margin-top: 14px; font-size: .85rem; color: var(--texto-2); }
 
 /* Faixa de nomes */
 .nomes { padding: 36px 0 44px; border-block: 1px solid var(--linha); background: var(--anil-fundo); }
@@ -337,7 +327,6 @@ section { position: relative; }
 @media (max-width: 980px) {
   .menu { display: none; }
   .hero__grid { grid-template-columns: 1fr; }
-  .hero__midia { max-width: 260px; justify-self: start; }
   .depo { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); scrollbar-width: none; }
   .depo::-webkit-scrollbar { display: none; }
   .depo__item { scroll-snap-align: start; }
@@ -392,7 +381,6 @@ section { position: relative; }
   .hero__grid { display: contents; }
   .hero__texto { order: 1; padding-inline: var(--gutter); }
   .hero__fios { order: 2; }
-  .hero__midia { order: 3; align-self: flex-start; margin: 28px var(--gutter) 0; width: calc(100% - var(--gutter) * 2); }
 }
 
 /* Case: detalhes técnicos */
@@ -522,3 +510,13 @@ section { position: relative; }
   .comparativo__total td { font-size: 1.2rem; }
   .comparativo thead th { font-size: .68rem; letter-spacing: .08em; }
 }
+
+/* Provas: cards que levam ao post no Instagram (capa + link, sem embutir o player) */
+.ig { position: relative; display: block; overflow: hidden; border-radius: var(--raio); background: var(--anil-claro); text-decoration: none; color: var(--texto); isolation: isolate; border: 1px solid var(--linha); transition: transform .6s var(--ease), border-color .4s; }
+.ig img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.ig--9x16 { aspect-ratio: 9 / 16; }
+.ig--4x5 { aspect-ratio: 4 / 5; }
+.ig__selo { position: absolute; left: 12px; right: 12px; bottom: 12px; display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 0 14px; border-radius: 999px; background: rgba(42, 8, 17, .88); color: var(--algodao); font-size: .88rem; font-weight: 620; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transition: background-color .3s, color .3s; }
+.ig:hover, .ig:focus-visible { transform: translateY(-4px); border-color: rgba(245, 239, 230, .35); }
+.ig:hover .ig__selo, .ig:focus-visible .ig__selo { background: var(--algodao); color: var(--anil-fundo); }
+.selo__img.ig { max-width: 360px; }

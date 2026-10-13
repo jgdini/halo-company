@@ -17,9 +17,8 @@ Seis cenas de "fios de luz" que avançam com o scroll: faísca, direção (estra
 Comparativo com o mesmo investimento em dois caminhos. Abas "Do jeito comum" e "Do jeito Halo" trocam os textos das 5 etapas (Anúncio, Clique, Página, Lead, Venda), as partículas e a coluna destacada da tabela. No jeito comum, parte das partículas escapa em cada etapa e cai em vermelho; no jeito Halo, a maioria chega à venda. Os números da tabela são ilustrativos e a página diz isso. Código em `trafego()` em `assets/js/main.js`; as chances de cada partícula seguir estão em `FICA`.
 
 ## Pendências (espaços reservados na página)
-- [ ] Vídeo 9:16 do topo: Raphael Mattos no palco falando da Amanda (6–10 s, sem som, em loop, MP4 leve + pôster WebP).
-- [ ] Três vídeos de prova (reels DLaJNTctdnN, DK-LcrZvWMh, DMA3n6eslXn) + transcrição exata do trecho de cada um.
-- [ ] Imagem do post da Community (DAk0jGqEcqy).
+- [x] Vídeo do topo removido (2026-10-13). A seção de provas agora mostra as capas dos reels com link para o Instagram (imagens em assets/img/provas, sem player embutido, para não pesar a página).
+- [x] Três reels e o post da Community com capa e link para o Instagram (autorizados pela Amanda). Falta trocar as falas entre colchetes pela transcrição exata de cada um.
 - [ ] Fotos 4:5 da Amanda, da Bia e do João.
 - [x] Hanaoka: prints de antes/depois (topo, desktop e celular) já no case. Gerados por `node scripts/imagens.mjs` a partir de `Arquivos/`.
 - [ ] Hanaoka: números do Instagram (seguidores) e leads por mês. Confirmar que o cliente autoriza o case.
