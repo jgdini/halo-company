@@ -34,6 +34,11 @@ section{ margin-bottom:60px; }
 .itens li::before{ font-weight:800; margin-right:5px; }
 .itens li.ok::before{ content:"✓"; }
 .itens li.falta::before{ content:"✕"; color:var(--bad); }
+.itens li.depois{ border:1px dashed var(--steel-light); color:var(--steel); }
+.itens li.depois::before{ content:"→"; color:var(--steel); }
+.legenda-placar{ display:flex; flex-wrap:wrap; gap:6px 16px; margin:10px 0 0; font-size:12px; color:var(--steel); }
+.legenda-placar b{ font-weight:800; margin-right:4px; }
+h3.sub-titulo{ font-size:15px; margin:22px 0 10px; }
 .kpis{ margin-top:12px; }
 .telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
 .telas figure{ margin:0; }
@@ -231,6 +236,15 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
       <figure><img src="img/modelo-computador.webp" alt="Modelo da nova página inicial da Minerthal no computador" loading="lazy"><figcaption>Modelo · computador</figcaption></figure>
       <figure class="cel"><img src="img/modelo-celular.webp" alt="Modelo da nova página inicial da Minerthal no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
     </div>
+    <h3 class="sub-titulo">O mesmo placar, com o modelo</h3>
+    <div class="placar">
+      <div class="pilar"><h3>Base técnica</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="3 de 4"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="207.3 69.1" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">3</text><text x="55" y="72" class="rosca__de">de 4</text></svg><ul class="itens"><li class="ok">Velocidade no celular ≥ 50</li><li class="falta">Conteúdo em até 2,5 s</li><li class="ok">http leva para https</li><li class="ok">Imagens leves</li><li class="depois">Endereço sem “www” abre</li><li class="depois">Sistema atualizado</li><li class="depois">Servidor com suporte</li></ul></div>
+      <div class="pilar"><h3>Ser encontrado</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="6 de 7"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="237.0 39.5" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">6</text><text x="55" y="72" class="rosca__de">de 7</text></svg><ul class="itens"><li class="ok">Título diz o que faz</li><li class="ok">Descrição no Google</li><li class="ok">Dados da empresa</li><li class="ok">Perguntas e respostas</li><li class="ok">Arquivo para IAs</li><li class="ok">Mapa do site em dia</li><li class="falta">Blog em dia</li></ul></div>
+      <div class="pilar"><h3>Converter</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="4 de 5"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="221.2 55.3" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">4</text><text x="55" y="72" class="rosca__de">de 5</text></svg><ul class="itens"><li class="ok">WhatsApp na página inicial</li><li class="ok">Formulário de contato</li><li class="ok">Contato em cada produto</li><li class="ok">Formulário que qualifica</li><li class="falta">Onde comprar</li></ul></div>
+    </div>
+    <p class="legenda-placar"><span><b style="color:var(--ok)">✓</b>atendido</span><span><b style="color:var(--bad)">✕</b>falta</span><span><b>→</b>resolvido na migração para o servidor de vocês</span></p>
+    <p class="leitura"><b>O conteúdo aparece em 2,7 s, quatro vezes mais rápido que hoje (10,8 s).</b> Ainda fica um pouco acima da meta de 2,5 s, o que é esperado num protótipo: o ajuste fino é feito na versão final, já no servidor de vocês. O blog e a página “onde comprar” dependem de informações da Minerthal.</p>
+    <div style="height:14px"></div>
     <div class="chart">
       <div class="chart__head"><div class="chart__title">Notas do Google no celular</div><div class="legend"><span class="l-old"><i></i>Site atual</span><span class="l-new"><i></i>Modelo</span></div></div>
       <div class="cmp-row"><div class="cmp-label">Velocidade</div><div class="bars">
@@ -247,7 +261,7 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
         <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:100%"></span></div><span class="bar__val">100</span></div></div></div>
     </div>
     <div class="kpis">
-      <div class="kpi"><div class="kpi__label">Conteúdo na tela</div><div class="kpi__flow"><span class="kpi__old">10,8 s</span><span class="kpi__new">2,7 s</span></div><div class="kpi__note">No celular</div></div>
+      <div class="kpi"><div class="kpi__label">Conteúdo na tela</div><div class="kpi__flow"><span class="kpi__old">10,8 s</span><span class="kpi__new">2,7 s</span></div><div class="kpi__note">No celular, quatro vezes mais rápido</div></div>
       <div class="kpi"><div class="kpi__label">Peso da página</div><div class="kpi__flow"><span class="kpi__old">3,3 MB</span><span class="kpi__new">0,4 MB</span></div><div class="kpi__note">Oito vezes menor</div></div>
       <div class="kpi"><div class="kpi__label">Arquivos pedidos</div><div class="kpi__flow"><span class="kpi__old">104</span><span class="kpi__new">22</span></div><div class="kpi__note">Ao abrir a página</div></div>
       <div class="kpi"><div class="kpi__label">Serviços de terceiros</div><div class="kpi__flow"><span class="kpi__old">9</span><span class="kpi__new">0</span></div><div class="kpi__note">Endereços externos</div></div>
@@ -280,7 +294,7 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
         <li>Instagram: números públicos de cada perfil. “s/d” quer dizer que o Instagram não mostrou o número. Não analisamos as publicações.</li>
         <li>Buscas: o que o Google sugere ao digitar, no Brasil. Não medimos o volume de buscas nem a posição de cada site.</li>
         <li>Versões de PHP e WordPress: as que o próprio site informa. Lemos uma página de produto (MinerBlock Cria MD).</li>
-        <li>O modelo tem a página inicial e três páginas internas. Não é o site completo.</li>
+        <li>O modelo tem a página inicial e três páginas internas. Não é o site completo. O placar do modelo foi conferido no ar em 13/10/2026.</li>
       </ul>
     </details>
   </section>

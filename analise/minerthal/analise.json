@@ -3,24 +3,72 @@
   "titulo": "O que o pecuarista encontra quando procura a <em>Minerthal</em>.",
   "lede": "Uma leitura feita só com informação pública: o site, o Google e três empresas do setor.",
   "negocio": [
-    ["Vende", "suplementos minerais e proteicos para bovinos, com mais de 40 produtos"],
-    ["Para", "pecuaristas de corte e de leite"],
-    ["Posição", "“suplementação de precisão”"]
+    [
+      "Vende",
+      "suplementos minerais e proteicos para bovinos, com mais de 40 produtos"
+    ],
+    [
+      "Para",
+      "pecuaristas de corte e de leite"
+    ],
+    [
+      "Posição",
+      "“suplementação de precisão”"
+    ]
   ],
-  "flags": { "tituloDizOQueFaz": false, "botaoDeContatoNoProduto": false, "ondeComprar": false, "formularioQualifica": false },
+  "flags": {
+    "tituloDizOQueFaz": false,
+    "botaoDeContatoNoProduto": false,
+    "ondeComprar": false,
+    "formularioQualifica": false
+  },
   "resumo": [
-    { "rotulo": "Velocidade no celular", "valor": "34<small style=\"font-size:.5em\">/100</small>", "nota": "Abaixo de 50 é ruim." },
-    { "rotulo": "Até o conteúdo aparecer", "valor": "10,8 s", "nota": "O Google considera bom até 2,5 s." },
-    { "rotulo": "Linguagem do servidor", "valor": "PHP 5.6", "nota": "Sem correções de segurança desde 2018." },
-    { "rotulo": "Último texto do blog", "valor": "ago/2025", "nota": "14 meses sem publicar." }
+    {
+      "rotulo": "Velocidade no celular",
+      "valor": "34<small style=\"font-size:.5em\">/100</small>",
+      "nota": "Abaixo de 50 é ruim."
+    },
+    {
+      "rotulo": "Até o conteúdo aparecer",
+      "valor": "10,8 s",
+      "nota": "O Google considera bom até 2,5 s."
+    },
+    {
+      "rotulo": "Linguagem do servidor",
+      "valor": "PHP 5.6",
+      "nota": "Sem correções de segurança desde 2018."
+    },
+    {
+      "rotulo": "Último texto do blog",
+      "valor": "ago/2025",
+      "nota": "14 meses sem publicar."
+    }
   ],
   "achados": [
-    ["O endereço sem “www” não abre", "Quem digita minerthal.com.br recebe erro."],
-    ["Servidor sem suporte de segurança", "PHP 5.6, sem correções desde 2018, e WordPress 5.2, de 2019."],
-    ["O Google não sabe o que a empresa faz", "Título “Minerthal Home”, nenhuma descrição, e a página abre com “Nossos produtos”."],
-    ["Produto sem próximo passo", "Na página de produto que abrimos, o único botão é “Fazer download”."],
-    ["Imagens pesadas e sem descrição", "38 PNG e 6 JPG na página inicial. 36 estão sem texto alternativo."],
-    ["Blog bom, mas parado", "Textos técnicos sobre seca, desmame e pré-parto. O último é de 18/08/2025."]
+    [
+      "O endereço sem “www” não abre",
+      "Quem digita minerthal.com.br recebe erro."
+    ],
+    [
+      "Servidor sem suporte de segurança",
+      "PHP 5.6, sem correções desde 2018, e WordPress 5.2, de 2019."
+    ],
+    [
+      "O Google não sabe o que a empresa faz",
+      "Título “Minerthal Home”, nenhuma descrição, e a página abre com “Nossos produtos”."
+    ],
+    [
+      "Produto sem próximo passo",
+      "Na página de produto que abrimos, o único botão é “Fazer download”."
+    ],
+    [
+      "Imagens pesadas e sem descrição",
+      "38 PNG e 6 JPG na página inicial. 36 estão sem texto alternativo."
+    ],
+    [
+      "Blog bom, mas parado",
+      "Textos técnicos sobre seca, desmame e pré-parto. O último é de 18/08/2025."
+    ]
   ],
   "leituras": {
     "velocidade": "<b>No celular, as quatro são lentas.</b> No computador, a Minerthal tem a menor nota das quatro.",
@@ -28,29 +76,195 @@
     "sinais": "<b>Nenhuma das quatro responde perguntas para o Google nem para as IAs.</b> Quem fizer primeiro ocupa esse espaço.",
     "buscas": "<b>Na busca pela categoria, o Google sugere Matsuda e Tortuga.</b> Quem digita “minerthal” procura o produto pelo nome: 160 MD, 80, Extra."
   },
-  "sinaisManuais": [["Título diz o que a empresa faz", [false, false, false, false]]],
-  "outrasMarcas": ["tortuga"],
-  "buscasMostrar": ["sal mineral", "sal mineral para gado", "suplemento para gado", "proteinado para"],
+  "sinaisManuais": [
+    [
+      "Título diz o que a empresa faz",
+      [
+        false,
+        false,
+        false,
+        false
+      ]
+    ]
+  ],
+  "outrasMarcas": [
+    "tortuga"
+  ],
+  "buscasMostrar": [
+    "sal mineral",
+    "sal mineral para gado",
+    "suplemento para gado",
+    "proteinado para"
+  ],
   "modernizar": [
-    ["Primeira tela", "Título “Nossos produtos” e dois cartões", "Uma frase que diz o que a empresa faz, foto do campo e dois botões"],
-    ["Imagens", "PNG e JPG, todas baixadas de uma vez", "WebP, carregando só quando aparecem"],
-    ["Construção", "WordPress 5.2, 10 plugins e 33 scripts", "Tema próprio, com um CSS e um JS"],
-    ["Catálogo", "Lista em páginas e ficha para download", "Filtro por fase e época, com contato em cada produto"],
-    ["Endereços", "Mapa de 2018, todo em http", "Mapa automático, tudo em https"]
+    [
+      "Primeira tela",
+      "Título “Nossos produtos” e dois cartões",
+      "Uma frase que diz o que a empresa faz, foto do campo e dois botões"
+    ],
+    [
+      "Imagens",
+      "PNG e JPG, todas baixadas de uma vez",
+      "WebP, carregando só quando aparecem"
+    ],
+    [
+      "Construção",
+      "WordPress 5.2, 10 plugins e 33 scripts",
+      "Tema próprio, com um CSS e um JS"
+    ],
+    [
+      "Catálogo",
+      "Lista em páginas e ficha para download",
+      "Filtro por fase e época, com contato em cada produto"
+    ],
+    [
+      "Endereços",
+      "Mapa de 2018, todo em http",
+      "Mapa automático, tudo em https"
+    ]
   ],
   "oportunidades": [
-    { "titulo": "Arrumar a base", "fazer": "Servidor atual, os mesmos endereços e o domínio sem “www” funcionando.", "impacto": "alto", "esforco": "médio" },
-    { "titulo": "Dar um próximo passo no produto", "fazer": "Botão de contato em cada produto e um formulário que pergunta rebanho, fase e região.", "impacto": "alto", "esforco": "baixo" },
-    { "titulo": "Virar a resposta do setor", "fazer": "Retomar o blog e responder as dúvidas mais comuns em cada página de produto.", "impacto": "crescente", "esforco": "contínuo" }
+    {
+      "titulo": "Arrumar a base",
+      "fazer": "Servidor atual, os mesmos endereços e o domínio sem “www” funcionando.",
+      "impacto": "alto",
+      "esforco": "médio"
+    },
+    {
+      "titulo": "Dar um próximo passo no produto",
+      "fazer": "Botão de contato em cada produto e um formulário que pergunta rebanho, fase e região.",
+      "impacto": "alto",
+      "esforco": "baixo"
+    },
+    {
+      "titulo": "Virar a resposta do setor",
+      "fazer": "Retomar o blog e responder as dúvidas mais comuns em cada página de produto.",
+      "impacto": "crescente",
+      "esforco": "contínuo"
+    }
   ],
   "modelo": {
     "intro": "Um modelo da nova página inicial, com o conteúdo e o catálogo reais: <a href=\"https://jgdini.github.io/minerthal/\" style=\"color:inherit\">jgdini.github.io/minerthal</a>",
     "resumo": [
-      { "rotulo": "Conteúdo na tela", "antes": "10,8 s", "depois": "2,7 s", "nota": "No celular" },
-      { "rotulo": "Peso da página", "antes": "3,3 MB", "depois": "0,4 MB", "nota": "Oito vezes menor" },
-      { "rotulo": "Arquivos pedidos", "antes": "104", "depois": "22", "nota": "Ao abrir a página" },
-      { "rotulo": "Serviços de terceiros", "antes": "9", "depois": "0", "nota": "Endereços externos" }
-    ]
+      {
+        "rotulo": "Conteúdo na tela",
+        "antes": "10,8 s",
+        "depois": "2,7 s",
+        "nota": "No celular, quatro vezes mais rápido"
+      },
+      {
+        "rotulo": "Peso da página",
+        "antes": "3,3 MB",
+        "depois": "0,4 MB",
+        "nota": "Oito vezes menor"
+      },
+      {
+        "rotulo": "Arquivos pedidos",
+        "antes": "104",
+        "depois": "22",
+        "nota": "Ao abrir a página"
+      },
+      {
+        "rotulo": "Serviços de terceiros",
+        "antes": "9",
+        "depois": "0",
+        "nota": "Endereços externos"
+      }
+    ],
+    "placar": [
+      {
+        "nome": "Base técnica",
+        "itens": [
+          [
+            "Velocidade no celular ≥ 50",
+            true
+          ],
+          [
+            "Conteúdo em até 2,5 s",
+            false
+          ],
+          [
+            "http leva para https",
+            true
+          ],
+          [
+            "Imagens leves",
+            true
+          ],
+          [
+            "Endereço sem “www” abre",
+            "depois"
+          ],
+          [
+            "Sistema atualizado",
+            "depois"
+          ],
+          [
+            "Servidor com suporte",
+            "depois"
+          ]
+        ]
+      },
+      {
+        "nome": "Ser encontrado",
+        "itens": [
+          [
+            "Título diz o que faz",
+            true
+          ],
+          [
+            "Descrição no Google",
+            true
+          ],
+          [
+            "Dados da empresa",
+            true
+          ],
+          [
+            "Perguntas e respostas",
+            true
+          ],
+          [
+            "Arquivo para IAs",
+            true
+          ],
+          [
+            "Mapa do site em dia",
+            true
+          ],
+          [
+            "Blog em dia",
+            false
+          ]
+        ]
+      },
+      {
+        "nome": "Converter",
+        "itens": [
+          [
+            "WhatsApp na página inicial",
+            true
+          ],
+          [
+            "Formulário de contato",
+            true
+          ],
+          [
+            "Contato em cada produto",
+            true
+          ],
+          [
+            "Formulário que qualifica",
+            true
+          ],
+          [
+            "Onde comprar",
+            false
+          ]
+        ]
+      }
+    ],
+    "leitura": "<b>O conteúdo aparece em 2,7 s, quatro vezes mais rápido que hoje (10,8 s).</b> Ainda fica um pouco acima da meta de 2,5 s, o que é esperado num protótipo: o ajuste fino é feito na versão final, já no servidor de vocês. O blog e a página “onde comprar” dependem de informações da Minerthal."
   },
   "perguntas": [
     "Quem chega ao site, e por qual busca?",
@@ -67,7 +281,7 @@
     "Instagram: números públicos de cada perfil. “s/d” quer dizer que o Instagram não mostrou o número. Não analisamos as publicações.",
     "Buscas: o que o Google sugere ao digitar, no Brasil. Não medimos o volume de buscas nem a posição de cada site.",
     "Versões de PHP e WordPress: as que o próprio site informa. Lemos uma página de produto (MinerBlock Cria MD).",
-    "O modelo tem a página inicial e três páginas internas. Não é o site completo."
+    "O modelo tem a página inicial e três páginas internas. Não é o site completo. O placar do modelo foi conferido no ar em 13/10/2026."
   ],
   "proximo": {
     "titulo": "Próximo passo: uma conversa de 30 minutos.",

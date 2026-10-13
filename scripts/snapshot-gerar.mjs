@@ -89,6 +89,14 @@ const pilares = [
   ]]
 ].map(([nome, itens]) => { const v = itens.filter((i) => i[1] != null); return { nome, itens: v, ok: v.filter((i) => i[1]).length }; });
 
+// Desenha um placar. Cada item é [texto, estado]: true (atendido), false (falta) ou 'depois' (só se resolve na migração).
+// A rosca conta só o que já dá para medir.
+function placarHtml(lista) {
+  return `<div class="placar">
+      ${lista.map((p) => { const medidos = p.itens.filter((i) => i[1] !== 'depois'), ok = medidos.filter((i) => i[1] === true).length; return `<div class="pilar"><h3>${p.nome}</h3>${rosca(ok, medidos.length)}<ul class="itens">${p.itens.map(([t, e]) => `<li class="${e === 'depois' ? 'depois' : e ? 'ok' : 'falta'}">${t}</li>`).join('')}</ul></div>`; }).join('\n      ')}
+    </div>`;
+}
+
 /* ---------- Sinais (matriz) ---------- */
 const marca = (v) => (v == null ? '<span class="m m--sd" title="sem dado">·</span>' : v ? '<span class="m m--ok" title="Sim">✓</span>' : '<span class="m m--nao" title="Não">✕</span>');
 const linhaSinal = (rotulo, f) => `<tr><td>${rotulo}</td>${todos.map((i) => `<td>${marca(i.sinais.falhou ? null : f(i.sinais, est(i), i))}</td>`).join('')}</tr>`;
@@ -138,6 +146,11 @@ section{ margin-bottom:60px; }
 .itens li::before{ font-weight:800; margin-right:5px; }
 .itens li.ok::before{ content:"✓"; }
 .itens li.falta::before{ content:"✕"; color:var(--bad); }
+.itens li.depois{ border:1px dashed var(--steel-light); color:var(--steel); }
+.itens li.depois::before{ content:"→"; color:var(--steel); }
+.legenda-placar{ display:flex; flex-wrap:wrap; gap:6px 16px; margin:10px 0 0; font-size:12px; color:var(--steel); }
+.legenda-placar b{ font-weight:800; margin-right:4px; }
+h3.sub-titulo{ font-size:15px; margin:22px 0 10px; }
 .kpis{ margin-top:12px; }
 .telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
 .telas figure{ margin:0; }
@@ -196,9 +209,7 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
 
   <section>
     <h2>O placar</h2>
-    <div class="placar">
-      ${pilares.map((p) => `<div class="pilar"><h3>${p.nome}</h3>${rosca(p.ok, p.itens.length)}<ul class="itens">${p.itens.map(([t, ok]) => `<li class="${ok ? 'ok' : 'falta'}">${t}</li>`).join('')}</ul></div>`).join('\n      ')}
-    </div>
+    ${placarHtml(pilares)}
     <div class="kpis">
       ${an.resumo.map((k) => `<div class="kpi"><div class="kpi__label">${k.rotulo}</div><div class="kpi__flow"><span class="kpi__new">${k.valor}</span></div><div class="kpi__note">${k.nota}</div></div>`).join('\n      ')}
     </div>
@@ -284,6 +295,11 @@ ${modelo && an.modelo ? `
       <figure>${img('modelo-computador.webp', `Modelo da nova página inicial da ${empresa.nome} no computador`)}<figcaption>Modelo · computador</figcaption></figure>
       <figure class="cel">${img('modelo-celular.webp', `Modelo da nova página inicial da ${empresa.nome} no celular`)}<figcaption>Celular</figcaption></figure>
     </div>
+    ${an.modelo.placar ? `<h3 class="sub-titulo">O mesmo placar, com o modelo</h3>
+    ${placarHtml(an.modelo.placar)}
+    <p class="legenda-placar"><span><b style="color:var(--ok)">✓</b>atendido</span><span><b style="color:var(--bad)">✕</b>falta</span><span><b>→</b>resolvido na migração para o servidor de vocês</span></p>
+    ${leitura(an.modelo.leitura)}
+    <div style="height:14px"></div>` : ''}
     ${pares('Notas do Google no celular', [['Velocidade', c.desempenho, modelo.celular.desempenho], ['Acessibilidade', c.acessibilidade, modelo.celular.acessibilidade], ['Boas práticas', c.boasPraticas, modelo.celular.boasPraticas], ['SEO técnico', c.seo, modelo.celular.seo]], 'Site atual', 'Modelo')}
     <div class="kpis">
       ${an.modelo.resumo.map((k) => `<div class="kpi"><div class="kpi__label">${k.rotulo}</div><div class="kpi__flow"><span class="kpi__old">${k.antes}</span><span class="kpi__new">${k.depois}</span></div><div class="kpi__note">${k.nota}</div></div>`).join('\n      ')}
