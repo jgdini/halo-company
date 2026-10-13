@@ -1,0 +1,242 @@
+{
+  "mes": "OUTUBRO 2026",
+  "titulo": "O que o pecuarista encontra quando procura a <em>Minerthal</em>.",
+  "lede": "Uma leitura da presença digital da Minerthal feita só com informação pública: o site, o que o Google lê nele e três empresas do mesmo setor. Não usamos nenhum dado interno da empresa.",
+  "resumo": [
+    {
+      "rotulo": "Velocidade no celular",
+      "valor": "34<small style=\"font-size:.5em\">/100</small>",
+      "nota": "Nota do Lighthouse, do Google. Abaixo de 50 é ruim."
+    },
+    {
+      "rotulo": "Até o conteúdo aparecer",
+      "valor": "10,8 s",
+      "nota": "No celular. O Google considera bom até 2,5 s."
+    },
+    {
+      "rotulo": "Linguagem do servidor",
+      "valor": "PHP 5.6",
+      "nota": "Sem correções de segurança desde dezembro de 2018."
+    },
+    {
+      "rotulo": "Último texto do blog",
+      "valor": "ago/2025",
+      "nota": "14 meses sem publicação."
+    }
+  ],
+  "pegada": {
+    "intro": "O que um visitante, o Google ou um assistente de IA encontra hoje em www.minerthal.com.br.",
+    "metodoNotas": "Lighthouse, ferramenta do Google, rodado em nosso computador em 13/10/2026: 3 rodadas, valor do meio. Notas de 0 a 100: acima de 90 é bom, abaixo de 50 é ruim. O PageSpeed Insights on-line (pagespeed.web.dev) usa a mesma ferramenta e pode dar alguns pontos de diferença.",
+    "linhas": [
+      [
+        "Endereço sem “www”",
+        "<span class=\"no\">minerthal.com.br não abre.</span> O domínio sem “www” não tem endereço configurado. Só www.minerthal.com.br funciona.",
+        "Quem digita o nome direto, ou clica num link antigo sem “www”, recebe erro e pode achar que o site saiu do ar."
+      ],
+      [
+        "Conexão segura",
+        "http://www.minerthal.com.br abre sem levar o visitante para a versão https.",
+        "Quem chega por um link antigo vê o aviso de “não seguro” do navegador."
+      ],
+      [
+        "Servidor",
+        "PHP 5.6.40 e WordPress 5.2.21, informados pelo próprio site.",
+        "O PHP 5.6 deixou de receber correções de segurança em dezembro de 2018. O WordPress 5.2 é uma linha de 2019. Duas das três concorrentes usam WordPress 7.1."
+      ],
+      [
+        "Título que aparece no Google",
+        "“Minerthal Home - Minerthal”",
+        "É o texto azul da busca. Não diz o que a empresa faz."
+      ],
+      [
+        "Descrição que aparece no Google",
+        "<span class=\"no\">Não existe</span> na página inicial, na lista de produtos nem na página de produto que abrimos.",
+        "Sem ela, o Google escolhe sozinho um trecho qualquer da página para mostrar."
+      ],
+      [
+        "Título principal da página inicial",
+        "“NOSSOS PRODUTOS”",
+        "É o que o Google e as IAs tomam como assunto da página. Não cita suplemento mineral, bovinos nem a marca."
+      ],
+      [
+        "Imagens",
+        "36 das 44 imagens da página inicial estão sem descrição.",
+        "Leitores de tela e a busca de imagens do Google não sabem o que elas mostram."
+      ],
+      [
+        "Resposta do servidor",
+        "Nas nossas consultas, o servidor levou de 3 a 9 segundos para entregar a página.",
+        "O visitante espera esse tempo antes de qualquer imagem começar a carregar."
+      ],
+      [
+        "Caminho de compra",
+        "Na página de produto que abrimos (MinerBlock Cria MD), o único botão é “Fazer download”. Não achamos “onde comprar”, “representante” nem “revenda” na página inicial, na lista de produtos e no contato.",
+        "Quem se interessou por um produto precisa procurar sozinho como falar com a empresa."
+      ],
+      [
+        "Blog",
+        "10 textos técnicos no arquivo do blog. O mais recente é de 18/08/2025.",
+        "O conteúdo é bom e responde dúvidas reais do pecuarista (seca, desmame, pré-parto), mas parou."
+      ]
+    ]
+  },
+  "radar": {
+    "intro": "Comparamos a página inicial da Minerthal com as de três empresas de nutrição animal: Matsuda, Connan e Premix. A escolha das concorrentes é nossa e pode ser ajustada com vocês.",
+    "metodo": "Página inicial de cada empresa, medida no celular com o Lighthouse (3 rodadas, valor do meio) em 13/10/2026. Os sinais foram lidos no código público de cada página.",
+    "leitura": "<b>O setor inteiro é lento no celular.</b> Nenhuma das quatro passa de 36 em 100. A Minerthal é a que mostra o conteúdo mais rápido (10,8 s) e a mais leve (3,3 MB), mas ainda leva quatro vezes o tempo que o Google considera bom. Ela fica atrás em SEO técnico (77, a menor nota das quatro) e em acessibilidade (63, também a menor), e é a única em que o endereço sem “www” não abre e o http não leva para o https. Nenhuma das quatro tem perguntas e respostas marcadas nem arquivo para assistentes de IA. <b>Quem arrumar primeiro ocupa esse espaço.</b>"
+  },
+  "oportunidades": {
+    "intro": "Em ordem de prioridade. Cada uma parte de uma evidência pública e pode ser conferida.",
+    "itens": [
+      {
+        "titulo": "Arrumar a base antes de investir em divulgação",
+        "evidencia": "o endereço sem “www” está fora do ar, o servidor usa PHP 5.6 (sem suporte desde 2018) com WordPress 5.2, e a nota de velocidade no celular é 34 em 100.",
+        "acao": "migrar para um tema próprio em servidor atualizado, mantendo os mesmos endereços e redirecionando o domínio sem “www” e o http.",
+        "impacto": "alto",
+        "esforco": "médio"
+      },
+      {
+        "titulo": "Dar um próximo passo a quem chega no produto",
+        "evidencia": "o catálogo tem mais de 40 produtos, e a página de produto que abrimos só oferece “Fazer download”. O contato é um formulário único, com nome, e-mail, telefone e mensagem.",
+        "acao": "um botão para falar com um técnico em cada produto, já com o produto e a região preenchidos, e uma página de representantes por estado.",
+        "impacto": "alto",
+        "esforco": "baixo"
+      },
+      {
+        "titulo": "Virar a resposta do setor no Google e nas IAs",
+        "evidencia": "nas buscas de categoria, o Google sugere marcas concorrentes e não a Minerthal. O blog tem textos técnicos bons e está parado desde agosto de 2025. O título e a descrição da página inicial não dizem o que a empresa faz. Nenhuma das quatro empresas marca perguntas e respostas nem tem arquivo para IAs.",
+        "acao": "retomar o blog com calendário, responder as dúvidas mais comuns em cada página de produto e descrever cada página para o Google.",
+        "impacto": "médio, crescente",
+        "esforco": "contínuo"
+      }
+    ]
+  },
+  "modelo": {
+    "intro": "Antes desta conversa, montamos um modelo da nova página inicial da Minerthal com o conteúdo e o catálogo reais do site. Ele está no ar para teste em <a href=\"https://jgdini.github.io/minerthal/\" style=\"color:inherit\">jgdini.github.io/minerthal</a>. Abaixo, as mesmas medições lado a lado.",
+    "resumo": [
+      {
+        "rotulo": "Conteúdo na tela",
+        "antes": "10,8 s",
+        "depois": "2,7 s",
+        "nota": "No celular"
+      },
+      {
+        "rotulo": "Peso da página",
+        "antes": "3,3 MB",
+        "depois": "0,4 MB",
+        "nota": "Oito vezes menor"
+      },
+      {
+        "rotulo": "Arquivos pedidos",
+        "antes": "104",
+        "depois": "22",
+        "nota": "Ao abrir a página"
+      },
+      {
+        "rotulo": "Serviços de terceiros",
+        "antes": "9",
+        "depois": "0",
+        "nota": "Endereços externos chamados"
+      }
+    ],
+    "metodo": "O modelo tem a página inicial e três páginas internas. Não é o site completo. Mesma medição: Lighthouse no celular, 3 rodadas, valor do meio, em 13/10/2026."
+  },
+  "ponte": {
+    "intro": "Tudo acima foi visto de fora. Quanto isso pesa no negócio, só os números de vocês mostram.",
+    "perguntas": [
+      [
+        "Quem chega ao site, e por qual busca?",
+        "O Google Analytics e o Search Console mostram em quais buscas a Minerthal já aparece e em quais deveria aparecer."
+      ],
+      [
+        "Quantos contatos viram venda?",
+        "Os envios do formulário, as ligações no 0800 e as conversas no WhatsApp, cruzados com o que o comercial fechou."
+      ],
+      [
+        "Quais produtos e regiões puxam a procura?",
+        "Com isso dá para decidir quais páginas e quais conteúdos fazer primeiro."
+      ],
+      [
+        "Quanto tempo leva a primeira resposta?",
+        "O intervalo entre o contato do produtor e o retorno do técnico costuma decidir a venda."
+      ]
+    ]
+  },
+  "limites": [
+    "Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da Minerthal.",
+    "As notas vêm do Lighthouse, ferramenta do Google, rodado em nosso computador em 13/10/2026 (3 rodadas, valor do meio). O PageSpeed Insights on-line pode dar alguns pontos de diferença.",
+    "A comparação olha só a página inicial de cada empresa, não o site inteiro. No caso da Matsuda, a página inicial é a do grupo.",
+    "As buscas mostram o que o Google sugere. Não medimos o volume de buscas nem a posição de cada site nos resultados.",
+    "Do Instagram, usamos só os números públicos de cada perfil. Não analisamos as publicações.",
+    "As concorrentes foram escolhidas por nós. Se houver outras mais próximas, refazemos a comparação.",
+    "As versões de PHP e WordPress são as que o próprio site informa publicamente."
+  ],
+  "proximo": {
+    "titulo": "Próximo passo: uma conversa de 30 minutos.",
+    "texto": "Apresentamos estes achados, vocês nos contam o que querem vender mais e para quem, e decidimos juntos se faz sentido abrir os dados para um diagnóstico completo."
+  },
+  "negocio": [
+    [
+      "O que vende",
+      "Suplementos minerais e proteicos para bovinos de corte e de leite. São mais de 40 produtos, em linhas como MinerBlock, Engorda MD e Núcleo Leite MD."
+    ],
+    [
+      "Para quem",
+      "Pecuaristas de corte e de leite. O site não deixa claro se a venda é direta, por representante ou por revenda. É a primeira pergunta para a nossa conversa."
+    ],
+    [
+      "Como se posiciona",
+      "“Suplementação de precisão”: nutrientes de qualidade, na quantidade certa, o ano todo."
+    ],
+    [
+      "O que já tem de conteúdo",
+      "Blog técnico, o informativo Resulthal, ferramentas de cálculo e um canal no YouTube."
+    ]
+  ],
+  "flags": {
+    "tituloDizOQueFaz": false,
+    "botaoDeContatoNoProduto": false,
+    "ondeComprar": false,
+    "formularioQualifica": false
+  },
+  "estrutura": {
+    "intro": "Olhamos como o site é construído e como ele se apresenta. Abaixo, o que o código mostra e o que mudaríamos.",
+    "modernizar": [
+      [
+        "Primeira tela",
+        "abre com o título “Nossos produtos” e dois cartões de linha. Não diz quem é a empresa nem para quem ela fabrica, e não mostra o campo. Na captura do celular, a faixa do topo aparece vazia.",
+        "uma frase que diga o que a Minerthal faz e para quem, uma foto real de rebanho e dois botões: encontrar o suplemento e falar com um técnico."
+      ],
+      [
+        "Imagens",
+        "38 PNG e 6 JPG na página inicial, todas baixadas de uma vez.",
+        "imagens em WebP, no tamanho de cada tela, carregando só quando aparecem."
+      ],
+      [
+        "Construção",
+        "WordPress 5.2 com 10 plugins, carrossel, 33 scripts e 21 folhas de estilo.",
+        "um tema próprio, com um CSS e um JS, em WordPress e PHP atuais. Menos peças para carregar e para manter."
+      ],
+      [
+        "Catálogo",
+        "lista de produtos dividida em páginas, e cada produto com uma ficha para download.",
+        "filtro por linha, fase do animal e época do ano, e cada produto com dose, dúvidas respondidas e um botão de contato."
+      ],
+      [
+        "Endereços",
+        "o mapa do site é de 2018, com 106 endereços em http, e o domínio sem “www” não abre.",
+        "mapa gerado sozinho a cada publicação, tudo em https e o domínio sem “www” levando para o site."
+      ]
+    ]
+  },
+  "buscas": {
+    "intro": "Usamos as sugestões do próprio Google: o que ele completa quando alguém começa a digitar. Elas mostram o que as pessoas procuram de verdade, mas não dizem quantas buscas cada termo tem.",
+    "metodo": "Sugestões do Google para o Brasil, em português, consultadas em 13/10/2026. Não medimos o volume de buscas nem a posição de cada site nos resultados.",
+    "leitura": "<b>Quem pesquisa a categoria encontra o nome de concorrentes.</b> Em “sal mineral”, o Google sugere “sal mineral matsuda” e “sal mineral tortuga”. A Minerthal não aparece em nenhuma das buscas de categoria que testamos. Já quem digita “minerthal” recebe sugestões de produto, como “minerthal 160 md”, “minerthal 80” e “minerthal extra”. <b>Quem já conhece a marca procura o produto pelo nome</b>, e é justamente na página de produto que faltam descrição, dúvidas respondidas e botão de contato."
+  },
+  "redes": {
+    "intro": "Só o que o Instagram mostra a qualquer visitante, sem login.",
+    "metodo": "Números públicos de cada perfil em 13/10/2026. O Instagram arredonda perfis grandes. “s/d”: não achamos o perfil no site da empresa ou o Instagram não mostrou os números. A leitura do conteúdo (bio, destaques, formatos e frequência) entra no diagnóstico completo, feita pela estrategista da Halo.",
+    "leitura": "<b>Volume de publicações parecido, alcance bem diferente.</b> A Minerthal e a Premix publicaram cerca de 2 mil vezes cada uma. A Premix tem 37 mil seguidores e a Minerthal, 6,7 mil. Os números não dizem o porquê, porque tamanho da empresa e anúncios também pesam. Mas mostram que quantidade de publicação não é o que falta: vale olhar o que se publica, para quem e com qual chamada."
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "coletadoEm": "2026-10-13T20:03:45.379Z",
+  "estrutura": {
+    "Minerthal": {
+      "servidor": "Microsoft-IIS/10.0",
+      "linguagem": "PHP/5.6.40, ASP.NET",
+      "sistema": "WordPress 5.2.21",
+      "semWwwAbre": false,
+      "semWwwErro": "ENOTFOUND",
+      "httpRedirecionaParaHttps": false,
+      "scripts": 33,
+      "folhasDeEstilo": 21,
+      "plugins": [
+        "contact-form-7",
+        "siteorigin-panels",
+        "so-widgets-bundle",
+        "youtube-channel",
+        "testimonial-rotator",
+        "instagram-slider-widget",
+        "wp-social-sharing",
+        "wp-paginate",
+        "meteor-slides",
+        "autoptimize"
+      ],
+      "tema": [
+        "minerthal"
+      ],
+      "imagens": 44,
+      "imagensSemDescricao": 36,
+      "imagensPorFormato": {
+        "png": 38,
+        "jpg": 6
+      },
+      "imagensComCarregamentoSobDemanda": 0,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "A Minerthal",
+        "Produtos",
+        "Resulthal",
+        "Ferramentas",
+        "Imprensa",
+        "Blog",
+        "Contato",
+        "Trabalhe Conosco"
+      ],
+      "mapaDoSite": {
+        "enderecos": 106,
+        "emHttp": 106,
+        "ultimaAtualizacao": "2018-03-20T21:20:59+00:00",
+        "geradoPor": "Free Online Sitemap Generator www.xml-sitemaps.com"
+      },
+      "blog": {
+        "textosNoFeed": 10,
+        "ultimo": "2025-08-18"
+      },
+      "redes": {
+        "instagram": "http://www.instagram.com/minerthal",
+        "facebook": "https://www.facebook.com/Minerthal/",
+        "linkedin": null,
+        "youtube": "https://www.youtube.com/channel/UCYkbAf5khwxaMfa7pXLqmcA",
+        "tiktok": null
+      }
+    },
+    "Matsuda": {
+      "servidor": "Microsoft-IIS/10.0",
+      "linguagem": "ASP.NET",
+      "sistema": null,
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 12,
+      "folhasDeEstilo": 4,
+      "plugins": [],
+      "tema": [],
+      "imagens": 25,
+      "imagensSemDescricao": 20,
+      "imagensPorFormato": {
+        "svg": 3,
+        "webp": 19,
+        "jpg": 3
+      },
+      "imagensComCarregamentoSobDemanda": 10,
+      "carrossel": false,
+      "jquery": true,
+      "menu": [],
+      "mapaDoSite": {
+        "enderecos": 0,
+        "emHttp": 0,
+        "ultimaAtualizacao": null,
+        "geradoPor": null
+      },
+      "blog": {
+        "textosNoFeed": 0,
+        "ultimo": null
+      },
+      "redes": {
+        "instagram": null,
+        "facebook": null,
+        "linkedin": null,
+        "youtube": null,
+        "tiktok": null
+      }
+    },
+    "Connan": {
+      "servidor": "LiteSpeed",
+      "linguagem": "CyberPanel-OLS/2.5.0",
+      "sistema": "WordPress 7.1.3",
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 20,
+      "folhasDeEstilo": 1,
+      "plugins": [
+        "creame-whatsapp-me",
+        "essential-addons-for-elementor-lite",
+        "litespeed-cache"
+      ],
+      "tema": [
+        "hello-elementor"
+      ],
+      "imagens": 14,
+      "imagensSemDescricao": 14,
+      "imagensPorFormato": {
+        "webp": 12,
+        "jpg": 2
+      },
+      "imagensComCarregamentoSobDemanda": 9,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "Home",
+        "Quem Somos",
+        "Produtos",
+        "Aglomerax",
+        "Artigos técnicos",
+        "Eventos",
+        "Representantes",
+        "Depoimentos",
+        "Contato"
+      ],
+      "mapaDoSite": {
+        "enderecos": 6,
+        "emHttp": 0,
+        "ultimaAtualizacao": "2026-09-24T20:29:20+00:00",
+        "geradoPor": null
+      },
+      "blog": {
+        "textosNoFeed": 10,
+        "ultimo": "2026-09-24"
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/connan.oficial/",
+        "facebook": "https://www.facebook.com/connannutricaoanimal/",
+        "linkedin": "https://www.linkedin.com/company/connangeracaoderesultados/",
+        "youtube": "https://www.youtube.com/channel/UCHzVWZL5OxNCYjCtS9iQi0Q",
+        "tiktok": null
+      }
+    },
+    "Premix": {
+      "servidor": "LiteSpeed",
+      "linguagem": "PHP/8.1.34",
+      "sistema": "WordPress 7.1.3",
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 49,
+      "folhasDeEstilo": 103,
+      "plugins": [
+        "click-to-chat-for-whatsapp",
+        "wgl-extensions",
+        "elementor",
+        "elementor-pro",
+        "insta-gallery",
+        "essential-addons-for-elementor-lite",
+        "material-design-icons-for-elementor",
+        "ml-slider",
+        "transmax-core"
+      ],
+      "tema": [
+        "transmax",
+        "transmax-child"
+      ],
+      "imagens": 34,
+      "imagensSemDescricao": 25,
+      "imagensPorFormato": {
+        "png": 22,
+        "jpg": 4
+      },
+      "imagensComCarregamentoSobDemanda": 18,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "HOME",
+        "BLOG",
+        "QUEM SOMOS",
+        "PRODUTOS",
+        "Nutrição Animal",
+        "Aditivos",
+        "Fator P",
+        "Fator 20A",
+        "Upmix",
+        "Sementes",
+        "TECNOLOGIAS",
+        "Bovmix",
+        "SUSTENTABILIDADE",
+        "TRABALHE CONOSCO"
+      ],
+      "mapaDoSite": {
+        "enderecos": 2,
+        "emHttp": 0,
+        "ultimaAtualizacao": "2026-10-05T17:15:48+00:00",
+        "geradoPor": null
+      },
+      "blog": {
+        "textosNoFeed": 10,
+        "ultimo": "2023-05-04"
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/premix_nutri/",
+        "facebook": "https://www.facebook.com/premix.nutri",
+        "linkedin": "https://www.linkedin.com/company/grupo-premix",
+        "youtube": "https://www.youtube.com/user/premixnutricao",
+        "tiktok": null
+      }
+    }
+  },
+  "instagram": {
+    "Minerthal": {
+      "usuario": "minerthal",
+      "status": 200,
+      "nome": "Minerthal | Suplementação Animal de Precisão (&#064;minerthal) • Instagram photos and videos",
+      "seguidores": 6691,
+      "seguindo": 512,
+      "posts": 2007,
+      "descricaoPublica": "6,691 Followers, 512 Following, 2,007 Posts - See Instagram photos and videos from Minerthal | Suplementação Animal de Precisão (&#064;minerthal)"
+    },
+    "Matsuda": null,
+    "Connan": {
+      "usuario": "connan.oficial",
+      "status": 200,
+      "nome": null,
+      "seguidores": null,
+      "seguindo": null,
+      "posts": null,
+      "descricaoPublica": ""
+    },
+    "Premix": {
+      "usuario": "premix_nutri",
+      "status": 200,
+      "nome": "Premix (&#064;premix_nutri) • Instagram photos and videos",
+      "seguidores": 37000,
+      "seguindo": 7071,
+      "posts": 2075,
+      "descricaoPublica": "37K Followers, 7,071 Following, 2,075 Posts - See Instagram photos and videos from Premix (&#064;premix_nutri)"
+    }
+  },
+  "buscas": [
+    {
+      "termo": "suplemento mineral para",
+      "sugestoes": [
+        "suplemento mineral para bovinos",
+        "suplemento mineral para equinos",
+        "suplemento mineral para ovinos",
+        "suplemento mineral para caes",
+        "suplemento mineral para bovinos de corte",
+        "suplemento mineral para gado",
+        "suplemento mineral para humanos",
+        "suplemento mineral para cavalo",
+        "suplemento mineral para gatos",
+        "suplemento mineral para aves"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "sal mineral para gado",
+      "sugestoes": [
+        "sal mineral para gado",
+        "sal mineral para gado 25 kg preço",
+        "sal mineral para gado pode ser consumido por humanos",
+        "sal mineral para gado 25 kg",
+        "sal mineral para gado de leite",
+        "sal mineral para gado preço",
+        "sal mineral para gado de corte",
+        "sal mineral para gado qual o melhor",
+        "sal mineral para gado matsuda",
+        "sal mineral para gado 50 kg"
+      ],
+      "marcasQueAparecem": [
+        "matsuda"
+      ]
+    },
+    {
+      "termo": "proteinado para",
+      "sugestoes": [
+        "proteinado para gado",
+        "proteinado para bezerros",
+        "proteinado para bovinos",
+        "proteinado para vaca de leite",
+        "proteinado para cavalo",
+        "proteinado para gado na seca",
+        "proteinado para bezerros desmamados",
+        "proteinado para seca",
+        "proteinado para gado de corte",
+        "proteinado para ovinos"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "suplemento para gado",
+      "sugestoes": [
+        "suplemento para gado",
+        "suplemento para gado de corte",
+        "suplemento para gado engorda",
+        "suplemento para gado de leite",
+        "suplemento para gado na seca",
+        "suplemento para gado ade",
+        "suplemento para gado magro",
+        "suplemento mineral para gado",
+        "mub suplemento para gado",
+        "suplemento mineral para gado de corte"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "sal mineral",
+      "sugestoes": [
+        "sal mineral",
+        "sal mineral integral",
+        "sal mineral para cavalo",
+        "sal mineral para gado",
+        "sal mineral para humanos",
+        "sal mineral para ovinos",
+        "sal mineral para equinos",
+        "sal mineral tortuga",
+        "sal mineral para vaca de leite",
+        "sal mineral matsuda"
+      ],
+      "marcasQueAparecem": [
+        "matsuda"
+      ]
+    },
+    {
+      "termo": "ração para gado de corte",
+      "sugestoes": [
+        "ração para gado de corte",
+        "ração para gado de corte confinado",
+        "ração para gado de corte engorda",
+        "ração para gado de corte terminação",
+        "ração para gado de corte preço",
+        "melhor ração para gado de corte",
+        "ração pronta para gado de corte",
+        "racao concentrada para gado de corte",
+        "formula ração para gado de corte",
+        "ração balanceada para gado de corte"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "suplementação mineral bovinos",
+      "sugestoes": [
+        "suplementação mineral bovinos",
+        "suplementação mineral para bovinos de corte",
+        "suplementação mineral para bovinos de corte pdf",
+        "suplementação mineral para bovinos de leite"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "bloco mineral para gado",
+      "sugestoes": [
+        "bloco mineral para gado",
+        "bloco de sal mineral para gado"
+      ],
+      "marcasQueAparecem": []
+    }
+  ],
+  "buscaPelaMarca": [
+    "minerthal produtos agro pecuarios ltda",
+    "minerthal produtos agropecuários ltda",
+    "minerthal produtos agropecuários",
+    "minerthal produtos",
+    "minerthal 160 md",
+    "minerthal 80",
+    "minerthal extra",
+    "minerthal fotos",
+    "minerthal nutrição animal"
+  ]
+}

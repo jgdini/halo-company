@@ -1,0 +1,34 @@
+{
+  "empresa": {
+    "nome": "Minerthal",
+    "url": "https://www.minerthal.com.br/"
+  },
+  "concorrentes": [
+    {
+      "nome": "Matsuda",
+      "url": "https://www.matsuda.com.br/"
+    },
+    {
+      "nome": "Connan",
+      "url": "https://connan.com.br/"
+    },
+    {
+      "nome": "Premix",
+      "url": "https://premix.com.br/"
+    }
+  ],
+  "modelo": {
+    "nome": "Modelo Halo",
+    "url": "https://jgdini.github.io/minerthal/"
+  },
+  "buscas": [
+    "suplemento mineral para",
+    "sal mineral para gado",
+    "proteinado para",
+    "suplemento para gado",
+    "sal mineral",
+    "ração para gado de corte",
+    "suplementação mineral bovinos",
+    "bloco mineral para gado"
+  ]
+}
