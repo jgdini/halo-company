@@ -137,6 +137,16 @@
   ],
   "proximo": {
     "titulo": "Próximo passo: uma conversa de 30 minutos.",
-    "texto": "Vocês nos contam o que querem vender mais e para quem. Decidimos juntos se faz sentido abrir os dados para um diagnóstico completo."
+    "texto": "Vocês nos contam o que querem vender mais e para quem. Decidimos juntos se faz sentido abrir os dados para um diagnóstico completo.",
+    "contatos": [
+      [
+        "João Dini",
+        "(11) 98953-1711"
+      ],
+      [
+        "Amanda Takahashi",
+        "(15) 99642-3577"
+      ]
+    ]
   }
 }

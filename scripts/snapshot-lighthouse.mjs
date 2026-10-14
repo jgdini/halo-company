@@ -42,7 +42,8 @@ for (const [papel, alvo] of lista) {
   if (so.length && !so.includes(alvo.nome)) continue;
   console.error(alvo.nome);
   out.itens[alvo.nome] = { celular: await medir(alvo.url, false) };
-  if (papel !== 'concorrente') out.itens[alvo.nome].computador = await medir(alvo.url, true);
+  // Computador para todos: comprador B2B costuma abrir no computador, e ali a ordem entre as empresas pode mudar.
+  out.itens[alvo.nome].computador = await medir(alvo.url, true);
   await writeFile(`${pasta}/lighthouse.json`, JSON.stringify(out, null, 2));
 }
 console.log('ok');

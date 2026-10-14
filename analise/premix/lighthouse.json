@@ -1,0 +1,181 @@
+{
+  "medidoEm": "2026-10-14T15:59:53.097Z",
+  "itens": {
+    "Premix": {
+      "celular": {
+        "desempenho": 10,
+        "acessibilidade": 66,
+        "boasPraticas": 73,
+        "seo": 85,
+        "lcpSeg": 15.6,
+        "fcpSeg": 9.1,
+        "tbtMs": 2519,
+        "cls": 0.341,
+        "pesoMB": 11.2,
+        "requisicoes": 226,
+        "terceiros": 22,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          9,
+          10,
+          11
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:01:56.387Z"
+      },
+      "computador": {
+        "desempenho": 59,
+        "acessibilidade": 76,
+        "boasPraticas": 77,
+        "seo": 85,
+        "lcpSeg": 2.7,
+        "fcpSeg": 2,
+        "tbtMs": 240,
+        "cls": 0.029,
+        "pesoMB": 11.7,
+        "requisicoes": 228,
+        "terceiros": 22,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          47,
+          59,
+          62
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:03:59.730Z"
+      }
+    },
+    "Tortuga": {
+      "celular": {
+        "desempenho": 5,
+        "acessibilidade": 85,
+        "boasPraticas": 54,
+        "seo": 85,
+        "lcpSeg": 49.7,
+        "fcpSeg": 7.6,
+        "tbtMs": 2669,
+        "cls": 0.505,
+        "pesoMB": 10.1,
+        "requisicoes": 96,
+        "terceiros": 16,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          5,
+          6,
+          5
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:08:47.705Z"
+      },
+      "computador": {
+        "desempenho": 33,
+        "acessibilidade": 85,
+        "boasPraticas": 54,
+        "seo": 85,
+        "lcpSeg": 10,
+        "fcpSeg": 2.4,
+        "tbtMs": 343,
+        "cls": 0.187,
+        "pesoMB": 9,
+        "requisicoes": 94,
+        "terceiros": 16,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          28,
+          33,
+          41
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:13:42.351Z"
+      }
+    },
+    "Matsuda": {
+      "celular": {
+        "desempenho": 38,
+        "acessibilidade": 86,
+        "boasPraticas": 58,
+        "seo": 82,
+        "lcpSeg": 16.2,
+        "fcpSeg": 3.4,
+        "tbtMs": 3088,
+        "cls": 0.001,
+        "pesoMB": 5.9,
+        "requisicoes": 64,
+        "terceiros": 18,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          34,
+          38,
+          38
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:14:57.477Z"
+      },
+      "computador": {
+        "desempenho": 70,
+        "acessibilidade": 84,
+        "boasPraticas": 58,
+        "seo": 82,
+        "lcpSeg": 2.8,
+        "fcpSeg": 1.2,
+        "tbtMs": 338,
+        "cls": 0.002,
+        "pesoMB": 5.9,
+        "requisicoes": 64,
+        "terceiros": 18,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          70,
+          62,
+          81
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:15:59.189Z"
+      }
+    },
+    "Guabi": {
+      "celular": {
+        "desempenho": 26,
+        "acessibilidade": 52,
+        "boasPraticas": 77,
+        "seo": 64,
+        "lcpSeg": 75.5,
+        "fcpSeg": 7.5,
+        "tbtMs": 3181,
+        "cls": 0.008,
+        "pesoMB": 65.4,
+        "requisicoes": 289,
+        "terceiros": 23,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          25,
+          26,
+          26
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:21:51.098Z"
+      },
+      "computador": {
+        "desempenho": 66,
+        "acessibilidade": 52,
+        "boasPraticas": 77,
+        "seo": 64,
+        "lcpSeg": 3.4,
+        "fcpSeg": 1.5,
+        "tbtMs": 158,
+        "cls": 0.001,
+        "pesoMB": 68.3,
+        "requisicoes": 293,
+        "terceiros": 23,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          76,
+          66,
+          48
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-14T16:23:50.301Z"
+      }
+    }
+  }
+}

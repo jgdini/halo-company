@@ -1,0 +1,131 @@
+{
+  "coletadoEm": "2026-10-14T16:19:30.155Z",
+  "itens": [
+    {
+      "papel": "empresa",
+      "nome": "Premix",
+      "url": "https://premix.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://premix.com.br/",
+        "respostaHtmlSeg": 2.8,
+        "htmlKB": 191,
+        "titulo": "Home - Premix",
+        "descricao": null,
+        "h1": [],
+        "gerador": "WordPress 7.1.3",
+        "viewport": true,
+        "dadosEstruturados": [
+          "WebPage",
+          "ReadAction",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite",
+          "SearchAction",
+          "EntryPoint",
+          "PropertyValueSpecification",
+          "Organization"
+        ],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": true,
+        "robotsTxt": true,
+        "elementor": 1335,
+        "jquery": true,
+        "whatsapp": true,
+        "formulario": true
+      },
+      "celular": null,
+      "computador": null
+    },
+    {
+      "papel": "concorrente",
+      "nome": "Tortuga",
+      "url": "https://www.dsm-firmenich.com/tortuga/pt_BR/home.html",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://www.dsm-firmenich.com/tortuga/pt_BR/home.html",
+        "respostaHtmlSeg": 0.8,
+        "htmlKB": 113,
+        "titulo": "TORTUGA®. Soluções completas para nutrição animal.",
+        "descricao": "Uma linha de soluções completas para nutrição animal de bovinos, equídeos, caprinos e ovinos. Acesse o site e conheça nossos suplementos.",
+        "h1": [
+          "Uma linha completa de suplementos para nutrição animal."
+        ],
+        "gerador": null,
+        "viewport": true,
+        "dadosEstruturados": [],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": true,
+        "robotsTxt": true,
+        "elementor": 0,
+        "jquery": true,
+        "whatsapp": true,
+        "formulario": false
+      },
+      "celular": null
+    },
+    {
+      "papel": "concorrente",
+      "nome": "Matsuda",
+      "url": "https://www.matsuda.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://www.matsuda.com.br/",
+        "respostaHtmlSeg": 0.1,
+        "htmlKB": 27,
+        "titulo": "Grupo Matsuda",
+        "descricao": "H&#xE1; 75 anos no mercado brasileiro tem como foco principal o agroneg&#xF3;cio, que envolve a produ&#xE7;&#xE3;o e a comercializa&#xE7;&#xE3;o de sementes para pastagens, suplementos minerais, equipamentos e implementos agr&#xED;colas, inoculantes para silagem, sa&#xFA;de animal, pet com linhas de alimentos para c&#xE3;es e gatos e incorporadora, com os empreendimentos portinari 1 e 2, recanto das araras e jardim imperial.",
+        "h1": [],
+        "gerador": null,
+        "viewport": true,
+        "dadosEstruturados": [],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": false,
+        "robotsTxt": false,
+        "elementor": 0,
+        "jquery": true,
+        "whatsapp": false,
+        "formulario": true
+      },
+      "celular": null
+    },
+    {
+      "papel": "concorrente",
+      "nome": "Guabi",
+      "url": "https://guabibovinos.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://guabibovinos.com.br/",
+        "respostaHtmlSeg": 0.7,
+        "htmlKB": 1126,
+        "titulo": "Guabi Bovinos",
+        "descricao": "",
+        "h1": [
+          "Download do Folder",
+          "Download do Folder",
+          "Download do Folder"
+        ],
+        "gerador": null,
+        "viewport": true,
+        "dadosEstruturados": [],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": false,
+        "robotsTxt": false,
+        "elementor": 0,
+        "jquery": false,
+        "whatsapp": false,
+        "formulario": true
+      },
+      "celular": null
+    }
+  ]
+}

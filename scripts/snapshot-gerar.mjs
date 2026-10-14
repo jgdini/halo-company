@@ -14,6 +14,8 @@ const coleta = await ler('coleta.json'), an = await ler('analise.json');
 // As notas vêm de lighthouse.json quando o PageSpeed on-line está sem cota.
 try { const lh = await ler('lighthouse.json'); for (const i of coleta.itens) { const m = lh.itens[i.nome]; if (m) { i.celular = i.celular ?? m.celular; i.computador = i.computador ?? m.computador; } } } catch {}
 let ex = null; try { ex = await ler('extras.json'); } catch {}
+// mercado.json (snapshot-mercado.mjs): buscas do setor por intenção, marcas citadas e textos publicados pela empresa.
+let merc = null; try { merc = await ler('mercado.json'); } catch {}
 
 const empresa = coleta.itens.find((i) => i.papel === 'empresa');
 if (empresa.sinais.falhou) { console.error('A leitura do site da empresa falhou. Rode a coleta de novo antes de gerar.'); process.exit(1); }
@@ -108,6 +110,47 @@ const destaca = (s) => { let t = esc(s); for (const m of marcasConhecidas) t = t
 const buscas = (ex?.buscas || []).filter((b) => !an.buscasMostrar || an.buscasMostrar.includes(b.termo));
 
 const temIg = todos.some((i) => ig[i.nome]?.seguidores);
+
+/* ---------- Mercado: o que se pesquisa x o que o site publica ---------- */
+// Barras a partir de uma lista qualquer: [rótulo, valor, destaque].
+function barrasLista(titulo, nota, linhas, formato = (v) => n(v)) {
+  const max = Math.max(...linhas.map((l) => l[1] ?? 0), 1) * 1.1;
+  return `<div class="chart">
+      <div class="chart__head"><div class="chart__title">${titulo}</div><div class="legend"><span>${nota}</span></div></div>
+      ${linhas.map(([r, v, foco]) => `<div class="cmp-row${foco ? ' foco' : ''}"><div class="cmp-label">${esc(r)}</div><div class="bars"><div class="bar ${foco ? 'new' : 'old'}"><div class="bar__track"><span class="bar__fill" style="width:${Math.max(1.5, (v / max) * 100).toFixed(1)}%"></span></div><span class="bar__val">${formato(v)}</span></div></div></div>`).join('')}
+    </div>`;
+}
+function secaoMercado() {
+  const am = an.mercado || {}, c = merc.contagem;
+  const marcas = Object.entries(merc.porMarca).filter(([, v]) => v > 0).sort((a, b) => b[1] - a[1]).map(([m, v]) => [m, v, m === empresa.nome]);
+  const anos = {}; for (const t of merc.conteudo.textos) { const a = t.data.slice(0, 4); if (!am.filtroLink || t.link.includes(am.filtroLink)) anos[a] = (anos[a] || 0) + 1; }
+  const ultAno = quando.getFullYear(), serie = Array.from({ length: am.anos || 6 }, (_, k) => String(ultAno - (am.anos || 6) + 1 + k)).map((a) => [a, am.textosPorAno?.[a] ?? anos[a] ?? 0, a === String(ultAno)]);
+  const perguntas = am.perguntasMostrar || merc.buscas.filter((b) => b.grupos.includes('pergunta')).slice(0, 12).map((b) => b.termo);
+  return `
+  <section>
+    <h2>${num()} · O que o mercado pesquisa e o site não responde</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi__label">Buscas do setor mapeadas</div><div class="kpi__flow"><span class="kpi__new">${n(merc.total)}</span></div><div class="kpi__note">Sugestões reais do Google</div></div>
+      <div class="kpi"><div class="kpi__label">São perguntas</div><div class="kpi__flow"><span class="kpi__new">${n(c.pergunta)}</span></div><div class="kpi__note">“qual”, “como”, “quanto”…</div></div>
+      <div class="kpi"><div class="kpi__label">Querem comprar</div><div class="kpi__flow"><span class="kpi__new">${n(c.compra)}</span></div><div class="kpi__note">Preço, saco, onde comprar</div></div>
+      <div class="kpi"><div class="kpi__label">Ligadas à época do ano</div><div class="kpi__flow"><span class="kpi__new">${n(c.epoca)}</span></div><div class="kpi__note">Seca, águas, transição</div></div>
+    </div>
+    <div class="dupla" style="margin-top:12px">
+      ${barrasLista('Marcas que aparecem nas buscas', 'Buscas que citam a marca', marcas)}
+      ${barrasLista('Textos publicados por ano', am.notaAnos || 'Blog da empresa', serie)}
+    </div>
+    ${am.temas ? `<h3 class="sub-titulo">Temas que o comprador pesquisa</h3>
+    <div class="table-wrap"><table class="cmp temas">
+      <thead><tr><th>Tema</th><th>Busca real</th><th>${esc(am.colunaTemas || "Textos sobre o tema")}</th></tr></thead>
+      <tbody>
+        ${am.temas.map(([t, b, q, u]) => `<tr><td>${t}</td><td>“${esc(b)}”</td><td>${q ? `<span class="m m--ok">✓</span> ${q}${u ? ` <small>(último: ${u})</small>` : ''}` : '<span class="m m--nao">✕</span> nenhum'}</td></tr>`).join('')}
+      </tbody>
+    </table></div>` : ''}
+    <h3 class="sub-titulo">Perguntas que o pecuarista digita</h3>
+    <div class="chips">${perguntas.map((p) => `<span>${esc(p)}</span>`).join('')}</div>
+    ${leitura(an.leituras?.mercado)}
+  </section>`;
+}
 const mesAno = (iso) => { const d = new Date(iso + 'T12:00:00'); return `${String(d.getMonth() + 1).padStart(2, '0')}/${d.getFullYear()}`; };
 
 const html = `<!DOCTYPE html>
@@ -173,6 +216,8 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
 .busca div{ display:flex; flex-wrap:wrap; gap:5px; }
 .busca span{ font-size:12px; padding:4px 9px; border-radius:999px; background:var(--paper-2); color:var(--steel); }
 .busca mark{ background:none; color:var(--bad); font-weight:700; } .busca mark.nossa{ color:var(--ok); }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; } .chips span{ font-size:12.5px; padding:6px 11px; border-radius:999px; background:var(--white); border:1px solid var(--line); color:var(--steel); }
+table.cmp.temas td{ width:auto; font-weight:400; text-align:left; } table.cmp.temas td:first-child{ font-weight:700; } table.cmp.temas td:nth-child(2){ color:var(--steel); } table.cmp.temas small{ color:var(--steel-light); } table.cmp.temas .m{ width:20px; height:20px; font-size:11px; margin-right:4px; }
 .opps{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 .opp{ background:var(--white); border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:3px; padding:18px; display:flex; flex-direction:column; gap:8px; }
 .opp__n{ font-size:30px; font-weight:800; font-stretch:110%; color:var(--gold); line-height:1; }
@@ -186,6 +231,7 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
 .metodo ul{ padding-left:18px; margin:10px 0 0; } .metodo li{ margin-bottom:5px; }
 .cta{ background:var(--ink); color:var(--paper); border-radius:4px; padding:26px 28px; }
 .cta h3{ margin:0 0 8px; font-size:22px; font-stretch:108%; }
+.cta .contatos{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; } .cta .contatos a{ color:inherit; text-decoration:none; border:1px solid rgba(245,239,230,.35); border-radius:999px; padding:9px 16px; font-size:14px; white-space:nowrap; } .cta .contatos b{ margin-right:8px; }
 .cta p{ margin:0; font-size:14.5px; line-height:1.6; opacity:.85; max-width:60ch; }
 :root[data-theme="dark"] .cta{ background:#1E050B; color:#F5EFE6; }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cta{ background:#1E050B; color:#F5EFE6; } }
@@ -225,6 +271,7 @@ ${an.pdf === false ? '' : `    <a class="pdf-link no-print" href="snapshot.pdf">
       ${an.achados.map((a) => `<div class="achado"><b>${a[0]}</b><span>${a[1]}</span></div>`).join('\n      ')}
     </div>
   </section>
+${merc ? secaoMercado() : ''}
 
   <section>
     <h2>${num()} · Velocidade</h2>
@@ -262,7 +309,7 @@ ${an.pdf === false ? '' : `    <a class="pdf-link no-print" href="snapshot.pdf">
     </table></div>
     ${leitura(an.leituras?.sinais)}
   </section>
-${buscas.length ? `
+${!merc && buscas.length ? `
   <section>
     <h2>${num()} · O que o mercado pesquisa</h2>
     <div class="buscas">
@@ -314,7 +361,7 @@ ${modelo && an.modelo ? `
   </section>
 
   <section>
-    <div class="cta"><h3>${an.proximo.titulo}</h3><p>${an.proximo.texto}</p></div>
+    <div class="cta"><h3>${an.proximo.titulo}</h3><p>${an.proximo.texto}</p>${an.proximo.contatos ? `<div class="contatos">${an.proximo.contatos.map(([nome, tel]) => `<a href="https://wa.me/55${tel.replace(/\D/g, '')}"><b>${esc(nome)}</b>${esc(tel)}</a>`).join('')}</div>` : ''}</div>
   </section>
 
   <section>

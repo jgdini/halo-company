@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Intelligence Snapshot · Premix · Halo Company</title>
+<meta name="description" content="Leitura da presença digital pública da Premix, com comparação entre concorrentes e três oportunidades.">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#3A0D18">
+<link rel="stylesheet" href="../estilo.css">
+<style>
+section{ margin-bottom:60px; }
+.sub{ margin-bottom:16px; }
+.leitura{ margin:14px 0 0; padding:14px 18px; border-left:4px solid var(--gold); background:var(--white); border-radius:3px; font-size:15px; line-height:1.55; color:var(--steel); }
+.leitura b{ color:var(--ink); }
+.cmp-row.foco .cmp-label{ color:var(--gold); }
+.chart .legend span:only-child{ text-transform:none; letter-spacing:0; font-size:11.5px; }
+.linha-negocio{ display:flex; flex-wrap:wrap; gap:10px; margin:-18px 0 44px; }
+.linha-negocio span{ background:var(--white); border:1px solid var(--line); border-radius:999px; padding:7px 14px; font-size:13px; color:var(--steel); }
+.linha-negocio b{ color:var(--ink); margin-right:6px; }
+.placar{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.pilar{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:18px; text-align:center; }
+.pilar h3{ margin:0 0 6px; font-size:15px; }
+.rosca{ width:118px; height:118px; display:block; margin:0 auto 10px; }
+.rosca__fundo{ fill:none; stroke:var(--track); stroke-width:11; }
+.rosca__ok{ fill:none; stroke:var(--gold); stroke-width:11; stroke-linecap:round; }
+.rosca__n{ font-size:30px; font-weight:800; text-anchor:middle; fill:var(--ink); font-family:var(--font-display); }
+.rosca__de{ font-size:11px; font-weight:600; text-anchor:middle; fill:var(--steel); font-family:var(--font-display); }
+.itens{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:5px; }
+.itens li{ font-size:11.5px; line-height:1.2; padding:5px 9px; border-radius:999px; }
+.itens li.ok{ background:var(--ok-bg); color:var(--ok); font-weight:600; }
+.itens li.falta{ background:var(--paper-2); color:var(--steel); }
+.itens li::before{ font-weight:800; margin-right:5px; }
+.itens li.ok::before{ content:"✓"; }
+.itens li.falta::before{ content:"✕"; color:var(--bad); }
+.itens li.depois{ border:1px dashed var(--steel-light); color:var(--steel); }
+.itens li.depois::before{ content:"→"; color:var(--steel); }
+.legenda-placar{ display:flex; flex-wrap:wrap; gap:6px 16px; margin:10px 0 0; font-size:12px; color:var(--steel); }
+.legenda-placar b{ font-weight:800; margin-right:4px; }
+h3.sub-titulo{ font-size:15px; margin:22px 0 10px; }
+.kpis{ margin-top:12px; }
+.telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
+.telas figure{ margin:0; }
+.telas img{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
+.telas .cel img{ width:168px; }
+.telas figcaption{ font-size:11px; color:var(--steel-light); margin-top:6px; font-stretch:84%; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
+.achados{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.achado{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px 14px 44px; position:relative; }
+.achado::before{ content:"✕"; position:absolute; left:16px; top:13px; font-weight:800; color:var(--bad); }
+.achado b{ display:block; font-size:14.5px; margin-bottom:2px; }
+.achado span{ font-size:13px; line-height:1.45; color:var(--steel); }
+table.cmp.troca td{ width:auto; font-weight:400; } table.cmp.troca td:first-child{ width:18%; font-weight:700; } table.cmp.troca td:nth-child(2){ color:var(--steel); } table.cmp.troca td:last-child{ font-weight:600; }
+.dupla{ display:grid; grid-template-columns:1fr 1fr; gap:12px; } .dupla .chart{ margin-bottom:0; }
+table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-align:center; padding:9px 10px; } table.cmp.matriz td:first-child, table.cmp.matriz th:first-child{ text-align:left; width:46%; font-weight:600; }
+.m{ display:inline-grid; place-items:center; width:24px; height:24px; border-radius:50%; font-size:13px; font-weight:800; }
+.m--ok{ background:var(--ok-bg); color:var(--ok); } .m--nao{ background:var(--paper-2); color:var(--bad); } .m--sd{ color:var(--steel-light); }
+.buscas{ display:grid; gap:10px; }
+.busca{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:12px 16px; display:grid; grid-template-columns:200px 1fr; gap:14px; align-items:baseline; }
+.busca b{ font-size:14px; }
+.busca div{ display:flex; flex-wrap:wrap; gap:5px; }
+.busca span{ font-size:12px; padding:4px 9px; border-radius:999px; background:var(--paper-2); color:var(--steel); }
+.busca mark{ background:none; color:var(--bad); font-weight:700; } .busca mark.nossa{ color:var(--ok); }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; } .chips span{ font-size:12.5px; padding:6px 11px; border-radius:999px; background:var(--white); border:1px solid var(--line); color:var(--steel); }
+table.cmp.temas td{ width:auto; font-weight:400; text-align:left; } table.cmp.temas td:first-child{ font-weight:700; } table.cmp.temas td:nth-child(2){ color:var(--steel); } table.cmp.temas small{ color:var(--steel-light); } table.cmp.temas .m{ width:20px; height:20px; font-size:11px; margin-right:4px; }
+.opps{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+.opp{ background:var(--white); border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:3px; padding:18px; display:flex; flex-direction:column; gap:8px; }
+.opp__n{ font-size:30px; font-weight:800; font-stretch:110%; color:var(--gold); line-height:1; }
+.opp h3{ margin:0; font-size:16.5px; line-height:1.25; }
+.opp p{ margin:0; font-size:13.5px; line-height:1.5; color:var(--steel); flex:1; }
+.opp__meta{ display:flex; flex-wrap:wrap; gap:6px; }
+.perguntas{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.perguntas li{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px; font-size:14.5px; font-weight:600; }
+.metodo{ font-size:12.5px; line-height:1.6; color:var(--steel); }
+.metodo summary{ cursor:pointer; font-weight:700; color:var(--ink); font-size:13px; }
+.metodo ul{ padding-left:18px; margin:10px 0 0; } .metodo li{ margin-bottom:5px; }
+.cta{ background:var(--ink); color:var(--paper); border-radius:4px; padding:26px 28px; }
+.cta h3{ margin:0 0 8px; font-size:22px; font-stretch:108%; }
+.cta .contatos{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; } .cta .contatos a{ color:inherit; text-decoration:none; border:1px solid rgba(245,239,230,.35); border-radius:999px; padding:9px 16px; font-size:14px; white-space:nowrap; } .cta .contatos b{ margin-right:8px; }
+.cta p{ margin:0; font-size:14.5px; line-height:1.6; opacity:.85; max-width:60ch; }
+:root[data-theme="dark"] .cta{ background:#1E050B; color:#F5EFE6; }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cta{ background:#1E050B; color:#F5EFE6; } }
+@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
+@media print{ section{ margin-bottom:34px; } .opp, .cta, .pilar, .achado, .telas figure, .chart, .busca, .perguntas li{ break-inside:avoid; } .placar, .opps{ grid-template-columns:repeat(3,1fr); } .achados, .dupla, .perguntas{ grid-template-columns:1fr 1fr; } h2{ break-after:avoid; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <a class="halo" href="../../"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--aclaris)" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--gold)" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span>halo <small>company</small></span></a>
+    <span class="date-tag">INTELLIGENCE SNAPSHOT · OUTUBRO 2026</span>
+  </div>
+
+  <div class="brands"><span>Para</span><b>PREMIX</b></div>
+  <h1>O que o pecuarista pesquisa, e onde a <em>Premix</em> aparece.</h1>
+  <p class="lede">Uma leitura feita só com informação pública: o site, o blog, o Google e três marcas do setor.</p>
+  <div class="linha-negocio"><span><b>Vende</b>minerais, proteinados, rações e aditivos, além de sementes</span><span><b>Para</b>pecuária de corte e de leite, cavalos, ovinos e caprinos</span><span><b>Posição</b>“alta performance”, com a tecnologia Fator P</span></div>
+
+  <section>
+    <h2>O placar</h2>
+    <div class="placar">
+      <div class="pilar"><h3>Base técnica</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="3 de 7"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="118.5 158.0" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">3</text><text x="55" y="72" class="rosca__de">de 7</text></svg><ul class="itens"><li class="falta">Velocidade no celular ≥ 50</li><li class="falta">Conteúdo em até 2,5 s</li><li class="ok">Endereço sem “www” abre</li><li class="ok">http leva para https</li><li class="ok">Sistema atualizado</li><li class="falta">Servidor com suporte</li><li class="falta">Imagens leves</li></ul></div>
+      <div class="pilar"><h3>Ser encontrado</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="3 de 7"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="118.5 158.0" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">3</text><text x="55" y="72" class="rosca__de">de 7</text></svg><ul class="itens"><li class="falta">Título diz o que faz</li><li class="falta">Descrição no Google</li><li class="ok">Dados da empresa</li><li class="falta">Perguntas e respostas</li><li class="falta">Arquivo para IAs</li><li class="ok">Mapa do site em dia</li><li class="ok">Blog em dia</li></ul></div>
+      <div class="pilar"><h3>Converter</h3><svg class="rosca" viewBox="0 0 110 110" role="img" aria-label="4 de 5"><circle cx="55" cy="55" r="44" class="rosca__fundo"/><circle cx="55" cy="55" r="44" class="rosca__ok" stroke-dasharray="221.2 55.3" transform="rotate(-90 55 55)"/><text x="55" y="53" class="rosca__n">4</text><text x="55" y="72" class="rosca__de">de 5</text></svg><ul class="itens"><li class="ok">WhatsApp na página inicial</li><li class="ok">Formulário de contato</li><li class="ok">Contato em cada produto</li><li class="ok">Onde comprar</li><li class="falta">Formulário que qualifica</li></ul></div>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi__label">Velocidade no celular</div><div class="kpi__flow"><span class="kpi__new">10<small style="font-size:.5em">/100</small></span></div><div class="kpi__note">Abaixo de 50 é ruim.</div></div>
+      <div class="kpi"><div class="kpi__label">Até o conteúdo aparecer</div><div class="kpi__flow"><span class="kpi__new">15,6 s</span></div><div class="kpi__note">O Google considera bom até 2,5 s.</div></div>
+      <div class="kpi"><div class="kpi__label">Buscas do setor com o nome Premix</div><div class="kpi__flow"><span class="kpi__new">2</span></div><div class="kpi__note">Tortuga aparece em 31, Matsuda em 30.</div></div>
+      <div class="kpi"><div class="kpi__label">Textos técnicos no blog em 2026</div><div class="kpi__flow"><span class="kpi__new">2 <small style="font-size:.5em">de 25</small></span></div><div class="kpi__note">Os outros 23 são notícias da empresa.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>1 · Como a Premix aparece hoje</h2>
+    <div class="telas">
+      <figure><img src="img/atual-computador.webp" alt="Página inicial atual da Premix no computador" loading="lazy"><figcaption>Site atual · computador</figcaption></figure>
+      <figure class="cel"><img src="img/atual-celular.webp" alt="Página inicial atual da Premix no celular" loading="lazy"><figcaption>Celular</figcaption></figure>
+    </div>
+    <div class="achados">
+      <div class="achado"><b>O Google não sabe o que a empresa faz</b><span>A página inicial se chama “Home - Premix”, não tem descrição nem título principal.</span></div>
+      <div class="achado"><b>Página inicial pesada</b><span>11,2 MB e 226 arquivos. São 22 imagens PNG e 4 JPG, nenhuma em formato leve.</span></div>
+      <div class="achado"><b>Cada produto em dois endereços</b><span>53 dos 56 produtos têm duas páginas iguais. O Google precisa escolher qual mostrar.</span></div>
+      <div class="achado"><b>O blog virou mural de notícias</b><span>Dos 25 textos de 2026, 23 falam de eventos, aniversário e equipe.</span></div>
+      <div class="achado"><b>“Quero comprar” não qualifica</b><span>O formulário pede nome, e-mail e celular. Não pergunta rebanho, região nem produto.</span></div>
+      <div class="achado"><b>Servidor sem suporte de segurança</b><span>PHP 8.1, cujas correções de segurança terminaram em dezembro de 2025.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>2 · O que o mercado pesquisa e o site não responde</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="kpi__label">Buscas do setor mapeadas</div><div class="kpi__flow"><span class="kpi__new">1.944</span></div><div class="kpi__note">Sugestões reais do Google</div></div>
+      <div class="kpi"><div class="kpi__label">São perguntas</div><div class="kpi__flow"><span class="kpi__new">272</span></div><div class="kpi__note">“qual”, “como”, “quanto”…</div></div>
+      <div class="kpi"><div class="kpi__label">Querem comprar</div><div class="kpi__flow"><span class="kpi__new">120</span></div><div class="kpi__note">Preço, saco, onde comprar</div></div>
+      <div class="kpi"><div class="kpi__label">Ligadas à época do ano</div><div class="kpi__flow"><span class="kpi__new">33</span></div><div class="kpi__note">Seca, águas, transição</div></div>
+    </div>
+    <div class="dupla" style="margin-top:12px">
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Marcas que aparecem nas buscas</div><div class="legend"><span>Buscas que citam a marca</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">31</span></div></div></div><div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:88.0%"></span></div><span class="bar__val">30</span></div></div></div><div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:52.8%"></span></div><span class="bar__val">18</span></div></div></div><div class="cmp-row"><div class="cmp-label">Nutron</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:14.7%"></span></div><span class="bar__val">5</span></div></div></div><div class="cmp-row"><div class="cmp-label">Vaccinar</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:8.8%"></span></div><span class="bar__val">3</span></div></div></div><div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Agroceres</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Bellman</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Purina</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:2.9%"></span></div><span class="bar__val">1</span></div></div></div>
+    </div>
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Textos publicados por ano</div><div class="legend"><span>Textos técnicos no blog, sem notícias</span></div></div>
+      <div class="cmp-row"><div class="cmp-label">2021</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:53.7%"></span></div><span class="bar__val">49</span></div></div></div><div class="cmp-row"><div class="cmp-label">2022</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">83</span></div></div></div><div class="cmp-row"><div class="cmp-label">2023</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:71.2%"></span></div><span class="bar__val">65</span></div></div></div><div class="cmp-row"><div class="cmp-label">2024</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:35.0%"></span></div><span class="bar__val">32</span></div></div></div><div class="cmp-row"><div class="cmp-label">2025</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:28.5%"></span></div><span class="bar__val">26</span></div></div></div><div class="cmp-row foco"><div class="cmp-label">2026</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:2.2%"></span></div><span class="bar__val">2</span></div></div></div>
+    </div>
+    </div>
+    <h3 class="sub-titulo">Temas que o comprador pesquisa</h3>
+    <div class="table-wrap"><table class="cmp temas">
+      <thead><tr><th>Tema</th><th>Busca real</th><th>Textos da Premix sobre o tema</th></tr></thead>
+      <tbody>
+        <tr><td>Proteinado na seca</td><td>“qual proteinado usar na seca”</td><td><span class="m m--nao">✕</span> nenhum</td></tr><tr><td>Sal mineral ou proteinado</td><td>“sal mineral ou proteinado”</td><td><span class="m m--nao">✕</span> nenhum</td></tr><tr><td>Semiconfinamento</td><td>“semiconfinamento como funciona”</td><td><span class="m m--nao">✕</span> nenhum</td></tr><tr><td>Ração para ovelha</td><td>“qual a melhor ração para ovelha dar leite”</td><td><span class="m m--nao">✕</span> nenhum</td></tr><tr><td>Consumo por cabeça</td><td>“quanto de proteinado uma vaca come por dia”</td><td><span class="m m--ok">✓</span> 1 <small>(último: 03/2019)</small></td></tr><tr><td>Custo do confinamento</td><td>“quanto custa um confinamento de gado”</td><td><span class="m m--ok">✓</span> 2 <small>(último: 07/2020)</small></td></tr><tr><td>Nutrição da vaca leiteira</td><td>“qual a melhor ração para vaca leiteira de alta produção”</td><td><span class="m m--ok">✓</span> 3 <small>(último: 10/2023)</small></td></tr><tr><td>Suplemento para cavalo</td><td>“qual suplemento para cavalo”</td><td><span class="m m--ok">✓</span> 6 <small>(último: 08/2024)</small></td></tr><tr><td>Creep feeding</td><td>“creep feeding e creep grazing diferença”</td><td><span class="m m--ok">✓</span> 11 <small>(último: 10/2023)</small></td></tr>
+      </tbody>
+    </table></div>
+    <h3 class="sub-titulo">Perguntas que o pecuarista digita</h3>
+    <div class="chips"><span>qual proteinado usar na seca</span><span>quanto de proteinado uma vaca come por dia</span><span>quando usar proteinado ou proteico energetico</span><span>qual a melhor ração para gado na seca</span><span>qual o melhor suplemento mineral para gado de corte</span><span>semiconfinamento como funciona</span><span>quanto custa um confinamento de gado</span><span>qual a melhor ração para vaca leiteira de alta produção</span><span>creep feeding e creep grazing diferença</span><span>qual suplemento para cavalo</span><span>qual a melhor ração para ovelha dar leite</span><span>como fazer ração para gado na seca</span></div>
+    <p class="leitura"><b>A Premix tem 638 textos no blog, mas os temas que o pecuarista mais pesquisa ficaram de fora.</b> Proteinado na seca, sal mineral ou proteinado e semiconfinamento não têm nenhum texto. A produção técnica caiu de 83 textos em 2022 para 2 em 2026.</p>
+  </section>
+
+  <section>
+    <h2>3 · Velocidade</h2>
+    <div class="dupla">
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Nota do Google, de 0 a 100</div><div class="legend"><span class="l-old"><i></i>Celular</span><span class="l-new"><i></i>Computador</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:10%"></span></div><span class="bar__val">10</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:59%"></span></div><span class="bar__val">59</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5%"></span></div><span class="bar__val">5</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:33%"></span></div><span class="bar__val">33</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:38%"></span></div><span class="bar__val">38</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:70%"></span></div><span class="bar__val">70</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars">
+        <div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:26%"></span></div><span class="bar__val">26</span></div>
+        <div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:66%"></span></div><span class="bar__val">66</span></div></div></div>
+    </div>
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Até o conteúdo aparecer</div><div class="legend"><span>No celular. Bom: até 2,5 s</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:18.8%"></span></div><span class="bar__val">15,6 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:59.8%"></span></div><span class="bar__val">49,7 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:19.5%"></span></div><span class="bar__val">16,2 s</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">75,5 s</span></div></div></div>
+    </div>
+    </div>
+    <p class="leitura"><b>As quatro são lentas no celular, e a Premix fica com nota 10.</b> Só a Tortuga, que está dentro de um site global, tem nota menor.</p>
+  </section>
+
+  <section>
+    <h2>4 · Conteúdo e redes</h2>
+    <div class="dupla">
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Último texto publicado</div><div class="legend"><span>Meses sem publicar</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:10.9%"></span></div><span class="bar__val">09/2026</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">05/2026</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:71.4%"></span></div><span class="bar__val">06/2026</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:0%"></span></div><span class="bar__val">s/d</span></div></div></div>
+    </div>
+      <div class="chart">
+      <div class="chart__head"><div class="chart__title">Seguidores no Instagram</div><div class="legend"><span>Número público do perfil</span></div></div>
+      <div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:44.8%"></span></div><span class="bar__val">37 mil</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">75 mil</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:70.3%"></span></div><span class="bar__val">58 mil</span></div></div></div>
+      <div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:66.7%"></span></div><span class="bar__val">55 mil</span></div></div></div>
+    </div>
+    </div>
+    <p class="leitura"><b>A Premix publica com frequência, mas quase só notícia.</b> No Instagram tem 37 mil seguidores, menos que Tortuga, Matsuda e Guabi.</p>
+  </section>
+
+  <section>
+    <h2>5 · O que o Google e as IAs leem</h2>
+    <div class="table-wrap"><table class="cmp matriz">
+      <thead><tr><th></th><th>Premix</th><th>Tortuga</th><th>Matsuda</th><th>Guabi</th></tr></thead>
+      <tbody>
+        <tr><td>Título diz o que a empresa faz</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Descrição da página</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Dados estruturados da empresa</td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Perguntas e respostas marcadas</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Arquivo para assistentes de IA</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Endereço sem “www” abre</td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+        <tr><td>http leva para https</td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td></tr>
+        <tr><td>Imagens em formato leve</td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--nao" title="Não">✕</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+        <tr><td>Texto novo em 2026</td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--ok" title="Sim">✓</span></td><td><span class="m m--nao" title="Não">✕</span></td></tr>
+      </tbody>
+    </table></div>
+    <p class="leitura"><b>Nenhuma das quatro marca perguntas e respostas para o Google e as IAs.</b> A Premix já informa os dados da empresa; falta o resto.</p>
+  </section>
+
+  <section>
+    <h2>6 · O que modernizar</h2>
+    <div class="table-wrap"><table class="cmp troca">
+      <thead><tr><th></th><th>Hoje</th><th>Proposta</th></tr></thead>
+      <tbody>
+        <tr><td>Primeira tela</td><td>Banner dos 48 anos e três logotipos</td><td>Uma frase que diz o que a Premix faz e um caminho por tipo de rebanho</td></tr>
+        <tr><td>Imagens</td><td>22 PNG e 4 JPG, 11,2 MB no total</td><td>WebP, carregando só quando aparecem</td></tr>
+        <tr><td>Produtos</td><td>Cada produto em dois endereços</td><td>Um endereço por produto; o outro redireciona</td></tr>
+        <tr><td>Blog</td><td>Notícias e textos técnicos misturados</td><td>Notícias à parte; textos técnicos por tema, a partir das buscas</td></tr>
+        <tr><td>Compra</td><td>Formulário com nome, e-mail e celular</td><td>Formulário que pergunta rebanho, região e produto</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>7 · Três oportunidades</h2>
+    <div class="opps">
+      <div class="opp"><div class="opp__n">1</div><h3>Responder o que o pecuarista pesquisa</h3><p>Um calendário de textos a partir das buscas reais, começando por proteinado na seca antes de abril.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço contínuo</span></div></div>
+      <div class="opp"><div class="opp__n">2</div><h3>Arrumar a base do site</h3><p>Página inicial mais leve, um endereço por produto, título e descrição pensados para o Google.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço médio</span></div></div>
+      <div class="opp"><div class="opp__n">3</div><h3>Qualificar quem quer comprar</h3><p>Um “Quero comprar” que pergunta rebanho, região e produto, para o contato chegar pronto ao comercial.</p><div class="opp__meta"><span class="status next"><i></i>Impacto alto</span><span class="status done"><i></i>Esforço baixo</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>O que só os dados de vocês respondem</h2>
+    <ul class="perguntas">
+      <li>Quem chega ao site, e por qual busca?</li>
+      <li>Quantos pedidos o “Quero comprar” recebe por mês?</li>
+      <li>Quais textos do blog trazem visitas hoje?</li>
+      <li>Quanto tempo leva a primeira resposta?</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="cta"><h3>Próximo passo: uma conversa de 30 minutos.</h3><p>Mostramos o mapa completo de buscas do setor. Se fizer sentido, montamos um modelo da nova página inicial da Premix, com o catálogo real, para vocês verem a diferença antes de decidir.</p><div class="contatos"><a href="https://wa.me/5511989531711"><b>João Dini</b>(11) 98953-1711</a><a href="https://wa.me/5515996423577"><b>Amanda Takahashi</b>(15) 99642-3577</a></div></div>
+  </section>
+
+  <section>
+    <details class="metodo">
+      <summary>Como medimos e os limites desta análise</summary>
+      <ul>
+        <li>Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da Premix.</li>
+        <li>Notas: Lighthouse, ferramenta do Google, rodado em nosso computador em 14/10/2026, com 3 rodadas no celular e 3 no computador, e o valor do meio. O PageSpeed Insights on-line usa a mesma ferramenta e pode dar alguns pontos de diferença.</li>
+        <li>A comparação olha só a página inicial de cada empresa. A da Tortuga fica dentro do site global da dsm-firmenich, a da Matsuda é a página do grupo e a da Guabi é o site de bovinos (guabibovinos.com.br).</li>
+        <li>Concorrentes escolhidas por nós: as três marcas que mais aparecem nas buscas do setor. Se houver outras mais próximas, refazemos.</li>
+        <li>Buscas: 1.944 sugestões do Google ao digitar, no Brasil, a partir de 15 temas do setor. Mostram que a busca existe; não medimos quantas pessoas buscam nem a posição de cada site.</li>
+        <li>Blog: 638 textos lidos pelo próprio site. A separação entre texto técnico e notícia e a contagem por tema foram feitas por nós, pelos títulos.</li>
+        <li>Último texto publicado: a data mais recente encontrada no blog ou na área de notícias de cada site. Não encontramos área de textos no site da Guabi Bovinos.</li>
+        <li>Instagram: números públicos de cada perfil. Não analisamos as publicações.</li>
+      </ul>
+    </details>
+  </section>
+
+  <footer>
+    <p>Intelligence Snapshot preparado pela Halo Company para a Premix. Dados públicos coletados em 14/10/2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>

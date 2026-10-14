@@ -1,0 +1,34 @@
+{
+  "empresa": {
+    "nome": "Premix",
+    "url": "https://premix.com.br/"
+  },
+  "concorrentes": [
+    {
+      "nome": "Tortuga",
+      "url": "https://www.dsm-firmenich.com/tortuga/pt_BR/home.html"
+    },
+    {
+      "nome": "Matsuda",
+      "url": "https://www.matsuda.com.br/"
+    },
+    {
+      "nome": "Guabi",
+      "url": "https://guabibovinos.com.br/"
+    }
+  ],
+  "mercado": {
+    "sementes": ["sal mineral", "proteinado", "suplemento mineral", "suplemento para gado", "ração para gado", "confinamento de gado", "semiconfinamento", "creep feeding", "suplementação a pasto", "suplemento para gado de leite", "ração para vaca leiteira", "suplemento para cavalo", "ração para cavalo", "ração para ovelha", "aditivo para bovinos"],
+    "marcas": ["Connan", "Nutron", "Agroceres", "Bellman", "Vaccinar", "Purina", "Phibro", "Trouw", "Cargill", "DSM"]
+  },
+  "buscas": [
+    "sal mineral para",
+    "proteinado para",
+    "suplemento para gado",
+    "confinamento de gado",
+    "suplemento para gado de leite",
+    "suplemento para cavalo",
+    "creep feeding",
+    "ração para gado"
+  ]
+}
