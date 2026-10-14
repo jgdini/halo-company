@@ -1,8 +1,8 @@
 // Monta a página e o PDF de uma análise (Intelligence Snapshot), em formato de apresentação: pouco texto, muito gráfico.
 // Uso: node scripts/snapshot-gerar.mjs analise/minerthal
 // Lê: coleta.json e lighthouse.json (números medidos), extras.json (estrutura, Instagram, buscas) e analise.json (a leitura feita por gente).
-// Grava index.html e snapshot.pdf na mesma pasta. O estilo base fica em analise/estilo.css.
-import { readFile, writeFile } from 'node:fs/promises';
+// Grava index.html e snapshot.pdf na mesma pasta ("pdf": false em analise.json deixa a análise só on-line, sem PDF). O estilo base fica em analise/estilo.css.
+import { readFile, writeFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -198,8 +198,8 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
 
   <div class="top">
     <a class="halo" href="../../"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--aclaris)" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--gold)" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span>halo <small>company</small></span></a>
-    <a class="pdf-link no-print" href="snapshot.pdf">Baixar em PDF ↓</a>
-    <span class="date-tag">INTELLIGENCE SNAPSHOT · ${esc(an.mes)}</span>
+${an.pdf === false ? '' : `    <a class="pdf-link no-print" href="snapshot.pdf">Baixar em PDF ↓</a>
+`}    <span class="date-tag">INTELLIGENCE SNAPSHOT · ${esc(an.mes)}</span>
   </div>
 
   <div class="brands"><span>Para</span><b>${esc(empresa.nome.toUpperCase())}</b></div>
@@ -335,6 +335,8 @@ ${modelo && an.modelo ? `
 </html>
 `;
 await writeFile(`${pasta}/index.html`, html);
+
+if (an.pdf === false) { await rm(`${pasta}/snapshot.pdf`, { force: true }); console.log('gerado:', `${pasta}/index.html`, '(sem PDF) |', pilares.map((x) => `${x.nome} ${x.ok}/${x.itens.length}`).join(' · ')); process.exit(0); }
 
 const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
 const p = await b.newPage();
