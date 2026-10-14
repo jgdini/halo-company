@@ -1,0 +1,142 @@
+{
+  "mes": "MÊS ANO",
+  "pdf": false,
+  "titulo": "O que o [comprador] encontra quando procura a <em>[Empresa]</em>.",
+  "lede": "Uma leitura feita só com informação pública: o site, o Google e três empresas do setor.",
+  "negocio": [
+    [
+      "Vende",
+      "[o que vende]"
+    ],
+    [
+      "Para",
+      "[para quem]"
+    ],
+    [
+      "Posição",
+      "“[como se posiciona]”"
+    ]
+  ],
+  "flags": {
+    "tituloDizOQueFaz": false,
+    "botaoDeContatoNoProduto": false,
+    "ondeComprar": false,
+    "formularioQualifica": false
+  },
+  "resumo": [
+    {
+      "rotulo": "Velocidade no celular",
+      "valor": "[nota]<small style=\"font-size:.5em\">/100</small>",
+      "nota": "Abaixo de 50 é ruim."
+    },
+    {
+      "rotulo": "Até o conteúdo aparecer",
+      "valor": "[x,x] s",
+      "nota": "O Google considera bom até 2,5 s."
+    },
+    {
+      "rotulo": "[número forte 3]",
+      "valor": "[valor]",
+      "nota": "[uma frase]"
+    },
+    {
+      "rotulo": "[número forte 4]",
+      "valor": "[valor]",
+      "nota": "[uma frase]"
+    }
+  ],
+  "achados": [
+    [
+      "[Achado em poucas palavras]",
+      "[Uma frase com o fato medido.]"
+    ]
+  ],
+  "leituras": {
+    "velocidade": "<b>[Destaque.]</b> [Complemento.]",
+    "conteudo": "<b>[Destaque.]</b> [Complemento.]",
+    "sinais": "<b>[Destaque.]</b> [Complemento.]",
+    "buscas": "<b>[Destaque.]</b> [Complemento.]"
+  },
+  "sinaisManuais": [
+    [
+      "Título diz o que a empresa faz",
+      [
+        false,
+        false,
+        false,
+        false
+      ]
+    ]
+  ],
+  "outrasMarcas": [
+    "[marca que aparece nas buscas e não está na análise]"
+  ],
+  "buscasMostrar": [
+    "[4 termos de alvos.json]"
+  ],
+  "modernizar": [
+    [
+      "[Tema]",
+      "[Hoje]",
+      "[Proposta]"
+    ]
+  ],
+  "oportunidades": [
+    {
+      "titulo": "[Oportunidade]",
+      "fazer": "[O que fazer, numa frase.]",
+      "impacto": "alto",
+      "esforco": "médio"
+    }
+  ],
+  "modelo": {
+    "intro": "[Só se houver protótipo. Apague este bloco se não houver.]",
+    "resumo": [
+      {
+        "rotulo": "Conteúdo na tela",
+        "antes": "[x] s",
+        "depois": "[y] s",
+        "nota": "[frase]"
+      }
+    ],
+    "placar": [
+      {
+        "nome": "Base técnica",
+        "itens": [
+          [
+            "[item]",
+            true
+          ],
+          [
+            "[item]",
+            false
+          ],
+          [
+            "[item resolvido só na migração]",
+            "depois"
+          ]
+        ]
+      }
+    ],
+    "leitura": "<b>[Destaque.]</b> [Complemento.]"
+  },
+  "perguntas": [
+    "Quem chega ao site, e por qual busca?",
+    "Quantos contatos viram venda?",
+    "[pergunta do negócio]",
+    "Quanto tempo leva a primeira resposta?"
+  ],
+  "metodo": [
+    "Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da [Empresa].",
+    "Notas: Lighthouse, ferramenta do Google, rodado em nosso computador em [data], com 3 rodadas e o valor do meio. O PageSpeed Insights on-line usa a mesma ferramenta e pode dar alguns pontos de diferença.",
+    "A comparação olha só a página inicial de cada empresa.",
+    "Concorrentes escolhidas por [nós / a empresa]: [nomes]. Se houver outras mais próximas, refazemos.",
+    "Último texto publicado: a data mais recente encontrada no blog ou na área de notícias de cada site.",
+    "Instagram: números públicos de cada perfil. “s/d” quer dizer que o Instagram não mostrou o número. Não analisamos as publicações.",
+    "Buscas: o que o Google sugere ao digitar, no Brasil. Não medimos o volume de buscas nem a posição de cada site."
+  ],
+  "proximo": {
+    "titulo": "Próximo passo: uma conversa de 30 minutos.",
+    "texto": "Vocês nos contam o que querem vender mais e para quem. Decidimos juntos se faz sentido abrir os dados para um diagnóstico completo."
+  }
+}

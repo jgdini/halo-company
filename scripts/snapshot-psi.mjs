@@ -1,5 +1,5 @@
 // Lê as notas na página oficial do PageSpeed (pagespeed.web.dev) e grava em <pasta>/coleta.json.
-// Usado quando a API pública está sem cota. Uso: node scripts/snapshot-psi.mjs analise/minerthal [nome...]
+// Usado quando a API pública está sem cota. Uso: node scripts/snapshot-psi.mjs analise/<empresa> [nome...]
 import { readFile, writeFile } from 'node:fs/promises';
 import puppeteer from 'puppeteer-core';
 

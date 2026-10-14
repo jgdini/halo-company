@@ -1,5 +1,5 @@
 // Mede cada site com o Lighthouse local (3 rodadas, mediana) e grava <pasta>/lighthouse.json.
-// Plano B para quando o PageSpeed online está sem cota. Uso: node scripts/snapshot-lighthouse.mjs analise/minerthal
+// Plano B para quando o PageSpeed online está sem cota. Uso: node scripts/snapshot-lighthouse.mjs analise/<empresa>
 import { readFile, writeFile } from 'node:fs/promises';
 import { execFile } from 'node:child_process';
 import { tmpdir } from 'node:os';
@@ -34,7 +34,7 @@ async function medir(url, desktop) {
     cls: m('cls', 3), pesoMB: m('pesoMB', 1), requisicoes: m('requisicoes'), terceiros: m('terceiros'), rodadas: r.length, desempenhoRodadas: r.map((x) => x.desempenho), fonte: 'lighthouse local', medidoEm: new Date().toISOString() };
 }
 
-// Com nomes depois da pasta, mede só esses e mantém o resto do arquivo. Ex.: node scripts/snapshot-lighthouse.mjs analise/minerthal "Modelo Halo"
+// Com nomes depois da pasta, mede só esses e mantém o resto do arquivo. Ex.: node scripts/snapshot-lighthouse.mjs analise/<empresa> "Modelo Halo"
 const so = process.argv.slice(3);
 let out = { medidoEm: new Date().toISOString(), itens: {} };
 if (so.length) { try { out = JSON.parse(await readFile(`${pasta}/lighthouse.json`, 'utf8')); } catch {} }

@@ -1,5 +1,5 @@
 // Monta a página e o PDF de uma análise (Intelligence Snapshot), em formato de apresentação: pouco texto, muito gráfico.
-// Uso: node scripts/snapshot-gerar.mjs analise/minerthal
+// Uso: node scripts/snapshot-gerar.mjs analise/<empresa>
 // Lê: coleta.json e lighthouse.json (números medidos), extras.json (estrutura, Instagram, buscas) e analise.json (a leitura feita por gente).
 // Grava index.html e snapshot.pdf na mesma pasta ("pdf": false em analise.json deixa a análise só on-line, sem PDF). O estilo base fica em analise/estilo.css.
 import { readFile, writeFile, rm } from 'node:fs/promises';

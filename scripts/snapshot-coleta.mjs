@@ -1,5 +1,5 @@
 // Coleta os dados públicos de um Snapshot: PageSpeed (API do Google) e sinais da página inicial.
-// Uso: node scripts/snapshot-coleta.mjs analise/minerthal
+// Uso: node scripts/snapshot-coleta.mjs analise/<empresa>
 // Lê <pasta>/alvos.json ({ "empresa": {nome,url}, "concorrentes": [{nome,url}], "modelo": {nome,url} })
 // e grava <pasta>/coleta.json. Nada aqui é interpretação: só o que qualquer pessoa consegue medir.
 import { readFile, writeFile } from 'node:fs/promises';

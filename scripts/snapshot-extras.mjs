@@ -1,5 +1,5 @@
 // Coleta complementar de uma análise: estrutura do site, Instagram público, o que as pessoas buscam e capturas de tela.
-// Uso: node scripts/snapshot-extras.mjs analise/minerthal
+// Uso: node scripts/snapshot-extras.mjs analise/<empresa>
 // Lê <pasta>/alvos.json (com "buscas": termos de partida do segmento) e grava <pasta>/extras.json e <pasta>/img/*.webp.
 // Tudo aqui é público e sem login. Do Instagram só sai o que o perfil mostra a qualquer visitante.
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
