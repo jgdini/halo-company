@@ -139,13 +139,22 @@ function secaoMercado() {
       ${barrasLista('Marcas que aparecem nas buscas', 'Buscas que citam a marca', marcas)}
       ${barrasLista('Textos publicados por ano', am.notaAnos || 'Blog da empresa', serie)}
     </div>
-    ${am.temas ? `<h3 class="sub-titulo">Temas que o comprador pesquisa</h3>
+    ${am.temas && am.colunas ? `<h3 class="sub-titulo">Quem tem texto sobre o que o comprador pesquisa</h3>
+    <div class="table-wrap"><table class="cmp temas quem">
+      <thead><tr><th>Tema</th><th>Busca real</th>${am.colunas.map((c) => `<th${c === empresa.nome ? ' class="foco"' : ''}>${esc(c)}</th>`).join('')}</tr></thead>
+      <tbody>
+        ${am.temas.map(([t, b, qs]) => `<tr><td>${t}</td><td>“${esc(b)}”</td>${qs.map((q, k) => `<td${am.colunas[k] === empresa.nome ? ' class="foco"' : ''}>${q == null ? '<span class="m m--sd" title="sem área de textos">–</span>' : q ? `<span class="m m--ok">${q}</span>` : '<span class="m m--nao">✕</span>'}</td>`).join('')}</tr>`).join('')}
+      </tbody>
+    </table></div>
+    ${am.notaTemas ? `<p class="legenda-placar">${am.notaTemas}</p>` : ''}` : am.temas ? `<h3 class="sub-titulo">Temas que o comprador pesquisa</h3>
     <div class="table-wrap"><table class="cmp temas">
       <thead><tr><th>Tema</th><th>Busca real</th><th>${esc(am.colunaTemas || "Textos sobre o tema")}</th></tr></thead>
       <tbody>
         ${am.temas.map(([t, b, q, u]) => `<tr><td>${t}</td><td>“${esc(b)}”</td><td>${q ? `<span class="m m--ok">✓</span> ${q}${u ? ` <small>(último: ${u})</small>` : ''}` : '<span class="m m--nao">✕</span> nenhum'}</td></tr>`).join('')}
       </tbody>
     </table></div>` : ''}
+    ${am.fazemBem ? `<h3 class="sub-titulo">O que os concorrentes fazem bem</h3>
+    <div class="achados bem">${am.fazemBem.map(([nome, texto]) => `<div class="achado"><b>${esc(nome)}</b><span>${texto}</span></div>`).join('')}</div>` : ''}
     <h3 class="sub-titulo">Perguntas que o pecuarista digita</h3>
     <div class="chips">${perguntas.map((p) => `<span>${esc(p)}</span>`).join('')}</div>
     ${leitura(an.leituras?.mercado)}
@@ -218,6 +227,9 @@ table.cmp.matriz{ min-width:0; } table.cmp.matriz td, table.cmp.matriz th{ text-
 .busca mark{ background:none; color:var(--bad); font-weight:700; } .busca mark.nossa{ color:var(--ok); }
 .chips{ display:flex; flex-wrap:wrap; gap:6px; } .chips span{ font-size:12.5px; padding:6px 11px; border-radius:999px; background:var(--white); border:1px solid var(--line); color:var(--steel); }
 table.cmp.temas td{ width:auto; font-weight:400; text-align:left; } table.cmp.temas td:first-child{ font-weight:700; } table.cmp.temas td:nth-child(2){ color:var(--steel); } table.cmp.temas small{ color:var(--steel-light); } table.cmp.temas .m{ width:20px; height:20px; font-size:11px; margin-right:4px; }
+table.cmp.temas.quem td:nth-child(n+3), table.cmp.temas.quem th:nth-child(n+3){ text-align:center; } table.cmp.temas.quem .m{ width:24px; height:24px; font-size:12px; margin:0; } table.cmp.temas.quem .foco{ background:var(--paper-2); } table.cmp.temas.quem .foco .m--nao{ background:var(--white); }
+@media (max-width:700px){ table.cmp.temas.quem td:nth-child(2), table.cmp.temas.quem th:nth-child(2){ display:none; } table.cmp.temas.quem{ min-width:0; } table.cmp.temas.quem td, table.cmp.temas.quem th{ padding:8px 4px; font-size:12.5px; } table.cmp.temas.quem th{ font-size:9.5px; letter-spacing:.02em; } }
+.achados.bem .achado::before{ content:"✓"; color:var(--ok); }
 .opps{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 .opp{ background:var(--white); border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:3px; padding:18px; display:flex; flex-direction:column; gap:8px; }
 .opp__n{ font-size:30px; font-weight:800; font-stretch:110%; color:var(--gold); line-height:1; }

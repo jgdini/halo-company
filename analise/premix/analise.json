@@ -75,7 +75,7 @@
     "velocidade": "<b>As quatro são lentas no celular, e a Premix fica com nota 10.</b> Só a Tortuga, que está dentro de um site global, tem nota menor.",
     "conteudo": "<b>A Premix publica com frequência, mas quase só notícia.</b> No Instagram tem 37 mil seguidores, menos que Tortuga, Matsuda e Guabi.",
     "sinais": "<b>Nenhuma das quatro marca perguntas e respostas para o Google e as IAs.</b> A Premix já informa os dados da empresa; falta o resto.",
-    "mercado": "<b>A Premix tem 638 textos no blog, mas os temas que o pecuarista mais pesquisa ficaram de fora.</b> Proteinado na seca, sal mineral ou proteinado e semiconfinamento não têm nenhum texto. A produção técnica caiu de 83 textos em 2022 para 2 em 2026."
+    "mercado": "<b>A Premix tem o maior acervo, mas não responde a busca mais forte do setor.</b> Em proteinado na seca, Tortuga e Matsuda têm três textos cada; a Premix, nenhum. Ninguém responde “sal mineral ou proteinado”. Já em creep feeding e cavalos, a Premix está na frente. A produção técnica caiu de 83 textos em 2022 para 2 em 2026."
   },
   "mercado": {
     "anos": 6,
@@ -88,61 +88,96 @@
       "2025": 26,
       "2026": 2
     },
-    "colunaTemas": "Textos da Premix sobre o tema",
     "temas": [
       [
         "Proteinado na seca",
         "qual proteinado usar na seca",
-        0,
-        null
+        [
+          0,
+          3,
+          3,
+          null
+        ]
       ],
       [
         "Sal mineral ou proteinado",
         "sal mineral ou proteinado",
-        0,
-        null
+        [
+          0,
+          0,
+          0,
+          null
+        ]
       ],
       [
         "Semiconfinamento",
         "semiconfinamento como funciona",
-        0,
-        null
-      ],
-      [
-        "Ração para ovelha",
-        "qual a melhor ração para ovelha dar leite",
-        0,
-        null
-      ],
-      [
-        "Consumo por cabeça",
-        "quanto de proteinado uma vaca come por dia",
-        1,
-        "03/2019"
+        [
+          0,
+          3,
+          0,
+          null
+        ]
       ],
       [
         "Custo do confinamento",
         "quanto custa um confinamento de gado",
-        2,
-        "07/2020"
+        [
+          2,
+          3,
+          0,
+          null
+        ]
+      ],
+      [
+        "Ração para ovelha",
+        "qual a melhor ração para ovelha dar leite",
+        [
+          0,
+          0,
+          1,
+          null
+        ]
+      ],
+      [
+        "Consumo por cabeça",
+        "quanto de proteinado uma vaca come por dia",
+        [
+          1,
+          0,
+          0,
+          null
+        ]
       ],
       [
         "Nutrição da vaca leiteira",
         "qual a melhor ração para vaca leiteira de alta produção",
-        3,
-        "10/2023"
+        [
+          3,
+          1,
+          0,
+          null
+        ]
       ],
       [
         "Suplemento para cavalo",
         "qual suplemento para cavalo",
-        6,
-        "08/2024"
+        [
+          6,
+          4,
+          0,
+          null
+        ]
       ],
       [
         "Creep feeding",
         "creep feeding e creep grazing diferença",
-        11,
-        "10/2023"
+        [
+          11,
+          0,
+          0,
+          null
+        ]
       ]
     ],
     "perguntasMostrar": [
@@ -158,6 +193,27 @@
       "qual suplemento para cavalo",
       "qual a melhor ração para ovelha dar leite",
       "como fazer ração para gado na seca"
+    ],
+    "colunas": [
+      "Premix",
+      "Tortuga",
+      "Matsuda",
+      "Guabi"
+    ],
+    "notaTemas": "Número de textos sobre o tema, contados por nós pelos títulos. ✕ nenhum · – sem área de textos no site.",
+    "fazemBem": [
+      [
+        "Tortuga",
+        "214 textos, com dados próprios (o Censo de Confinamento) e um simulador de custo x benefício dos produtos."
+      ],
+      [
+        "Matsuda",
+        "Só 9 informativos técnicos, mas três sobre a busca mais forte do setor: suplementação na seca. Produtos organizados por fase: cria, recria, engorda e leite."
+      ],
+      [
+        "Guabi",
+        "Sem blog, mas com um localizador de revendas (“onde comprar”) e a ficha técnica de cada produto em PDF."
+      ]
     ]
   },
   "sinaisManuais": [
@@ -231,7 +287,7 @@
     "A comparação olha só a página inicial de cada empresa. A da Tortuga fica dentro do site global da dsm-firmenich, a da Matsuda é a página do grupo e a da Guabi é o site de bovinos (guabibovinos.com.br).",
     "Concorrentes escolhidas por nós: as três marcas que mais aparecem nas buscas do setor. Se houver outras mais próximas, refazemos.",
     "Buscas: 1.944 sugestões do Google ao digitar, no Brasil, a partir de 15 temas do setor. Mostram que a busca existe; não medimos quantas pessoas buscam nem a posição de cada site.",
-    "Blog: 638 textos lidos pelo próprio site. A separação entre texto técnico e notícia e a contagem por tema foram feitas por nós, pelos títulos.",
+    "Conteúdo: 638 textos do blog da Premix, 214 da área de notícias da Tortuga e os informativos da Matsuda, lidos nos próprios sites. A Guabi Bovinos não tem área de textos. A separação entre texto técnico e notícia e a contagem por tema foram feitas por nós, pelos títulos. Ter um texto sobre o tema não quer dizer aparecer primeiro no Google: a posição não foi medida.",
     "Último texto publicado: a data mais recente encontrada no blog ou na área de notícias de cada site. Não encontramos área de textos no site da Guabi Bovinos.",
     "Instagram: números públicos de cada perfil. Não analisamos as publicações."
   ],

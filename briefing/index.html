@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Briefing do projeto · Halo Company</title>
+<meta name="description" content="Briefing para iniciar o projeto de site ou landing page com a Halo Company.">
+<meta name="theme-color" content="#3A0D18">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Archivo"; src: url(../assets/fonts/archivo.woff2) format("woff2"); font-weight: 100 900; font-stretch: 62% 125%; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url(../assets/fonts/newsreader-italic.woff2) format("woff2"); font-style: italic; font-weight: 400; font-display: swap; }
+:root{
+  --bordo:#3A0D18; --bordo-fundo:#2A0811; --bordo-claro:#561A29; --off:#F5EFE6; --perola:#FBF8F3; --cereja:#E0506F; --champanhe:#E7C493;
+  --fundo:var(--off); --cartao:var(--perola); --tinta:var(--bordo); --tinta-2:rgba(58,13,24,.68); --linha:rgba(58,13,24,.14); --campo:#fff; --ok:#2E7D4F;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --fundo:var(--bordo-fundo); --cartao:#35101A; --tinta:var(--off); --tinta-2:rgba(245,239,230,.7); --linha:rgba(245,239,230,.16); --campo:#2A0811; --ok:#7FD3A0; } }
+:root[data-theme="dark"]{ --fundo:var(--bordo-fundo); --cartao:#35101A; --tinta:var(--off); --tinta-2:rgba(245,239,230,.7); --linha:rgba(245,239,230,.16); --campo:#2A0811; --ok:#7FD3A0; }
+*{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--fundo); color:var(--tinta); font-family:"Archivo",system-ui,sans-serif; font-size:16px; line-height:1.55; }
+a{ color:inherit; }
+.topo{ background:var(--bordo); color:var(--off); }
+.topo .in{ max-width:760px; margin:0 auto; padding:18px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.marca{ display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:800; font-size:19px; letter-spacing:-.01em; }
+.marca svg{ width:28px; height:28px; }
+.marca small{ font-weight:600; font-size:10px; letter-spacing:.32em; text-transform:uppercase; opacity:.8; font-stretch:110%; }
+.salvo{ font-size:12px; opacity:.7; }
+.barra{ height:3px; background:rgba(245,239,230,.15); }
+.barra span{ display:block; height:100%; width:0; background:var(--cereja); transition:width .5s var(--ease); }
+main{ max-width:760px; margin:0 auto; padding:36px 16px 80px; }
+.etapa-n{ font-size:12px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--cereja); margin:0 0 8px; font-stretch:110%; }
+h1{ font-size:clamp(30px,6vw,46px); line-height:1.05; letter-spacing:-.025em; margin:0 0 14px; font-stretch:105%; font-weight:800; }
+h1 em, h2 em{ font-family:"Newsreader",Georgia,serif; font-weight:400; color:var(--cereja); }
+h2{ font-size:clamp(24px,4.5vw,32px); line-height:1.12; letter-spacing:-.02em; margin:0 0 8px; font-weight:800; }
+.lede{ color:var(--tinta-2); font-size:17px; margin:0 0 26px; max-width:58ch; }
+.dicas{ list-style:none; padding:0; margin:0 0 30px; display:grid; gap:10px; }
+.dicas li{ background:var(--cartao); border:1px solid var(--linha); border-radius:14px; padding:14px 16px 14px 46px; position:relative; font-size:15px; }
+.dicas li::before{ content:"✓"; position:absolute; left:17px; top:13px; color:var(--cereja); font-weight:800; }
+.campo{ margin:0 0 22px; }
+.campo > label, .campo > .rot{ display:block; font-weight:700; font-size:15.5px; margin:0 0 4px; }
+.campo .ajuda{ display:block; color:var(--tinta-2); font-size:13.5px; margin:0 0 8px; }
+.obrig{ color:var(--cereja); margin-left:3px; }
+input[type=text], input[type=email], input[type=tel], input[type=url], textarea{
+  width:100%; font:inherit; color:var(--tinta); background:var(--campo); border:1px solid var(--linha); border-radius:12px; padding:13px 14px; transition:border-color .2s, box-shadow .2s; }
+textarea{ min-height:96px; resize:vertical; }
+input:focus, textarea:focus{ outline:none; border-color:var(--cereja); box-shadow:0 0 0 3px rgba(224,80,111,.18); }
+.opcoes{ display:flex; flex-wrap:wrap; gap:8px; }
+.opcoes label{ position:relative; cursor:pointer; }
+.opcoes input{ position:absolute; opacity:0; pointer-events:none; }
+.opcoes span{ display:inline-block; padding:10px 15px; border:1px solid var(--linha); border-radius:999px; background:var(--campo); font-size:14.5px; transition:all .2s var(--ease); }
+.opcoes input:checked + span{ background:var(--bordo); border-color:var(--bordo); color:var(--off); }
+:root[data-theme="dark"] .opcoes input:checked + span{ background:var(--cereja); border-color:var(--cereja); }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .opcoes input:checked + span{ background:var(--cereja); border-color:var(--cereja); } }
+.opcoes input:focus-visible + span{ box-shadow:0 0 0 3px rgba(224,80,111,.35); }
+.erro{ color:var(--cereja); font-size:13px; margin-top:6px; display:none; }
+.campo.invalido .erro{ display:block; }
+.campo.invalido input, .campo.invalido textarea{ border-color:var(--cereja); }
+.nav{ display:flex; justify-content:space-between; gap:12px; margin-top:34px; padding-top:22px; border-top:1px solid var(--linha); }
+.botao{ font:inherit; font-weight:700; font-size:15px; border-radius:999px; padding:14px 24px; cursor:pointer; border:1px solid transparent; transition:transform .2s var(--ease), background .2s; }
+.botao:active{ transform:scale(.98); }
+.botao.principal{ background:var(--cereja); color:#fff; }
+.botao.principal:hover{ background:#c9405e; }
+.botao.secundario{ background:transparent; color:var(--tinta); border-color:var(--linha); }
+.botao[disabled]{ opacity:.55; cursor:wait; }
+.etapa{ animation:entra .45s var(--ease); }
+@keyframes entra{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce){ .etapa{ animation:none; } .barra span{ transition:none; } }
+.revisao{ display:grid; gap:12px; }
+.revisao section{ background:var(--cartao); border:1px solid var(--linha); border-radius:14px; padding:16px 18px; }
+.revisao h3{ margin:0 0 8px; font-size:15px; display:flex; justify-content:space-between; gap:10px; }
+.revisao h3 button{ font:inherit; font-size:13px; font-weight:600; background:none; border:0; color:var(--cereja); cursor:pointer; padding:0; }
+.revisao dl{ margin:0; font-size:14px; }
+.revisao dt{ color:var(--tinta-2); margin-top:8px; }
+.revisao dd{ margin:2px 0 0; white-space:pre-wrap; overflow-wrap:anywhere; }
+.vazio{ color:var(--tinta-2); font-style:italic; }
+.aviso{ background:var(--cartao); border:1px solid var(--linha); border-left:4px solid var(--cereja); border-radius:12px; padding:14px 16px; font-size:14.5px; margin-top:18px; }
+.fim{ text-align:center; padding-top:40px; }
+.fim .selo{ width:72px; height:72px; margin:0 auto 18px; }
+.mel{ position:absolute; left:-9999px; }
+footer{ text-align:center; font-size:12.5px; color:var(--tinta-2); padding:0 16px 40px; }
+@media (max-width:520px){ .nav .botao{ flex:1; padding:14px 16px; } }
+</style>
+</head>
+<body>
+<header class="topo">
+  <div class="in">
+    <a class="marca" href="../" aria-label="Halo Company">
+      <svg viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke-width="3"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F5EFE6" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg>
+      <span>halo <small>company</small></span>
+    </a>
+    <span class="salvo" id="salvo" aria-live="polite"></span>
+  </div>
+  <div class="barra" aria-hidden="true"><span id="progresso"></span></div>
+</header>
+
+<main>
+  <form id="form" novalidate>
+    <input class="mel" type="text" name="_site" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div id="etapa"></div>
+    <div class="nav" id="nav">
+      <button type="button" class="botao secundario" id="voltar">Voltar</button>
+      <button type="button" class="botao principal" id="avancar">Começar</button>
+    </div>
+  </form>
+</main>
+<footer>Halo Company · suas respostas são usadas só para este projeto.</footer>
+
+<script>
+/* Endereço do Apps Script que grava na planilha e no Drive (scripts/briefing-apps-script.gs). */
+var ENVIO = 'https://script.google.com/macros/s/AKfycbxoCRJXmJVA2KGLaE7OzkgMrnydWBkSmXOimTmV5oo7kqEpx9ASDLq8Ms9eD9aPBYo/exec';
+
+/* ---------- Perguntas ----------
+   tipo: texto | longo | email | tel | url | uma (escolha única) | varias (múltipla)
+   so: 'site' ou 'lp' mostra a etapa ou a pergunta só para aquele projeto. obrig: resposta obrigatória. */
+var ETAPAS = [
+  { id: 'contato', titulo: 'Contato e decisão', intro: 'Quem está do outro lado do projeto.', campos: [
+    { id: 'empresa', rot: 'Nome da empresa', tipo: 'texto', obrig: true },
+    { id: 'nome', rot: 'Seu nome', tipo: 'texto', obrig: true },
+    { id: 'cargo', rot: 'Seu cargo', tipo: 'texto' },
+    { id: 'whatsapp', rot: 'WhatsApp', tipo: 'tel', obrig: true, ajuda: 'Com DDD.' },
+    { id: 'email', rot: 'E-mail', tipo: 'email', obrig: true },
+    { id: 'aprovador', rot: 'Quem aprova o projeto no final?', tipo: 'texto', ajuda: 'Nome e cargo, se for outra pessoa.' },
+    { id: 'siteAtual', rot: 'Site atual', tipo: 'texto', ajuda: 'Se ainda não tiver, deixe em branco.' },
+    { id: 'redes', rot: 'Perfis nas redes sociais', tipo: 'longo', ajuda: 'Instagram, LinkedIn, YouTube…' },
+    { id: 'tipoProjeto', rot: 'O que vamos construir?', tipo: 'uma', obrig: true, opcoes: ['Site', 'Landing page', 'Os dois'] }
+  ]},
+  { id: 'negocio', titulo: 'O negócio', intro: 'O que vocês fazem, contado por vocês.', campos: [
+    { id: 'oQueVende', rot: 'O que a empresa vende, em uma frase', tipo: 'longo', obrig: true },
+    { id: 'prioridades', rot: 'Quais produtos ou serviços vocês mais querem vender nos próximos 12 meses?', tipo: 'longo', ajuda: 'Até 3, em ordem de importância.' },
+    { id: 'diferencial', rot: 'Por que os clientes escolhem vocês, e não o concorrente?', tipo: 'longo' },
+    { id: 'concorrentes', rot: '3 concorrentes, e o que cada um faz bem', tipo: 'longo' },
+    { id: 'regiao', rot: 'Região que atendem', tipo: 'texto' },
+    { id: 'cicloVenda', rot: 'Do primeiro contato até a venda, quanto tempo leva em média?', tipo: 'uma', opcoes: ['Mesmo dia', 'Até 1 semana', 'Até 1 mês', '1 a 3 meses', 'Mais de 3 meses', 'Não sei'] }
+  ]},
+  { id: 'cliente', titulo: 'O cliente ideal', intro: 'Quanto mais concreto, melhor o texto e a busca no Google.', campos: [
+    { id: 'quemCompra', rot: 'Quem compra de vocês?', tipo: 'longo', ajuda: 'Segmento, porte, cargo. Se for pessoa física, perfil e idade.' },
+    { id: 'quemDecide', rot: 'Quem decide a compra?', tipo: 'texto' },
+    { id: 'problema', rot: 'Que problema ele quer resolver quando procura vocês?', tipo: 'longo' },
+    { id: 'perguntas', rot: 'Quais perguntas os clientes sempre fazem antes de comprar?', tipo: 'longo', ajuda: 'Uma por linha. Essa resposta vira conteúdo do site.' },
+    { id: 'buscas', rot: 'O que vocês acham que o cliente digita no Google para achar uma empresa como a de vocês?', tipo: 'longo', ajuda: 'Uma busca por linha.' },
+    { id: 'objecoes', rot: 'Objeções mais comuns', tipo: 'longo', ajuda: '“É caro”, “já tenho fornecedor”…' },
+    { id: 'canais', rot: 'Como os clientes chegam hoje?', tipo: 'varias', opcoes: ['Indicação', 'Google', 'Instagram', 'LinkedIn', 'Anúncios', 'Feiras e eventos', 'Representantes', 'Outros'] }
+  ]},
+  { id: 'objetivo', titulo: 'Objetivo', intro: 'O que o projeto precisa entregar.', campos: [
+    { id: 'objetivo', rot: 'Objetivo principal', tipo: 'uma', obrig: true, ajuda: 'Escolha um. Os outros podem vir junto, mas um manda.', opcoes: ['Gerar contatos', 'Vender on-line', 'Passar autoridade', 'Apresentar a empresa a parceiros e investidores', 'Recrutar', 'Outro'] },
+    { id: 'acao', rot: 'O que o visitante deve fazer na página?', tipo: 'varias', opcoes: ['Chamar no WhatsApp', 'Preencher formulário', 'Ligar', 'Agendar', 'Comprar', 'Baixar material'] },
+    { id: 'quemAtende', rot: 'Quem recebe os contatos, e em quanto tempo responde?', tipo: 'longo' },
+    { id: 'meta', rot: 'Tem meta em número?', tipo: 'texto', ajuda: 'Ex.: 30 contatos qualificados por mês.' },
+    { id: 'medicao', rot: 'Como medem os resultados hoje?', tipo: 'varias', opcoes: ['Google Analytics', 'CRM', 'Planilha', 'Não medimos'] }
+  ]},
+  { id: 'expectativas', titulo: 'Expectativas', intro: 'Para alinharmos o que é sucesso desde o começo.', campos: [
+    { id: 'sucesso', rot: 'Daqui a 6 meses, o que faria vocês dizerem “valeu a pena”?', tipo: 'longo' },
+    { id: 'naoPode', rot: 'O que não pode acontecer de jeito nenhum?', tipo: 'longo' },
+    { id: 'dataImportante', rot: 'Existe alguma data importante?', tipo: 'texto', ajuda: 'Lançamento, feira, campanha.' },
+    { id: 'naoFuncionou', rot: 'O que não funcionou em sites ou campanhas anteriores?', tipo: 'longo' }
+  ]},
+  { id: 'estilo', titulo: 'Referências e estilo', intro: 'O que vocês gostam de ver, e o que não combina com a marca.', campos: [
+    { id: 'refsGosta', rot: '3 sites que vocês admiram, e o que gostam em cada um', tipo: 'longo', ajuda: 'Podem ser de qualquer setor.' },
+    { id: 'refsNao', rot: '1 site de que não gostam, e por quê', tipo: 'longo' },
+    { id: 'palavrasSim', rot: '3 palavras que descrevem a marca', tipo: 'texto' },
+    { id: 'palavrasNao', rot: '3 palavras que não descrevem a marca', tipo: 'texto' },
+    { id: 'tomFormal', rot: 'Tom de voz', tipo: 'uma', opcoes: ['Mais formal', 'Equilibrado', 'Mais próximo'] },
+    { id: 'tomTecnico', rot: 'Linguagem', tipo: 'uma', opcoes: ['Mais técnica', 'Equilibrada', 'Mais simples'] },
+    { id: 'identidade', rot: 'Já têm identidade visual?', tipo: 'uma', opcoes: ['Sim, com manual', 'Só o logo', 'Não'] },
+    { id: 'arquivosMarca', rot: 'Link para os arquivos da marca', tipo: 'url', ajuda: 'Logo em vetor, manual, fontes. Google Drive, Dropbox ou WeTransfer.' },
+    { id: 'fotos', rot: 'Têm fotos e vídeos próprios?', tipo: 'uma', opcoes: ['Sim, bastante', 'Alguns', 'Não, vamos precisar produzir'] },
+    { id: 'arquivosFotos', rot: 'Link para fotos e vídeos', tipo: 'url' }
+  ]},
+  { id: 'conteudo', so: 'site', titulo: 'Conteúdo do site', intro: 'O que entra no site.', campos: [
+    { id: 'paginas', rot: 'Quais páginas vocês imaginam?', tipo: 'varias', opcoes: ['Início', 'Sobre', 'Produtos ou serviços', 'Cases', 'Blog', 'Contato', 'Trabalhe conosco', 'Onde comprar', 'Área do cliente'] },
+    { id: 'outrasPaginas', rot: 'Outras páginas', tipo: 'texto' },
+    { id: 'textos', rot: 'Já existe texto pronto?', tipo: 'uma', opcoes: ['Sim, tudo', 'Parte', 'Não, a Halo escreve'] },
+    { id: 'provas', rot: 'Provas que podemos usar', tipo: 'varias', ajuda: 'Logos de clientes só com autorização deles.', opcoes: ['Depoimentos', 'Cases', 'Números', 'Certificações', 'Prêmios', 'Logos de clientes'] },
+    { id: 'provasDetalhe', rot: 'Conte um pouco sobre essas provas', tipo: 'longo' },
+    { id: 'blog', rot: 'Querem blog?', tipo: 'uma', opcoes: ['Sim, com a Halo escrevendo', 'Sim, nós escrevemos', 'Não por enquanto', 'Não sei'] },
+    { id: 'catalogo', rot: 'Quantos produtos ou serviços entram no catálogo?', tipo: 'texto' }
+  ]},
+  { id: 'campanha', so: 'lp', titulo: 'A campanha', intro: 'Tudo sobre a oferta da landing page.', campos: [
+    { id: 'oferta', rot: 'O que exatamente está sendo oferecido?', tipo: 'longo', obrig: true },
+    { id: 'preco', rot: 'O preço aparece na página?', tipo: 'uma', opcoes: ['Sim', 'Não', 'A decidir'] },
+    { id: 'publicoCampanha', rot: 'Para quem é essa campanha?', tipo: 'longo', ajuda: 'Se for diferente do cliente ideal.' },
+    { id: 'origem', rot: 'De onde vem o visitante?', tipo: 'varias', opcoes: ['Meta Ads', 'Google Ads', 'E-mail', 'WhatsApp', 'Orgânico', 'Ainda não sei'] },
+    { id: 'duracao', rot: 'Quanto tempo a campanha fica no ar?', tipo: 'texto' },
+    { id: 'garantia', rot: 'Garantia, bônus ou condição especial', tipo: 'longo' },
+    { id: 'camposForm', rot: 'Quais dados o formulário deve pedir?', tipo: 'longo' },
+    { id: 'depois', rot: 'O que acontece depois do cadastro?', tipo: 'varias', opcoes: ['Página de obrigado', 'Mensagem no WhatsApp', 'E-mail', 'Ligação da equipe'] }
+  ]},
+  { id: 'tecnico', titulo: 'Parte técnica e acessos', intro: 'Se não souber, responda “não sei”: vemos juntos na reunião.', campos: [
+    { id: 'dominio', rot: 'Quem tem acesso ao domínio (Registro.br ou outro)?', tipo: 'texto' },
+    { id: 'hospedagem', rot: 'Onde o site está hospedado hoje?', tipo: 'texto' },
+    { id: 'emailDominio', rot: 'O e-mail da empresa usa o mesmo domínio do site?', tipo: 'uma', ajuda: 'Ex.: contato@suaempresa.com.br. Importante para não derrubar o e-mail na troca.', opcoes: ['Sim', 'Não', 'Não sei'] },
+    { id: 'plataforma', rot: 'Plataforma do site atual', tipo: 'uma', opcoes: ['WordPress', 'Wix', 'Outra', 'Não temos site', 'Não sei'] },
+    { id: 'integracoes', rot: 'Ferramentas que precisam se conectar ao site', tipo: 'varias', opcoes: ['CRM', 'RD Station', 'WhatsApp Business', 'Agenda', 'ERP', 'Nenhuma'] },
+    { id: 'acessos', rot: 'Contas que vocês já têm', tipo: 'varias', opcoes: ['Google Analytics', 'Search Console', 'Meta Business', 'Google Ads', 'Nenhuma', 'Não sei'] },
+    { id: 'lgpd', rot: 'Dados para a política de privacidade', tipo: 'longo', ajuda: 'Razão social, CNPJ e e-mail de quem responde pelos dados.' }
+  ]},
+  { id: 'fechar', titulo: 'Para fechar', intro: 'Últimos detalhes.', campos: [
+    { id: 'melhorCanal', rot: 'Melhor canal e horário para falar com vocês', tipo: 'texto' },
+    { id: 'reunioes', rot: 'Quem participa das reuniões?', tipo: 'texto' },
+    { id: 'algoMais', rot: 'Algo mais que devemos saber?', tipo: 'longo' }
+  ]}
+];
+
+/* ---------- Estado ---------- */
+var CHAVE = 'halo-briefing';
+var dados = {}, pos = -1, enviado = false;
+try { var s = JSON.parse(localStorage.getItem(CHAVE) || '{}'); dados = s.dados || {}; pos = typeof s.pos === 'number' ? s.pos : -1; enviado = !!s.enviado; } catch (e) {}
+try { var q = new URLSearchParams(location.search); if (q.get('empresa') && !dados.empresa) dados.empresa = q.get('empresa'); } catch (e) {}
+function guardar() {
+  try { localStorage.setItem(CHAVE, JSON.stringify({ dados: dados, pos: pos, enviado: enviado })); document.getElementById('salvo').textContent = 'Rascunho salvo'; } catch (e) {}
+}
+
+var $etapa = document.getElementById('etapa'), $voltar = document.getElementById('voltar'), $avancar = document.getElementById('avancar'), $nav = document.getElementById('nav');
+var esc = function (s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); };
+function tipoProjeto() { var t = dados.tipoProjeto || ''; return { site: t !== 'Landing page', lp: t === 'Landing page' || t === 'Os dois' }; }
+function visiveis() { var tp = tipoProjeto(); return ETAPAS.filter(function (e) { return !e.so || tp[e.so]; }); }
+
+function campoHtml(c) {
+  var v = dados[c.id], obrig = c.obrig ? '<span class="obrig" aria-hidden="true">*</span>' : '', ajuda = c.ajuda ? '<span class="ajuda" id="a-' + c.id + '">' + c.ajuda + '</span>' : '';
+  var desc = c.ajuda ? ' aria-describedby="a-' + c.id + '"' : '';
+  if (c.tipo === 'uma' || c.tipo === 'varias') {
+    var multi = c.tipo === 'varias', marcados = multi ? (v || []) : [v];
+    return '<fieldset class="campo" data-campo="' + c.id + '" style="border:0;padding:0;margin:0 0 22px"><legend class="rot" style="padding:0;font-weight:700;font-size:15.5px;margin:0 0 4px">' + c.rot + obrig + '</legend>' + ajuda +
+      '<div class="opcoes">' + c.opcoes.map(function (o) { return '<label><input type="' + (multi ? 'checkbox' : 'radio') + '" name="' + c.id + '" value="' + esc(o) + '"' + (marcados.indexOf(o) > -1 ? ' checked' : '') + (c.obrig && !multi ? ' required' : '') + '><span>' + esc(o) + '</span></label>'; }).join('') + '</div>' +
+      '<div class="erro">Escolha uma opção.</div></fieldset>';
+  }
+  var tipos = { texto: 'text', email: 'email', tel: 'tel', url: 'url' }, auto = { email: 'email', whatsapp: 'tel', nome: 'name', empresa: 'organization', cargo: 'organization-title' }[c.id] || 'off';
+  var entrada = c.tipo === 'longo'
+    ? '<textarea id="c-' + c.id + '" name="' + c.id + '" maxlength="4000"' + desc + (c.obrig ? ' required' : '') + '>' + esc(v) + '</textarea>'
+    : '<input id="c-' + c.id + '" name="' + c.id + '" type="' + tipos[c.tipo] + '" maxlength="500" autocomplete="' + auto + '" value="' + esc(v) + '"' + desc + (c.obrig ? ' required' : '') + (c.tipo === 'url' ? ' placeholder="https://"' : '') + '>';
+  return '<div class="campo" data-campo="' + c.id + '"><label for="c-' + c.id + '">' + c.rot + obrig + '</label>' + ajuda + entrada + '<div class="erro">' + (c.tipo === 'email' ? 'Confira o e-mail.' : 'Preencha este campo.') + '</div></div>';
+}
+
+function render(foco) {
+  var lista = visiveis(), total = lista.length;
+  document.getElementById('progresso').style.width = (pos < 0 ? 0 : Math.min(100, ((pos + 1) / (total + 1)) * 100)) + '%';
+  $nav.hidden = false; $voltar.hidden = pos < 0; $voltar.disabled = false;
+  if (enviado) { return renderFim(); }
+  if (pos < 0) {
+    $etapa.innerHTML = '<div class="etapa"><p class="etapa-n">Briefing do projeto</p><h1>Vamos começar pelo <em>que importa.</em></h1>' +
+      '<p class="lede">Estas respostas são o ponto de partida do seu site ou da sua landing page. Elas orientam o texto, o visual e o que vamos medir depois.</p>' +
+      '<ul class="dicas"><li>Leva cerca de 20 minutos.</li><li>O rascunho fica salvo neste navegador: pode parar e voltar depois.</li><li>“Não sei” é uma boa resposta. Completamos juntos na reunião de abertura.</li><li>Só os campos com <span class="obrig">*</span> são obrigatórios.</li></ul></div>';
+    $avancar.textContent = Object.keys(dados).length > 1 ? 'Continuar de onde parei' : 'Começar';
+    return;
+  }
+  if (pos >= total) { return renderRevisao(lista); }
+  var e = lista[pos], tp = tipoProjeto();
+  $etapa.innerHTML = '<div class="etapa"><p class="etapa-n">Etapa ' + (pos + 1) + ' de ' + total + '</p><h2>' + e.titulo + '</h2><p class="lede">' + e.intro + '</p>' +
+    e.campos.filter(function (c) { return !c.so || tp[c.so]; }).map(campoHtml).join('') + '</div>';
+  $avancar.textContent = pos === total - 1 ? 'Revisar respostas' : 'Avançar';
+  if (foco) { var p = $etapa.querySelector('h2'); p.setAttribute('tabindex', '-1'); p.focus({ preventScroll: true }); }
+}
+
+function valorTexto(c) { var v = dados[c.id]; if (Array.isArray(v)) return v.join(', '); return v || ''; }
+function renderRevisao(lista) {
+  var tp = tipoProjeto();
+  $etapa.innerHTML = '<div class="etapa"><p class="etapa-n">Revisão</p><h2>Tudo certo por aqui?</h2><p class="lede">Confira as respostas. Dá para voltar e ajustar qualquer etapa.</p><div class="revisao">' +
+    lista.map(function (e, i) {
+      return '<section><h3>' + e.titulo + ' <button type="button" data-ir="' + i + '">Editar</button></h3><dl>' + e.campos.filter(function (c) { return !c.so || tp[c.so]; }).map(function (c) {
+        var t = valorTexto(c); return '<dt>' + c.rot + '</dt><dd>' + (t ? esc(t) : '<span class="vazio">sem resposta</span>') + '</dd>';
+      }).join('') + '</dl></section>';
+    }).join('') + '</div><div class="aviso" id="aviso" hidden></div></div>';
+  $avancar.textContent = 'Enviar briefing';
+  $etapa.querySelectorAll('[data-ir]').forEach(function (b) { b.addEventListener('click', function () { pos = +b.getAttribute('data-ir'); guardar(); render(true); window.scrollTo(0, 0); }); });
+}
+
+function renderFim() {
+  document.getElementById('progresso').style.width = '100%';
+  $nav.hidden = true;
+  $etapa.innerHTML = '<div class="etapa fim"><svg class="selo" viewBox="0 0 32 32" aria-hidden="true" fill="none" stroke-width="2.4"><g transform="rotate(-90 16 16)"><circle cx="16" cy="16" r="12" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="12" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="12" pathLength="300" stroke="currentColor" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg>' +
+    '<p class="etapa-n">Briefing enviado</p><h2>Obrigado, ' + esc((dados.nome || '').split(' ')[0]) + '.</h2><p class="lede" style="margin:0 auto 26px">Recebemos tudo. Em até 2 dias úteis entramos em contato para marcar a reunião de abertura.</p>' +
+    '<button type="button" class="botao secundario" id="novo">Preencher outro briefing</button></div>';
+  document.getElementById('novo').addEventListener('click', function () { if (!confirm('Começar um briefing novo? As respostas deste navegador serão apagadas.')) return; dados = {}; pos = -1; enviado = false; try { localStorage.removeItem(CHAVE); } catch (e) {} render(); });
+}
+
+/* Lê os campos da etapa atual para "dados". */
+function ler() {
+  $etapa.querySelectorAll('[data-campo]').forEach(function (el) {
+    var id = el.getAttribute('data-campo'), cx = el.querySelectorAll('input[type=checkbox]'), rd = el.querySelectorAll('input[type=radio]'), tx = el.querySelector('input:not([type=checkbox]):not([type=radio]), textarea');
+    if (cx.length) dados[id] = [].filter.call(cx, function (i) { return i.checked; }).map(function (i) { return i.value; });
+    else if (rd.length) { var m = [].filter.call(rd, function (i) { return i.checked; })[0]; dados[id] = m ? m.value : ''; }
+    else if (tx) dados[id] = tx.value.trim();
+  });
+}
+function valida() {
+  var primeiro = null;
+  $etapa.querySelectorAll('[data-campo]').forEach(function (el) {
+    var id = el.getAttribute('data-campo'), c = null;
+    ETAPAS.forEach(function (e) { e.campos.forEach(function (x) { if (x.id === id) c = x; }); });
+    var v = dados[id], ruim = c.obrig && (!v || (Array.isArray(v) && !v.length));
+    if (!ruim && c.tipo === 'email' && v) ruim = !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    el.classList.toggle('invalido', !!ruim);
+    if (ruim && !primeiro) primeiro = el;
+  });
+  if (primeiro) { primeiro.scrollIntoView({ block: 'center', behavior: 'smooth' }); var f = primeiro.querySelector('input, textarea'); if (f) f.focus({ preventScroll: true }); }
+  return !primeiro;
+}
+
+$etapa.addEventListener('input', function () { ler(); guardar(); });
+$etapa.addEventListener('change', function () { ler(); guardar(); });
+$voltar.addEventListener('click', function () { ler(); pos = Math.max(-1, pos - 1); guardar(); render(true); window.scrollTo(0, 0); });
+$avancar.addEventListener('click', function () {
+  var total = visiveis().length;
+  if (pos >= 0 && pos < total) { ler(); if (!valida()) return; }
+  if (pos >= total) return enviar();
+  pos++; guardar(); render(true); window.scrollTo(0, 0);
+});
+
+/* Monta o envio na ordem das perguntas, com o texto de cada pergunta. */
+function montar() {
+  var tp = tipoProjeto(), secoes = visiveis().map(function (e) {
+    return { titulo: e.titulo, respostas: e.campos.filter(function (c) { return !c.so || tp[c.so]; }).map(function (c) { return { id: c.id, pergunta: c.rot, resposta: valorTexto(c) }; }) };
+  });
+  return { enviadoEm: new Date().toISOString(), empresa: dados.empresa || '', nome: dados.nome || '', tipoProjeto: dados.tipoProjeto || '', secoes: secoes };
+}
+function enviar() {
+  var aviso = document.getElementById('aviso');
+  if (document.querySelector('.mel').value) { enviado = true; guardar(); return render(); }
+  if (!ENVIO) { aviso.hidden = false; aviso.textContent = 'O envio ainda não está configurado. Suas respostas continuam salvas neste navegador.'; return; }
+  $avancar.disabled = true; $voltar.disabled = true; $avancar.textContent = 'Enviando…';
+  /* text/plain evita a checagem prévia do navegador, que o Apps Script não responde. */
+  fetch(ENVIO, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(montar()) })
+    .then(function () { enviado = true; guardar(); render(); window.scrollTo(0, 0); })
+    .catch(function () {
+      $avancar.disabled = false; $voltar.disabled = false; $avancar.textContent = 'Tentar de novo';
+      aviso.hidden = false; aviso.innerHTML = 'Não conseguimos enviar agora. Suas respostas continuam salvas. Tente de novo em instantes ou fale com a gente no <a href="https://wa.me/5511989531711">WhatsApp</a>.';
+    });
+}
+
+render();
+</script>
+</body>
+</html>
