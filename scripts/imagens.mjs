@@ -19,12 +19,15 @@ for (const nome of ['antigo-celular-topo', 'novo-celular-topo']) {
 // Capturas longas dos sites (a imagem rola dentro do cartão ao passar o mouse)
 const sites = {
   'veiculo-judicial': 'https://veiculojudicial.com.br/',
-  'marcelo-lusardo': 'https://jgdini.github.io/nosofaraway/new/index.html',
-  'marcelo-lusardo-landing': 'https://jgdini.github.io/nosofaraway/new/ecossistema-australia-blocks.html',
+  'marcelo-lusardo': 'https://liderdetravessias.com.br/',
+  'marcelo-lusardo-landing': 'https://marcelolusardo.com.br/',
   drlsys: 'https://drlsys.com/'
 };
 const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
+// Com nomes na linha de comando, captura só esses (ex.: node scripts/imagens.mjs marcelo-lusardo).
+const so = process.argv.slice(2);
 for (const [nome, url] of Object.entries(sites)) {
+  if (so.length && !so.includes(nome)) continue;
   const p = await b.newPage();
   await p.setViewport({ width: 1440, height: 900 });
   await p.emulateMediaFeatures([{ name: 'prefers-reduced-motion', value: 'reduce' }]);

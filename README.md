@@ -28,7 +28,7 @@ Comparativo com o mesmo investimento em dois caminhos. Abas "Do jeito comum" e "
 - [x] Hanaoka: prints de antes/depois (topo, desktop e celular) já no case. Gerados por `node scripts/imagens.mjs` a partir de `Arquivos/`.
 - [ ] Hanaoka: números do Instagram (seguidores) e leads por mês. Confirmar que o cliente autoriza o case.
 - [x] Hanaoka: PageSpeed no computador 90/100/100/100 (print do João, 2026-10-07), usado no case. No celular o site fez 67 e 79 de desempenho; a maior parte do público acessa pelo computador.
-- [ ] Marcelo Lusardo: trocar o link do GitHub pelo domínio oficial quando subir e rodar `node scripts/imagens.mjs` de novo.
+- [x] Marcelo Lusardo: links trocados pelos domínios oficiais (liderdetravessias.com.br e marcelolusardo.com.br).
 - [ ] Veículo Judicial: confirmar o número de seguidores ganhos (+6 mil) com um print do antes.
 - [x] Faixa de nomes com fotos e logos (Raphael Mattos, Scale Club, Marcus Marques, Acelerador Empresarial, Joel Jota, Graciane Barbosa, Community), autorizados pela Amanda em 2026-10-07. Pablo Marçal saiu. Para trocar uma imagem: substituir em Arquivos/Pessoas e rodar `node scripts/pessoas.mjs` (os recortes em volta do rosto estão no script).
 - [ ] Destino da aplicação: preencher `ENVIO` no topo de `assets/js/main.js` (endpoint JSON ou número de WhatsApp). Hoje o formulário só mostra a mensagem de sucesso.
