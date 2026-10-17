@@ -20,7 +20,15 @@ createServer(async (req, res) => {
   try {
     let body = await readFile(file); const ext = extname(file).toLowerCase();
     const h = { 'Content-Type': types[ext] || 'application/octet-stream', 'Cache-Control': 'no-cache' };
+    // Pedidos parciais (Range): sem isso o navegador trava o vídeo no meio, como no GitHub Pages não acontece.
+    const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range || '');
+    if (range && !zip.has(ext)) {
+      const ini = range[1] ? +range[1] : Math.max(0, body.length - +range[2]);
+      const fim = range[1] && range[2] ? Math.min(+range[2], body.length - 1) : body.length - 1;
+      res.writeHead(206, { ...h, 'Accept-Ranges': 'bytes', 'Content-Range': `bytes ${ini}-${fim}/${body.length}`, 'Content-Length': fim - ini + 1 }).end(body.subarray(ini, fim + 1));
+      return;
+    }
     if (zip.has(ext) && /gzip/.test(req.headers['accept-encoding'] || '')) { body = gzipSync(body); h['Content-Encoding'] = 'gzip'; }
-    res.writeHead(200, h).end(body);
+    res.writeHead(200, { ...h, 'Accept-Ranges': 'bytes' }).end(body);
   } catch { res.writeHead(404, { 'Content-Type': 'text/plain' }).end('404'); }
 }).listen(port, () => console.log(`http://localhost:${port}/`));

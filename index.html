@@ -167,6 +167,20 @@
     <div class="hero__fios"><canvas class="faixa-fios" id="fios-hero" aria-hidden="true"></canvas></div>
   </section>
 
+  <!-- ABERTURA: vídeo da marca. Na primeira visita abre em tela cheia e encolhe para este card (main.js, "Abertura"). -->
+  <section class="abertura" id="abertura" aria-labelledby="abertura-titulo">
+    <div class="wrap">
+      <div class="cabeca">
+        <p class="rotulo">Halo Company</p>
+        <h2 id="abertura-titulo" class="titulo">Estratégia, branding e tecnologia num só halo.</h2>
+      </div>
+      <div class="abertura__card" id="abertura-card">
+        <video class="abertura__video" id="abertura-video" muted playsinline loop preload="none" poster="assets/video/abertura-fim.webp" aria-label="Vídeo da Halo Company: estratégia, branding e tecnologia se juntam no logo"></video>
+        <button type="button" class="abertura__som" id="abertura-som" aria-pressed="false">Ligar som</button>
+      </div>
+    </div>
+  </section>
+
   <!-- NOMES -->
   <section class="nomes" aria-label="Com quem a Amanda Takahashi já trabalhou">
     <p class="rotulo wrap">Com quem a Amanda Takahashi já trabalhou</p>
@@ -643,6 +657,14 @@
   <div class="cookies__acoes">
     <button type="button" class="cookies__nao" data-cookies="recusado">Recusar</button>
     <button type="button" class="botao botao--peq" data-cookies="aceito">Aceitar</button>
+  </div>
+</div>
+
+<!-- Fundo e botões da abertura em tela cheia. O próprio vídeo do card voa por cima e depois volta para o lugar. -->
+<div class="intro" id="intro" hidden>
+  <div class="intro__acoes">
+    <button type="button" id="intro-som" aria-pressed="false">Ligar som</button>
+    <button type="button" id="intro-pular">Pular</button>
   </div>
 </div>
 

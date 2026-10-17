@@ -5,6 +5,13 @@
   if (!temGsap) raiz.classList.remove('js-mov');
   const mov = raiz.classList.contains('js-mov');
 
+  // Abertura em vídeo (ver "Abertura" lá embaixo): só na 1ª visita, com movimento e a página no topo.
+  // Enquanto ela cobre a tela, os fios do hero não desenham (ninguém vê, e o desenho disputa com o vídeo,
+  // que chegava a travar); a entrada dos fios começa quando o vídeo encolhe.
+  let abertura1 = false; try { abertura1 = localStorage.getItem('halo-abertura') !== '1'; } catch {}
+  const abre = { ativa: mov && abertura1 && scrollY <= 40 && !location.hash && !!document.getElementById('abertura-video'), fim: [] };
+  const fimAbertura = () => { if (!abre.ativa) return; abre.ativa = false; abre.fim.splice(0).forEach((f) => f()); };
+
   // Para onde vai a aplicação. Preencher antes de publicar:
   // url: endpoint que recebe JSON (Formspree, Make, n8n, planilha); whatsapp: número com DDI, só dígitos.
   const ENVIO = { url: '', whatsapp: '' };
@@ -95,12 +102,13 @@
     gsap.registerPlugin(ScrollTrigger);
 
     // Entrada: os fios correm da esquerda para a direita e seguem girando devagar.
-    gsap.to(hero.st, { revela: 1, duration: 2.2, delay: .3, ease: 'power3.inOut' });
+    const entradaFios = () => gsap.to(hero.st, { revela: 1, duration: 2.2, delay: .3, ease: 'power3.inOut' });
+    if (abre.ativa) abre.fim.push(entradaFios); else entradaFios();
     let heroVisivel = true, velocidade = 0;
     new IntersectionObserver(([en]) => { heroVisivel = en.isIntersecting; }).observe(document.getElementById('fios-hero'));
     ScrollTrigger.create({ onUpdate: (s) => { velocidade = Math.min(Math.abs(s.getVelocity()) / 1200, 4); } });
     gsap.ticker.add((_, dt) => {
-      if (!heroVisivel) return;
+      if (!heroVisivel || abre.ativa) return;
       velocidade *= .94;
       hero.st.fase += (dt / 1000) * (.55 + velocidade);
       hero.desenhar();
@@ -669,6 +677,98 @@
       bEnviar.disabled = false;
     }
   });
+
+  /* ---------- Abertura: o vídeo abre em tela cheia e encolhe até o card ---------- */
+  // Só na primeira visita, com movimento ligado e a página no topo. Começa mudo (o navegador só toca
+  // sozinho assim) e encolhe quando o vídeo acaba, quando a pessoa rola ou quando clica em "Pular".
+  (function abertura() {
+    const card = document.getElementById('abertura-card');
+    const video = document.getElementById('abertura-video');
+    const somCard = document.getElementById('abertura-som');
+    if (!card || !video) return;
+    const intro = document.getElementById('intro');
+    const somIntro = document.getElementById('intro-som');
+    const pular = document.getElementById('intro-pular');
+    const fonte = () => (innerWidth * (devicePixelRatio || 1) > 1600 ? 'assets/video/abertura-1080.mp4' : 'assets/video/abertura.mp4');
+    const carregar = () => { if (!video.src) video.src = fonte(); };
+    const marcarSom = (b, ligado) => { b.setAttribute('aria-pressed', String(ligado)); b.textContent = ligado ? 'Desligar som' : 'Ligar som'; };
+    const alternarSom = (b) => { video.muted = !video.muted; if (!video.muted && video.paused) video.play().catch(() => {}); marcarSom(b, !video.muted); };
+    somCard.addEventListener('click', () => alternarSom(somCard));
+
+    // Sem movimento: o card mostra a capa e os controles do próprio vídeo.
+    if (!mov) { video.controls = true; video.preload = 'metadata'; carregar(); somCard.hidden = true; return; }
+
+    // No card, o vídeo roda em repetição só enquanto aparece na tela.
+    let noCard = true;
+    new IntersectionObserver(([en]) => {
+      if (!noCard) return;
+      if (en.isIntersecting) { carregar(); video.play().catch(() => {}); } else video.pause();
+    }, { rootMargin: '200px 0px' }).observe(card);
+
+    if (!abre.ativa) return;
+
+    // Retângulo inicial: tela cheia quando a tela é mais larga que 16:9; senão, uma faixa 16:9 no meio.
+    const inicio = () => {
+      const w = innerWidth, h = innerHeight;
+      if (w / h >= 16 / 9) return { x: 0, y: 0, w, h, r: 0 };
+      const vh = w * 9 / 16; return { x: 0, y: (h - vh) / 2, w, h: vh, r: 0 };
+    };
+    const pos = (q) => { video.style.left = q.x + 'px'; video.style.top = q.y + 'px'; video.style.width = q.w + 'px'; video.style.height = q.h + 'px'; video.style.borderRadius = q.r + 'px'; };
+
+    noCard = false;
+    const capa = video.poster;
+    video.poster = 'assets/video/abertura-inicio.webp';
+    carregar();
+    video.loop = false;
+    video.classList.add('voando');
+    pos(inicio());
+    intro.hidden = false;
+    // Em tela mais estreita que 16:9 o vídeo vira uma faixa: as bordas de cima e de baixo se dissolvem no fundo.
+    const faixa = () => video.classList.toggle('faixa', innerWidth / innerHeight < 16 / 9);
+    faixa();
+    const ajusta = () => { if (!saiu) { pos(inicio()); faixa(); } };
+    addEventListener('resize', ajusta);
+
+    let saiu = false;
+    function encolher() {
+      if (saiu) return;
+      saiu = true;
+      removeEventListener('resize', ajusta);
+      ['wheel', 'touchmove', 'keydown'].forEach((ev) => removeEventListener(ev, gatilho));
+      try { localStorage.setItem('halo-abertura', '1'); } catch {}
+      fimAbertura();
+      intro.classList.add('saindo');
+      video.classList.remove('faixa');
+      // No card o vídeo fica mudo: baixa o som aos poucos se estiver ligado.
+      if (!video.muted) { const v0 = video.volume; const t0 = performance.now(); (function desce(t) { const k = Math.min(1, Math.max(0, (t - t0) / 700)); video.volume = v0 * (1 - k); if (k < 1) requestAnimationFrame(desce); else { video.muted = true; video.volume = v0; } })(t0); }
+      marcarSom(somCard, false);
+      const de = inicio(), raio = parseFloat(getComputedStyle(card).borderRadius) || 18, dur = 1100, t0 = performance.now();
+      const ease = (t) => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+      // O destino é lido a cada quadro: se a pessoa rolar durante o voo, o vídeo acompanha o card.
+      (function voa(t) {
+        const k = ease(Math.min(1, Math.max(0, (t - t0) / dur))), r = card.getBoundingClientRect();
+        // Pousa dentro da borda do card, para não dar um pulo de 1 px no fim.
+        const x = r.left + card.clientLeft, y = r.top + card.clientTop;
+        pos({ x: mistura(de.x, x, k), y: mistura(de.y, y, k), w: mistura(de.w, card.clientWidth, k), h: mistura(de.h, card.clientHeight, k), r: mistura(0, raio - card.clientLeft, k) });
+        intro.style.opacity = String(1 - k);
+        if (k < 1) return requestAnimationFrame(voa);
+        video.classList.remove('voando');
+        video.removeAttribute('style');
+        video.poster = capa;
+        intro.hidden = true;
+        video.loop = true;
+        noCard = true;
+        if (video.paused || video.ended) video.play().catch(() => {});
+      })(t0);
+    }
+    const gatilho = (e) => { if (e.type === 'keydown' && !['ArrowDown', 'PageDown', 'Space', ' ', 'End', 'Escape'].includes(e.key)) return; encolher(); };
+    ['wheel', 'touchmove', 'keydown'].forEach((ev) => addEventListener(ev, gatilho, { passive: true }));
+    video.addEventListener('ended', encolher, { once: true });
+    pular.addEventListener('click', encolher);
+    somIntro.addEventListener('click', () => alternarSom(somIntro));
+    // Se o navegador não deixar tocar (modo economia, por exemplo), pula a abertura.
+    video.play().catch(() => { saiu = true; fimAbertura(); video.classList.remove('voando'); video.removeAttribute('style'); video.poster = capa; intro.hidden = true; video.loop = true; noCard = true; });
+  })();
 
   /* ---------- Cookies ---------- */
   // Guarda a escolha e avisa a página. Quando entrar medição (Google Analytics, pixel da Meta),
