@@ -15,12 +15,15 @@
  */
 var AVISAR = '';   // vazio = avisa o dono da planilha; ou escreva e-mails separados por vírgula
 var PASTA = 'Briefings Halo';
+// Aplicações da página inicial (formulário "Aplicar para um diagnóstico"): para quem vai o e-mail.
+var AVISAR_APLICACAO = 'joao@drlsys.com';
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
   lock.waitLock(20000);
   try {
     var d = JSON.parse(e.postData.contents);
+    if (d.tipo === 'aplicacao') return aplicacao(d);
     var linhas = [];
     d.secoes.forEach(function (s) { s.respostas.forEach(function (r) { linhas.push(r); }); });
 
@@ -73,4 +76,33 @@ function doPost(e) {
   } finally {
     lock.releaseLock();
   }
+}
+
+/**
+ * Aplicação enviada pela página inicial: uma linha na aba "Aplicações" e um e-mail para AVISAR_APLICACAO.
+ * O "Responder" do e-mail vai direto para quem se aplicou.
+ */
+function aplicacao(d) {
+  var campos = [
+    ['nome', 'Nome'], ['whatsapp', 'WhatsApp'], ['email', 'E-mail'], ['empresa', 'Empresa'], ['segmento', 'Segmento'],
+    ['perfil', 'Perfil'], ['faturamento', 'Faturamento'], ['investimento', 'Investimento em marketing'], ['objetivo', 'Objetivo'], ['origem', 'Página de origem']
+  ];
+  var limpa = function (v) { return String(v == null ? '' : v).slice(0, 2000); };
+  var planilha = SpreadsheetApp.getActiveSpreadsheet();
+  var aba = planilha.getSheetByName('Aplicações') || planilha.insertSheet('Aplicações');
+  if (!aba.getLastRow()) aba.appendRow(['Recebido em'].concat(campos.map(function (c) { return c[1]; }))).setFrozenRows(1);
+  aba.appendRow([new Date()].concat(campos.map(function (c) { return limpa(d[c[0]]); })));
+
+  var esc = function (s) { return limpa(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\n/g, '<br>'); };
+  var linhas = campos.map(function (c) {
+    return '<tr><td style="padding:8px 14px 8px 0;color:#7A5A62;vertical-align:top;white-space:nowrap">' + c[1] + '</td><td style="padding:8px 0;color:#3A0D18">' + (esc(d[c[0]]) || '—') + '</td></tr>';
+  }).join('');
+  var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5">' +
+    '<p style="margin:0 0 14px;font-size:16px;color:#3A0D18"><b>Nova aplicação pelo site da Halo Company</b></p>' +
+    '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse">' + linhas + '</table>' +
+    '<p style="margin:18px 0 0;color:#7A5A62;font-size:12px">Responda este e-mail para falar direto com ' + esc(d.nome) + '. Todas as aplicações ficam na aba "Aplicações" da planilha: ' + planilha.getUrl() + '</p></div>';
+  var opcoes = { htmlBody: html, name: 'Site Halo Company' };
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(limpa(d.email))) opcoes.replyTo = limpa(d.email);
+  MailApp.sendEmail(AVISAR_APLICACAO, 'Nova aplicação: ' + (limpa(d.empresa) || limpa(d.nome) || 'site'), 'Nova aplicação pelo site da Halo Company. Abra em HTML para ver os dados.', opcoes);
+  return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(ContentService.MimeType.JSON);
 }

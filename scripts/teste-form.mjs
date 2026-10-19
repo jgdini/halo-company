@@ -4,8 +4,13 @@ const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chro
 const p = await b.newPage();
 await p.setViewport({ width: 1280, height: 900 });
 const logs = [];
+// Intercepta o envio para o Apps Script: confere o que sairia, sem mandar e-mail de verdade.
+let enviado = null;
+await p.setRequestInterception(true);
+p.on('request', (r) => { if (r.url().includes('script.google.com')) { enviado = JSON.parse(r.postData()); r.respond({ status: 200, body: '{"ok":true}' }); } else r.continue(); });
+await p.evaluateOnNewDocument(() => { localStorage.setItem('halo-abertura', '1'); localStorage.setItem('halo-cookies', 'recusado'); });
 p.on('console', (m) => logs.push(m.type() + ': ' + m.text().slice(0, 80)));
-await p.goto('http://localhost:5610/', { waitUntil: 'networkidle0' });
+await p.goto('http://localhost:5610/', { waitUntil: 'domcontentloaded', timeout: 90000 });
 await p.evaluate(() => document.getElementById('aplicar').scrollIntoView());
 await new Promise((r) => setTimeout(r, 800));
 const etapa = () => p.$eval('#form-etapa', (e) => e.textContent);
@@ -23,5 +28,6 @@ await p.type('[name=objetivo]', 'Crescer.');
 await p.click('#form-enviar');
 await new Promise((r) => setTimeout(r, 400));
 console.log('ok visivel:', await p.$eval('#form-ok', (e) => !e.hidden && getComputedStyle(e).display !== 'none'));
+console.log('envio:', enviado && enviado.tipo === 'aplicacao' && enviado.email === 'teste@exemplo.com' && enviado.empresa === 'Empresa X' && !('_site' in enviado) ? 'ok' : 'FALHOU', JSON.stringify(enviado));
 console.log(logs.join('\n'));
 await b.close();

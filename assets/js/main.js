@@ -12,9 +12,10 @@
   const abre = { ativa: mov && abertura1 && scrollY <= 40 && !location.hash && !!document.getElementById('abertura-video'), fim: [] };
   const fimAbertura = () => { if (!abre.ativa) return; abre.ativa = false; abre.fim.splice(0).forEach((f) => f()); };
 
-  // Para onde vai a aplicação. Preencher antes de publicar:
-  // url: endpoint que recebe JSON (Formspree, Make, n8n, planilha); whatsapp: número com DDI, só dígitos.
-  const ENVIO = { url: '', whatsapp: '' };
+  // Para onde vai a aplicação: o mesmo Apps Script do briefing (scripts/briefing-apps-script.gs),
+  // que grava na aba "Aplicações" da planilha "Briefings Halo" e manda e-mail para joao@drlsys.com.
+  // whatsapp: plano B, número com DDI, só dígitos (usado só se url estiver vazio).
+  const ENVIO = { url: 'https://script.google.com/macros/s/AKfycbxoCRJXmJVA2KGLaE7OzkgMrnydWBkSmXOimTmV5oo7kqEpx9ASDLq8Ms9eD9aPBYo/exec', whatsapp: '' };
 
   // Fios: cereja (estratégia), champanhe (imagem), pérola (site). Fundo bordô.
   const CORES = ['#E0506F', '#E7C493', '#F8F3EB'];
@@ -658,11 +659,13 @@
     e.preventDefault();
     if (!valida()) return;
     const dados = Object.fromEntries(new FormData(form));
+    // Campo invisível preenchido = robô: finge que enviou e não manda nada.
+    const robo = !!dados._site; delete dados._site;
     bEnviar.disabled = true;
     try {
-      if (ENVIO.url) {
-        const r = await fetch(ENVIO.url, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(dados) });
-        if (!r.ok) throw new Error(r.status);
+      if (robo) { /* nada */ } else if (ENVIO.url) {
+        // O Apps Script não responde à checagem prévia do navegador: vai como texto simples e sem ler a resposta.
+        await fetch(ENVIO.url, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ tipo: 'aplicacao', origem: location.href, ...dados }) });
       } else if (ENVIO.whatsapp) {
         const txt = `Aplicação Halo Company\n\nNome: ${dados.nome}\nWhatsApp: ${dados.whatsapp}\nE-mail: ${dados.email}\nEmpresa: ${dados.empresa}\nSegmento: ${dados.segmento}\nPerfil: ${dados.perfil}\nFaturamento: ${dados.faturamento}\nInvestimento em marketing: ${dados.investimento}\nObjetivo: ${dados.objetivo}`;
         window.open(`https://wa.me/${ENVIO.whatsapp}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');
