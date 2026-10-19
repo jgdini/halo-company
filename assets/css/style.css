@@ -622,3 +622,9 @@ section { position: relative; }
 .intro__acoes { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(18px, env(safe-area-inset-bottom)); z-index: 2002; display: flex; gap: 8px; transition: opacity .3s; }
 .intro.saindo .intro__acoes { opacity: 0; pointer-events: none; }
 .abertura__video.voando.faixa { -webkit-mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); mask-image: linear-gradient(transparent, #000 14%, #000 86%, transparent); }
+
+/* Fotos do time (assets/img/time/, recortadas em 4:5 a partir de Arquivos/). */
+.ph--foto { padding: 0; border: 0; background: var(--algodao-2); }
+.ph--foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.pessoa:hover .ph--foto img { transform: scale(1.03); }
+.ph--foto::after { z-index: 1; }
