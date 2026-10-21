@@ -1,0 +1,152 @@
+{
+  "coletadoEm": "2026-10-21T17:25:17.925Z",
+  "itens": [
+    {
+      "papel": "empresa",
+      "nome": "Expresso 3300",
+      "url": "https://www.expresso3300.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://www.expresso3300.com.br/",
+        "respostaHtmlSeg": 0.3,
+        "htmlKB": 140,
+        "titulo": "Expresso 3300 &#8211; Armazenagem e Logística &#8211; Curitiba · Paraná",
+        "descricao": "Expresso 3300 Curitiba, Armazenagem e Logística. Excelência em Serviços de Transporte, Readiness, Inhouse, Warehouse.",
+        "h1": [
+          "Expresso 3300"
+        ],
+        "gerador": "WPML ver:3.3.8 stt:1,2,43;",
+        "viewport": true,
+        "dadosEstruturados": [
+          "WebSite",
+          "SearchAction",
+          "Organization"
+        ],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": true,
+        "robotsTxt": true,
+        "elementor": 0,
+        "jquery": true,
+        "whatsapp": true,
+        "formulario": true
+      },
+      "celular": null,
+      "computador": null
+    },
+    {
+      "papel": "concorrente",
+      "nome": "Multilog",
+      "url": "https://site.multilog.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://site.multilog.com.br/",
+        "respostaHtmlSeg": 0.5,
+        "htmlKB": 422,
+        "titulo": "Multilog - Logística integrada a serviço do Brasil há 30 anos",
+        "descricao": "O maior operador logístico com área alfandegada da América Latina. Multilog oferece controle e rastreabilidade para toda a cadeia de suprimentos.",
+        "h1": [
+          "30 anos de experiência movendo o Brasil com logística integrada"
+        ],
+        "gerador": "WordPress 7.1.3",
+        "viewport": true,
+        "dadosEstruturados": [
+          "WebPage",
+          "ReadAction",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite",
+          "SearchAction",
+          "EntryPoint",
+          "PropertyValueSpecification",
+          "Organization"
+        ],
+        "temFAQ": false,
+        "llmsTxt": true,
+        "sitemap": true,
+        "robotsTxt": true,
+        "elementor": 3210,
+        "jquery": true,
+        "whatsapp": false,
+        "formulario": true
+      },
+      "celular": null
+    },
+    {
+      "papel": "concorrente",
+      "nome": "Tegma",
+      "url": "https://www.tegma.com.br/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://www.tegma.com.br/",
+        "respostaHtmlSeg": 2.4,
+        "htmlKB": 267,
+        "titulo": "Tegma Gestão Logística | Empresa de logística 100% brasileira",
+        "descricao": "A Tegma é uma empresa de logística 100% brasileira. Especializada em operações logísticas personalizadas grandes indústrias. Saiba mais!",
+        "h1": [
+          ""
+        ],
+        "gerador": "WPML ver:4.4.10 stt:1,42;",
+        "viewport": true,
+        "dadosEstruturados": [
+          "WebPage",
+          "ReadAction",
+          "ImageObject",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite",
+          "SearchAction",
+          "EntryPoint",
+          "PropertyValueSpecification",
+          "Organization"
+        ],
+        "temFAQ": false,
+        "llmsTxt": true,
+        "sitemap": true,
+        "robotsTxt": true,
+        "elementor": 0,
+        "jquery": true,
+        "whatsapp": false,
+        "formulario": true
+      },
+      "celular": null
+    },
+    {
+      "papel": "modelo",
+      "nome": "Modelo Halo",
+      "url": "https://jgdini.github.io/halo-company/modelos/expresso3300/",
+      "sinais": {
+        "falhou": false,
+        "status": 200,
+        "enderecoFinal": "https://jgdini.github.io/halo-company/modelos/expresso3300/",
+        "respostaHtmlSeg": 0.4,
+        "htmlKB": 12,
+        "titulo": "Expresso 3300 | Armazenagem, operação inhouse e transporte para a indústria",
+        "descricao": "Operador logístico de Curitiba: warehouse, operação dentro da fábrica (line feeding, kitting, sequenciamento), transporte e readiness, com WMS próprio na nuvem. Grupo Inglat.",
+        "h1": [
+          "Armazenagem e operação dentro da sua fábrica."
+        ],
+        "gerador": null,
+        "viewport": true,
+        "dadosEstruturados": [
+          "Organization",
+          "PostalAddress"
+        ],
+        "temFAQ": false,
+        "llmsTxt": false,
+        "sitemap": false,
+        "robotsTxt": false,
+        "elementor": 0,
+        "jquery": false,
+        "whatsapp": false,
+        "formulario": false
+      },
+      "celular": null,
+      "computador": null
+    }
+  ]
+}

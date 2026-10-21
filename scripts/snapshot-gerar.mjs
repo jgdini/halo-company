@@ -26,7 +26,11 @@ const todos = [empresa, ...concorrentes];
 const n = (v, casas = 0) => (v == null ? 's/d' : v.toLocaleString('pt-BR', { minimumFractionDigits: casas, maximumFractionDigits: casas }));
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const quando = new Date(coleta.coletadoEm), data = quando.toLocaleDateString('pt-BR');
-const img = (arq, alt) => (existsSync(`${pasta}/img/${arq}`) ? `<img src="img/${arq}" alt="${esc(alt)}" loading="lazy">` : '');
+const img = (arq, alt) => {
+  const mp4 = arq.replace(/.webp$/, '.mp4');
+  if (existsSync(`${pasta}/img/${mp4}`)) return `<video src="img/${mp4}" poster="img/${arq}" autoplay muted loop playsinline preload="metadata" aria-label="${esc(alt)}"></video>`;
+  return existsSync(`${pasta}/img/${arq}`) ? `<img src="img/${arq}" alt="${esc(alt)}" loading="lazy">` : '';
+};
 const est = (i) => ex?.estrutura?.[i.nome] ?? null;
 const ig = ex?.instagram || {};
 const c = empresa.celular, eE = est(empresa), fl = an.flags || {};
@@ -130,14 +134,17 @@ function secaoMercado() {
   <section>
     <h2>${num()} · O que o mercado pesquisa e o site não responde</h2>
     <div class="kpis">
-      <div class="kpi"><div class="kpi__label">Buscas do setor mapeadas</div><div class="kpi__flow"><span class="kpi__new">${n(merc.total)}</span></div><div class="kpi__note">Sugestões reais do Google</div></div>
-      <div class="kpi"><div class="kpi__label">São perguntas</div><div class="kpi__flow"><span class="kpi__new">${n(c.pergunta)}</span></div><div class="kpi__note">“qual”, “como”, “quanto”…</div></div>
-      <div class="kpi"><div class="kpi__label">Querem comprar</div><div class="kpi__flow"><span class="kpi__new">${n(c.compra)}</span></div><div class="kpi__note">Preço, saco, onde comprar</div></div>
-      <div class="kpi"><div class="kpi__label">Ligadas à época do ano</div><div class="kpi__flow"><span class="kpi__new">${n(c.epoca)}</span></div><div class="kpi__note">Seca, águas, transição</div></div>
+      ${(am.kpis || [
+        { rotulo: 'Buscas do setor mapeadas', valor: n(merc.total), nota: 'Sugestões reais do Google' },
+        { rotulo: 'São perguntas', valor: n(c.pergunta), nota: '“qual”, “como”, “quanto”…' },
+        { rotulo: 'Querem comprar', valor: n(c.compra), nota: 'Preço, saco, onde comprar' },
+        { rotulo: 'Ligadas à época do ano', valor: n(c.epoca), nota: 'Seca, águas, transição' }
+      ]).map((k) => `<div class="kpi"><div class="kpi__label">${k.rotulo}</div><div class="kpi__flow"><span class="kpi__new">${k.valor}</span></div><div class="kpi__note">${k.nota}</div></div>`).join('')}
     </div>
     <div class="dupla" style="margin-top:12px">
-      ${barrasLista('Marcas que aparecem nas buscas', 'Buscas que citam a marca', marcas)}
-      ${barrasLista('Textos publicados por ano', am.notaAnos || 'Blog da empresa', serie)}
+      ${am.graficos
+        ? am.graficos.map((g) => barrasLista(g.titulo, g.nota, g.linhas.map(([r, v, f]) => [r, v, f ?? r === empresa.nome]))).join('')
+        : barrasLista('Marcas que aparecem nas buscas', 'Buscas que citam a marca', marcas) + barrasLista('Textos publicados por ano', am.notaAnos || 'Blog da empresa', serie)}
     </div>
     ${am.temas && am.colunas ? `<h3 class="sub-titulo">Quem tem texto sobre o que o comprador pesquisa</h3>
     <div class="table-wrap"><table class="cmp temas quem">
@@ -155,7 +162,7 @@ function secaoMercado() {
     </table></div>` : ''}
     ${am.fazemBem ? `<h3 class="sub-titulo">O que os concorrentes fazem bem</h3>
     <div class="achados bem">${am.fazemBem.map(([nome, texto]) => `<div class="achado"><b>${esc(nome)}</b><span>${texto}</span></div>`).join('')}</div>` : ''}
-    <h3 class="sub-titulo">Perguntas que o pecuarista digita</h3>
+    <h3 class="sub-titulo">${am.tituloPerguntas || "Perguntas que o comprador digita"}</h3>
     <div class="chips">${perguntas.map((p) => `<span>${esc(p)}</span>`).join('')}</div>
     ${leitura(an.leituras?.mercado)}
   </section>`;
@@ -206,8 +213,8 @@ h3.sub-titulo{ font-size:15px; margin:22px 0 10px; }
 .kpis{ margin-top:12px; }
 .telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
 .telas figure{ margin:0; }
-.telas img{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
-.telas .cel img{ width:168px; }
+.telas img, .telas video{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
+.telas .cel img, .telas .cel video{ width:168px; }
 .telas figcaption{ font-size:11px; color:var(--steel-light); margin-top:6px; font-stretch:84%; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
 .achados{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
 .achado{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px 14px 44px; position:relative; }
@@ -245,9 +252,15 @@ table.cmp.temas.quem td:nth-child(n+3), table.cmp.temas.quem th:nth-child(n+3){ 
 .cta h3{ margin:0 0 8px; font-size:22px; font-stretch:108%; }
 .cta .contatos{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; } .cta .contatos a{ color:inherit; text-decoration:none; border:1px solid rgba(245,239,230,.35); border-radius:999px; padding:9px 16px; font-size:14px; white-space:nowrap; } .cta .contatos b{ margin-right:8px; }
 .cta p{ margin:0; font-size:14.5px; line-height:1.6; opacity:.85; max-width:60ch; }
+.desenvolvido{ display:inline-flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:10px; }
+.halo-credit{ display:inline-flex; align-items:center; gap:10px; color:var(--ink); text-decoration:none; font-weight:600; }
+.halo-credit:hover .halo-sym{ transform:rotate(120deg); }
+.halo-sym{ transition:transform .8s cubic-bezier(.16,1,.3,1); }
+.halo-nome{ font-size:15px; letter-spacing:-.02em; }
+.halo-nome small{ font-size:11px; font-weight:600; letter-spacing:.24em; text-transform:uppercase; color:var(--steel); }
 :root[data-theme="dark"] .cta{ background:#1E050B; color:#F5EFE6; }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cta{ background:#1E050B; color:#F5EFE6; } }
-@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
+@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img, .telas .cel video{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
 @media print{ section{ margin-bottom:34px; } .opp, .cta, .pilar, .achado, .telas figure, .chart, .busca, .perguntas li{ break-inside:avoid; } .placar, .opps{ grid-template-columns:repeat(3,1fr); } .achados, .dupla, .perguntas{ grid-template-columns:1fr 1fr; } h2{ break-after:avoid; } }
 </style>
 </head>
@@ -316,7 +329,7 @@ ${merc ? secaoMercado() : ''}
         ${linhaSinal('Endereço sem “www” abre', (s, e) => (e ? e.semWwwAbre : null))}
         ${linhaSinal('http leva para https', (s, e) => (e ? e.httpRedirecionaParaHttps : null))}
         ${linhaSinal('Imagens em formato leve', (s, e) => (levePct(e) == null ? null : levePct(e) >= 0.5))}
-        ${linhaSinal(`Texto novo em ${quando.getFullYear()}`, (s, e) => (e ? (e.blog?.ultimo || '').startsWith(String(quando.getFullYear())) : null))}
+        ${linhaSinal(`Texto novo em ${quando.getFullYear()}`, (s, e) => (!e || e.blog?.semDado ? null : (e.blog?.ultimo || '').startsWith(String(quando.getFullYear()))))}
       </tbody>
     </table></div>
     ${leitura(an.leituras?.sinais)}
@@ -359,7 +372,7 @@ ${modelo && an.modelo ? `
     <p class="legenda-placar"><span><b style="color:var(--ok)">✓</b>atendido</span><span><b style="color:var(--bad)">✕</b>falta</span><span><b>→</b>resolvido na migração para o servidor de vocês</span></p>
     ${leitura(an.modelo.leitura)}
     <div style="height:14px"></div>` : ''}
-    ${pares('Notas do Google no celular', [['Velocidade', c.desempenho, modelo.celular.desempenho], ['Acessibilidade', c.acessibilidade, modelo.celular.acessibilidade], ['Boas práticas', c.boasPraticas, modelo.celular.boasPraticas], ['SEO técnico', c.seo, modelo.celular.seo]], 'Site atual', 'Modelo')}
+    ${pares('Notas do Google no celular', [['Velocidade', c.desempenho, modelo.celular.desempenho], ['Acessibilidade', c.acessibilidade, modelo.celular.acessibilidade], ['Boas práticas', c.boasPraticas, modelo.celular.boasPraticas], ...(an.modelo.semSeo ? [] : [['SEO técnico', c.seo, modelo.celular.seo]])], 'Site atual', 'Modelo')}
     <div class="kpis">
       ${an.modelo.resumo.map((k) => `<div class="kpi"><div class="kpi__label">${k.rotulo}</div><div class="kpi__flow"><span class="kpi__old">${k.antes}</span><span class="kpi__new">${k.depois}</span></div><div class="kpi__note">${k.nota}</div></div>`).join('\n      ')}
     </div>
@@ -387,6 +400,7 @@ ${modelo && an.modelo ? `
 
   <footer>
     <p>Intelligence Snapshot preparado pela Halo Company para a ${esc(empresa.nome)}. Dados públicos coletados em ${data}.</p>
+    <p class="desenvolvido">Desenvolvido por <a href="https://jgdini.github.io/halo-company/" target="_blank" rel="noopener" class="halo-credit"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
   </footer>
 
 </div>

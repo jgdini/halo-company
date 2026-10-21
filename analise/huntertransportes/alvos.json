@@ -1,0 +1,63 @@
+{
+  "empresa": {
+    "nome": "Hunter",
+    "url": "https://www.huntertransportes.com.br/index.php"
+  },
+  "concorrentes": [
+    {
+      "nome": "Ativa",
+      "url": "https://ativalog.com.br/"
+    },
+    {
+      "nome": "Pacer",
+      "url": "https://www.pacer.com.br/"
+    },
+    {
+      "nome": "Luft",
+      "url": "https://www.luft.com.br/"
+    }
+  ],
+  "mercado": {
+    "sementes": [
+      "transporte de medicamentos",
+      "transportadora de medicamentos",
+      "armazenagem de medicamentos",
+      "transporte de medicamentos controlados",
+      "transporte de produtos perigosos",
+      "transporte de cosméticos",
+      "armazenagem de cosméticos",
+      "logística farmacêutica",
+      "transporte de saneantes",
+      "armazenagem de fertilizantes",
+      "armazém anvisa",
+      "transportadora itapevi",
+      "transporte aéreo de cargas",
+      "transportadora são paulo"
+    ],
+    "marcas": [
+      "Jadlog",
+      "Braspress",
+      "Rodonaves",
+      "Patrus",
+      "Total Express",
+      "Loggi",
+      "Jamef",
+      "DHL",
+      "Correios",
+      "Azul Cargo"
+    ],
+    "epoca": "black friday|natal|fim de ano|verão|inverno"
+  },
+  "buscas": [
+    "transporte de medicamentos",
+    "transportadora de medicamentos",
+    "transporte de produtos perigosos",
+    "armazenagem de medicamentos",
+    "transportadora itapevi",
+    "logística farmacêutica"
+  ],
+  "modelo": {
+    "nome": "Modelo Halo",
+    "url": "https://jgdini.github.io/halo-company/modelos/hunter/"
+  }
+}

@@ -42,8 +42,8 @@ h3.sub-titulo{ font-size:15px; margin:22px 0 10px; }
 .kpis{ margin-top:12px; }
 .telas{ display:grid; grid-template-columns:1fr auto; gap:12px; align-items:start; margin-bottom:14px; }
 .telas figure{ margin:0; }
-.telas img{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
-.telas .cel img{ width:168px; }
+.telas img, .telas video{ display:block; width:100%; height:auto; border:1px solid var(--line); border-radius:3px; background:var(--white); }
+.telas .cel img, .telas .cel video{ width:168px; }
 .telas figcaption{ font-size:11px; color:var(--steel-light); margin-top:6px; font-stretch:84%; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
 .achados{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
 .achado{ background:var(--white); border:1px solid var(--line); border-radius:3px; padding:14px 16px 14px 44px; position:relative; }
@@ -81,9 +81,15 @@ table.cmp.temas.quem td:nth-child(n+3), table.cmp.temas.quem th:nth-child(n+3){ 
 .cta h3{ margin:0 0 8px; font-size:22px; font-stretch:108%; }
 .cta .contatos{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; } .cta .contatos a{ color:inherit; text-decoration:none; border:1px solid rgba(245,239,230,.35); border-radius:999px; padding:9px 16px; font-size:14px; white-space:nowrap; } .cta .contatos b{ margin-right:8px; }
 .cta p{ margin:0; font-size:14.5px; line-height:1.6; opacity:.85; max-width:60ch; }
+.desenvolvido{ display:inline-flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:10px; }
+.halo-credit{ display:inline-flex; align-items:center; gap:10px; color:var(--ink); text-decoration:none; font-weight:600; }
+.halo-credit:hover .halo-sym{ transform:rotate(120deg); }
+.halo-sym{ transition:transform .8s cubic-bezier(.16,1,.3,1); }
+.halo-nome{ font-size:15px; letter-spacing:-.02em; }
+.halo-nome small{ font-size:11px; font-weight:600; letter-spacing:.24em; text-transform:uppercase; color:var(--steel); }
 :root[data-theme="dark"] .cta{ background:#1E050B; color:#F5EFE6; }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .cta{ background:#1E050B; color:#F5EFE6; } }
-@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
+@media (max-width:700px){ .placar, .opps, .achados, .dupla, .perguntas{ grid-template-columns:1fr; } .telas{ grid-template-columns:1fr; } .telas .cel img, .telas .cel video{ width:150px; } .busca{ grid-template-columns:1fr; gap:8px; } }
 @media print{ section{ margin-bottom:34px; } .opp, .cta, .pilar, .achado, .telas figure, .chart, .busca, .perguntas li{ break-inside:avoid; } .placar, .opps{ grid-template-columns:repeat(3,1fr); } .achados, .dupla, .perguntas{ grid-template-columns:1fr 1fr; } h2{ break-after:avoid; } }
 </style>
 </head>
@@ -134,17 +140,13 @@ table.cmp.temas.quem td:nth-child(n+3), table.cmp.temas.quem th:nth-child(n+3){ 
   <section>
     <h2>2 · O que o mercado pesquisa e o site não responde</h2>
     <div class="kpis">
-      <div class="kpi"><div class="kpi__label">Buscas do setor mapeadas</div><div class="kpi__flow"><span class="kpi__new">1.944</span></div><div class="kpi__note">Sugestões reais do Google</div></div>
-      <div class="kpi"><div class="kpi__label">São perguntas</div><div class="kpi__flow"><span class="kpi__new">272</span></div><div class="kpi__note">“qual”, “como”, “quanto”…</div></div>
-      <div class="kpi"><div class="kpi__label">Querem comprar</div><div class="kpi__flow"><span class="kpi__new">120</span></div><div class="kpi__note">Preço, saco, onde comprar</div></div>
-      <div class="kpi"><div class="kpi__label">Ligadas à época do ano</div><div class="kpi__flow"><span class="kpi__new">33</span></div><div class="kpi__note">Seca, águas, transição</div></div>
+      <div class="kpi"><div class="kpi__label">Buscas do setor mapeadas</div><div class="kpi__flow"><span class="kpi__new">1.944</span></div><div class="kpi__note">Sugestões reais do Google</div></div><div class="kpi"><div class="kpi__label">São perguntas</div><div class="kpi__flow"><span class="kpi__new">272</span></div><div class="kpi__note">“qual”, “como”, “quanto”…</div></div><div class="kpi"><div class="kpi__label">Querem comprar</div><div class="kpi__flow"><span class="kpi__new">120</span></div><div class="kpi__note">Preço, saco, onde comprar</div></div><div class="kpi"><div class="kpi__label">Ligadas à época do ano</div><div class="kpi__flow"><span class="kpi__new">33</span></div><div class="kpi__note">Seca, águas, transição</div></div>
     </div>
     <div class="dupla" style="margin-top:12px">
       <div class="chart">
       <div class="chart__head"><div class="chart__title">Marcas que aparecem nas buscas</div><div class="legend"><span>Buscas que citam a marca</span></div></div>
       <div class="cmp-row"><div class="cmp-label">Tortuga</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">31</span></div></div></div><div class="cmp-row"><div class="cmp-label">Matsuda</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:88.0%"></span></div><span class="bar__val">30</span></div></div></div><div class="cmp-row"><div class="cmp-label">Guabi</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:52.8%"></span></div><span class="bar__val">18</span></div></div></div><div class="cmp-row"><div class="cmp-label">Nutron</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:14.7%"></span></div><span class="bar__val">5</span></div></div></div><div class="cmp-row"><div class="cmp-label">Vaccinar</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:8.8%"></span></div><span class="bar__val">3</span></div></div></div><div class="cmp-row foco"><div class="cmp-label">Premix</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Agroceres</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Bellman</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Purina</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:5.9%"></span></div><span class="bar__val">2</span></div></div></div><div class="cmp-row"><div class="cmp-label">Connan</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:2.9%"></span></div><span class="bar__val">1</span></div></div></div>
-    </div>
-      <div class="chart">
+    </div><div class="chart">
       <div class="chart__head"><div class="chart__title">Textos publicados por ano</div><div class="legend"><span>Textos técnicos no blog, sem notícias</span></div></div>
       <div class="cmp-row"><div class="cmp-label">2021</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:53.7%"></span></div><span class="bar__val">49</span></div></div></div><div class="cmp-row"><div class="cmp-label">2022</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:90.9%"></span></div><span class="bar__val">83</span></div></div></div><div class="cmp-row"><div class="cmp-label">2023</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:71.2%"></span></div><span class="bar__val">65</span></div></div></div><div class="cmp-row"><div class="cmp-label">2024</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:35.0%"></span></div><span class="bar__val">32</span></div></div></div><div class="cmp-row"><div class="cmp-label">2025</div><div class="bars"><div class="bar old"><div class="bar__track"><span class="bar__fill" style="width:28.5%"></span></div><span class="bar__val">26</span></div></div></div><div class="cmp-row foco"><div class="cmp-label">2026</div><div class="bars"><div class="bar new"><div class="bar__track"><span class="bar__fill" style="width:2.2%"></span></div><span class="bar__val">2</span></div></div></div>
     </div>
@@ -288,6 +290,7 @@ table.cmp.temas.quem td:nth-child(n+3), table.cmp.temas.quem th:nth-child(n+3){ 
 
   <footer>
     <p>Intelligence Snapshot preparado pela Halo Company para a Premix. Dados públicos coletados em 14/10/2026.</p>
+    <p class="desenvolvido">Desenvolvido por <a href="https://jgdini.github.io/halo-company/" target="_blank" rel="noopener" class="halo-credit"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
   </footer>
 
 </div>

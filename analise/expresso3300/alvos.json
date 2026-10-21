@@ -1,0 +1,59 @@
+{
+  "empresa": {
+    "nome": "Expresso 3300",
+    "url": "https://www.expresso3300.com.br/"
+  },
+  "concorrentes": [
+    {
+      "nome": "Multilog",
+      "url": "https://site.multilog.com.br/"
+    },
+    {
+      "nome": "Tegma",
+      "url": "https://www.tegma.com.br/"
+    }
+  ],
+  "mercado": {
+    "sementes": [
+      "operador logístico",
+      "armazém geral",
+      "armazenagem terceirizada",
+      "logística inhouse",
+      "line feeding",
+      "milk run",
+      "cross docking",
+      "kitting logística",
+      "logística automotiva",
+      "centro de distribuição",
+      "fiel depositário",
+      "transportadora curitiba",
+      "armazém curitiba",
+      "logística de autopeças"
+    ],
+    "marcas": [
+      "DHL",
+      "Ceva",
+      "Luft",
+      "Braspress",
+      "Patrus",
+      "Rodonaves",
+      "Jamef",
+      "Kuehne",
+      "ID Logistics",
+      "GEFCO"
+    ],
+    "epoca": "black friday|natal|fim de ano|safra"
+  },
+  "buscas": [
+    "operador logístico",
+    "armazém geral",
+    "logística inhouse",
+    "armazenagem curitiba",
+    "transportadora curitiba",
+    "milk run"
+  ],
+  "modelo": {
+    "nome": "Modelo Halo",
+    "url": "https://jgdini.github.io/halo-company/modelos/expresso3300/"
+  }
+}

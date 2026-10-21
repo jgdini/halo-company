@@ -1,0 +1,367 @@
+{
+  "mes": "OUTUBRO 2026",
+  "pdf": false,
+  "titulo": "O que o comprador de carga regulada pesquisa, e onde a <em>Hunter</em> aparece.",
+  "lede": "Uma leitura feita só com informação pública: o site, o Google e três empresas do setor.",
+  "negocio": [
+    [
+      "Vende",
+      "transporte rodoviário e aéreo, distribuição e armazenagem"
+    ],
+    [
+      "Para",
+      "empresas com carga regulada: medicamentos, cosméticos, saneantes, alimentos e produtos perigosos"
+    ],
+    [
+      "Posição",
+      "“empresa de soluções”, não só transportadora"
+    ]
+  ],
+  "flags": {
+    "tituloDizOQueFaz": true,
+    "botaoDeContatoNoProduto": true,
+    "ondeComprar": null,
+    "formularioQualifica": false
+  },
+  "resumo": [
+    {
+      "rotulo": "Velocidade no celular",
+      "valor": "27<small style=\"font-size:.5em\">/100</small>",
+      "nota": "Abaixo de 50 é ruim."
+    },
+    {
+      "rotulo": "Até o conteúdo aparecer",
+      "valor": "21,4 s",
+      "nota": "O Google considera bom até 2,5 s."
+    },
+    {
+      "rotulo": "Buscas sobre licença e regulação",
+      "valor": "199 <small style=\"font-size:.5em\">de 703</small>",
+      "nota": "Anvisa, AFE, controlados, perigosos, saneantes."
+    },
+    {
+      "rotulo": "Textos publicados",
+      "valor": "0",
+      "nota": "A Ativa publicou 47 desde 2024."
+    }
+  ],
+  "achados": [
+    [
+      "O maior trunfo está escondido",
+      "Licenças da Anvisa (inclusive AE para controlados), da PF e da Polícia Civil para perigosos e do MAPA ficam numa página interna. A primeira tela diz “Transporte, Logística e Soluções”."
+    ],
+    [
+      "O Google não sabe o que a empresa faz",
+      "A página inicial não tem descrição, título principal nem dados da empresa."
+    ],
+    [
+      "Site sem cadeado",
+      "O endereço com http abre direto, sem levar para a versão segura (https)."
+    ],
+    [
+      "Informações que não batem",
+      "Dois endereços para o mesmo galpão (Av. Caio Cotrim e Av. Portugal, 46) e “duas localizações de 2.628,50 m² cada”, enquanto outra página fala de um CD só."
+    ],
+    [
+      "Página inicial pesada",
+      "9,6 MB e 134 arquivos. São 45 JPG e 24 PNG, nenhum em formato leve."
+    ],
+    [
+      "Contato sem perguntas que qualificam",
+      "O formulário pede nome, e-mail, WhatsApp e mensagem. Não pergunta produto, licença, origem, destino nem volume."
+    ]
+  ],
+  "leituras": {
+    "velocidade": "<b>As quatro são lentas, e a Hunter tem a melhor nota das quatro, no celular e no computador.</b> Mesmo assim, o conteúdo leva 21,4 s para aparecer no celular.",
+    "conteudo": "<b>A Hunter é a única das quatro sem blog.</b> A Ativa publicou 9 textos em 2026 e a Luft, 6.",
+    "sinais": "<b>Nenhuma das quatro marca perguntas e respostas para o Google e as IAs.</b> A Hunter é a única sem mapa do site e sem cadeado no endereço com http.",
+    "mercado": "<b>Quase 3 em cada 10 buscas do setor são sobre licença e regulação, e a Hunter tem as licenças que as pessoas pesquisam.</b> AE para controlados, AFE, produtos perigosos e saneantes. Nenhuma das quatro empresas explica esses temas no site."
+  },
+  "mercado": {
+    "kpis": [
+      {
+        "rotulo": "Variações de busca encontradas",
+        "valor": "703",
+        "nota": "Sugestões reais do Google, a partir de 14 temas"
+      },
+      {
+        "rotulo": "Sobre licença e regulação",
+        "valor": "199",
+        "nota": "Anvisa, AFE, AE, RDC, MOPP, saneantes"
+      },
+      {
+        "rotulo": "Sobre produtos perigosos",
+        "valor": "154",
+        "nota": "Legislação, ANTT, MOPP, classes"
+      },
+      {
+        "rotulo": "Textos da Hunter sobre esses temas",
+        "valor": "0",
+        "nota": "O site não tem área de textos"
+      }
+    ],
+    "graficos": [
+      {
+        "titulo": "Buscas por tema",
+        "nota": "Variações encontradas no Google",
+        "linhas": [
+          [
+            "Medicamentos",
+            293,
+            false
+          ],
+          [
+            "Produtos perigosos",
+            154,
+            false
+          ],
+          [
+            "Licença, Anvisa, AFE",
+            41,
+            false
+          ],
+          [
+            "Transporte aéreo",
+            18,
+            false
+          ],
+          [
+            "Cosméticos",
+            9,
+            false
+          ],
+          [
+            "Saneantes",
+            9,
+            false
+          ]
+        ]
+      },
+      {
+        "titulo": "Textos publicados desde 2024",
+        "nota": "Blog ou notícias de cada empresa",
+        "linhas": [
+          [
+            "Ativa",
+            47
+          ],
+          [
+            "Luft",
+            11
+          ],
+          [
+            "Hunter",
+            0
+          ]
+        ]
+      }
+    ],
+    "colunas": [
+      "Hunter",
+      "Ativa",
+      "Pacer",
+      "Luft"
+    ],
+    "temas": [
+      [
+        "Medicamentos controlados",
+        "autorização especial para transporte de medicamentos controlados",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ],
+      [
+        "Licença para cosméticos",
+        "afe para transporte de cosméticos",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ],
+      [
+        "Saneantes",
+        "licença para transporte de saneantes",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ],
+      [
+        "Produtos perigosos",
+        "transporte de produtos perigosos legislação",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ],
+      [
+        "Armazenagem de medicamentos",
+        "boas práticas de armazenagem de medicamentos",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ],
+      [
+        "Transporte aéreo",
+        "transporte aéreo de cargas vantagens e desvantagens",
+        [
+          null,
+          0,
+          null,
+          0
+        ]
+      ]
+    ],
+    "notaTemas": "Textos que explicam o tema, contados por nós pelos títulos. ✕ nenhum · – sem área de textos no site (Hunter) ou não foi possível ler os textos (Pacer). Os textos da Ativa sobre medicamentos são notícias de prêmios, não explicações.",
+    "fazemBem": [
+      [
+        "Ativa",
+        "Tem blog e área de conteúdo, e mostra prêmios do setor farmacêutico, como o Sindusfarma de Qualidade 2026."
+      ],
+      [
+        "Pacer",
+        "Organiza o menu por setor atendido: farma e correlatos, cosméticos. Quem chega acha o seu caso."
+      ],
+      [
+        "Luft",
+        "Separa as linhas de negócio no menu (Healthcare, Agro, Solutions), cada uma com o seu caminho."
+      ]
+    ],
+    "perguntasMostrar": [
+      "autorização especial para transporte de medicamentos controlados",
+      "licença anvisa para transporte de cosméticos",
+      "afe para transporte de saneantes",
+      "como tirar licença para transporte de produtos perigosos",
+      "qual norma regulamenta o transporte de produtos perigosos no brasil",
+      "transporte de medicamentos como funciona",
+      "boas praticas de armazenagem de medicamentos",
+      "mapeamento térmico na armazenagem de medicamentos",
+      "armazem com anvisa",
+      "transporte aéreo de cargas vantagens e desvantagens"
+    ],
+    "tituloPerguntas": "Perguntas que o comprador digita"
+  },
+  "sinaisManuais": [],
+  "outrasMarcas": [],
+  "modernizar": [
+    [
+      "Primeira tela",
+      "“Transporte, Logística e Soluções”",
+      "As licenças na primeira tela: Anvisa (AFE e AE), PF e Polícia Civil, MAPA"
+    ],
+    [
+      "Licenças",
+      "Uma página que lista as licenças",
+      "Uma página por licença, dizendo o que ela permite transportar e armazenar"
+    ],
+    [
+      "Endereços",
+      "Dois endereços para o mesmo galpão",
+      "Os dois CDs, com endereço e metragem conferidos"
+    ],
+    [
+      "Imagens",
+      "45 JPG e 24 PNG, 9,6 MB",
+      "WebP, carregando só quando aparecem"
+    ],
+    [
+      "Contato",
+      "Nome, e-mail, WhatsApp e mensagem",
+      "Pergunta produto, licença exigida, origem, destino e volume"
+    ]
+  ],
+  "oportunidades": [
+    {
+      "titulo": "Vender pela licença",
+      "fazer": "Licenças na primeira tela e uma página para cada uma, respondendo o que o comprador pesquisa.",
+      "impacto": "alto",
+      "esforco": "baixo"
+    },
+    {
+      "titulo": "Arrumar a base",
+      "fazer": "Cadeado (https), descrição para o Google, mapa do site, imagens leves e endereços conferidos.",
+      "impacto": "alto",
+      "esforco": "médio"
+    },
+    {
+      "titulo": "Uma cotação que qualifica",
+      "fazer": "Formulário que pergunta produto, licença, origem, destino e volume, para o pedido chegar pronto ao comercial.",
+      "impacto": "alto",
+      "esforco": "baixo"
+    }
+  ],
+  "perguntas": [
+    "Quem chega ao site, e por qual busca?",
+    "Quantos pedidos de cotação chegam por mês?",
+    "Quais licenças trazem os melhores clientes?",
+    "Quanto tempo leva a primeira resposta?"
+  ],
+  "metodo": [
+    "Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da Hunter.",
+    "Notas: Lighthouse, ferramenta do Google, rodado em nosso computador em 21/10/2026, com 3 rodadas no celular e 3 no computador, e o valor do meio. O PageSpeed Insights on-line usa a mesma ferramenta e pode dar alguns pontos de diferença.",
+    "A comparação olha só a página inicial de cada empresa.",
+    "Concorrentes escolhidas por nós: Ativa e Pacer, que atuam com medicamentos e cosméticos, e Luft, que tem uma linha de saúde. Se houver concorrentes mais próximas, refazemos.",
+    "Buscas: 703 sugestões do Google ao digitar, no Brasil, a partir de 14 temas do setor. Mostram que a busca existe; não medimos quantas pessoas buscam nem a posição de cada site.",
+    "Conteúdo: textos lidos nos próprios sites (118 da Ativa e 32 da Luft). Não foi possível ler os textos da Pacer. A contagem por tema foi feita por nós, pelos títulos.",
+    "Licenças da Hunter: as informadas na página Certificados do próprio site. Não conferimos nos órgãos emissores.",
+    "Instagram: números públicos de cada perfil. Não analisamos as publicações.",
+    "O modelo tem só a primeira tela da página inicial, com textos e números tirados do site atual, e um vídeo de apresentação criado para ele. Notas medidas no ar em 21/10/2026, do mesmo jeito que as do site atual. O modelo está marcado para não aparecer no Google; por isso a nota de SEO técnico dele fica de fora da comparação."
+  ],
+  "proximo": {
+    "titulo": "Próximo passo: uma conversa de 30 minutos.",
+    "texto": "Mostramos o mapa completo de buscas do setor e o modelo funcionando. Se fizer sentido, seguimos com a página inicial completa, para vocês verem a diferença antes de decidir.",
+    "contatos": [
+      [
+        "João Dini",
+        "(11) 98953-1711"
+      ],
+      [
+        "Amanda Takahashi",
+        "(15) 99642-3577"
+      ]
+    ]
+  },
+  "modelo": {
+    "intro": "Um modelo da primeira tela da nova página inicial, com vídeo e com o conteúdo do site de vocês: <a href=\"https://jgdini.github.io/halo-company/modelos/hunter/\" style=\"color:inherit\">jgdini.github.io/halo-company/modelos/hunter</a>",
+    "semSeo": true,
+    "resumo": [
+      {
+        "rotulo": "Conteúdo na tela",
+        "antes": "21,4 s",
+        "depois": "1,7 s",
+        "nota": "No celular, mais de doze vezes mais rápido"
+      },
+      {
+        "rotulo": "Peso da página",
+        "antes": "9,6 MB",
+        "depois": "1,6 MB",
+        "nota": "Seis vezes menor, mesmo com vídeo"
+      },
+      {
+        "rotulo": "Arquivos pedidos",
+        "antes": "134",
+        "depois": "6",
+        "nota": "Ao abrir a página"
+      },
+      {
+        "rotulo": "Serviços de terceiros",
+        "antes": "8",
+        "depois": "0",
+        "nota": "Endereços externos"
+      }
+    ],
+    "leitura": "<b>Com vídeo e tudo, a primeira tela aparece em 1,7 s no celular, contra 21,4 s hoje.</b> As licenças saem da página interna e vão para a primeira tela, que é o que o comprador de carga regulada procura."
+  }
+}

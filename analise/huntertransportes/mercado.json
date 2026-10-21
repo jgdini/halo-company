@@ -1,0 +1,5083 @@
+{
+ "coletadoEm": "2026-10-21T15:01:15.140Z",
+ "sementes": [
+  "transporte de medicamentos",
+  "transportadora de medicamentos",
+  "armazenagem de medicamentos",
+  "transporte de medicamentos controlados",
+  "transporte de produtos perigosos",
+  "transporte de cosméticos",
+  "armazenagem de cosméticos",
+  "logística farmacêutica",
+  "transporte de saneantes",
+  "armazenagem de fertilizantes",
+  "armazém anvisa",
+  "transportadora itapevi",
+  "transporte aéreo de cargas",
+  "transportadora são paulo"
+ ],
+ "consultasSemResposta": 0,
+ "total": 703,
+ "contagem": {
+  "pergunta": 27,
+  "comparacao": 4,
+  "compra": 5,
+  "epoca": 3
+ },
+ "porMarca": {
+  "Hunter": 0,
+  "Ativa": 1,
+  "Pacer": 0,
+  "Luft": 0,
+  "Jadlog": 3,
+  "Braspress": 1,
+  "Rodonaves": 1,
+  "Patrus": 0,
+  "Total Express": 0,
+  "Loggi": 0,
+  "Jamef": 1,
+  "DHL": 2,
+  "Correios": 1,
+  "Azul Cargo": 0
+ },
+ "exemplosPorMarca": {
+  "Hunter": [],
+  "Ativa": [
+   "transportadora ativa itapevi"
+  ],
+  "Pacer": [],
+  "Luft": [],
+  "Jadlog": [
+   "transportadora jadlog itapevi",
+   "transportadora são paulo jadlog",
+   "transportadora jadlog sao paulo telefone"
+  ],
+  "Braspress": [
+   "transportadora braspress são paulo telefone"
+  ],
+  "Rodonaves": [
+   "transportadora rodonaves sao paulo telefone"
+  ],
+  "Patrus": [],
+  "Total Express": [],
+  "Loggi": [],
+  "Jamef": [
+   "transportadora jamef são paulo"
+  ],
+  "DHL": [
+   "dhl transporte de medicamentos",
+   "dhl logistica farmaceutica"
+  ],
+  "Correios": [
+   "transporte de medicamentos pelos correios"
+  ],
+  "Azul Cargo": []
+ },
+ "buscas": [
+  {
+   "termo": "transporte aéreo de cargas vantagens e desvantagens",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 9,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos em quantidade limitada",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo de cargas no brasil",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos controlados",
+   "semente": "transporte de medicamentos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos legislação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos cnae",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo de cargas perigosas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos antt",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em voos nacionais",
+   "semente": "transporte de medicamentos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mapeamento térmico na armazenagem de medicamentos",
+   "semente": "armazenagem de medicamentos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "autorização especial para transporte de medicamentos controlados",
+   "semente": "transporte de medicamentos controlados",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos curso",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "licença anvisa para transporte de cosméticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "empresas de transporte aéreo de cargas no brasil",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos e insumos hospitalares",
+   "semente": "transporte de medicamentos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em ribeirão preto",
+   "semente": "transportadora de medicamentos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como abrir uma transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora de medicamentos e insumos farmacêuticos sp",
+   "semente": "transportadora de medicamentos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "boas praticas de armazenagem de medicamentos",
+   "semente": "armazenagem de medicamentos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "quando o transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de produtos perigosos fepam",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "afe para transporte de cosméticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "levu transporte aereo e logistica de cargas s a",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "rm melo transporte rodoviario e aereo de cargas ltda",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "onix logistica transporte aereo e rodoviario de cargas ltda",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo rio de janeiro",
+   "semente": "transportadora são paulo",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica no brasil livro",
+   "semente": "logística farmacêutica",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica e o transporte de medicamentos termolábeis",
+   "semente": "logística farmacêutica",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "legislação para transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte de produtos perigosos deve ser feito",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos com fiorino",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em são paulo",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em guarulhos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos precisa de farmaceutico",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos o que é",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos pode ser mei",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica no brasil",
+   "semente": "logística farmacêutica",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "armazenagem de fertilizantes a granel",
+   "semente": "armazenagem de fertilizantes",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "modern transporte aereo de cargas rastreamento",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "modern transporte aereo de cargas sa",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos como funciona",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "gelo para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "gelo para transporte de medicamentos dura quanto tempo",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos feira de santana",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em goiânia",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "maior transportadora de medicamentos do brasil",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "roteiro de inspeção transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos da classe",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "total logística farmacêutica filial manaus fotos",
+   "semente": "logística farmacêutica",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para bahia",
+   "semente": "transportadora são paulo",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo rio grande do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos de alto custo",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "o que caracteriza o transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "total logística farmacêutica filial manaus",
+   "semente": "logística farmacêutica",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para minas gerais",
+   "semente": "transportadora são paulo",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo foz do iguacu",
+   "semente": "transportadora são paulo",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em viagens internacionais",
+   "semente": "transporte de medicamentos",
+   "vezes": 3,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em recife",
+   "semente": "transportadora de medicamentos",
+   "vezes": 3,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo juazeiro do norte",
+   "semente": "transportadora são paulo",
+   "vezes": 3,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos refrigerados",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos vagas",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos agregar",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "caixa de transporte para medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em bh",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos dentro del hospital",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como fazer transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de medicamentos por motoboy",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "qual cnae para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora de medicamentos sp",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos rj",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos df",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora para medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "rdc armazenagem de medicamentos",
+   "semente": "armazenagem de medicamentos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sest senat",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos nr",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos no brasil",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como tirar licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de cosméticos legislação",
+   "semente": "transporte de cosméticos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de cosmeticos anvisa",
+   "semente": "transporte de cosméticos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte natura cosmeticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica vagas",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica faveni",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica curso",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica salário",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica hospitalar",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica napoli",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "curso logística farmacêutica gratuito",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica pos graduação",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica o que é",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de saneantes anvisa",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "rdc transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "afe para transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "armazem com anvisa",
+   "semente": "armazém anvisa",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora itapevi sp",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora ga itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora prime itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora jadlog itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora amazon itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora rodo tt itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transporte aereo de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo internacional de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aereo para cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo minas",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo trabalhe conosco",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo bahia",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo sp",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para rio de janeiro",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo natal",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "epoca"
+   ]
+  },
+  {
+   "termo": "transportadora são paulo belo horizonte",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo vitoria da conquista",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo espirito santo",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em voos internacionais",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos refrigerados em avião",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos termolábeis anvisa",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos pelos correios",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "credencial para transporte de medicamentos e insumos hospitalares",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "kit transporte de medicamentos insulina temperatura refrigerada",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos voo internacional",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em campinas",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em fortaleza",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "autorização de transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "qual norma regulamenta o transporte de produtos perigosos no brasil",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos cnae",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos legislação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica pdf",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "evolução logística farmacêutica entrega de medicamentos transporte de medicamentos",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "vipfarma logística farmacêutica sa",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "afe transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora granado itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora ativa itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "icms transporte aéreo de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "custo do transporte aéreo de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo natal rn",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": [
+    "epoca"
+   ]
+  },
+  {
+   "termo": "transportadora são paulo minas gerais",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "carro para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "kit para/transporte de medicamentos ac089 ortho pauher",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos trabalhe conosco",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "como funciona o transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora de medicamentos em curitiba",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em rio preto",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos o veículo pode emitir",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica como funciona",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "evolução logística farmacêutica entrega de medicamentos transporte de medicamentos fotos",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cnae para transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "levu transporte aereo e logistica de cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo recife",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo juiz de fora",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo minas vila maria",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "kit para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "kit térmico transporte de medicamentos e insulina ortho pauher",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "golpe da transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos dispensada *)",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "no transporte de produtos perigosos as infrações são atribuídas a quem",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte de produtos perigosos as infrações são atribuídas a quem",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos pode ser mei",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos só pode ser praticado por",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "medlog logística farmacêutica sa",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para santa catarina",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo campo grande",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo feira de santana",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em sao paulo. lc transportadora serviços de transportes ltda",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "motorista para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "gelo seco para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "pop transporte de medicamentos termolábeis",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "regras para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos não perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "organizacion logistica farmaceutica clinifarma",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "total logistica farmaceutica ltda",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para rio grande do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo jaragua do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em são paulo vagas de emprego",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo rio grande do norte",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "maleta de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em bh",
+   "semente": "transportadora de medicamentos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "tc transporte rodoviario de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mba logistica farmaceutica.faveni",
+   "semente": "logística farmacêutica",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo parana",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "rdc transporte de medicamentos anvisa",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "resolução antt transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte terrestre de produtos perigosos no mercosul",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para brasilia",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo caxias do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "licença ambiental transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para fortaleza",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo belem do para",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo mato grosso",
+   "semente": "transportadora são paulo",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "vagas para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 2,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos gol",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "jp transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos legislação",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos motorista",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos no aviao",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos oncologicos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos quimioterápicos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos termolábeis",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos urgentes emprego",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em araraquara",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos bh",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos curitiba",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos frios",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "hielera transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos londrina",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos mg",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "armazenagem de medicamentos",
+   "semente": "armazenagem de medicamentos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "sistema nacional de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "horario transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "é proibido transporte de produtos perigosos junto com",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte terrestre de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "são documentos usados no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos valor",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "qual a nr para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de cosméticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transporte de cosmeticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "rdc transporte de.cosmeticos",
+   "semente": "transporte de cosméticos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "armazenamento de cosmeticos",
+   "semente": "armazenagem de cosméticos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica argentina",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "dms logística farmacêutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica empresas",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica italia",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica livro",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica milano",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "que es logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica racine",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica trabajo",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica uruguay",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que e logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de saneantes",
+   "semente": "transporte de saneantes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "armazenagem de fertilizantes",
+   "semente": "armazenagem de fertilizantes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em itapevi",
+   "semente": "transportadora itapevi",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aereo gol cargas",
+   "semente": "transporte aéreo de cargas",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de sao paulo para ourinhos",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo aracaju",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo ceara",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo diretão",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo florianópolis",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo goiania",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo irece bahia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo joao pessoa",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo ltda",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para o rio de janeiro",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de sao paulo que atende espirito santo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo uberlandia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "qual transportadora da drogaria sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "melhor transportadora de sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos anvisa",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "golpe transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "jetsmart transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos latam",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos medicos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos normativa",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "kit para transporte de medicamentos ortho pauher",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos urgentes emprego porto",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "como trabalhar com transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "legislação transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos refrigerados",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos sc",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos (mopp)",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "sistema nacional de transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos documentação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "envelope transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte ferroviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "guia de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "habilitação para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos onu",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos pdf",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos salario",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "tpp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "veículos de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "qual orgao regulamenta o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que seria transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logistica farmaceutica andreani",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica cajamar",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica hospitalaria",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica in inglese",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica lavoro",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica master",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica ospedaliera",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica roma",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica srl",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "unyleya logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora ouro negro sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a goiania",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo brasilia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo curitiba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo express",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo fortaleza",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo goias",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora hmc são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo interior",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo joinville",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo londrina",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo nordeste",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o nordeste",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo santa catarina",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo teresina",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo uberaba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo vitoria",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos aviao",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "qualificação de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos rdc",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "rdc sobre transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos urgentes",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos vencidos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "bcl express transportadora de medicamentos e biológicos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em santa catarina",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em minas gerais",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "como montar uma transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora de medicamentos rs",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos sorocaba",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "segurança na armazenagem manuseio e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "abnt transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "epi transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "fiscalização de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "embalagens homologadas para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos não perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos o porte do cipp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos placas",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "resolução transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sigla",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "qual a licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "pós graduação logística farmacêutica a distância",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica bologna",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "pós graduação logística farmacêutica ead",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "gestion logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica industria farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica lodi",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mba logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica pavia",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica somaglia",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "total logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em são paulo sp transportadora nacional",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo alagoas",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo cuiaba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para espirito santo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo guarulhos",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora hervi sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo itajai",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo limitada",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o maranhão",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que atende são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo salvador",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo tocantins",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para uberlandia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo vitoria es",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos assunção",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "boas praticas transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos cnae",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "dhl transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em curitiba",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "farmacêutico transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "gelox para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "hielera para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "certificado anvisa para transporte de medicamentos motorista",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "normas para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "pop transporte de medicamentos pdf",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos rj",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "legislação sobre transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos tap",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "empresas de transporte de medicamentos urgentes",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos veterinarios",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos salvador",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "kit para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos cetesb",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos emitida pelo ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "certificado de capacitação para o transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "habilitado em curso específico de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "licença transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "licença ambiental para transporte de produtos perigosos mg",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transporte de produtos não perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "legislação para transporte de produtos quimicos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "regulamentação transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "tabela de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "velocidade máxima para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica anagni",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica corrientes",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "evolução logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "dms logistics farmacêutica fotos",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa industria farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica lombardia",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "curso de logística farmacêutica online",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica piacenza",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "rdc logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a minas gerais",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo belém",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo guaruja",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "hc transportadora sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo minas passos mg",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo zona norte",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o pará",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz são paulo rio de janeiro",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo rastreio",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo sergipe",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora união sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos azul",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa térmica para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos curitiba",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos empresas",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "fiorino para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "hielo para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte internacional de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "legislação anvisa transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "normatividad transporte de medicamentos en colombia",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "que es el transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos recrutamento",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte urgente de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "caixa transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cnae de transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "farmaceutico transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "pop transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "autorização transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos polícia federal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte interestadual de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "lss transporte de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "motorista transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "entre os documentos específicos para transporte de produtos perigosos temos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "condutores de veículos de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "qual o tipo de transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logistica farmaceutica arona",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "dhl logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "logistica inversa farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica chignolo po",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a cuiaba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo bh",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo capital",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em são paulo capital",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo franca",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora heltran são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para imperatriz maranhão",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo sao luis",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo manaus",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo x nordeste",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora de são paulo para o paraná",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo pernambuco",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz sao paulo goiania",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo santarem",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora minuano são paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para ubatuba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa refrigerada para transporte de medicamentos wellion",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "empresa de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "geladeira para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transporte irregular de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "licença anvisa para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "nevera transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "pop transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos recrutamento viseu",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "saco termico para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "temperatura transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "proteina transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "autorização para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças municipal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "policia federal transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transporte interestadual de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "lei transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "manual transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "kit emergência transporte de produtos perigosos nbr 9735 kit mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "pae transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "validade do curso de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "o que é considerado transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logistica azienda farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "5s transportes e logistica farmacêutica cnpj",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "logistica farmaceutica del sur",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "estagio logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "marka logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "logifarma logistica farmaceutica sa",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a brasilia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo bauru",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo campinas",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora emborcação são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo feira",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora novo horizonte são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora imile sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo jadlog",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora expresso são paulo lajeado",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo maceio",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo x natal",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "comparacao",
+    "epoca"
+   ]
+  },
+  {
+   "termo": "transportadora de são paulo para o ceará",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo porto alegre",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz são paulo bahia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo rio",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo sorocaba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora rodonaves sao paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora ultrapress sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo porto velho",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cnae para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "bolsa refrigerada para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "caixa de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos em aviao",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "agregar fiorino para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "gelo para transporte de medicamentos em avião",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "isopor para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "carro para/ transporte de materiais e medicamentos - ltda 6160",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mochila para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "nom transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos refrigerados en avión",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "alvara sanitario para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transporte medicamentos veterinarios",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "caja transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "principal proteína transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "rdc transportadora de medicamentos",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "certificado para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cipp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças intermunicipal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "inmetro transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "carboplus comercio e transporte de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "multa transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "dentro do processo de transporte de produtos perigosos o expedidor é",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte rodoviário de produtos perigosos pode ser",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "empresas de transporte de produtos perigosos sp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "simbologia do veículo no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o que são resíduos no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cadeia logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "diplomado logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "5s transportes e logistica farmacêutica fotos",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "5s transportes e logística farmacêutica ltda",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "medlog - logistics farmaceutica s a",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo acre",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo bras",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo caruaru",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em são paulo sp",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora continental são paulo fotos",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora imperial sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo sao jose do rio preto",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo mercado livre",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo maringa",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para nordeste",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o acre",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz sao paulo pernambuco",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo ribeirao preto",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo sinop",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora jadlog sao paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora unitrans sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo boa vista",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "maleta para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "agregar veículos para transporte de medicamentos em bh",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "tls log logística hospitalar e transporte de medicamentos fotos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de los medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mala para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos requisitos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transporte seguro de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "caixa termica transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "certificado anvisa para transporte de medicamentos valor",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "cnae para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "certificado transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos do ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "empresa de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "documento fiscal para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "infração transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transporte marítimo de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "nbr transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos sest senat",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "regulamento terrestre do transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "sinalização de veiculos para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ctpp o que é transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "logística farmacêutica pós graduação",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "evolução logística farmacêutica entrega de medicamentos transporte de medicamentos são paulo",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "imagens de total logística farmacêutica filial manaus",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "5s transportes e logística farmacêutica ltda aparecida de goiânia",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "logifarma logística farmacêutica sa",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a fortaleza",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo blumenau",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo cascavel",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora rápido são paulo fotos",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para ipatinga mg",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo x lucas do rio verde",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora são paulo maranhão",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o rio grande do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz sao paulo minas gerais",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo rondonia",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo shopee",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora braspress são paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de sao paulo para uruguaiana",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo master expresso vtex",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "boas práticas de transporte de medicamentos anvisa",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cimed transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cnae de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transporte medicamentos frio",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "geladeira termica para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mecanismo de transporte de los medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "carro para transporte de medicamentos e materiais",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transporte y entrega de medicamentos sl",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "trabalhar com transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de medicamentos em salvador",
+   "semente": "transportadora de medicamentos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "placas para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "checklist transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "extintor para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "quem fiscaliza o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "norma transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "quanto o transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "quantidade limitada para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "simbologia transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "valores das infrações no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "o que é proibido no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "corso logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "especialização logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "avaliações sobre total logística farmacêutica filial manaus",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "legislação logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "meta logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "logistica y seguridad farmaceutica sa de cv",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo para curitiba",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a belo horizonte",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora economica sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora cristina são paulo fotos",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de sao paulo para itajai",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora jdf sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo zona leste",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo macapa",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora nimec sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o rio",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz sao paulo rio grande do sul",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo roraima",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo x santa catarina",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora reunidas sao paulo telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora nova uniao sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo master standard vtex",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "validação de transporte medicamentos anvisa",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "buenas practicas de transporte de medicamentos pdf",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "caixa transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "motorista de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos emprego",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de medicamentos con cadena de frio",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mini geladeira para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "iberia transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ley de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "caixa maleta para transporte de medicamentos psicotrópicos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "rdc 430 transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "servicio de transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "termometro para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "veiculo para transporte de medicamentos",
+   "semente": "transporte de medicamentos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "envelope para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ctpp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "placas de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "fiscalização do transporte rodoviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "inea transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "manuseio e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "quem regulamenta o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "regulamento de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "sinalização transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "tpp curso especializado de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "valor da multa de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "logistica farmaceutica cambiago",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "logistica e farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "la logistica farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "medlog logística farmacêutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "logistica y seguridad farmaceutica",
+   "semente": "logística farmacêutica",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para belo horizonte",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo a palmas",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo botucatu",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo candeias",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para franca",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para goias",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora itapirense bertini são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora jamef são paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo para conselheiro lafaiete",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora novatos sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de são paulo para o espirito santo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora que faz sao paulo a mato grosso",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora sao paulo rio preto",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora são paulo minas telefone",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora valencia sao paulo",
+   "semente": "transportadora são paulo",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  }
+ ],
+ "conteudo": {
+  "textos": [],
+  "paginas": [],
+  "fonte": [
+   "sem API do WordPress: preencher à mão a partir do mapa do site"
+  ]
+ }
+}

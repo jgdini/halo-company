@@ -1,0 +1,181 @@
+{
+  "medidoEm": "2026-10-21T14:13:45.448Z",
+  "itens": {
+    "Expresso 3300": {
+      "celular": {
+        "desempenho": 30,
+        "acessibilidade": 81,
+        "boasPraticas": 100,
+        "seo": 100,
+        "lcpSeg": 17.6,
+        "fcpSeg": 10.1,
+        "tbtMs": 1433,
+        "cls": 0,
+        "pesoMB": 3.9,
+        "requisicoes": 53,
+        "terceiros": 4,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          30,
+          30,
+          28
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:15:47.214Z"
+      },
+      "computador": {
+        "desempenho": 54,
+        "acessibilidade": 85,
+        "boasPraticas": 100,
+        "seo": 100,
+        "lcpSeg": 4.8,
+        "fcpSeg": 1.8,
+        "tbtMs": 111,
+        "cls": 0.252,
+        "pesoMB": 4.2,
+        "requisicoes": 55,
+        "terceiros": 4,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          54,
+          55,
+          52
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:17:33.400Z"
+      }
+    },
+    "Multilog": {
+      "celular": {
+        "desempenho": 29,
+        "acessibilidade": 90,
+        "boasPraticas": 96,
+        "seo": 100,
+        "lcpSeg": 10.5,
+        "fcpSeg": 9.4,
+        "tbtMs": 1975,
+        "cls": 0,
+        "pesoMB": 3.9,
+        "requisicoes": 114,
+        "terceiros": 4,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          28,
+          29,
+          29
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:19:30.097Z"
+      },
+      "computador": {
+        "desempenho": 81,
+        "acessibilidade": 90,
+        "boasPraticas": 100,
+        "seo": 100,
+        "lcpSeg": 2.1,
+        "fcpSeg": 1.7,
+        "tbtMs": 101,
+        "cls": 0.001,
+        "pesoMB": 4,
+        "requisicoes": 114,
+        "terceiros": 4,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          82,
+          74,
+          81
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:21:24.588Z"
+      }
+    },
+    "Tegma": {
+      "celular": {
+        "desempenho": 26,
+        "acessibilidade": 81,
+        "boasPraticas": 65,
+        "seo": 92,
+        "lcpSeg": 7.5,
+        "fcpSeg": 5.7,
+        "tbtMs": 7174,
+        "cls": 0.003,
+        "pesoMB": 6.2,
+        "requisicoes": 112,
+        "terceiros": 32,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          26,
+          28,
+          26
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:23:46.767Z"
+      },
+      "computador": {
+        "desempenho": 40,
+        "acessibilidade": 85,
+        "boasPraticas": 69,
+        "seo": 92,
+        "lcpSeg": 2.9,
+        "fcpSeg": 2.2,
+        "tbtMs": 753,
+        "cls": 0.002,
+        "pesoMB": 8.9,
+        "requisicoes": 112,
+        "terceiros": 32,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          40,
+          40,
+          37
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T14:26:27.758Z"
+      }
+    },
+    "Modelo Halo": {
+      "celular": {
+        "desempenho": 99,
+        "acessibilidade": 100,
+        "boasPraticas": 96,
+        "seo": 63,
+        "lcpSeg": 1.9,
+        "fcpSeg": 1.1,
+        "tbtMs": 0,
+        "cls": 0.011,
+        "pesoMB": 1.7,
+        "requisicoes": 7,
+        "terceiros": 0,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          99,
+          100,
+          99
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T17:26:45.330Z"
+      },
+      "computador": {
+        "desempenho": 100,
+        "acessibilidade": 100,
+        "boasPraticas": 96,
+        "seo": 63,
+        "lcpSeg": 0.4,
+        "fcpSeg": 0.3,
+        "tbtMs": 0,
+        "cls": 0,
+        "pesoMB": 1.7,
+        "requisicoes": 7,
+        "terceiros": 0,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          100,
+          100,
+          100
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-10-21T17:27:53.069Z"
+      }
+    }
+  }
+}
