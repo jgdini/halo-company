@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Hunter Transportes e Logística | Transporte e armazenagem de carga regulada</title>
+<meta name="description" content="Transporte rodoviário e aéreo, distribuição e armazenagem para medicamentos, cosméticos, saneantes, alimentos e produtos perigosos, com licenças Anvisa (AFE e AE), PF, Polícia Civil e MAPA. Itapevi e Embu das Artes, SP.">
+<meta name="theme-color" content="#080805">
+<link rel="preload" href="assets/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/hero-capa.webp" as="image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MovingCompany","name":"Hunter Transportes e Logística","url":"https://www.huntertransportes.com.br/","telephone":"+55-11-99596-1494","email":"comercial@huntertransportes.com.br","foundingDate":"2012","areaServed":"BR","address":{"@type":"PostalAddress","streetAddress":"Av. Caio Cotrim, 46, Galpão 18","addressLocality":"Itapevi","addressRegion":"SP","postalCode":"06696-060","addressCountry":"BR"},"knowsAbout":["Transporte de medicamentos","Medicamentos controlados (Portaria 344/98)","Produtos perigosos","Armazenagem de cosméticos e saneantes","Armazenagem de fertilizantes"]}
+</script>
+<style>
+@font-face { font-family: "Figtree"; src: url(assets/figtree.woff2) format("woff2"); font-weight: 300 900; font-display: swap; }
+:root {
+  --noite: #080805; --grafite: #121212; --borda: #2A2A2A; --nevoa: #8F8F8F; --branco: #FFFFFF;
+  --azul-rota: #78D0E8; --azul-hunter: #0E3F6E;
+  --raio-painel: 32px; --raio-icone: 16px;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scrollbar-color: #2A2A2A var(--noite); }
+body { margin: 0; background: var(--noite); color: var(--branco); font-family: "Figtree", system-ui, sans-serif; font-weight: 300; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--azul-rota); color: var(--noite); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--azul-rota); outline-offset: 3px; border-radius: 6px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Painel do hero: a foto flutua sobre o fundo, com 16 px de margem. */
+.hero { padding: 16px; min-height: 100svh; display: flex; }
+.painel { position: relative; flex: 1; min-height: calc(100svh - 32px); border-radius: var(--raio-painel); overflow: hidden; isolation: isolate; display: flex; flex-direction: column; background: var(--grafite); }
+.painel__foto { position: absolute; inset: 0; z-index: -2; }
+.painel__foto video { width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; display: block; }
+.painel::before { content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(8,8,5,.72) 0%, rgba(8,8,5,.35) 22%, rgba(8,8,5,.55) 48%, rgba(8,8,5,.9) 72%, rgba(8,8,5,.97) 100%); }
+@media (min-width: 900px) { .painel::before { background: linear-gradient(90deg, rgba(8,8,5,.95) 0%, rgba(8,8,5,.84) 34%, rgba(8,8,5,.38) 56%, rgba(8,8,5,.08) 72%), linear-gradient(180deg, rgba(8,8,5,.6) 0%, rgba(8,8,5,0) 24%, rgba(8,8,5,0) 70%, rgba(8,8,5,.75) 100%); } }
+
+/* Topo */
+.topo { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 24px 0; }
+.marca { display: inline-flex; align-items: center; background: var(--azul-hunter); border-radius: var(--raio-icone); padding: 10px 14px; text-decoration: none; }
+.marca img { display: block; width: 132px; height: auto; }
+.menu { display: none; gap: 4px; align-items: center; padding: 6px; border-radius: 9999px; background: rgba(18,18,18,.62); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.08); }
+.menu a { padding: 8px 18px; border-radius: 9999px; font-size: .9rem; font-weight: 400; text-decoration: none; color: rgba(255,255,255,.82); transition: background .3s, color .3s; }
+.menu a:hover { background: rgba(255,255,255,.08); color: var(--branco); }
+.topo__acoes { display: flex; align-items: center; gap: 10px; }
+.cotar-topo { display: none; align-items: center; gap: 10px; height: 44px; padding: 0 8px 0 20px; border-radius: 9999px; background: var(--azul-rota); color: var(--noite); font-weight: 500; font-size: .9rem; text-decoration: none; transition: transform .3s var(--ease); }
+.cotar-topo svg { width: 28px; height: 28px; padding: 6px; border-radius: 50%; background: var(--noite); color: var(--azul-rota); }
+.cotar-topo:hover { transform: translateY(-1px); }
+.btn-menu { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255,255,255,.12); background: rgba(18,18,18,.62); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); color: var(--branco); display: grid; place-items: center; cursor: pointer; }
+.btn-menu svg { width: 18px; height: 18px; }
+
+/* Linha de contexto, como no modelo: três informações curtas abaixo do topo. */
+.contexto { display: none; justify-content: space-between; padding: 28px 48px 0; font-size: .78rem; color: rgba(255,255,255,.72); }
+.contexto p { margin: 0; max-width: 24ch; }
+.contexto p:nth-child(2) { text-align: center; }
+.contexto p:last-child { text-align: right; }
+
+/* Base do hero */
+.base { margin-top: auto; padding: 0 24px 28px; display: grid; gap: 28px; }
+h1 { margin: 0; font-weight: 500; font-size: clamp(2.35rem, 8.4vw, 4.25rem); line-height: 1.04; letter-spacing: -.04em; max-width: 17ch; text-wrap: balance; }
+h1 span { color: var(--azul-rota); }
+.apoio { margin: 14px 0 0; max-width: 46ch; color: rgba(255,255,255,.78); font-size: .98rem; }
+.licencas { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.licencas li { display: inline-flex; align-items: baseline; gap: 8px; padding: 8px 14px; border-radius: 9999px; background: rgba(18,18,18,.66); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.08); font-size: .78rem; font-weight: 400; color: rgba(255,255,255,.88); }
+.licencas b { font-weight: 600; letter-spacing: .06em; color: var(--azul-rota); }
+.acoes { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.seta { display: inline-flex; align-items: center; gap: 14px; color: var(--branco); text-decoration: none; font-size: 1rem; font-weight: 400; }
+.seta span { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,.28); transition: border-color .3s, color .3s, transform .4s var(--ease); }
+.seta svg { width: 16px; height: 16px; }
+.seta:hover span { border-color: var(--azul-rota); color: var(--azul-rota); transform: translateX(3px); }
+.seta--forte span { background: var(--azul-rota); border-color: var(--azul-rota); color: var(--noite); }
+.seta--forte:hover span { color: var(--noite); }
+
+.nota { padding: 8px 24px 28px; font-size: .75rem; color: var(--nevoa); text-align: center; }
+.nota a { color: var(--azul-rota); text-underline-offset: 3px; }
+
+@media (min-width: 900px) {
+  .topo { padding: 24px 32px 0; }
+  .menu { display: flex; }
+  .cotar-topo { display: inline-flex; }
+  .btn-menu { display: none; }
+  .contexto { display: flex; }
+  .base { grid-template-columns: 1fr auto; align-items: end; padding: 0 48px 44px; gap: 40px; }
+  .acoes { flex-direction: row; gap: 0; padding-left: 40px; border-left: 1px solid rgba(255,255,255,.12); }
+  .acoes .seta + .seta { margin-left: 28px; padding-left: 28px; border-left: 1px solid rgba(255,255,255,.12); }
+  .licencas { margin-top: 26px; }
+}
+
+/* Um momento de movimento: a foto assenta e o título surge do desfoque. */
+@media (prefers-reduced-motion: no-preference) {
+  .painel__foto video { animation: assenta 1.8s var(--ease) both; }
+  .entra { animation: surge 1.1s var(--ease) both; animation-delay: calc(.25s + var(--i, 0) * .09s); }
+  @keyframes assenta { from { transform: scale(1.07); } to { transform: none; } }
+  @keyframes surge { from { opacity: 0; transform: translateY(18px); filter: blur(8px); } to { opacity: 1; transform: none; filter: none; } }
+}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" aria-labelledby="titulo">
+    <div class="painel">
+      <div class="painel__foto">
+        <video id="hero-video" muted loop playsinline preload="none" poster="assets/hero-capa.webp" aria-label="Vídeo da operação Hunter: carregamento no armazém, caminhão na estrada e transporte aéreo"></video>
+      </div>
+
+      <header class="topo">
+        <a class="marca" href="#" aria-label="Hunter Transportes e Logística, início"><img src="assets/logo-hunter.png" width="180" height="70" alt="Hunter Transportes e Logística"></a>
+        <nav class="menu" aria-label="Principal">
+          <a href="#">Transporte</a>
+          <a href="#">Armazenagem</a>
+          <a href="#">Licenças</a>
+          <a href="#">Sobre</a>
+        </nav>
+        <div class="topo__acoes">
+          <a class="cotar-topo" href="#cotacao">Solicitar cotação <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <button class="btn-menu" type="button" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+        </div>
+      </header>
+
+      <div class="contexto" aria-hidden="true">
+        <p>Itapevi e Embu das Artes · SP</p>
+        <p>Desde 2012, para indústria, comércio e serviços</p>
+        <p>Rodoviário, aéreo, distribuição e armazenagem</p>
+      </div>
+
+      <div class="base">
+        <div>
+          <h1 id="titulo" class="entra">Transporte e armazenagem para <span>carga que exige licença.</span></h1>
+          <p class="apoio entra" style="--i:1">Medicamentos, inclusive controlados, cosméticos, saneantes, alimentos e produtos perigosos, com rastreamento 24 horas e seguro de carga.</p>
+          <ul class="licencas entra" style="--i:2" aria-label="Licenças e garantias">
+            <li><b>ANVISA</b> AFE e AE (Portaria 344/98)</li>
+            <li><b>PF e PC</b> Produtos perigosos</li>
+            <li><b>MAPA</b> Fertilizantes e insumos</li>
+            <li><b>R$ 14 mi</b> Apólice averbada</li>
+          </ul>
+        </div>
+        <div class="acoes entra" style="--i:3" id="cotacao">
+          <a class="seta seta--forte" href="#">Solicitar cotação <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a class="seta" href="https://wa.me/5511995961494" target="_blank" rel="noopener">Falar no WhatsApp <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p class="nota">Modelo de página inicial preparado pela <a href="https://jgdini.github.io/halo-company/">Halo Company</a> com o conteúdo do site atual da Hunter.</p>
+</main>
+<script>
+(function () {
+  var v = document.getElementById('hero-video');
+  if (!v || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  v.src = innerWidth * (devicePixelRatio || 1) > 1600 ? 'assets/hero-1080.mp4' : 'assets/hero-720.mp4';
+  v.play().catch(function () {});
+})();
+</script>
+</body>
+</html>

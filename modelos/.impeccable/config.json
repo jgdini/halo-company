@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-21T17:15:09.958Z",
+        "reason": "Modelo de referência Traceo escolhido pelo João usa Inter no texto; fixado no DESIGN.md da Expresso"
+      }
+    ]
+  }
+}
