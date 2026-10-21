@@ -1,0 +1,372 @@
+{
+  "coletadoEm": "2026-10-21T18:05:02.260Z",
+  "estrutura": {
+    "Semitrans": {
+      "servidor": "cloudflare",
+      "linguagem": "PHP/5.3.29",
+      "sistema": null,
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": false,
+      "scripts": 21,
+      "folhasDeEstilo": 11,
+      "plugins": [],
+      "tema": [],
+      "imagens": 6,
+      "imagensSemDescricao": 5,
+      "imagensPorFormato": {
+        "png": 5
+      },
+      "imagensComCarregamentoSobDemanda": 0,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [],
+      "mapaDoSite": {
+        "enderecos": 0,
+        "emHttp": 0,
+        "ultimaAtualizacao": null,
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": null,
+        "fonte": null,
+        "secoes": []
+      },
+      "redes": {
+        "instagram": null,
+        "facebook": null,
+        "linkedin": null,
+        "youtube": "https://www.youtube.com/watch?v=jGvfK3VrEqE",
+        "tiktok": null
+      }
+    },
+    "Translima": {
+      "servidor": "nginx/1.24.0",
+      "linguagem": "PHP/7.4.33",
+      "sistema": "Site Kit by Google 1.190.0",
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 62,
+      "folhasDeEstilo": 39,
+      "plugins": [
+        "elementor",
+        "header-footer-elementor",
+        "essential-addons-for-elementor-lite",
+        "sticky-header-effects-for-elementor",
+        "metform",
+        "smart-slider-3",
+        "cookie-law-info",
+        "elementskit-lite",
+        "google-site-kit"
+      ],
+      "tema": [
+        "customizr"
+      ],
+      "imagens": 42,
+      "imagensSemDescricao": 22,
+      "imagensPorFormato": {
+        "webp": 13,
+        "png": 21,
+        "jpg": 4,
+        "svg": 2
+      },
+      "imagensComCarregamentoSobDemanda": 21,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "Quem Somos",
+        "Soluções",
+        "Sustentabilidade",
+        "Blog",
+        "Trabalhe Conosco",
+        "Contato"
+      ],
+      "mapaDoSite": {
+        "enderecos": 5,
+        "emHttp": 0,
+        "ultimaAtualizacao": "2026-10-21T14:57:19+00:00",
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": "2026-10-21",
+        "fonte": "/feed",
+        "secoes": []
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/translima.logistica/",
+        "facebook": "https://www.facebook.com/translima.logistica",
+        "linkedin": "https://www.linkedin.com/company/translima-log%C3%ADstica-e-transportes/",
+        "youtube": null,
+        "tiktok": null
+      }
+    },
+    "Dupla Química": {
+      "servidor": "nginx/1.26.1",
+      "linguagem": null,
+      "sistema": "WordPress 7.1.3",
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 96,
+      "folhasDeEstilo": 64,
+      "plugins": [
+        "header-footer-elementor",
+        "contact-form-7",
+        "woocommerce",
+        "elementor",
+        "elementor-pro",
+        "essential-addons-for-elementor-lite",
+        "cf7-redirect-thank-you-page",
+        "revslider",
+        "wpcf7-recaptcha",
+        "gtranslate"
+      ],
+      "tema": [
+        "fastrans",
+        "fastrans-child"
+      ],
+      "imagens": 37,
+      "imagensSemDescricao": 22,
+      "imagensPorFormato": {
+        "png": 26,
+        "jpg": 8,
+        "webp": 2
+      },
+      "imagensComCarregamentoSobDemanda": 7,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "Home",
+        "Quem Somos",
+        "Transporte",
+        "Comércio",
+        "Frota",
+        "Seminovos",
+        "Blog",
+        "Contato"
+      ],
+      "mapaDoSite": {
+        "enderecos": 7,
+        "emHttp": 0,
+        "ultimaAtualizacao": "2026-08-31T12:56:11+00:00",
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": "2025-12-09",
+        "fonte": "último texto de conteúdo (O Ácido Fosfórico); os posts de 2026 são relatórios de transparência",
+        "secoes": [
+          "/noticias"
+        ]
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/duplaquimica_transportes/",
+        "facebook": "https://www.facebook.com/p/Duplaqumica-61560411623498/",
+        "linkedin": null,
+        "youtube": null,
+        "tiktok": null
+      }
+    },
+    "Rodoquímica": {
+      "servidor": "Apache",
+      "linguagem": null,
+      "sistema": "WordPress 7.1.3",
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 37,
+      "folhasDeEstilo": 22,
+      "plugins": [
+        "carousel-block",
+        "woocommerce",
+        "advanced-woo-search",
+        "yith-woocommerce-catalog-mode",
+        "kadence-blocks",
+        "wp-whatsapp-chat",
+        "gp-premium",
+        "cookie-law-info",
+        "masks-form-fields",
+        "page-scroll-to-id"
+      ],
+      "tema": [
+        "generatepress"
+      ],
+      "imagens": 23,
+      "imagensSemDescricao": 9,
+      "imagensPorFormato": {
+        "png": 3,
+        "jpg": 19,
+        "svg": 1
+      },
+      "imagensComCarregamentoSobDemanda": 17,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [
+        "Todas Linhas",
+        "Linha LAVANDEX",
+        "Linha automotiva RODOKLIN",
+        "Linha PISCINA",
+        "Linha INSTITUCIONAL",
+        "Linha Construção Civil",
+        "Linha de Aditivos e Desmoldantes para concreto",
+        "Hipoclorito de sódio",
+        "Ácido Clorídrico",
+        "Construção Civil",
+        "Aditivos p/ concreto",
+        "Para Empresas",
+        "RODOCOLOR",
+        "RODOKLIN"
+      ],
+      "mapaDoSite": {
+        "enderecos": 7,
+        "emHttp": 0,
+        "ultimaAtualizacao": null,
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": null,
+        "fonte": "só a postagem padrão do WordPress (Olá, mundo!), desconsiderada"
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/rodoquimica",
+        "facebook": "https://www.facebook.com/gruporodoquimicaoficial",
+        "linkedin": null,
+        "youtube": null,
+        "tiktok": null
+      }
+    }
+  },
+  "instagram": {
+    "Semitrans": null,
+    "Translima": {
+      "usuario": "translima.logistica",
+      "status": 200,
+      "nome": "Translima Logística (&#064;translima.logistica) • Instagram photos and videos",
+      "seguidores": 799,
+      "seguindo": 31,
+      "posts": 60,
+      "descricaoPublica": "799 Followers, 31 Following, 60 Posts - See Instagram photos and videos from Translima Logística (&#064;translima.logistica)"
+    },
+    "Dupla Química": {
+      "usuario": "duplaquimica_transportes",
+      "status": 200,
+      "nome": "Duplaquímica Transporte (&#064;duplaquimica_transportes) • Instagram photos and videos",
+      "seguidores": 4001,
+      "seguindo": 75,
+      "posts": 212,
+      "descricaoPublica": "4,001 Followers, 75 Following, 212 Posts - See Instagram photos and videos from Duplaquímica Transporte (&#064;duplaquimica_transportes)"
+    },
+    "Rodoquímica": {
+      "usuario": "rodoquimica",
+      "status": 200,
+      "nome": "Grupo Rodoquímica (&#064;rodoquimica) • Instagram photos and videos",
+      "seguidores": 3478,
+      "seguindo": 672,
+      "posts": 474,
+      "descricaoPublica": "3,478 Followers, 672 Following, 474 Posts - See Instagram photos and videos from Grupo Rodoquímica (&#064;rodoquimica)"
+    }
+  },
+  "buscas": [
+    {
+      "termo": "transporte de produtos químicos",
+      "sugestoes": [
+        "transporte de produtos químicos",
+        "transporte de produtos químicos perigosos",
+        "transporte de produtos químicos legislação",
+        "transporte de produtos químicos pequenas quantidades",
+        "transporte de produtos químicos não perigosos",
+        "transporte de produtos quimicos classificados",
+        "transporte de produtos quimicos não classificados",
+        "transporte de produtos quimicos cnae",
+        "duplaquímica transporte de produtos químicos",
+        "dupla química - transporte de produtos químicos fotos"
+      ],
+      "marcasQueAparecem": [
+        "dupla química"
+      ]
+    },
+    {
+      "termo": "transportadora de produtos químicos",
+      "sugestoes": [
+        "transportadora de produtos químicos",
+        "transportadora de produtos químicos em guarulhos",
+        "transportadora de produtos químicos a granel",
+        "transportadora de produtos químicos em são paulo",
+        "transportadora de produtos químicos rj",
+        "transportadora de produtos químicos no abc",
+        "transportadora de produtos quimicos no parana"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "transporte de produtos perigosos",
+      "sugestoes": [
+        "transporte de produtos perigosos",
+        "transporte de produtos perigosos (mopp)",
+        "transporte de produtos perigosos legislação",
+        "transporte de produtos perigosos cnae",
+        "transporte de produtos perigosos sest senat",
+        "transporte de produtos perigosos antt",
+        "transporte de produtos perigosos nr",
+        "transporte de produtos perigosos a granel",
+        "transporte de produtos perigosos em quantidade limitada"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "licença polícia federal produtos químicos",
+      "sugestoes": [
+        "licença polícia federal produtos químicos",
+        "licença policia federal produtos quimicos consulta",
+        "renovação licença policia federal produtos quimicos",
+        "licença policia federal transporte produtos quimicos",
+        "licença de funcionamento da polícia federal para produtos químicos"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "mopp",
+      "sugestoes": [
+        "mopp",
+        "mopp curso",
+        "moppe",
+        "mopp de limpeza",
+        "moppe sjc",
+        "mopp sest senat",
+        "mopp significado",
+        "moppy",
+        "mopp o que é",
+        "moppi"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "transportadora embu das artes",
+      "sugestoes": [
+        "transportadora embu das artes",
+        "transportadora giovanella embu das artes",
+        "transportadora garantia embu das artes",
+        "transportadora tecmar embu das artes",
+        "transportadora alfa embu das artes",
+        "transportadora solução embu das artes",
+        "transportadora transferrari embu das artes",
+        "transportadora guaianazes embu das artes",
+        "transportadora turbo embu das artes",
+        "embu das artes transportadora shopee"
+      ],
+      "marcasQueAparecem": []
+    }
+  ],
+  "buscaPelaMarca": [
+    "semitrans 20",
+    "semitrans site",
+    "semitrans cnpj",
+    "semitrans chave seletora",
+    "semitrans catálogo",
+    "semitrans chave comutadora",
+    "semitrans equipamentos",
+    "semitrans efe",
+    "semitrans 10",
+    "semitrans 2"
+  ]
+}

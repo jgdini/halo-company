@@ -1,0 +1,7632 @@
+{
+ "coletadoEm": "2026-10-21T18:09:07.334Z",
+ "sementes": [
+  "transporte de produtos químicos",
+  "transportadora de produtos químicos",
+  "transporte de produtos perigosos",
+  "transporte de produtos controlados",
+  "licença polícia federal produtos químicos",
+  "licença exército produtos controlados",
+  "mopp",
+  "ficha de emergência",
+  "plano de atendimento emergencial",
+  "transporte de solventes",
+  "transporte de inflamáveis",
+  "logística reversa de embalagens",
+  "cross docking",
+  "transportadora embu das artes"
+ ],
+ "consultasSemResposta": 0,
+ "total": 1048,
+ "contagem": {
+  "pergunta": 77,
+  "comparacao": 25,
+  "compra": 9,
+  "epoca": 0
+ },
+ "porMarca": {
+  "Semitrans": 0,
+  "Translima": 6,
+  "Dupla Química": 1,
+  "Rodoquímica": 3,
+  "Suatrans": 0,
+  "Braspress": 0,
+  "Jadlog": 0,
+  "Patrus": 0,
+  "Rodonaves": 0,
+  "Jamef": 0,
+  "Luft": 0,
+  "Ativa": 0
+ },
+ "exemplosPorMarca": {
+  "Semitrans": [],
+  "Translima": [
+   "avaliações sobre translima transporte de produtos quimicos",
+   "serviços oferecidos por translima transporte de produtos quimicos",
+   "translima transporte de produtos quimicos fotos",
+   "translima transporte de produtos quimicos cnpj",
+   "imagens de translima transporte de produtos quimicos",
+   "translima transporte de produtos quimicos"
+  ],
+  "Dupla Química": [
+   "dupla química - transporte de produtos químicos fotos"
+  ],
+  "Rodoquímica": [
+   "rodoquimica industria comercio e transporte de produtos quimicos ltda",
+   "rodoquímica indústria comércio e transporte de produtos químicos fotos",
+   "rodoquímica indústria comércio e transporte de produtos químicos"
+  ],
+  "Suatrans": [],
+  "Braspress": [],
+  "Jadlog": [],
+  "Patrus": [],
+  "Rodonaves": [],
+  "Jamef": [],
+  "Luft": [],
+  "Ativa": []
+ },
+ "buscas": [
+  {
+   "termo": "transporte de produtos químicos não perigosos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 10,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos quimicos controlados policia civil",
+   "semente": "transporte de produtos químicos",
+   "vezes": 10,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens mato grosso do sul",
+   "semente": "logística reversa de embalagens",
+   "vezes": 10,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos perigosos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos pequenas quantidades",
+   "semente": "transporte de produtos químicos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos em guarulhos",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos a granel",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos em quantidade limitada",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos controlados pelo exercito",
+   "semente": "transporte de produtos controlados",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos controlados pela policia federal",
+   "semente": "transporte de produtos controlados",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa de embalagens em geral",
+   "semente": "logística reversa de embalagens",
+   "vezes": 8,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos no abc",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 8,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa de embalagens pós consumo",
+   "semente": "logística reversa de embalagens",
+   "vezes": 8,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos legislação",
+   "semente": "transporte de produtos químicos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos rj",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos legislação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos cnae",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença polícia federal produtos químicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa de embalagens plásticas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens lei",
+   "semente": "logística reversa de embalagens",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens goias",
+   "semente": "logística reversa de embalagens",
+   "vezes": 7,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos antt",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 7,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens legislação",
+   "semente": "logística reversa de embalagens",
+   "vezes": 7,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos controlados",
+   "semente": "transporte de produtos controlados",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença exercito produtos controlados",
+   "semente": "licença exército produtos controlados",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "plano de atendimento emergencial modelo",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "plano de atendimento emergencial para o transporte de produtos perigosos",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "acordo setorial para logística reversa de embalagens em geral",
+   "semente": "logística reversa de embalagens",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos químicos em são paulo",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 6,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "qual nr fala sobre transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença de funcionamento da polícia federal para produtos químicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "plano de atendimento emergencial",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "plano de atendimento emergencial pae",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "no transporte de materiais inflamáveis qual o principal risco associado",
+   "semente": "transporte de inflamáveis",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "um caminhão de transporte de inflamáveis transporta o combustível",
+   "semente": "transporte de inflamáveis",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos curso",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos controlados pelo exercito",
+   "semente": "transporte de produtos controlados",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "consulta licença polícia federal produtos químicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "no transporte de líquidos inflamáveis estão presentes oxigênio",
+   "semente": "transporte de inflamáveis",
+   "vezes": 5,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "o que é transporte de produtos químicos e perigosos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "para o transporte de produtos químicos é necessário",
+   "semente": "transporte de produtos químicos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "rodoquimica industria comercio e transporte de produtos quimicos ltda",
+   "semente": "transporte de produtos químicos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos quimicos no parana",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "quando o transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de produtos perigosos fepam",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos controlados",
+   "semente": "transporte de produtos controlados",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de líquidos inflamáveis e combustíveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "um caminhão de transporte de inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "sistema nacional de logística reversa de embalagens plásticas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "duplaquimica comercio e transporte de produtos quimicos ltda",
+   "semente": "transporte de produtos químicos",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "licença da policia federal para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "sistema de logística reversa de embalagens em geral sisrev ms",
+   "semente": "logística reversa de embalagens",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte de produtos perigosos deve ser feito",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 4,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença da policia federal para compra de produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 4,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "no transporte de líquidos inflamáveis estão presentes oxigênio bastante",
+   "semente": "transporte de inflamáveis",
+   "vezes": 4,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "como conseguir licença da policia federal para produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 4,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "avaliações sobre translima transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "gr industria comercio e transporte de produtos quimicos ltda",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "clean vale industria comercio e transporte de produtos quimicos ltda",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora de produtos quimicos em sao paulo",
+   "semente": "transportadora de produtos químicos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos o que é",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos pode ser mei",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença da policia federal para produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência para transporte de produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que é plano de atendimento emergencial",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte de tintas e solventes",
+   "semente": "transporte de solventes",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens o que é",
+   "semente": "logística reversa de embalagens",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking o que é",
+   "semente": "cross docking",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ou crossdocking",
+   "semente": "cross docking",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora morada do sol embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos quimicos não classificados",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "dupla química - transporte de produtos químicos fotos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logus industria e transporte de produtos quimicos ltda",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "rodoquímica indústria comércio e transporte de produtos químicos fotos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "serviços oferecidos por translima transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos da classe",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "pae plano de atendimento emergencial modelo",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens de produtos quimicos",
+   "semente": "logística reversa de embalagens",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking o que significa",
+   "semente": "cross docking",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "caixa para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logus industria e transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "o que caracteriza o transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "sistema de logística reversa de embalagens mato grosso do sul",
+   "semente": "logística reversa de embalagens",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "legislação para transporte de produtos quimicos perigosos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking empresas que utilizam",
+   "semente": "cross docking",
+   "vezes": 3,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "carrinho para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 3,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos quimicos classificados",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "duplaquímica transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "placas para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte e manuseio de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "translima transporte de produtos quimicos fotos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sest senat",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos nr",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos no brasil",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como tirar licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "licença policia federal produtos quimicos consulta",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "renovação licença policia federal produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença policia federal transporte produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "renovação licença exercito produtos controlados",
+   "semente": "licença exército produtos controlados",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "licença do exercito para produtos controlados",
+   "semente": "licença exército produtos controlados",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp de limpeza",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp sest senat",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp o que é",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp para motorista",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na cnh",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou cetpp",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "ficha de emergência e fispq são a mesma coisa",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência modelo",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência de produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência iphone",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência no celular",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nativo",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia sperto",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia verdict ultra",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de inflamáveis periculosidade",
+   "semente": "transporte de inflamáveis",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de inflamáveis legislação",
+   "semente": "transporte de inflamáveis",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa embalagens de agrotoxicos",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "novo decreto logística reversa de embalagens plásticas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking mercado livre",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking tradução",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking logística",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking significado",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking como funciona",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cross docking icon",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking na logistica",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking junto ou separado",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora giovanella embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora tecmar embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora alfa embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos quimicos cnae",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte e armazenamento de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "autorização de transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "qual norma regulamenta o transporte de produtos perigosos no brasil",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos cnae",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos legislação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp significado",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na habilitação",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência mercosul",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência e envelope para o transporte",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia navio",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia joint ultra",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa das embalagens vazias de defensivos agrícolas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens de medicamentos",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking conceito",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "o cross docking veio para incrementar a eficiencia",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking na prática",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ou dropshipping",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "que es cross docking en logistica",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora garantia embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora transferrari embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "embu das artes transportadora shopee",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "manuseio transporte armazenagem de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "translima transporte de produtos quimicos cnpj",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "empresa de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "rodoquímica indústria comércio e transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop para limpeza",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na cnh digital",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nativo plus",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia em ingles",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "como ver ficha de emergencia iphone",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logística reversa embalagens de óleo lubrificante",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "comprovante de logística reversa das embalagens vazias",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking nachteile",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ou",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "transportadora solução embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora guaianazes embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora turbo embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "norma para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "manuseio transporte e armazenamento de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "tanque de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "imagens de translima transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos dispensada *)",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "no transporte de produtos perigosos as infrações são atribuídas a quem",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos o veículo pode emitir",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte de produtos perigosos as infrações são atribuídas a quem",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos pode ser mei",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos só pode ser praticado por",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp nao vence mais",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "decreto logística reversa de embalagens plásticas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "sistema de logística reversa de embalagens plásticas",
+   "semente": "logística reversa de embalagens",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking na czym.polega",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "o que é cross docking na armazenagem logística",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cross docking rio de janeiro",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "dds manuseio transporte armazenagem de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "regras para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na carteira",
+   "semente": "mopp",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking trabalha com um unico fornecedor",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "curso para transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "tc transporte rodoviario de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia gli up 720 wg",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "resolução antt transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte terrestre de produtos perigosos no mercosul",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking logistics",
+   "semente": "cross docking",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "licença ambiental transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "duplaquimica comercio e transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 2,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nitrogenio liquido",
+   "semente": "ficha de emergência",
+   "vezes": 2,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "antt transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "insalubridade transporte de produtos químicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "translima transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "sistema nacional de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "horario transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "é proibido transporte de produtos perigosos junto com",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte terrestre de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "são documentos usados no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos valor",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "qual a nr para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "licença de produtos controlados pelo exercito",
+   "semente": "licença exército produtos controlados",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "preço mop",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "mop a vapor",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp breve",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop eletrico",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp habilitação",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop industrial",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jula",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp motorista",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp precisa fazer prova no detran",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop quadrado",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mop rodo",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp tem validade",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp uniform",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp valor",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "mopp como fazer",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp qual categoria",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mopp quanto tempo",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "quando o curso mopp é exigido",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "melhor curso mopp online",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que é mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergência",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia wipe out",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia adver",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia blowout",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia curbix",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia fox xpro",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia glint full",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hampton",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia judoka",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia lannate",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia off road",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia quartzo",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia roundup wg",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia transporte produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia unizeb gold",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como colocar ficha de emergência no celular",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "qual a finalidade da ficha de emergência",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que e ficha de emergência",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "modelo de plano de atendimento emergencial",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o'que é um plano de atendimento emergencial",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de solventes",
+   "semente": "transporte de solventes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de cargas inflamaveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "nr transporte de inflamaveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "qual é o limite para transporte de inflamáveis líquidos",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa embalagens de cosmeticos",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa de embalagens de agrotóxicos",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "imasul logistica reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa embalagens de vidro",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que é logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "tradução cross docking para português",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking adalah",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking brazil rep",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking definition",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking exemplos",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking facility",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking guarulhos",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hub",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking platform",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking que es",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking refrigerado",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking urbano",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs transloading",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "como escreve cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora de embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora em embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora no embu das artes",
+   "semente": "transportadora embu das artes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transportadora embu das artes sp",
+   "semente": "transportadora embu das artes",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos (mopp)",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "sistema nacional de transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos documentação",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "envelope transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte ferroviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "guia de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "habilitação para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos onu",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos pdf",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos salario",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "tpp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "veículos de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "qual orgao regulamenta o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que seria transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "policia federal produtos quimicos controlados licença",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "como tirar licença da policia federal para produtos quimicos",
+   "semente": "licença polícia federal produtos químicos",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "licença para produtos controlados pelo exercito",
+   "semente": "licença exército produtos controlados",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "como solicitar licença do exército para produtos controlados",
+   "semente": "licença exército produtos controlados",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mop para lavar carro",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou tpp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "curso mopp preço",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "mop agua limpa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp brasil",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso online",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp detran",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ead",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mop flat electrolux",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp gratuito",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mop havan",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mop inox",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jif",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mop lava e seca",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp multiserviços ltda",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp online",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp precisa renovar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mop que separa agua limpa da suja",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp renovação",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp transporte",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp us army",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp validade",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp como funciona",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mopp qual nr",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "mopp quanto custa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "quando vence o.mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "melhor curso mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "o que é mopp na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergencia para produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fispq ou ficha de emergencia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "ficha de emergencia aproach power",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia belyan",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia cartago",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia diesel s10",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia fusao",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia glifosato",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hero",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia iharol gold",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia loyer",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nitrogenio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oleo diesel",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência produtos perigosos é obrigatório",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia querosene",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia roundup original mais",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia soldier",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia talisman",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia ultimato",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia verdavis",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "como preencher ficha de emergência no celular",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é ficha de emergencia produtos quimicos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "plano de atendimento emergencial (pae)",
+   "semente": "plano de atendimento emergencial",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso para transporte de cargas inflamaveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de liquidos inflamaveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "associação de logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "sistema de logística reversa de embalagens em geral",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking and delivery",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking brasil",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking diagram",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e dropshipping diferença",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta",
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "cross docking facility meaning",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking galpao",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hibrido",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking is",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking just in time",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "layout cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking molecular",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking process",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking resumo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking shopee",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking terminal",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking usa",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs break bulk",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "como funciona cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é cross docking na logistica",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transportadora em embu das artes sp",
+   "semente": "transportadora embu das artes",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "autorização para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "nr transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "segurança na armazenagem manuseio e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "abnt transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "epi transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "fiscalização de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "embalagens homologadas para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos não perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "durante o transporte de produtos perigosos o porte do cipp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos placas",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "resolução transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sigla",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "veiculos para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "qual a licença para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "moppe",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou mope",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "mopp averbado na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "moto bike",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso valor",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "mopp detran sp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop electrolux",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop flat",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop hospitalar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop industrial grande",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jacket",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp mudou de nome",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp o que significa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp produtos perigosos",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop que aspira e passa pano",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop rodo mágico",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mop spray",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp tem validade de quanto tempo",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp und eimer",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "mopp vence",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "como colocar mopp na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mopp qual a validade",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "quanto custa curso mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é mopp para motorista",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergencia para transporte",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia aurora",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia bravonil 720",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia clorfenapir",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia dual gold",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia fox supra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência gasolina comum petrobras",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia heat",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia imidacloprid nortox",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia judoka super",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia legion",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia magnum",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia não é mais obrigatório",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oxigenio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia produto quimico",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia roundup",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia sponta",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia terrador",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia ultimato sc",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia vessarya",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos inflamáveis legislação",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "central de custódia da logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa de embalagens de plástico",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "sistema de logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking and consolidation are essential",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking break bulk",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking como se escreve",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking drop shipping",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e picking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking futuro",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking gudang",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hub lilo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in wms",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking jelentése",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking leroy merlin",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking meli",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking no mercado livre",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking process in sap ewm",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "que significa en español cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ribeirão preto",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking significado em português",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking types",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking unilever",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs drop shipping",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "como fazer cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que significa cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "kit para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte aéreo de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos cetesb",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos emitida pelo ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "certificado de capacitação para o transporte de produtos perigosos a granel",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "habilitado em curso específico de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "licença transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "licença ambiental para transporte de produtos perigosos mg",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cnae transporte de produtos não perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "regulamentação transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "tabela de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop para limpar chão",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp aparece na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop biltema",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp cargas perigosas",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mobb deep",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp e cargas indivisíveis",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop flat lava e seca menalux com refil extra de microfibra",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório original",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop homettler",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop inteligente",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp joinville",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza spray",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop menalux",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp onde fazer",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp prova detran",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop que torce",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mop retangular",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp sest senat ead",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp treinamento",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "up mop",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "mopp vencimento",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "como consultar mopp na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "qual curso mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "curso mopp quanto tempo para fazer",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "o que é mopp transporte",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergencia para el transporte",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia argonio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia bazuka",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia cletodim",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia disarm",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia engeo pleno",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia fipronil",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência gasolina",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hexazinona nortox",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia iharol",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia joya",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia lagare",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia magma",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia orkestra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência pdf",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia zapp qi 620",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia reglone",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia scout",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia talstar",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia u46",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia vertimec 84 sc",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "como colocar ficha de emergencia no iphone",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cross docking area",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking bioinformatics",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking container",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking definição",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e transit point",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "flow cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking goods",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hub adalah",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking imagem",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking jobs",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking logo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking manager",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking nota fiscal",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking operation",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking pronunciation",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking quizlet",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking são paulo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking transporte",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs transshipment",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "como fazer cross docking no mercado livre",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "placas de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "autorização transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "licença para transporte de produtos perigosos polícia federal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte interestadual de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "lss transporte de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "motorista transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de produtos perigosos sp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "entre os documentos específicos para transporte de produtos perigosos temos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "velocidade máxima para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "qual o tipo de transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "moppe sjc",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop para limpar a casa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp outfit",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp atualização",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop best i test",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso sest senat",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop documento",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp exercito",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop facil",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop grande",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop havan promoção",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop industrial para limpeza",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jysk",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop lava e seca flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop mor",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp nr 20",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop quadrado 360",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp reciclagem",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp simulado",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp tem que renovar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mopp usmc",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "mop vassoura",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "como renovar mopp online",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "qual significado mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "curso mopp quanto tempo para renovar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "o que é mopp curso",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergência é obrigatória",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia para trabajadores",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia aureo",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia bravonil",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia calaris",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia decorum",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia exalt",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "fispq ficha de emergencia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia glp",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hidrica",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia intrepid",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia joiner",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia letra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia mirant",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nomolt",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oberon",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia preciso xk",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência produtos químicos pdf",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia reator",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia sonda",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia tinta",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia volcane",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "como editar ficha de emergencia no iphone",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "logística reversa de embalagens de óleo lubrificante",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "o que significa cross docking na logistica",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cross docking ou cross dock",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "cross docking area in warehouse",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking bling",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking curitiba",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking desvantagens",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking en logística",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking fulfillment",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking gif",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "houston cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking inbound",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking logistica definição",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ml",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking nacional",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking puro",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking que es y como funciona",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "cross docking rj",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking se escreve junto ou separado",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "cross docking to",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking video",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "como se pronuncia cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é cross docking mercado livre",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "autorização para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "quanto ao transporte de produtos perigosos classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças municipal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "policia federal transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transporte interestadual de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "lei transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "manual transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "kit emergência transporte de produtos perigosos nbr 9735 kit mopp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "pae transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "condutores de veículos de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "o que é considerado transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mop para limpar vidros",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na cnh o que significa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp qut",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop agua",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop bauhaus",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop de pia",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop esfregão",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop flat flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório agua limpa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop hiperclean",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop infantil",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jernia",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop microfibra",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp online sest senat",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop qual o melhor",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop refil",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mop spray flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp usa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "mopp validade indeterminada",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "como tirar mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "qual valor curso mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta",
+    "compra"
+   ]
+  },
+  {
+   "termo": "quanto custa curso mopp senai",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é mopp detran",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "existe uma ficha de emergência para todos os produtos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia alion",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia basagran 600",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia comet",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia dermacor",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia expedition",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia freno",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia gastoxin",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hidroxido de sodio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia imazetapir nortox",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia lannate br",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia miravis duo",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oleo diesel s10",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia produto quimico é obrigatorio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência resíduos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia sumyzin",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia trinca caps",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia verdict max",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "transporte de líquidos inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "container anti explosão para transporte de líquidos inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking advantages and disadvantages",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking benchmark for automated pose and ranking prediction of ligand binding",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking características",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking def",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking empresas",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking fornecedores",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking gdp",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hibrido ejemplos",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in amazon",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "just in time vs cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "cross docking last mile",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking meaning",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking near me",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking objetivo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking ppt",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking qué significa",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking regional",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking significado logística",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking tradutor",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "o cross docking é uma prática em que",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vantagens",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "o que significa cross docking em portugues",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 5,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "certificado para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cipp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças intermunicipal",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "inmetro transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "carboplus comercio e transporte de produtos perigosos ltda",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "multa transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "dentro do processo de transporte de produtos perigosos o expedidor é",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o transporte rodoviário de produtos perigosos pode ser",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "empresas de transporte de produtos perigosos sp",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "validade do curso de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o que são resíduos no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mop para piso laminado",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop nao precisa renovar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "curso mopp ou tpp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "mop agua limpa e suja",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp bezüge",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp caminhão",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp digital",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop eletrico sem fio",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop flash limp fit",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório flashlimp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop hospitalar profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop io",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "jem och fix mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpa vidros",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop mercado livre",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop novica",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp online é valido",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop que torce sozinho",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mop rosa",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp senai",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp transporte de passageiros",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp utan hink",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "mopp valor do curso",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "como fazer mopp online",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "qual valor do mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "pergunta",
+    "compra"
+   ]
+  },
+  {
+   "termo": "motorista mopp quanto ganha",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o ' q u e é mopping",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia acetileno",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia brilhantebr",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia carga perigosa",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia diesel",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia egan",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia feroce",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia hipoclorito de sodio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia impulse",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia linear",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia mancozeb",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia nufuron",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia onu 3082",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia prefer",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "o'que é ficha de emergencia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia recop",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia score",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia thinner",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia verde",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "segurança no transporte rodoviário de líquidos inflamáveis",
+   "semente": "transporte de inflamáveis",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "logistica reversa de embalagens de vidro",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking polega na bez konieczności jego składowania",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking and warehouse systems",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking benefits",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking cargo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking deutsch",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e fulfillment",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking fiscal",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "galpão cross docking santo andré",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking hub and spoke",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking là j",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking legislação",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking meaning in warehouse",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docki̇ng nedi̇r",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking puro e futuro",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking retail",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking sefaz sp",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking 1 und 2",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs traditional warehousing",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "cnae para transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cnae de transporte de produtos quimicos",
+   "semente": "transporte de produtos químicos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cnae para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "certificado transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos do ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "empresa de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "documento fiscal para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "infração transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "transporte marítimo de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "nbr transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos sest senat",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "regulamento terrestre do transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "simbologia do veículo no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ctpp o que é transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "moppy",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop para limpeza pesada",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp na carteira digital",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "curso mopp ourinhos",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop a vapor multifuncional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp blå",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso gratuito",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp detran pr",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop esponja",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop fit",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório inox",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop h50 pro",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop inox profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ja ämber",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop lava e seca electrolux",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop magico",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp nova regra",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp online grátis",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp placas",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop quadrado flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop redondo",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp suit",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mop til roborock",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp urvridare",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "mopp veiculos",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "como consultar mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "curso mopp qual idade",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "curso mopp quanto tempo de validade",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "o'que é mopp caminhao",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência óleo diesel s10 petrobras",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia para transporte de residuos perigosos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia aceway",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia benevia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia crucial",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia defensivos agricolas",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência e fispq",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia flex",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia galil",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia sonda ht",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia imunit",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia lufenuron",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia magma 500 sc",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia norton",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oleo diesel s10 ipiranga",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia protac",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de resposta a emergência química cetesb",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia rainbow",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia stone",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia terminus",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia gli up",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia verango prime",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "logística reversa das embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "programa de logística reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vorteile nachteile",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking amazon",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking beneficios",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "curso cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking directo e indirecto",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking fortaleza",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking là gì",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking helps in",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in supply chain",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking y just in time",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking local",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking meaning in logistics",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking odoo",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking pre distribuido",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking refers to which of the following",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking sp",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking transit point",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking is used to",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs hub and spoke",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "o que é operação cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "placas para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "checklist transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "curso de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "extintor para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "quem fiscaliza o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "autorização ambiental para transporte de produtos perigosos ibama",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "norma transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "quanto o transporte de produtos perigosos da classe 1",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "quantidade limitada para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "simbologia transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "sinalização de veiculos para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "o que é proibido no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "mop para pia",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop nao precisa mais renovar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "curso mopp ou mope",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "mop abrasivo",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "bona mop",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp curso online reclame aqui",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mobb deep shook ones pt. ii",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop eletrico inteligente",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop flash limp spray",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratório grande",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop havan é bom",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop industrial profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp jordan",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza giratório",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop menalux electrolux",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp não precisa atualizar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou mop",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "mopp pdf",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop que prende o pano",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mop rodo flash limp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp sigla",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp tape",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp und eimer set",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "mopp vigente",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "como renovar mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "quanto tempo dura mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é curso mopp para motorista",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha de emergencia ampligo",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia belt",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia cypress",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia da gasolina",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia exemplo",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia freno 240 ec",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia gapper",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia peroxido de hidrogenio",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência óleo lubrificante",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "minha ficha de emergencia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia oxigenio white martins",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia priori xtra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia é o mesmo que fispq",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia reator 360",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia standak top",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia triclopir",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia eliminate ultra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia vertimec",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "decreto logistica reversa de embalagens",
+   "semente": "logística reversa de embalagens",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "nave cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking and dropshipping",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking bedeutung",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking cnae",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking d365",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e dropshipping",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking facilities",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking là gì trong logistics",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "híbrido cross docking e service center",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in sap ewm",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in jde",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking model",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking nghĩa là gì",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking of walmart",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross-docking problem",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking reduced",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking supply chain",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking truck",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking bertujuan untuk",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs fulfillment",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "o que é sistema cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "envelope para transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ctpp transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "placas de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "transporte rodoviário de carga exceto produtos perigosos e mudanças",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "fiscalização do transporte rodoviário de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "inea transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "manuseio e transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "quem regulamenta o transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "regulamento de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "sinalização transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "tpp curso especializado de transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "valores das infrações no transporte de produtos perigosos",
+   "semente": "transporte de produtos perigosos",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "moppi",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop para limpeza profissional",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "curso mopp na cnh",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ou mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "mop a vapor shark",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop baby",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp certificado",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mobb deep survival of the fittest",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop esfregão giratório",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop flat lava e seca",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop giratorio noviça",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop h50",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop inowar",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp journal",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop limpeza original",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop mor 13 litros",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop po",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp qbrn",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop retangular com balde",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mop sekito",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp teleskopstiel",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp ultramax",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "mopp vitalicio",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "como atualizar mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "o que é certificado mopp",
+   "semente": "mopp",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "ficha para emergencia",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia acetamiprid",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia bombardeiro",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia certeza n",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergência do produto",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia ethrel",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia funcionario",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia granary",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha básica de emergencia hídrica",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia mesotriona",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia orsa",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia poker",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia ruler",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia samurai",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia truper",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia palace ultra",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "ficha de emergencia valeos",
+   "semente": "ficha de emergência",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "naves cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking automatizado",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking betekenis",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking chinese",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking dhl",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking e milk run",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking/flow through",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking atlanta ga",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "hybrid cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking in warehouse",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking new jersey",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking marketing",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking o drop shipping",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking protein",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "o cross docking evita que os produtos",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking refers to",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking system",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking totvs",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking einstufig zweistufig unterschied",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  },
+  {
+   "termo": "cross docking vs merge in transit",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "comparacao"
+   ]
+  },
+  {
+   "termo": "o que é galpão cross docking",
+   "semente": "cross docking",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": [
+    "pergunta"
+   ]
+  }
+ ],
+ "conteudo": {
+  "textos": [],
+  "paginas": [],
+  "fonte": [
+   "sem API do WordPress: preencher à mão a partir do mapa do site"
+  ]
+ }
+}
