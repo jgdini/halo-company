@@ -400,7 +400,7 @@ ${modelo && an.modelo ? `
 
   <footer>
     <p>Intelligence Snapshot preparado pela Halo Company para a ${esc(empresa.nome)}. Dados públicos coletados em ${data}.</p>
-    <p class="desenvolvido">Desenvolvido por <a href="https://jgdini.github.io/halo-company/" target="_blank" rel="noopener" class="halo-credit"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
+    <p class="desenvolvido">Desenvolvido por <a href="https://haloconsulting.com.br/" target="_blank" rel="noopener" class="halo-credit"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="var(--ink)" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
   </footer>
 
 </div>

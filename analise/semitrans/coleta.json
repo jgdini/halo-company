@@ -139,11 +139,11 @@
     {
       "papel": "modelo",
       "nome": "Modelo Halo",
-      "url": "https://jgdini.github.io/halo-company/modelos/semitrans/",
+      "url": "https://haloconsulting.com.br/modelos/semitrans/",
       "sinais": {
         "falhou": false,
         "status": 200,
-        "enderecoFinal": "https://jgdini.github.io/halo-company/modelos/semitrans/",
+        "enderecoFinal": "https://haloconsulting.com.br/modelos/semitrans/",
         "respostaHtmlSeg": 0.4,
         "htmlKB": 13,
         "titulo": "Semitrans | Transporte de produtos químicos controlados e perigosos em SP",

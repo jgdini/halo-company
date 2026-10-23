@@ -1,6 +1,6 @@
 # Halo Company — landing page
 
-Página única para a Halo Company (Amanda Takahashi, Bianca Fortes e João Dini). O nome de teste era "Trama"; a pasta local e o preview ainda usam esse nome. Repositório: github.com/jgdini/halo-company; GitHub Pages: jgdini.github.io/halo-company. HTML, CSS e JS puros, com GSAP + ScrollTrigger locais (`assets/js`), fontes Archivo e Newsreader em woff2 locais.
+Página única para a Halo Company (Amanda Takahashi, Bianca Fortes e João Dini). O nome de teste era "Trama"; a pasta local e o preview ainda usam esse nome. Repositório: github.com/jgdini/halo-company; GitHub Pages: haloconsulting.com.br. HTML, CSS e JS puros, com GSAP + ScrollTrigger locais (`assets/js`), fontes Archivo e Newsreader em woff2 locais.
 
 ## Rodar
 - Preview do app: configuração `trama` (porta 5610), que usa `scripts/serve.mjs`.
@@ -32,7 +32,7 @@ Comparativo com o mesmo investimento em dois caminhos. Abas "Do jeito comum" e "
 - [ ] Veículo Judicial: confirmar o número de seguidores ganhos (+6 mil) com um print do antes.
 - [x] Faixa de nomes com fotos e logos (Raphael Mattos, Scale Club, Marcus Marques, Acelerador Empresarial, Joel Jota, Graciane Barbosa, Community), autorizados pela Amanda em 2026-10-07. Pablo Marçal saiu. Para trocar uma imagem: substituir em Arquivos/Pessoas e rodar `node scripts/pessoas.mjs` (os recortes em volta do rosto estão no script).
 - [ ] Destino da aplicação: preencher `ENVIO` no topo de `assets/js/main.js` (endpoint JSON ou número de WhatsApp). Hoje o formulário só mostra a mensagem de sucesso.
-- [ ] Domínio, @ do Instagram, LinkedIn e e-mail da Halo Company (rodapé com [@halocompany] e [contato@halocompany.com.br] provisórios; canonical, sitemap, robots, llms.txt e JSON-LD apontam para jgdini.github.io/halo-company).
+- [ ] Domínio, @ do Instagram, LinkedIn e e-mail da Halo Company (rodapé com [@halocompany] e [contato@halocompany.com.br] provisórios; canonical, sitemap, robots, llms.txt e JSON-LD apontam para haloconsulting.com.br).
 - [ ] Imagem de compartilhamento (og:image 1200×630) e logo definitivo.
 - [ ] Nome "Halo Company": checar domínio, @ e INPI (classe 35). "Halo" sozinho é muito usado; o "Company" ajuda a diferenciar.
 

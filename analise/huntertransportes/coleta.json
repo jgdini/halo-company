@@ -132,11 +132,11 @@
     {
       "papel": "modelo",
       "nome": "Modelo Halo",
-      "url": "https://jgdini.github.io/halo-company/modelos/hunter/",
+      "url": "https://haloconsulting.com.br/modelos/hunter/",
       "sinais": {
         "falhou": false,
         "status": 200,
-        "enderecoFinal": "https://jgdini.github.io/halo-company/modelos/hunter/",
+        "enderecoFinal": "https://haloconsulting.com.br/modelos/hunter/",
         "respostaHtmlSeg": 0.2,
         "htmlKB": 11,
         "titulo": "Hunter Transportes e Logística | Transporte e armazenagem de carga regulada",

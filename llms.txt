@@ -25,4 +25,4 @@ O resultado do anúncio depende do caminho depois do clique: campanha com objeti
 - [DRLSYS](https://drlsys.com/): site da empresa de infraestrutura de TI de João Dini, feito em menos de uma semana.
 
 ## Página
-- [Página da Halo Company](https://jgdini.github.io/halo-company/): sócios, método, case, perguntas frequentes e aplicação
+- [Página da Halo Company](https://haloconsulting.com.br/): sócios, método, case, perguntas frequentes e aplicação
