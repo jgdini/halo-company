@@ -32,7 +32,8 @@ Comparativo com o mesmo investimento em dois caminhos. Abas "Do jeito comum" e "
 - [ ] Veículo Judicial: confirmar o número de seguidores ganhos (+6 mil) com um print do antes.
 - [x] Faixa de nomes com fotos e logos (Raphael Mattos, Scale Club, Marcus Marques, Acelerador Empresarial, Joel Jota, Graciane Barbosa, Community), autorizados pela Amanda em 2026-10-07. Pablo Marçal saiu. Para trocar uma imagem: substituir em Arquivos/Pessoas e rodar `node scripts/pessoas.mjs` (os recortes em volta do rosto estão no script).
 - [ ] Destino da aplicação: preencher `ENVIO` no topo de `assets/js/main.js` (endpoint JSON ou número de WhatsApp). Hoje o formulário só mostra a mensagem de sucesso.
-- [ ] Domínio, @ do Instagram, LinkedIn e e-mail da Halo Company (rodapé com [@halocompany] e [contato@halocompany.com.br] provisórios; canonical, sitemap, robots, llms.txt e JSON-LD apontam para haloconsulting.com.br).
+- [x] Domínio haloconsulting.com.br, Instagram @halocompany_ e e-mail contato@haloconsulting.com.br no rodapé, no JSON-LD e no llms.txt (2026-10-23).
+- [ ] Link do LinkedIn da Halo no rodapé (ainda aponta para #).
 - [ ] Imagem de compartilhamento (og:image 1200×630) e logo definitivo.
 - [ ] Nome "Halo Company": checar domínio, @ e INPI (classe 35). "Halo" sozinho é muito usado; o "Company" ajuda a diferenciar.
 
