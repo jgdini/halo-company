@@ -177,11 +177,11 @@ const caminhoRevisao = (t) => `revisao/${t.slug}-${codigo(t.slug)}`;
 
 function paginaRevisao(t) {
   const aviso = `
-    <div class="revisao__aviso"><div class="wrap"><b>Rascunho para revisão.</b> Este texto ainda não está publicado. Leia e vote no fim da página. <a href="#revisar">Ir para o voto</a></div></div>`;
+    <div class="revisao__aviso"><div class="wrap"><b>Rascunho para revisão.</b> Este texto ainda não está publicado. Leia e aprove ou peça ajuste no fim da página. <a href="#revisar">Ir para o voto</a></div></div>`;
   const form = `
       <section class="revisao" id="revisar" aria-labelledby="revisar-titulo">
         <h2 id="revisar-titulo">Sua revisão</h2>
-        <p>Previsto para ${dataBr(t.data)}. O texto só vai ao ar com a aprovação.</p>
+        <p>Ao clicar em <b>Aprovar e publicar</b>, o texto vai para o blog em poucos minutos. Para mudar algo antes, use <b>Pedir ajuste</b> e escreva o que mudar.</p>
         <form class="revisao__form" id="form-revisao" data-slug="${esc(t.slug)}" data-titulo="${esc(t.titulo)}">
           <fieldset><legend>Quem está revisando</legend>
             <div class="chips">${['Amanda', 'Bia', 'João'].map((n) => `<label><input type="radio" name="quem" value="${n}" required><span>${n}</span></label>`).join('')}</div>
@@ -191,7 +191,7 @@ function paginaRevisao(t) {
           </label>
           <p class="revisao__erro" id="revisao-erro" role="alert"></p>
           <div class="revisao__botoes">
-            <button type="submit" class="botao" value="aprovado">Aprovar</button>
+            <button type="submit" class="botao" value="aprovado">Aprovar e publicar</button>
             <button type="submit" class="botao botao--linha" value="ajuste">Pedir ajuste</button>
           </div>
           <p class="revisao__ok" id="revisao-ok" hidden tabindex="-1"></p>
@@ -203,7 +203,7 @@ function paginaRevisao(t) {
   var f = document.getElementById('form-revisao'), erro = document.getElementById('revisao-erro'), ok = document.getElementById('revisao-ok');
   var chave = 'halo-revisao-' + f.dataset.slug;
   try { var antes = JSON.parse(localStorage.getItem(chave) || 'null'); if (antes) mostrar(antes); } catch (e) {}
-  function mostrar(v) { ok.hidden = false; ok.textContent = 'Voto registrado: ' + v.quem + ' ' + (v.decisao === 'aprovado' ? 'aprovou' : 'pediu ajuste') + '. Se mudar de ideia, é só votar de novo.'; }
+  function mostrar(v) { ok.hidden = false; ok.textContent = v.decisao === 'aprovado' ? 'Aprovado por ' + v.quem + '. O texto vai para o blog em poucos minutos: haloconsulting.com.br/blog/' : 'Pedido de ajuste enviado por ' + v.quem + '. O João recebe o comentário por e-mail.'; }
   f.addEventListener('submit', function (ev) {
     ev.preventDefault();
     var decisao = ev.submitter && ev.submitter.value, quem = (f.querySelector('input[name=quem]:checked') || {}).value, comentario = f.comentario.value.trim();

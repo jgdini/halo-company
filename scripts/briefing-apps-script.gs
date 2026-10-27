@@ -86,17 +86,46 @@ function revisao(d) {
   var limpa = function (v) { return String(v == null ? '' : v).slice(0, 3000); };
   var planilha = SpreadsheetApp.getActiveSpreadsheet();
   var aba = planilha.getSheetByName('Revisões do blog') || planilha.insertSheet('Revisões do blog');
-  if (!aba.getLastRow()) aba.appendRow(['Recebido em', 'Texto', 'Arquivo', 'Quem', 'Decisão', 'Comentário']).setFrozenRows(1);
+  if (!aba.getLastRow()) aba.appendRow(['Recebido em', 'Texto', 'Arquivo', 'Quem', 'Decisão', 'Comentário', 'Publicação']).setFrozenRows(1);
+  if (aba.getRange(1, 7).getValue() === '') aba.getRange(1, 7).setValue('Publicação');
   var decisao = d.decisao === 'aprovado' ? 'Aprovado' : 'Pediu ajuste';
-  aba.appendRow([new Date(), limpa(d.titulo), limpa(d.slug), limpa(d.quem), decisao, limpa(d.comentario)]);
+  // Aprovado: pede ao GitHub para publicar (workflow .github/workflows/publicar-texto.yml).
+  // A chave fica em Configurações do projeto > Propriedades do script > GITHUB_TOKEN (nunca no código).
+  var publicacao = '';
+  if (d.decisao === 'aprovado' && /^[a-z0-9-]+$/.test(String(d.slug || ''))) {
+    var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
+    if (!token) publicacao = 'não publicado: falta GITHUB_TOKEN no Apps Script';
+    else {
+      var r = UrlFetchApp.fetch('https://api.github.com/repos/jgdini/halo-company/dispatches', {
+        method: 'post', contentType: 'application/json', muteHttpExceptions: true,
+        headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+        payload: JSON.stringify({ event_type: 'publicar-texto', client_payload: { slug: d.slug, quem: limpa(d.quem) } })
+      });
+      publicacao = r.getResponseCode() === 204 ? 'publicação enviada ao GitHub' : 'erro ao publicar: ' + r.getResponseCode() + ' ' + r.getContentText().slice(0, 200);
+    }
+  }
+  aba.appendRow([new Date(), limpa(d.titulo), limpa(d.slug), limpa(d.quem), decisao, limpa(d.comentario), publicacao]);
   var esc = function (s) { return limpa(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\n/g, '<br>'); };
   var html = '<div style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.5;color:#3A0D18">' +
     '<p style="margin:0 0 10px;font-size:16px"><b>' + esc(d.quem) + ': ' + decisao + '</b></p>' +
     '<p style="margin:0 0 10px">Texto: ' + esc(d.titulo) + '</p>' +
     (d.comentario ? '<p style="margin:0 0 10px;padding:10px 14px;background:#F5EFE6;border-radius:8px">' + esc(d.comentario) + '</p>' : '') +
+    (publicacao ? '<p style="margin:0 0 10px">Blog: ' + esc(publicacao) + '. O texto aparece em https://haloconsulting.com.br/blog/ em poucos minutos.</p>' : '') +
     '<p style="margin:14px 0 0;color:#7A5A62;font-size:12px">Todos os votos ficam na aba "Revisões do blog": ' + planilha.getUrl() + '</p></div>';
   MailApp.sendEmail(AVISAR_APLICACAO, 'Blog: ' + limpa(d.quem) + ' ' + decisao.toLowerCase() + ' · ' + limpa(d.titulo), decisao + ' por ' + limpa(d.quem) + ': ' + limpa(d.titulo), { htmlBody: html, name: 'Revisão do blog Halo' });
   return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(ContentService.MimeType.JSON);
+}
+
+/**
+ * Rode esta função uma vez pelo editor (Executar) para autorizar o acesso ao GitHub
+ * e conferir se a chave GITHUB_TOKEN está certa. Não publica nada.
+ */
+function testarGithub() {
+  var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
+  if (!token) { Logger.log('Falta a propriedade GITHUB_TOKEN em Configurações do projeto > Propriedades do script.'); return; }
+  var r = UrlFetchApp.fetch('https://api.github.com/repos/jgdini/halo-company', { muteHttpExceptions: true, headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' } });
+  var j = JSON.parse(r.getContentText());
+  Logger.log(r.getResponseCode() === 200 ? 'OK: acesso ao repositório ' + j.full_name + ' (pode escrever: ' + (j.permissions && j.permissions.push) + ')' : 'Erro ' + r.getResponseCode() + ': ' + r.getContentText().slice(0, 200));
 }
 
 /**

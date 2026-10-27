@@ -1,0 +1,57 @@
+# Publica um texto do blog quando alguém clica em "Aprovar" na página de revisão (/revisao/...).
+# Quem dispara: o Apps Script da Halo (função revisao), com o evento "publicar-texto" e o slug do texto.
+# Também dá para rodar à mão em Actions > Publicar texto do blog > Run workflow.
+name: Publicar texto do blog
+
+on:
+  repository_dispatch:
+    types: [publicar-texto]
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug do texto (nome do arquivo em _blog sem a data e sem .md)"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-blog
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Aprovar e gerar o blog
+        env:
+          SLUG: ${{ github.event.client_payload.slug || github.event.inputs.slug }}
+          QUEM: ${{ github.event.client_payload.quem || github.actor }}
+        run: |
+          set -e
+          if ! printf '%s' "$SLUG" | grep -Eq '^[a-z0-9-]+$'; then echo "slug inválido: $SLUG"; exit 1; fi
+          ARQ=$(ls _blog/*-"$SLUG".md 2>/dev/null | head -1)
+          if [ -z "$ARQ" ]; then echo "texto não encontrado: $SLUG"; exit 1; fi
+          HOJE=$(TZ=America/Sao_Paulo date +%F)
+          # Publica hoje: status aprovado e data do dia (se a data prevista ainda não chegou).
+          sed -i 's/^status: .*/status: aprovado/' "$ARQ"
+          DATA=$(grep -m1 '^data:' "$ARQ" | sed 's/^data: *//')
+          if [ "$DATA" \> "$HOJE" ]; then sed -i "s/^data: .*/data: $HOJE/" "$ARQ"; fi
+          node scripts/paginas.mjs
+          node scripts/blog.mjs
+          test -f "blog/$SLUG/index.html"
+          echo "QUEM=$QUEM" >> "$GITHUB_ENV"
+
+      - name: Commit e push
+        run: |
+          git config user.name "Blog Halo"
+          git config user.email "blog@haloconsulting.com.br"
+          git add -A _blog blog revisao sitemap.xml
+          git commit -m "Blog: publicar ${{ github.event.client_payload.slug || github.event.inputs.slug }} (aprovado por $QUEM)" || echo "nada para publicar"
+          git push
