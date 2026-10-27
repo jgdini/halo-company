@@ -91,18 +91,25 @@ function revisao(d) {
   var decisao = d.decisao === 'aprovado' ? 'Aprovado' : 'Pediu ajuste';
   // Aprovado: pede ao GitHub para publicar (workflow .github/workflows/publicar-texto.yml).
   // A chave fica em Configurações do projeto > Propriedades do script > GITHUB_TOKEN (nunca no código).
+  // Pedir ajuste: grava _blog/ajustes/<data>-<slug>.json no repositório; o agente "Blog Halo: aplicar ajuste" corrige e reenvia.
   var publicacao = '';
-  if (d.decisao === 'aprovado' && /^[a-z0-9-]+$/.test(String(d.slug || ''))) {
-    var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
-    if (!token) publicacao = 'não publicado: falta GITHUB_TOKEN no Apps Script';
-    else {
-      var r = UrlFetchApp.fetch('https://api.github.com/repos/jgdini/halo-company/dispatches', {
-        method: 'post', contentType: 'application/json', muteHttpExceptions: true,
-        headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
-        payload: JSON.stringify({ event_type: 'publicar-texto', client_payload: { slug: d.slug, quem: limpa(d.quem) } })
-      });
-      publicacao = r.getResponseCode() === 204 ? 'publicação enviada ao GitHub' : 'erro ao publicar: ' + r.getResponseCode() + ' ' + r.getContentText().slice(0, 200);
-    }
+  var slugOk = /^[a-z0-9-]+$/.test(String(d.slug || ''));
+  var token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
+  var gh = function (metodo, caminho, corpo) {
+    return UrlFetchApp.fetch('https://api.github.com/repos/jgdini/halo-company' + caminho, {
+      method: metodo, contentType: 'application/json', muteHttpExceptions: true,
+      headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' }, payload: JSON.stringify(corpo)
+    });
+  };
+  if (slugOk && !token) publicacao = 'não enviado ao GitHub: falta GITHUB_TOKEN no Apps Script';
+  else if (slugOk && d.decisao === 'aprovado') {
+    var r = gh('post', '/dispatches', { event_type: 'publicar-texto', client_payload: { slug: d.slug, quem: limpa(d.quem) } });
+    publicacao = r.getResponseCode() === 204 ? 'publicação enviada ao GitHub' : 'erro ao publicar: ' + r.getResponseCode() + ' ' + r.getContentText().slice(0, 200);
+  } else if (slugOk) {
+    var nome = Utilities.formatDate(new Date(), 'America/Sao_Paulo', 'yyyyMMdd-HHmmss') + '-' + d.slug + '.json';
+    var pedido = JSON.stringify({ slug: d.slug, titulo: limpa(d.titulo), quem: limpa(d.quem), comentario: limpa(d.comentario), recebido: new Date().toISOString() }, null, 2);
+    var r2 = gh('put', '/contents/_blog/ajustes/' + nome, { message: 'Blog: pedido de ajuste em ' + d.slug + ' (' + limpa(d.quem) + ')', content: Utilities.base64Encode(pedido, Utilities.Charset.UTF_8) });
+    publicacao = r2.getResponseCode() === 201 ? 'ajuste enviado para correção (o texto corrigido chega por e-mail)' : 'erro ao enviar ajuste: ' + r2.getResponseCode() + ' ' + r2.getContentText().slice(0, 200);
   }
   aba.appendRow([new Date(), limpa(d.titulo), limpa(d.slug), limpa(d.quem), decisao, limpa(d.comentario), publicacao]);
   var esc = function (s) { return limpa(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/\n/g, '<br>'); };
@@ -110,7 +117,7 @@ function revisao(d) {
     '<p style="margin:0 0 10px;font-size:16px"><b>' + esc(d.quem) + ': ' + decisao + '</b></p>' +
     '<p style="margin:0 0 10px">Texto: ' + esc(d.titulo) + '</p>' +
     (d.comentario ? '<p style="margin:0 0 10px;padding:10px 14px;background:#F5EFE6;border-radius:8px">' + esc(d.comentario) + '</p>' : '') +
-    (publicacao ? '<p style="margin:0 0 10px">Blog: ' + esc(publicacao) + '. O texto aparece em https://haloconsulting.com.br/blog/ em poucos minutos.</p>' : '') +
+    (publicacao ? '<p style="margin:0 0 10px">Blog: ' + esc(publicacao) + '.</p>' : '') +
     '<p style="margin:14px 0 0;color:#7A5A62;font-size:12px">Todos os votos ficam na aba "Revisões do blog": ' + planilha.getUrl() + '</p></div>';
   MailApp.sendEmail(AVISAR_APLICACAO, 'Blog: ' + limpa(d.quem) + ' ' + decisao.toLowerCase() + ' · ' + limpa(d.titulo), decisao + ' por ' + limpa(d.quem) + ': ' + limpa(d.titulo), { htmlBody: html, name: 'Revisão do blog Halo' });
   return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(ContentService.MimeType.JSON);

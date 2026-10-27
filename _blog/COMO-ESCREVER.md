@@ -10,6 +10,8 @@ Halo Company: três sócios que cuidam da presença digital de empresas premium 
 - João Dini: site, tecnologia e automações (sites rápidos, SEO, otimização para ChatGPT, Gemini e Perplexity).
 Somos de Cotia e Alphaville (SP) e atendemos todo o Brasil. O valor da Halo sai depois do diagnóstico: nunca escreva um preço da Halo.
 
+**A Halo NÃO é agência.** Nunca escreva "a agência Halo", "nossa agência" ou qualquer frase que coloque a Halo como agência. Agências estão desgastadas no mercado. A Halo é um time de três sócios que responde pela presença digital inteira (estratégia, imagem, tráfego, site e comercial) num plano só, como a Vinci Society se posiciona fora do modelo de agência. A palavra "agência" só aparece como o modelo antigo com que a Halo se compara, porque é o que as pessoas buscam no Google.
+
 ## Arquivo
 
 `_blog/AAAA-MM-DD-slug.md`, com a data da terça-feira de publicação e o slug igual ao título sem acento, em minúsculas, com hífens. Cabeçalho obrigatório:
