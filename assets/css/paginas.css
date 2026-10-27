@@ -167,3 +167,26 @@
   .insta__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .tabela tbody th { width: auto; }
 }
+
+/* Topo das páginas internas: voltar para o início */
+.topo__acoes { display: flex; align-items: center; gap: 20px; }
+.topo__inicio { display: inline-flex; align-items: center; gap: 6px; min-height: 42px; font-size: .95rem; font-weight: 600; text-decoration: none; color: var(--texto-2); transition: color .3s; }
+.topo__inicio:hover { color: var(--texto); }
+.topo__inicio span { transition: transform .3s var(--ease); }
+.topo__inicio:hover span { transform: translateX(-3px); }
+
+/* Botão flutuante de WhatsApp, em todas as páginas */
+.whats { position: fixed; right: 20px; bottom: 20px; z-index: 55; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 22px 0 16px;
+  border-radius: 999px; background: var(--anil-fundo); color: var(--algodao); border: 1px solid rgba(245, 239, 230, .22); text-decoration: none; font-weight: 620; font-size: .95rem;
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, .55); transition: transform .4s var(--ease), border-color .3s; }
+.whats svg { width: 26px; height: 26px; color: #25D366; flex: none; }
+.whats:hover, .whats:focus-visible { transform: translateY(-3px); border-color: rgba(245, 239, 230, .5); }
+/* Com o aviso de cookies aberto, o botão sobe para não ficar por cima dele. */
+body:has(.cookies:not([hidden])) .whats { bottom: 180px; }
+@media (max-width: 600px) {
+  .whats { right: 16px; bottom: 16px; width: 58px; height: 58px; padding: 0; justify-content: center; }
+  .whats span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .whats svg { width: 30px; height: 30px; }
+  body:has(.cookies:not([hidden])) .whats { bottom: 200px; }
+  .topo__acoes { gap: 14px; }
+}
