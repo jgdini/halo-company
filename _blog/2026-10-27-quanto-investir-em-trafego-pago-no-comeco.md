@@ -60,6 +60,10 @@ Na maioria das empresas, o problema não é a verba. É o caminho depois do cliq
 
 Arrumar esses quatro pontos costuma render mais do que dobrar a verba. Por isso, na Halo, tráfego pago vem junto com a [página para onde o anúncio leva](/criacao-de-sites/) e com o treinamento de quem atende.
 
+## E o vídeo, entra onde nessa conta?
+
+O vídeo também faz parte da jornada do lead. Quando é pensado de forma estratégica para o tráfego, ele ajuda o anúncio a converter: mostra a empresa, tira dúvidas antes do contato e chega ao comercial um lead mais preparado. Para isso, não precisa ser grande. Um vídeo curto, com um objetivo claro, já cumpre o papel. Se quiser ir além, veja como funciona o [vídeo institucional](/video-institucional/).
+
 ## Meta ou Google: por onde começar
 
 Depende de como o seu cliente compra.
@@ -74,6 +78,7 @@ Muita empresa começa pelo Google, porque a intenção de compra é maior, e usa
 - Você sabe quanto vale, em média, um cliente?
 - Sabe quantos leads viram venda hoje?
 - Tem uma página rápida, com uma ação clara, para receber o clique?
+- Tem um vídeo curto, com objetivo claro, para acompanhar o lead até o contato?
 - Alguém responde o lead em minutos, não em horas?
 - Vai anotar de onde veio cada lead?
 
