@@ -1,0 +1,169 @@
+/* Páginas internas (serviços, segmentos, região, case) e blocos novos da home.
+   Usa os tokens e componentes de style.css; aqui só o que é próprio dessas páginas. */
+
+.pg .topo { background: rgba(42, 8, 17, .92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: var(--linha); }
+.pg .menu a[aria-current="page"] { color: var(--texto); }
+
+.pg-hero { position: relative; padding: clamp(128px, 16vw, 176px) 0 clamp(64px, 8vw, 104px); overflow: hidden; }
+.pg-hero::after { content: ""; position: absolute; right: -12vw; top: 8%; width: min(56vw, 620px); aspect-ratio: 1; border-radius: 50%;
+  background: conic-gradient(from -90deg, var(--garanca) 0 28.6%, transparent 0 33.3%, var(--acafrao) 0 61.9%, transparent 0 66.6%, var(--celeste) 0 95.2%, transparent 0);
+  -webkit-mask: radial-gradient(closest-side, transparent 84%, #000 85% 99%, transparent 100%); mask: radial-gradient(closest-side, transparent 84%, #000 85% 99%, transparent 100%);
+  opacity: .22; pointer-events: none; }
+.migalha { display: flex; flex-wrap: wrap; gap: 8px; font-size: .85rem; color: var(--texto-2); margin-bottom: 28px; }
+.migalha a { text-decoration: none; color: var(--texto-2); }
+.migalha a:hover { color: var(--texto); }
+.migalha span[aria-hidden] { opacity: .5; }
+.pg-titulo { position: relative; z-index: 1; font-size: clamp(2.3rem, 5vw, 4.3rem); font-stretch: 110%; font-weight: 750; line-height: 1.02; letter-spacing: -.03em; max-width: 17ch; text-wrap: balance; }
+.pg-titulo em { font-family: "Newsreader", Georgia, serif; font-style: italic; font-weight: 400; color: var(--garanca); letter-spacing: -.01em; }
+.pg-apoio { position: relative; z-index: 1; margin-top: 26px; max-width: 54ch; font-size: clamp(1.06rem, 1.4vw, 1.25rem); color: var(--texto-2); }
+.pg-acoes { position: relative; z-index: 1; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin-top: 34px; }
+
+.secao { padding: clamp(72px, 10vw, 128px) 0; }
+.secao + .secao:not(.claro) { padding-top: 0; }
+.titulo-2 { font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-stretch: 110%; font-weight: 720; max-width: 20ch; text-wrap: balance; }
+.prosa { max-width: 64ch; display: grid; gap: 18px; color: var(--texto-2); font-size: 1.08rem; }
+.prosa strong { color: var(--texto); font-weight: 650; }
+.prosa a { text-decoration-color: var(--garanca); text-underline-offset: 3px; }
+.duas { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
+.duas > .titulo-2 { position: sticky; top: 110px; }
+
+/* Lista de problemas */
+.dores { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.dores li { display: grid; grid-template-columns: auto 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--linha); font-size: 1.08rem; }
+.dores li:last-child { border-bottom: 1px solid var(--linha); }
+.dores .ponto { margin-top: .55em; }
+.dores b { display: block; color: var(--texto); font-weight: 650; margin-bottom: 4px; }
+.dores span:not(.ponto) { color: var(--texto-2); }
+
+/* Três fios: o que a Halo faz */
+.fios3 { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.fios3 li { position: relative; padding: 30px 26px 30px; border: 1px solid var(--linha); border-radius: var(--raio); background: rgba(245, 239, 230, .03); }
+.fios3 li::before { content: ""; position: absolute; left: 26px; right: 26px; top: -1px; height: 3px; border-radius: 3px; background: var(--fio); }
+.fios3 small { display: block; font-size: .78rem; font-weight: 600; font-stretch: 78%; text-transform: uppercase; letter-spacing: .16em; color: var(--texto-2); margin-bottom: 12px; }
+.fios3 h3 { font-size: 1.35rem; font-stretch: 106%; margin-bottom: 12px; }
+.fios3 p { color: var(--texto-2); }
+.fios3 p + p { margin-top: 10px; }
+.claro .fios3 li { background: #fff6; }
+/* Em fundo claro, --texto continua off-white: os destaques usam a tinta bordô. */
+.claro .check b, .claro .dores b, .claro .prosa strong, .claro .lado figcaption b, .claro .tabela tbody th, .claro .cidades li { color: var(--tinta); }
+
+/* Passos numerados */
+.etapas { list-style: none; margin: 0; padding: 0; counter-reset: e; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.etapas li { counter-increment: e; padding-top: 22px; border-top: 2px solid var(--linha); }
+.etapas li::before { content: counter(e, decimal-leading-zero); display: block; font-size: .85rem; font-weight: 650; color: var(--garanca); margin-bottom: 14px; letter-spacing: .08em; }
+.etapas h3 { font-size: 1.2rem; margin-bottom: 8px; }
+.etapas p { color: var(--texto-2); font-size: 1rem; }
+
+/* Checklist */
+.check { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 40px; }
+.check li { display: grid; grid-template-columns: 22px 1fr; gap: 14px; padding: 14px 0; border-top: 1px solid var(--linha); color: var(--texto-2); }
+.check li::before { content: ""; width: 18px; height: 10px; margin-top: .45em; border-left: 2px solid var(--garanca); border-bottom: 2px solid var(--garanca); transform: rotate(-45deg) translate(2px, -2px); }
+.check b { color: var(--texto); font-weight: 650; }
+
+/* Antes e depois lado a lado */
+.lado { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.lado figure { margin: 0; }
+.lado .janela { border-radius: 14px; overflow: hidden; border: 1px solid var(--linha); background: var(--anil-fundo); }
+.lado img { width: 100%; height: auto; }
+.lado figcaption { margin-top: 12px; font-size: .92rem; color: var(--texto-2); }
+.lado figcaption b { color: var(--texto); }
+.numeros { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 36px; }
+.numeros div { padding: 22px; border: 1px solid var(--linha); border-radius: 14px; }
+.numeros strong { display: block; font-size: clamp(2rem, 3.6vw, 2.8rem); font-stretch: 110%; font-weight: 750; line-height: 1; }
+.numeros span { display: block; margin-top: 8px; font-size: .9rem; color: var(--texto-2); }
+
+/* Tela de site: captura alta mostrada numa janela, só o topo */
+.tela-site { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--linha); background: var(--anil-fundo); max-height: 620px; }
+.tela-site--baixa { max-height: 460px; }
+.tela-site img { width: 100%; height: auto; }
+.tela-site::after { content: ""; position: absolute; inset: auto 0 0; height: 90px; background: linear-gradient(transparent, var(--anil)); pointer-events: none; }
+.numeros--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 720px; }
+
+/* Lista de cases */
+.casos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.caso { display: grid; gap: 10px; align-content: start; text-decoration: none; }
+.caso__img { aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--raio); border: 1px solid var(--linha); background: var(--anil-fundo); margin-bottom: 10px; }
+.caso__img img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .9s var(--ease); }
+.caso:hover .caso__img img { transform: scale(1.03); }
+.caso small { font-size: .78rem; font-weight: 600; font-stretch: 78%; text-transform: uppercase; letter-spacing: .14em; color: var(--texto-2); }
+.caso h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); font-stretch: 108%; }
+.caso p { color: var(--texto-2); max-width: 52ch; }
+.caso .seta { font-weight: 650; font-size: .95rem; }
+.caso .seta::after { content: " →"; }
+
+/* Blog: texto */
+.pg-hero--texto { padding-bottom: clamp(36px, 5vw, 56px); }
+.pg-titulo--texto { font-size: clamp(2.1rem, 4.2vw, 3.6rem); max-width: 22ch; }
+.texto__meta { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-top: 22px; font-size: .95rem; color: var(--texto-2); }
+.texto { display: grid; gap: 40px; padding-bottom: clamp(56px, 8vw, 96px); }
+.texto__resumo { max-width: 68ch; padding: 24px 28px; border: 1px solid var(--linha); background: rgba(245, 239, 230, .05); border-radius: 14px; }
+.texto__resumo b { display: block; font-size: .78rem; font-weight: 600; font-stretch: 78%; text-transform: uppercase; letter-spacing: .14em; color: var(--texto-2); margin-bottom: 8px; }
+.texto__resumo p { font-size: 1.12rem; }
+.texto__corpo { max-width: 68ch; font-size: 1.1rem; line-height: 1.7; color: rgba(245, 239, 230, .86); }
+.texto__corpo > * + * { margin-top: 1.1em; }
+.texto__corpo h2 { margin-top: 2em; font-size: clamp(1.5rem, 2.6vw, 2rem); font-stretch: 108%; line-height: 1.15; color: var(--texto); }
+.texto__corpo h3 { margin-top: 1.6em; font-size: 1.25rem; color: var(--texto); }
+.texto__corpo strong { color: var(--texto); }
+.texto__corpo a { text-decoration-color: var(--garanca); text-underline-offset: 3px; }
+.texto__corpo ul, .texto__corpo ol { padding-left: 1.3em; }
+.texto__corpo li + li { margin-top: .5em; }
+.texto__corpo li::marker { color: var(--garanca); }
+.texto__corpo blockquote { margin-inline: 0; padding-left: 22px; border-left: 2px solid var(--acafrao); font-family: "Newsreader", Georgia, serif; font-style: italic; font-size: 1.3rem; color: var(--texto); }
+
+/* Tabela simples (site x landing page) */
+.tabela { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.tabela th, .tabela td { text-align: left; vertical-align: top; padding: 16px 18px 16px 0; border-top: 1px solid var(--linha); }
+.tabela thead th { font-size: .78rem; font-weight: 600; font-stretch: 78%; text-transform: uppercase; letter-spacing: .14em; color: var(--texto-2); border-top: 0; }
+.tabela tbody th { font-weight: 650; width: 22%; }
+.tabela td { color: var(--texto-2); }
+.tabela__caixa { overflow-x: auto; }
+
+/* Cidades */
+.cidades { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.cidades li { padding: 10px 18px; border: 1px solid var(--linha); border-radius: 999px; font-size: .98rem; }
+.cidades li:first-child, .cidades li:nth-child(2) { border-color: var(--garanca); }
+
+/* Faixa de chamada */
+.chamada { text-align: left; padding: clamp(48px, 7vw, 80px); border-radius: calc(var(--raio) * 1.4); background: var(--anil-fundo); border: 1px solid var(--linha); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 28px 48px; align-items: center; }
+.chamada h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); font-stretch: 110%; max-width: 22ch; }
+.chamada p { margin-top: 12px; color: var(--texto-2); max-width: 52ch; }
+
+/* Veja também / soluções */
+.cartoes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.cartao { display: grid; gap: 10px; align-content: start; padding: 26px; border: 1px solid var(--linha); border-radius: var(--raio); text-decoration: none; transition: border-color .3s, transform .5s var(--ease), background-color .3s; }
+.cartao:hover, .cartao:focus-visible { border-color: rgba(245, 239, 230, .4); transform: translateY(-3px); background: rgba(245, 239, 230, .04); }
+.claro .cartao:hover, .claro .cartao:focus-visible { border-color: rgba(58, 13, 24, .4); background: #fff8; }
+.cartao small { font-size: .78rem; font-weight: 600; font-stretch: 78%; text-transform: uppercase; letter-spacing: .14em; color: var(--texto-2); }
+.cartao h3 { font-size: 1.3rem; font-stretch: 106%; }
+.cartao p { color: var(--texto-2); font-size: .98rem; }
+.cartao .seta { margin-top: 6px; font-weight: 650; font-size: .95rem; }
+.cartao .seta::after { content: " →"; transition: margin-left .3s; }
+.cartao:hover .seta::after { margin-left: 4px; }
+
+/* Instagram na home */
+.insta__grade { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.insta__grade .ig { border-radius: 12px; }
+.insta__grade .ig img { transition: transform .8s var(--ease); }
+.insta__grade .ig:hover img { transform: scale(1.04); }
+.insta__rodape { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; margin-top: 28px; }
+.insta__rodape p { color: var(--texto-2); }
+
+.rodape__solucoes { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px 22px; font-size: .92rem; padding-top: 22px; border-top: 1px solid var(--linha); }
+.rodape__solucoes a { color: var(--texto-2); text-decoration: none; }
+.rodape__solucoes a:hover { color: var(--texto); }
+
+@media (max-width: 980px) {
+  .duas { grid-template-columns: 1fr; }
+  .duas > .titulo-2 { position: static; }
+  .fios3, .cartoes { grid-template-columns: 1fr; }
+  .etapas { grid-template-columns: 1fr 1fr; }
+  .numeros { grid-template-columns: 1fr 1fr; }
+  .chamada { grid-template-columns: 1fr; }
+  .insta__grade { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .lado, .check, .etapas, .casos { grid-template-columns: 1fr; }
+  .tela-site { max-height: 460px; }
+  .insta__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .tabela tbody th { width: auto; }
+}

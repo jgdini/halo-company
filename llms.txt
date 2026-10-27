@@ -7,10 +7,10 @@ O nome vem do efeito halo (Edward Thorndike, 1920): uma ótima impressão da mar
 ## Sócios
 - Amanda Takahashi (estratégia e growth): estratégia e gestão de Instagram, Facebook e LinkedIn. Já trabalhou com Raphael Mattos (Scale Club) e Marcus Marques (Acelerador Empresarial); gravou entrevistas com Joel Jota e Graciane Barbosa. Embaixadora da Community, escola de creators.
 - Bianca Fortes (arte, tráfego e receita): especialista em tráfego pago; captação e edição de foto e vídeo e treinamento do time comercial, com experiência em grandes clínicas odontológicas.
+- João Dini (site, tecnologia e automações): sites sob medida, rápidos, com SEO e preparados para assistentes de IA.
 
 ## Tráfego pago
 O resultado do anúncio depende do caminho depois do clique: campanha com objetivo e público certo, página rápida com uma ação clara e comercial que responde o lead em minutos. Com o mesmo investimento, menos cliques de curiosos e mais vendas.
-- João Dini (site, tecnologia e automações): sites sob medida, rápidos, com SEO e preparados para assistentes de IA.
 
 ## Como funciona
 1. Aplicação: a empresa conta sobre o negócio.
@@ -24,10 +24,20 @@ O resultado do anúncio depende do caminho depois do clique: campanha com objeti
 - [Austrália Sem Fronteiras](https://liderdetravessias.com.br/) e [landing page do ecossistema](https://marcelolusardo.com.br/): projeto internacional (Brasil e Austrália) para Marcelo Lusardo, com 23 anos de mercado.
 - [DRLSYS](https://drlsys.com/): site da empresa de infraestrutura de TI de João Dini, feito em menos de uma semana.
 
-## Página
+## Páginas
 - [Página da Halo Company](https://haloconsulting.com.br/): sócios, método, case, perguntas frequentes e aplicação
+- [Criação de sites e landing pages](https://haloconsulting.com.br/criacao-de-sites/): o que todo site da Halo tem, site x landing page, o que muda o preço
+- [Vídeo institucional e captação](https://haloconsulting.com.br/video-institucional/): roteiro, diária de gravação e edição em formatos para site, Reels e anúncios
+- [Marketing para indústrias](https://haloconsulting.com.br/marketing-para-industrias/): site com catálogo, captação na fábrica e LinkedIn
+- [Marketing para clínicas](https://haloconsulting.com.br/marketing-para-clinicas/): conteúdo com o especialista, tráfego local e treinamento da recepção
+- [Cases](https://haloconsulting.com.br/cases/): todos os cases
+- [Case Hanaoka](https://haloconsulting.com.br/cases/hanaoka/): indústria química desde 1985, antes e depois do site e notas do PageSpeed
+- [Case Veículo Judicial](https://haloconsulting.com.br/cases/veiculo-judicial/): plataforma que reúne leilões judiciais de leiloeiros oficiais, com custo total estimado
+- [Case Marcelo Lusardo](https://haloconsulting.com.br/cases/marcelo-lusardo/): site e landing page do ecossistema Austrália Sem Fronteiras
+- [Case DRLSYS](https://haloconsulting.com.br/cases/drlsys/): site de TI em Cotia, do briefing ao ar em menos de uma semana
 
 ## Contato
+- Região: Cotia e Alphaville (SP), atendimento em todo o Brasil. Sem escritório aberto ao público.
 - Instagram: [@halocompany_](https://www.instagram.com/halocompany_/)
 - E-mail: contato@haloconsulting.com.br
 - Aplicação: [haloconsulting.com.br/#aplicar](https://haloconsulting.com.br/#aplicar)
