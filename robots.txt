@@ -1,17 +1,24 @@
 User-agent: *
 Allow: /
+Disallow: /revisao/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /revisao/
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /revisao/
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /revisao/
 User-agent: ClaudeBot
 Allow: /
+Disallow: /revisao/
 User-agent: PerplexityBot
 Allow: /
+Disallow: /revisao/
 User-agent: Google-Extended
 Allow: /
+Disallow: /revisao/
 
 Sitemap: https://haloconsulting.com.br/sitemap.xml

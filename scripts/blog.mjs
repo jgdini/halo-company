@@ -16,6 +16,7 @@
 //   ---
 // Texto em Markdown simples: ## e ### para títulos, parágrafos, listas com - ou 1., **negrito**, *itálico*, [link](url), > citação.
 import { readdir, readFile, writeFile, mkdir, rm } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { casca, chamada, esc, empresa, SITE, raiz } from './paginas.mjs';
 
 const PREVIA = process.argv.includes('--previa');
@@ -167,6 +168,65 @@ ${lista.map((t) => `<item><title>${x(t.titulo)}</title><link>${SITE}/blog/${t.sl
 `;
 }
 
+/* ---------- Revisão (rascunhos com voto de Amanda, Bia e João) ---------- */
+// Endereço escondido (/revisao/<slug>-<código>/), fora do sitemap, com noindex e bloqueado no robots.txt.
+// Os votos vão para o Apps Script da Halo (aba "Revisões do blog" + e-mail para o João).
+const APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbxoCRJXmJVA2KGLaE7OzkgMrnydWBkSmXOimTmV5oo7kqEpx9ASDLq8Ms9eD9aPBYo/exec';
+const codigo = (slug) => createHash('sha256').update('halo-revisao:' + slug).digest('hex').slice(0, 8);
+const caminhoRevisao = (t) => `revisao/${t.slug}-${codigo(t.slug)}`;
+
+function paginaRevisao(t) {
+  const aviso = `
+    <div class="revisao__aviso"><div class="wrap"><b>Rascunho para revisão.</b> Este texto ainda não está publicado. Leia e vote no fim da página. <a href="#revisar">Ir para o voto</a></div></div>`;
+  const form = `
+      <section class="revisao" id="revisar" aria-labelledby="revisar-titulo">
+        <h2 id="revisar-titulo">Sua revisão</h2>
+        <p>Previsto para ${dataBr(t.data)}. O texto só vai ao ar com a aprovação.</p>
+        <form class="revisao__form" id="form-revisao" data-slug="${esc(t.slug)}" data-titulo="${esc(t.titulo)}">
+          <fieldset><legend>Quem está revisando</legend>
+            <div class="chips">${['Amanda', 'Bia', 'João'].map((n) => `<label><input type="radio" name="quem" value="${n}" required><span>${n}</span></label>`).join('')}</div>
+          </fieldset>
+          <label class="revisao__comentario">Comentário (obrigatório para pedir ajuste)
+            <textarea name="comentario" rows="4" placeholder="O que mudar, cortar ou acrescentar"></textarea>
+          </label>
+          <p class="revisao__erro" id="revisao-erro" role="alert"></p>
+          <div class="revisao__botoes">
+            <button type="submit" class="botao" value="aprovado">Aprovar</button>
+            <button type="submit" class="botao botao--linha" value="ajuste">Pedir ajuste</button>
+          </div>
+          <p class="revisao__ok" id="revisao-ok" hidden tabindex="-1"></p>
+        </form>
+      </section>`;
+  const script = `
+<script>
+(function () {
+  var f = document.getElementById('form-revisao'), erro = document.getElementById('revisao-erro'), ok = document.getElementById('revisao-ok');
+  var chave = 'halo-revisao-' + f.dataset.slug;
+  try { var antes = JSON.parse(localStorage.getItem(chave) || 'null'); if (antes) mostrar(antes); } catch (e) {}
+  function mostrar(v) { ok.hidden = false; ok.textContent = 'Voto registrado: ' + v.quem + ' ' + (v.decisao === 'aprovado' ? 'aprovou' : 'pediu ajuste') + '. Se mudar de ideia, é só votar de novo.'; }
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    var decisao = ev.submitter && ev.submitter.value, quem = (f.querySelector('input[name=quem]:checked') || {}).value, comentario = f.comentario.value.trim();
+    erro.textContent = '';
+    if (!quem) { erro.textContent = 'Escolha quem está revisando.'; return; }
+    if (decisao === 'ajuste' && !comentario) { erro.textContent = 'Escreva o que precisa mudar.'; f.comentario.focus(); return; }
+    var botoes = f.querySelectorAll('button'); botoes.forEach(function (b) { b.disabled = true; });
+    var dados = { tipo: 'revisao', slug: f.dataset.slug, titulo: f.dataset.titulo, quem: quem, decisao: decisao, comentario: comentario };
+    fetch('${APPS_SCRIPT}', { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
+      .then(function () { try { localStorage.setItem(chave, JSON.stringify(dados)); } catch (e) {} mostrar(dados); ok.focus(); })
+      .catch(function () { erro.textContent = 'Não foi possível enviar. Verifique a internet e tente de novo.'; })
+      .finally(function () { botoes.forEach(function (b) { b.disabled = false; }); });
+  });
+})();
+</script>`;
+  return paginaTexto(t, [], '/blog/')
+    .replace('<head>', '<head>\n<meta name="robots" content="noindex, nofollow">')
+    .replace('<body class="pg">', '<body class="pg pg--revisao">')
+    .replace('<article>', '<article>' + aviso)
+    .replace('</article>', form + '\n  </article>')
+    .replace('</body>', script + '\n</body>');
+}
+
 /* ---------- Gerar ---------- */
 const todos = await textos();
 const publicados = todos.filter((t) => t.status === 'aprovado' && t.data <= HOJE);
@@ -190,6 +250,15 @@ sm = sm.split('\n').filter((l) => !/\/blog\/[^<]+\/<\/loc>/.test(l)).join('\n');
 const linhas = publicados.map((t) => `  <url><loc>${SITE}/blog/${t.slug}/</loc><lastmod>${t.atualizado || t.data}</lastmod></url>`).join('\n');
 if (linhas) sm = sm.replace('</urlset>', linhas + '\n</urlset>');
 await writeFile(raiz + 'sitemap.xml', sm);
+
+// Páginas de revisão: uma para cada texto ainda não publicado (rascunho ou com data futura).
+await rm(raiz + 'revisao', { recursive: true, force: true });
+const pendentes = todos.filter((t) => !publicados.includes(t));
+for (const t of pendentes) {
+  await mkdir(raiz + caminhoRevisao(t), { recursive: true });
+  await writeFile(raiz + caminhoRevisao(t) + '/index.html', paginaRevisao(t));
+}
+if (pendentes.length) console.log('revisão:', pendentes.map((t) => `${SITE}/${caminhoRevisao(t)}/`).join('\n         '));
 
 // Prévia dos rascunhos (pasta _previa/, fora do ar e fora do git).
 if (PREVIA) {

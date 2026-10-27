@@ -3,7 +3,7 @@
 O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` com a data. Para mudar a ordem ou incluir temas, edite esta lista. Origem dos temas: `planejamento/buscas-halo/PLANO-PAGINAS.md` (buscas reais sugeridas pelo Google).
 
 - [x] Quanto custa uma agência de marketing e o que muda o preço (2026-11-03)
-- [ ] Quanto investir em tráfego pago no começo · autor: Bianca Fortes · tema: Tráfego
+- [x] Quanto investir em tráfego pago no começo (2026-10-27)
 - [ ] Tráfego pago funciona mesmo? Pago e orgânico juntos · autor: Bianca Fortes · tema: Tráfego
 - [ ] Quanto custa um vídeo institucional e o que faz ele valer · autor: Bianca Fortes · tema: Vídeo
 - [ ] Quanto custa um site para empresa · autor: João Dini · tema: Site

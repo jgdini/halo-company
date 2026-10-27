@@ -190,3 +190,21 @@ body:has(.cookies:not([hidden])) .whats { bottom: 180px; }
   body:has(.cookies:not([hidden])) .whats { bottom: 200px; }
   .topo__acoes { gap: 14px; }
 }
+
+/* Revisão de rascunhos do blog (/revisao/...) */
+.pg--revisao .whats { display: none; }
+.revisao__aviso { position: sticky; top: 72px; z-index: 40; background: var(--acafrao); color: var(--anil-fundo); font-size: .95rem; padding: 12px 0; }
+.revisao__aviso a { color: inherit; font-weight: 650; }
+.revisao { max-width: 68ch; margin-top: 56px; padding: clamp(24px, 4vw, 36px); border: 1px solid var(--linha); border-radius: var(--raio); background: rgba(245, 239, 230, .04); display: grid; gap: 14px; }
+.revisao h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); font-stretch: 108%; }
+.revisao > p { color: var(--texto-2); }
+.revisao__form { display: grid; gap: 18px; }
+.revisao__form fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 10px; }
+.revisao__form legend { font-size: .92rem; color: var(--texto-2); margin-bottom: 10px; }
+.revisao__comentario { display: grid; gap: 8px; font-size: .92rem; color: var(--texto-2); }
+.revisao__comentario textarea { width: 100%; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--linha); background: var(--anil-fundo); color: var(--texto); resize: vertical; }
+.revisao__botoes { display: flex; flex-wrap: wrap; gap: 12px; }
+.botao--linha { background: transparent; color: var(--texto); border: 1px solid rgba(245, 239, 230, .4); }
+.revisao__erro { color: #FF9AAE; font-size: .95rem; min-height: 0; }
+.revisao__erro:empty { display: none; }
+.revisao__ok { padding: 14px 16px; border-radius: 12px; background: rgba(231, 196, 147, .14); color: var(--texto); }
