@@ -2,7 +2,7 @@
 titulo: Quanto investir em tráfego pago no começo
 descricao: A verba inicial de tráfego pago sai de uma conta simples: quanto vale um cliente, quantos leads viram venda e quanto custa cada lead. Veja como calcular a sua.
 data: 2026-10-27
-status: rascunho
+status: aprovado
 autor: Bianca Fortes
 tema: Tráfego
 resumo: Não existe um valor certo para começar. A verba inicial sai de três números da sua empresa: quanto vale um cliente, quantos leads viram venda e quanto custa trazer cada lead. Comece com o suficiente para a campanha gerar resultados toda semana, meça por um mês e só depois aumente.
