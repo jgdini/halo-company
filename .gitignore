@@ -1,3 +1,11 @@
 node_modules/
 motion/.venv/
 _previa/
+
+# Prospects pausados: ficam só no computador (fora do ar)
+analise/expresso3300/
+analise/huntertransportes/
+analise/semitrans/
+modelos/expresso3300/
+modelos/hunter/
+modelos/semitrans/
