@@ -1,8 +1,8 @@
 ---
 titulo: Quanto custa uma agência de marketing (e por que a Halo não é uma)
 descricao: O preço de uma agência depende do que ela entrega e de quem faz o trabalho. Veja o que comparar nas propostas e por que a Halo trabalha de outro jeito.
-data: 2026-11-03
-status: rascunho
+data: 2026-10-28
+status: aprovado
 autor: Halo Company
 tema: Marketing
 resumo: Não existe preço único, porque "agência de marketing" pode ser desde alguém que publica três posts por semana até um time que cuida de anúncios e site. Para comparar, olhe o que está incluído, quem faz o trabalho e como o resultado é medido. A Halo não é agência: é um time de sócios que responde pela presença digital inteira, do post ao lead atendido.
