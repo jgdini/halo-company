@@ -4,7 +4,7 @@ O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` c
 
 - [x] Quanto custa uma agência de marketing (e por que a Halo não é uma) (2026-11-03)
 - [x] Quanto investir em tráfego pago no começo (2026-10-27)
-- [ ] Tráfego pago funciona mesmo? Pago e orgânico juntos · autor: Bianca Fortes · tema: Tráfego
+- [x] Tráfego pago funciona mesmo? Pago e orgânico juntos · autor: Bianca Fortes · tema: Tráfego (2026-11-03)
 - [ ] Quanto custa um vídeo institucional e o que faz ele valer · autor: Bianca Fortes · tema: Vídeo
 - [ ] Quanto custa um site para empresa · autor: João Dini · tema: Site
 - [ ] Quanto custa gestão de redes sociais · autor: Amanda Takahashi · tema: Redes
