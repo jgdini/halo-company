@@ -5,9 +5,9 @@ O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` c
 - [x] Quanto custa uma agência de marketing (e por que a Halo não é uma) (2026-11-03)
 - [x] Quanto investir em tráfego pago no começo (2026-10-27)
 - [x] Tráfego pago funciona mesmo? Pago e orgânico juntos · autor: Bianca Fortes · tema: Tráfego (2026-11-03)
-- [ ] Quanto custa um vídeo institucional e o que faz ele valer · autor: Bianca Fortes · tema: Vídeo
-- [ ] Quanto custa um site para empresa · autor: João Dini · tema: Site
-- [ ] Quanto custa gestão de redes sociais · autor: Amanda Takahashi · tema: Redes
+- [x] Quanto custa um vídeo institucional e o que faz ele valer · autor: Bianca Fortes · tema: Vídeo (2026-11-10)
+- [x] Quanto custa um site para empresa · autor: João Dini · tema: Site (2026-11-17)
+- [x] Quanto custa gestão de redes sociais · autor: Amanda Takahashi · tema: Redes (2026-11-24)
 - [ ] Por que o lead do Instagram não fecha · autor: Bianca Fortes · tema: Comercial
 - [ ] Agência, equipe interna ou um time de sócios: o que muda para a sua empresa · autor: Halo Company · tema: Marketing
 - [ ] Site ou landing page: quando usar cada um · autor: João Dini · tema: Site
