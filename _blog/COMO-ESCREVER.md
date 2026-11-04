@@ -23,12 +23,12 @@ descricao: (até 160 caracteres, para o Google)
 data: AAAA-MM-DD
 status: rascunho
 autor: Amanda Takahashi | Bianca Fortes | João Dini | Halo Company
-tema: Marketing | Site | Vídeo | Tráfego | Redes | Comercial
+tema: Posicionamento | Branding | Site | Marketing | Vídeo | Tráfego | Redes | Comercial
 resumo: (a resposta direta em 2 ou 3 frases; é o que as IAs citam)
 ---
 ```
 
-O agente semanal grava `status: aprovado` direto no PR, porque o merge do PR pelo João é a aprovação. Quem escreve à mão, fora do PR, usa `rascunho` até o João aprovar.
+Todo texto novo entra com `status: rascunho`. A aprovação acontece na página de revisão (/revisao/...): o botão Aprovar e publicar muda o status e publica.
 
 ## Regras do texto
 
@@ -39,9 +39,9 @@ O agente semanal grava `status: aprovado` direto no PR, porque o merge do PR pel
 - Sem jargão de marketing: "alavancar", "potencializar", "transformar seu negócio", "estratégias robustas", "no cenário atual". Sem emojis.
 - **Nunca invente número, estatística, pesquisa, cliente ou depoimento.** Só use número com fonte conferível e link para ela. Na dúvida, explique do que o valor depende em vez de dar um valor.
 - Pode citar os cases reais da Halo, só com o que está nas páginas de case do site: Hanaoka (/cases/hanaoka/), Veículo Judicial (/cases/veiculo-judicial/), Marcelo Lusardo (/cases/marcelo-lusardo/), DRLSYS (/cases/drlsys/).
-- Faça 1 a 3 links internos quando fizer sentido: /criacao-de-sites/, /video-institucional/, /marketing-para-industrias/, /marketing-para-clinicas/, /cases/.
+- Faça 1 a 3 links internos quando fizer sentido: /criacao-de-sites/, /video-institucional/, /marketing-para-industrias/, /cases/.
 - Termine com uma lista prática (perguntas para levar à reunião, checklist, próximos passos). Não termine com "conclusão".
-- Publicidade de saúde segue regras dos conselhos (CFM, CFO): não prometa resultado de tratamento.
+- Não escreva sobre clínicas ou saúde enquanto a Halo não tiver um case de clínica. Prefira exemplos de indústria, serviços e especialistas, onde há case.
 
 ## Depois de escrever
 
