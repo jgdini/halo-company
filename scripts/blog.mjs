@@ -44,15 +44,26 @@ function inline(t) {
 }
 function markdown(md) {
   const linhas = md.replace(/\r\n/g, '\n').split('\n');
-  const out = []; let para = [], lista = null, cit = [];
+  const out = []; let para = [], lista = null, cit = [], tab = [];
   const fechaPara = () => { if (para.length) { out.push(`<p>${inline(para.join(' '))}</p>`); para = []; } };
   const fechaLista = () => { if (lista) { out.push(`<${lista.tipo}>${lista.itens.map((i) => `<li>${inline(i)}</li>`).join('')}</${lista.tipo}>`); lista = null; } };
   const fechaCit = () => { if (cit.length) { out.push(`<blockquote><p>${inline(cit.join(' '))}</p></blockquote>`); cit = []; } };
-  const fechaTudo = () => { fechaPara(); fechaLista(); fechaCit(); };
+  // Tabela: linhas começando com |; a primeira é o cabeçalho e a linha de --- é ignorada.
+  const fechaTab = () => {
+    if (!tab.length) return;
+    const linhas = tab.filter((l) => !/^\|[\s:|-]+\|?$/.test(l)).map((l) => l.replace(/^\||\|$/g, '').split('|').map((c) => c.trim()));
+    const [cab, ...corpo] = linhas;
+    out.push('<div class="tabela__caixa"><table class="tabela"><thead><tr>' + cab.map((c) => '<th scope="col">' + inline(c) + '</th>').join('') + '</tr></thead><tbody>' +
+      corpo.map((r) => '<tr>' + r.map((c, i) => i ? '<td>' + inline(c) + '</td>' : '<th scope="row">' + inline(c) + '</th>').join('') + '</tr>').join('') + '</tbody></table></div>');
+    tab = [];
+  };
+  const fechaTudo = () => { fechaPara(); fechaLista(); fechaCit(); fechaTab(); };
   const ids = new Set();
   for (const l of linhas) {
     let m;
     if (!l.trim()) { fechaTudo(); continue; }
+    if (/^\|/.test(l.trim())) { fechaPara(); fechaLista(); fechaCit(); tab.push(l.trim()); continue; }
+    fechaTab();
     if ((m = l.match(/^(#{2,3})\s+(.+)/))) {
       fechaTudo();
       let id = m[2].toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');

@@ -10,6 +10,7 @@ O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` c
 - [x] Quanto custa um vídeo institucional e o que faz ele valer · autor: Bianca Fortes · tema: Vídeo (2026-11-10)
 - [x] Quanto custa um site para empresa · autor: João Dini · tema: Site (2026-11-17)
 - [x] Quanto custa gestão de redes sociais · autor: Amanda Takahashi · tema: Redes (2026-11-24)
+- [x] Tabela de preços de sites no Brasil em 2026 (com as fontes) · autor: João Dini · tema: Site (2026-12-01)
 - [ ] O que é posicionamento de marca (e por que ele vem antes do primeiro post) · autor: Amanda Takahashi · tema: Posicionamento
 - [ ] Efeito halo: por que uma boa primeira impressão vende todo o resto · autor: Halo Company · tema: Branding
 - [ ] A primeira tela do seu site: o que ela precisa dizer em 5 segundos · autor: João Dini · tema: Site
