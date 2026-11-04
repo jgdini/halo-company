@@ -1,8 +1,8 @@
 ---
 titulo: Quanto custa um site para empresa (e o que separa um site barato de um caro)
 descricao: O preço de um site para empresa depende de páginas, idiomas, conteúdo, integrações e migração. Veja o que pesa no orçamento e o que todo site precisa ter, barato ou não.
-data: 2026-11-17
-status: rascunho
+data: 2026-11-04
+status: aprovado
 autor: João Dini
 tema: Site
 resumo: O preço de um site depende do que ele precisa fazer: quantas páginas e idiomas, se o conteúdo já existe, quais integrações e se há um site antigo para migrar. Mais importante que o preço é o que vem incluso: velocidade no celular, estrutura para o Google, Search Console e um formulário que qualifica. Um site barato que ninguém encontra sai caro.
