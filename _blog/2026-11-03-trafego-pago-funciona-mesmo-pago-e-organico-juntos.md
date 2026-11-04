@@ -2,7 +2,7 @@
 titulo: Tráfego pago funciona mesmo? Pago e orgânico juntos
 descricao: Tráfego pago funciona quando há página, atendimento e medição por trás. Veja quando ele falha, o que o orgânico faz por ele e como usar os dois juntos.
 data: 2026-11-03
-status: rascunho
+status: aprovado
 autor: Bianca Fortes
 tema: Tráfego
 resumo: Tráfego pago funciona quando existe uma oferta clara, uma página rápida para receber o clique e um comercial que responde rápido. Sem isso, ele só deixa o problema mais caro. O orgânico (Instagram, site, Google) cria a confiança que faz o anúncio converter, e o pago traz quem ainda não conhece a empresa. Os dois funcionam melhor juntos.
