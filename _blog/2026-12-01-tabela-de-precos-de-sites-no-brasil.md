@@ -1,8 +1,8 @@
 ---
 titulo: Tabela de preços de sites no Brasil em 2026 (com as fontes)
 descricao: Quanto custa landing page, site institucional e site sob medida no Brasil em 2026, segundo as tabelas publicadas por empresas do setor. Mais os custos de domínio, hospedagem e manutenção.
-data: 2026-12-01
-status: rascunho
+data: 2026-11-04
+status: aprovado
 autor: João Dini
 tema: Site
 resumo: Nas tabelas que empresas brasileiras do setor publicaram em 2026, uma landing page aparece entre R$ 800 e R$ 5.000, um site institucional simples entre R$ 1.500 e R$ 6.000 e um site personalizado entre R$ 5.000 e R$ 25.000, com projetos sob medida acima disso. Depois vêm os custos de todo ano: domínio .com.br, hospedagem, plugins e manutenção. As faixas são largas porque cada empresa inclui coisas diferentes no preço.
