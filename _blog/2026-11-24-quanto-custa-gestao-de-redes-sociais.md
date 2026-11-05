@@ -1,5 +1,5 @@
 ---
-titulo: Quanto custa gestão de redes sociais (e o que deveria vir junto)
+titulo: Postzinho paga boleto? Quanto custa gestão de redes sociais
 descricao: O preço de gestão de redes sociais depende de estratégia, produção, quantidade de redes e de quem faz o trabalho. Veja o que comparar e por que post bonito não é o que gera cliente.
 data: 2026-11-24
 status: rascunho
@@ -24,7 +24,7 @@ Este texto mostra o que muda o valor e o que perguntar antes de contratar.
 
 **5. Quem faz.** Um profissional sênior pensando o seu perfil é diferente de alguém que atende dezenas de contas ao mesmo tempo. Pergunte sempre quem vai cuidar do seu perfil no dia a dia.
 
-## Por que tanto perfil bonito não gera cliente?
+## Por que tanto perfil bonito não paga boleto?
 
 Porque o objetivo virou estética, e não negócio. Os sinais mais comuns:
 
