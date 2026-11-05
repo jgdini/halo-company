@@ -1,8 +1,8 @@
 ---
 titulo: Quanto custa um vídeo institucional e o que faz ele valer
 descricao: O preço de um vídeo institucional depende de diárias, locações, pessoas em cena e quantos formatos saem da gravação. Veja o que pesa e como fazer o vídeo render meses.
-data: 2026-11-10
-status: rascunho
+data: 2026-11-05
+status: aprovado
 autor: Bianca Fortes
 tema: Vídeo
 resumo: O preço de um vídeo institucional depende menos da duração e mais do que é preciso para gravar: diárias, locações, pessoas em cena e recursos extras. O que faz ele valer é o uso: um vídeo planejado pela estratégia vira site, Reels, anúncio e apresentação comercial. Um vídeo bonito que ninguém vê é caro a qualquer preço.
