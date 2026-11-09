@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>ASR Consult | Implantação, suporte e consultoria TOTVS Protheus</title>
+<meta name="description" content="Canal Homologado TOTVS desde 2008. Implantação, suporte N1 e N2, consultoria e desenvolvimento em Protheus para empresas de 11 estados.">
+<meta name="theme-color" content="#061522">
+<link rel="preload" href="assets/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/plexmono.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"ASR Consult","url":"https://www.asrconsult.com.br/","foundingDate":"2008","telephone":"+55-11-97996-7825","taxID":"13.250.313/0001-40","address":{"@type":"PostalAddress","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"03165-003","addressCountry":"BR"},"knowsAbout":["TOTVS Protheus","Implantação de ERP","Suporte Protheus","Consultoria TOTVS","Fluig","Power BI","Reforma tributária"]}
+</script>
+<style>
+@font-face { font-family: "Jakarta"; src: url(assets/jakarta.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+@font-face { font-family: "Plex Mono"; src: url(assets/plexmono.woff2) format("woff2"); font-weight: 500; font-display: swap; }
+:root {
+  --n950: #050F19; --n900: #071A2A; --n850: #0A2236; --n800: #0F2D46; --n700: #1A3F5E;
+  --linha-e: rgba(150, 190, 225, .14); --linha-e2: rgba(150, 190, 225, .26);
+  --ciano: #1CC8F2; --ciano-claro: #8FE6FA; --ciano-fundo: rgba(28, 200, 242, .1);
+  --papel: #F3F6F9; --branco: #FFFFFF; --tinta: #0A1A2A; --tinta-2: #3B5068; --linha-c: #DCE4EC;
+  --texto-e: #E9F1F8; --texto-e2: #9DB3C8;
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  --max: 1240px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { margin: 0; background: var(--papel); color: var(--tinta); font-family: "Jakarta", system-ui, sans-serif; font-weight: 400; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--ciano); outline-offset: 3px; }
+::selection { background: var(--ciano); color: var(--n950); }
+.mono { font-family: "Plex Mono", ui-monospace, monospace; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; font-size: .72rem; }
+.wrap { width: 100%; max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+.escuro { background: var(--n900); color: var(--texto-e); }
+h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -.025em; line-height: 1.08; }
+h2 { font-size: clamp(1.8rem, 4.6vw, 3rem); }
+.olho { display: inline-flex; align-items: center; gap: 10px; color: var(--ciano); }
+.olho::before { content: ""; width: 18px; height: 1px; background: currentColor; }
+.claro .olho { color: #066A88; }
+.claro .reforma .olho { color: var(--ciano); }
+
+/* Topo */
+.topo { position: sticky; top: 0; z-index: 20; background: rgba(5, 15, 25, .86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--linha-e); color: var(--texto-e); }
+.topo .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 68px; }
+.marca img { width: 112px; height: auto; }
+.menu { display: none; gap: 28px; list-style: none; margin: 0; padding: 0; font-size: .9rem; }
+.menu a { white-space: nowrap; text-decoration: none; color: var(--texto-e2); transition: color .25s; }
+.menu a:hover { color: var(--branco); }
+.topo__acoes { display: flex; align-items: center; gap: 18px; }
+.topo__suporte { display: none; text-align: right; line-height: 1.25; text-decoration: none; }
+.topo__suporte span { display: block; color: var(--texto-e2); font-size: .66rem; }
+.topo__suporte b { font-weight: 600; font-size: .88rem; white-space: nowrap; }
+.btn { white-space: nowrap; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 20px; border-radius: 6px; font-weight: 600; font-size: .9rem; text-decoration: none; border: 1px solid transparent; cursor: pointer; font-family: inherit; transition: background .25s, border-color .25s, color .25s; }
+.btn svg { width: 16px; height: 16px; transition: transform .35s var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+.btn--ciano { background: var(--ciano); color: var(--n950); }
+.btn--ciano:hover { background: var(--ciano-claro); }
+.btn--ciano.btn--pequeno { padding: 10px 16px; }
+.btn--linha { border-color: var(--linha-e2); color: var(--texto-e); }
+.btn--linha:hover { border-color: var(--ciano); }
+.btn--pequeno { padding: 10px 14px; font-size: .82rem; }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; background: radial-gradient(1100px 600px at 85% 10%, rgba(28,200,242,.13), transparent 60%), linear-gradient(180deg, var(--n950), var(--n900)); color: var(--texto-e); }
+.hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(var(--linha-e) 1px, transparent 1px), linear-gradient(90deg, var(--linha-e) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); opacity: .5; pointer-events: none; }
+.hero .wrap { position: relative; display: grid; gap: 48px; padding-top: 64px; padding-bottom: 56px; }
+.selo { display: inline-flex; align-items: center; gap: 12px; padding: 6px 12px 6px 6px; border: 1px solid var(--linha-e2); border-radius: 999px; background: rgba(10,34,54,.6); }
+.selo img { width: 54px; height: auto; border-radius: 999px; background: #fff; padding: 3px 6px; }
+.selo span { color: var(--texto-e2); }
+.hero h1 { margin-top: 26px; font-size: clamp(2.2rem, 7vw, 4.3rem); text-wrap: balance; font-weight: 700; letter-spacing: -.035em; line-height: 1.02; }
+.hero h1 em { font-style: normal; color: var(--ciano); }
+.hero__apoio { margin: 24px 0 0; max-width: 54ch; color: var(--texto-e2); font-size: 1.06rem; }
+.hero__acoes { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+
+/* Painel de módulos */
+.painel { border: 1px solid var(--linha-e2); border-radius: 14px; background: linear-gradient(180deg, rgba(15,45,70,.75), rgba(7,26,42,.85)); box-shadow: 0 40px 80px -30px rgba(0,0,0,.6), inset 0 1px 0 rgba(255,255,255,.05); overflow: hidden; align-self: center; }
+.painel__topo { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--linha-e); color: var(--texto-e2); }
+.painel__luzes { display: flex; gap: 6px; }
+.painel__luzes i { width: 8px; height: 8px; border-radius: 50%; background: var(--n700); }
+.modulos { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--linha-e); }
+.modulo { position: relative; padding: 16px 18px; background: var(--n850); min-height: 86px; }
+.modulo b { display: block; font-weight: 600; font-size: .95rem; color: var(--branco); }
+.modulo span { display: block; margin-top: 4px; color: var(--texto-e2); font-size: .66rem; }
+.modulo::after { content: ""; position: absolute; top: 18px; right: 18px; width: 7px; height: 7px; border-radius: 50%; background: var(--ciano); box-shadow: 0 0 0 0 rgba(28,200,242,.6); }
+.painel__rodape { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-top: 1px solid var(--linha-e); color: var(--texto-e2); }
+.painel__rodape i { width: 7px; height: 7px; border-radius: 50%; background: #3EE08F; flex: none; }
+
+/* Números */
+.numeros { border-top: 1px solid var(--linha-e); background: var(--n900); color: var(--texto-e); }
+.numeros dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
+.numeros div { padding: 26px 20px; border-right: 1px solid var(--linha-e); border-bottom: 1px solid var(--linha-e); }
+.numeros dt { order: 2; color: var(--texto-e2); margin-top: 6px; }
+.numeros dd { margin: 0; font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -.03em; line-height: 1; }
+.numeros dd small { color: var(--ciano); font-size: .6em; margin-right: 2px; }
+.numeros div { display: flex; flex-direction: column-reverse; }
+
+/* Seções */
+.secao { padding: 88px 0; }
+.secao__cabeca { display: grid; gap: 18px; margin-bottom: 48px; }
+.secao__cabeca p { margin: 0; max-width: 60ch; color: var(--tinta-2); font-size: 1.04rem; }
+.escuro .secao__cabeca p { color: var(--texto-e2); }
+
+.servicos { display: grid; gap: 1px; background: var(--linha-c); border: 1px solid var(--linha-c); border-radius: 12px; overflow: hidden; }
+.servico { background: var(--branco); padding: 30px 26px; transition: background .3s; }
+.servico:hover { background: #FAFCFE; }
+.servico .mono { color: #066A88; }
+.servico h3 { margin: 14px 0 10px; font-size: 1.3rem; }
+.servico p { margin: 0; color: var(--tinta-2); font-size: .96rem; }
+.servico ul { margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.servico li { padding: 4px 10px; border-radius: 999px; background: var(--papel); border: 1px solid var(--linha-c); font-size: .78rem; color: var(--tinta-2); }
+
+.solucoes { display: grid; gap: 12px; }
+.solucao { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; align-items: baseline; padding: 22px 22px; border: 1px solid var(--linha-e); border-radius: 10px; background: rgba(15,45,70,.35); text-decoration: none; transition: border-color .3s, background .3s; }
+.solucao:hover { border-color: var(--ciano); background: rgba(15,45,70,.6); }
+.solucao .mono { color: var(--ciano); grid-row: span 2; }
+.solucao b { font-size: 1.08rem; font-weight: 600; }
+.solucao span { color: var(--texto-e2); font-size: .92rem; }
+
+/* Reforma tributária */
+.reforma { background: linear-gradient(120deg, var(--n800), var(--n900) 60%); color: var(--texto-e); border-radius: 16px; padding: 40px 26px; display: grid; gap: 30px; position: relative; overflow: hidden; }
+.reforma::after { content: "CBS · IBS"; position: absolute; right: -10px; bottom: -28px; font-weight: 800; font-size: clamp(4rem, 14vw, 9rem); letter-spacing: -.05em; color: rgba(28,200,242,.06); pointer-events: none; white-space: nowrap; }
+.reforma h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); }
+.reforma p { margin: 14px 0 0; color: var(--texto-e2); max-width: 56ch; }
+.linha-tempo { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; position: relative; z-index: 1; }
+.linha-tempo li { display: grid; grid-template-columns: 64px 1fr; gap: 14px; align-items: baseline; padding: 12px 0; border-top: 1px solid var(--linha-e); }
+.linha-tempo b { color: var(--ciano); font-family: "Plex Mono", monospace; font-weight: 500; }
+.linha-tempo span { color: var(--texto-e); font-size: .94rem; }
+
+.segmentos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.segmento { display: flex; align-items: center; gap: 12px; padding: 18px 16px; background: var(--branco); border: 1px solid var(--linha-c); border-radius: 10px; font-weight: 600; font-size: .95rem; text-decoration: none; transition: border-color .25s, transform .35s var(--ease); }
+.segmento:hover { border-color: #066A88; transform: translateY(-2px); }
+.segmento i { width: 8px; height: 8px; border-radius: 2px; background: var(--ciano); flex: none; }
+
+.porque { display: grid; gap: 1px; background: var(--linha-e); border-top: 1px solid var(--linha-e); border-bottom: 1px solid var(--linha-e); }
+.porque div { background: var(--n900); padding: 30px 4px; }
+.porque h3 { font-size: 1.2rem; margin: 12px 0 8px; }
+.porque p { margin: 0; color: var(--texto-e2); font-size: .95rem; max-width: 40ch; }
+.porque .mono { color: var(--ciano); }
+
+/* Contato */
+.contato { display: grid; gap: 40px; }
+.contato__lado p { color: var(--tinta-2); margin: 16px 0 0; max-width: 46ch; }
+.canais { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 10px; }
+.canais a { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 18px; border: 1px solid var(--linha-c); border-radius: 10px; background: var(--branco); text-decoration: none; transition: border-color .25s; }
+.canais a:hover { border-color: #066A88; }
+.canais span { color: var(--tinta-2); }
+.canais b { font-weight: 600; }
+form { background: var(--branco); border: 1px solid var(--linha-c); border-radius: 14px; padding: 26px 22px; display: grid; gap: 18px; box-shadow: 0 30px 60px -40px rgba(10,26,42,.35); }
+.campos { display: grid; gap: 14px; }
+label, legend { display: block; font-size: .82rem; font-weight: 600; color: var(--tinta); margin-bottom: 6px; padding: 0; }
+input, select, textarea { width: 100%; font: inherit; font-size: .95rem; color: var(--tinta); padding: 12px 14px; border: 1px solid var(--linha-c); border-radius: 8px; background: var(--papel); transition: border-color .2s, background .2s; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #066A88; background: var(--branco); }
+textarea { min-height: 96px; resize: vertical; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.opcoes { display: flex; flex-wrap: wrap; gap: 8px; }
+.opcoes label { margin: 0; font-weight: 500; }
+.opcoes input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.opcoes span { display: inline-block; padding: 9px 14px; border: 1px solid var(--linha-c); border-radius: 999px; background: var(--papel); font-size: .86rem; cursor: pointer; transition: all .2s; }
+.opcoes input:checked + span { background: var(--n900); border-color: var(--n900); color: var(--branco); }
+.opcoes input:focus-visible + span { outline: 2px solid var(--ciano); outline-offset: 2px; }
+.form__nota { margin: 0; font-size: .8rem; color: var(--tinta-2); }
+.form__ok { display: none; padding: 14px; border-radius: 8px; background: var(--ciano-fundo); color: var(--tinta); font-size: .9rem; }
+form.enviado .form__ok { display: block; }
+
+/* Rodapé */
+.rodape { background: var(--n950); color: var(--texto-e2); padding: 56px 0 28px; font-size: .88rem; }
+.rodape__grade { display: grid; gap: 28px; padding-bottom: 32px; border-bottom: 1px solid var(--linha-e); }
+.rodape img { width: 104px; }
+.rodape h4 { margin: 0 0 10px; color: var(--texto-e); font-size: .72rem; }
+.rodape p { margin: 0; }
+.rodape ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.rodape a { text-decoration: none; }
+.rodape a:hover { color: var(--branco); }
+.rodape__fim { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; padding-top: 22px; font-size: .78rem; }
+.halo-credit { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; font-weight: 600; }
+.halo-credit:hover .halo-sym { transform: rotate(120deg); }
+.halo-sym { transition: transform .8s var(--ease); }
+.halo-nome { font-size: 13px; letter-spacing: -.02em; color: #F5F7FA; }
+.halo-nome small { font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; opacity: .7; }
+
+/* Etiqueta de modelo */
+.modelo-tag { position: fixed; left: 12px; bottom: 12px; z-index: 30; display: flex; align-items: center; gap: 8px; padding: 8px 12px; border-radius: 999px; background: rgba(5,15,25,.92); color: var(--texto-e); border: 1px solid var(--linha-e2); font-size: .7rem; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.modelo-tag i { width: 6px; height: 6px; border-radius: 50%; background: #E0506F; }
+.whats { position: fixed; right: 16px; bottom: 16px; z-index: 30; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: grid; place-items: center; box-shadow: 0 10px 30px -8px rgba(0,0,0,.45); }
+.whats svg { width: 26px; height: 26px; fill: #fff; }
+
+@media (min-width: 640px) {
+  .numeros dl { grid-template-columns: repeat(4, 1fr); }
+  .servicos { grid-template-columns: 1fr 1fr; }
+  .solucoes { grid-template-columns: 1fr 1fr; }
+  .segmentos { grid-template-columns: repeat(3, 1fr); }
+  .campos--2 { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1000px) {
+  .wrap { padding: 0 40px; }
+  .hero h1 { font-size: clamp(2.6rem, 4.4vw, 4.3rem); }
+  .hero .wrap { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: 64px; padding-top: 96px; padding-bottom: 96px; }
+  .numeros div { padding: 34px 40px; }
+  .numeros div:first-child { padding-left: 0; }
+  .secao { padding: 120px 0; }
+  .secao__cabeca { grid-template-columns: 1fr 1fr; align-items: end; gap: 40px; }
+  .servicos { grid-template-columns: repeat(3, 1fr); }
+  .solucoes { grid-template-columns: repeat(3, 1fr); }
+  .reforma { grid-template-columns: 1.1fr .9fr; padding: 64px 56px; gap: 56px; }
+  .segmentos { grid-template-columns: repeat(4, 1fr); }
+  .porque { grid-template-columns: repeat(3, 1fr); }
+  .porque div { padding: 40px 36px 40px 0; }
+  .porque div + div { padding-left: 36px; }
+  .contato { grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: start; }
+  form { padding: 36px; }
+  .rodape__grade { grid-template-columns: 1.4fr 1fr 1fr 1fr; }
+}
+
+@media (min-width: 1180px) { .menu { display: flex; } .topo__suporte { display: block; } }
+@media (prefers-reduced-motion: no-preference) {
+  .sobe { opacity: 0; transform: translateY(18px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: calc(var(--i, 0) * 70ms); }
+  .sobe.visivel { opacity: 1; transform: none; }
+  .hero h1 { animation: entra 1s var(--ease) both .1s; }
+  .modulo { animation: entra .8s var(--ease) both; animation-delay: calc(.5s + var(--i) * .06s); }
+  .modulo::after { animation: pulso 3.2s ease-out infinite; animation-delay: calc(1.2s + var(--i) * .4s); }
+  @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes pulso { 0% { box-shadow: 0 0 0 0 rgba(28,200,242,.55); } 40%, 100% { box-shadow: 0 0 0 9px rgba(28,200,242,0); } }
+}
+</style>
+</head>
+<body>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#" aria-label="ASR Consult, início"><img src="assets/logo.webp" width="480" height="138" alt="ASR Consult"></a>
+    <ul class="menu" aria-label="Principal">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#solucoes">Soluções</a></li>
+      <li><a href="#reforma">Reforma tributária</a></li>
+      <li><a href="#segmentos">Segmentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="topo__acoes">
+      <a class="topo__suporte" href="tel:+551126595360"><span class="mono">Suporte</span><b>(11) 2659-5360</b></a>
+      <a class="btn btn--ciano btn--pequeno" href="#contato">Falar com especialista</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="titulo">
+  <div class="wrap">
+    <div>
+      <span class="selo"><img src="assets/canaltotvs.png" width="368" height="163" alt="Canal Homologado TOTVS"><span class="mono">Canal Homologado TOTVS · desde 2008</span></span>
+      <h1 id="titulo">O Protheus da sua empresa implantado, <em>sustentado e evoluindo.</em></h1>
+      <p class="hero__apoio">Implantação, suporte N1 e N2, consultoria e desenvolvimento em TOTVS Protheus para empresas de manufatura, distribuição, serviços, construção e agro, em 11 estados.</p>
+      <div class="hero__acoes">
+        <a class="btn btn--ciano" href="#contato">Falar com um especialista <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--linha" href="#servicos">Ver serviços</a>
+      </div>
+    </div>
+
+    <aside class="painel" aria-label="Áreas do Protheus atendidas pela ASR">
+      <div class="painel__topo"><span class="mono">Protheus · áreas atendidas</span><span class="painel__luzes" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      <div class="modulos">
+        <div class="modulo" style="--i:0"><b>Financeiro</b><span class="mono">DDA · PIX</span></div>
+        <div class="modulo" style="--i:1"><b>Fiscal</b><span class="mono">Reforma tributária</span></div>
+        <div class="modulo" style="--i:2"><b>RH e folha</b><span class="mono">e-Social · e-Ponto</span></div>
+        <div class="modulo" style="--i:3"><b>Saúde ocupacional</b><span class="mono">Protheus &amp; SOC</span></div>
+        <div class="modulo" style="--i:4"><b>Indústria</b><span class="mono">ACD 4.0</span></div>
+        <div class="modulo" style="--i:5"><b>Controladoria</b><span class="mono">Power BI</span></div>
+        <div class="modulo" style="--i:6"><b>Processos</b><span class="mono">Fluig</span></div>
+        <div class="modulo" style="--i:7"><b>Dados pessoais</b><span class="mono">LGPD</span></div>
+      </div>
+      <div class="painel__rodape"><i aria-hidden="true"></i><span class="mono">Suporte 24/7 em fins de semana e feriados</span></div>
+    </aside>
+  </div>
+
+  <div class="numeros">
+    <div class="wrap">
+      <dl>
+        <div><dt class="mono">Projetos entregues</dt><dd><small>+</small>1.000</dd></div>
+        <div><dt class="mono">Atendimentos por ano</dt><dd><small>+</small>5.000</dd></div>
+        <div><dt class="mono">Início das atividades</dt><dd>2008</dd></div>
+        <div><dt class="mono">Estados atendidos</dt><dd>11</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="secao claro" id="servicos" aria-labelledby="t-servicos">
+  <div class="wrap">
+    <div class="secao__cabeca">
+      <div><span class="olho mono">O que fazemos</span><h2 id="t-servicos" style="margin-top:14px">Do primeiro módulo ao suporte do dia a dia.</h2></div>
+      <p>Uma equipe só cuida do projeto inteiro: implanta, treina quem vai usar, mantém o sistema rodando e desenvolve o que o padrão não cobre.</p>
+    </div>
+    <div class="servicos">
+      <article class="servico sobe" style="--i:0"><span class="mono">01</span><h3>Implantação</h3><p>Projeto de implantação do Protheus com foco na usabilidade: o sistema configurado para o jeito que a empresa trabalha.</p></article>
+      <article class="servico sobe" style="--i:1"><span class="mono">02</span><h3>Suporte N1 e N2</h3><p>Atendimento em horário comercial e suporte 24/7 em fins de semana e feriados, com linha direta.</p></article>
+      <article class="servico sobe" style="--i:2"><span class="mono">03</span><h3>Consultoria</h3><p>Especialistas por área para revisar processos e tirar mais do ERP.</p><ul><li>RH e e-Social</li><li>Controladoria</li><li>Materiais</li></ul></article>
+      <article class="servico sobe" style="--i:3"><span class="mono">04</span><h3>Fábrica de software</h3><p>Desenvolvimento de personalizações e integrações com outros sistemas.</p></article>
+      <article class="servico sobe" style="--i:4"><span class="mono">05</span><h3>Capacitação</h3><p>Treinamento das equipes para usar o Protheus no dia a dia, sem depender do suporte.</p></article>
+      <article class="servico sobe" style="--i:5"><span class="mono">06</span><h3>Mapeamento de processos</h3><p>Antes de configurar, entender como a operação funciona e onde o sistema pode ajudar.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="secao escuro" id="solucoes" aria-labelledby="t-solucoes">
+  <div class="wrap">
+    <div class="secao__cabeca">
+      <div><span class="olho mono">Soluções</span><h2 id="t-solucoes" style="margin-top:14px">O Protheus conectado ao resto da empresa.</h2></div>
+      <p>Integrações e ferramentas que levam o ERP para a fábrica, o financeiro, o RH e as decisões da diretoria.</p>
+    </div>
+    <div class="solucoes">
+      <a class="solucao sobe" style="--i:0" href="#contato"><span class="mono">01</span><b>Protheus &amp; SOC</b><span>Saúde ocupacional e segurança do trabalho integradas à folha.</span></a>
+      <a class="solucao sobe" style="--i:1" href="#contato"><span class="mono">02</span><b>Protheus &amp; e-Ponto</b><span>Ponto eletrônico ligado direto ao RH.</span></a>
+      <a class="solucao sobe" style="--i:2" href="#contato"><span class="mono">03</span><b>DDA entre bancos</b><span>Boletos de fornecedores entrando no financeiro.</span></a>
+      <a class="solucao sobe" style="--i:3" href="#contato"><span class="mono">04</span><b>PIX</b><span>Recebimentos por PIX conciliados no ERP.</span></a>
+      <a class="solucao sobe" style="--i:4" href="#contato"><span class="mono">05</span><b>ACD Indústria 4.0</b><span>Coleta de dados no chão de fábrica e no estoque.</span></a>
+      <a class="solucao sobe" style="--i:5" href="#contato"><span class="mono">06</span><b>Power BI</b><span>Painéis de gestão com os dados do Protheus.</span></a>
+      <a class="solucao sobe" style="--i:6" href="#contato"><span class="mono">07</span><b>Fluig</b><span>Processos, aprovações e documentos digitais.</span></a>
+      <a class="solucao sobe" style="--i:7" href="#contato"><span class="mono">08</span><b>LGPD</b><span>Adequação à Lei 13.709 no tratamento de dados.</span></a>
+      <a class="solucao sobe" style="--i:8" href="#contato"><span class="mono">09</span><b>Backoffice TOTVS</b><span>Financeiro, fiscal, compras, estoque e vendas.</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="secao claro" id="reforma" aria-labelledby="t-reforma">
+  <div class="wrap">
+    <div class="reforma sobe">
+      <div style="position:relative;z-index:1">
+        <span class="olho mono">Reforma tributária</span>
+        <h2 id="t-reforma" style="margin-top:14px">A reforma tributária já chegou ao seu Protheus.</h2>
+        <p>Cadastros, notas, preços e apuração mudam a cada fase da transição. A ASR revisa o ambiente, acompanha as atualizações da TOTVS e testa antes de cada etapa.</p>
+        <div class="hero__acoes"><a class="btn btn--ciano" href="#contato">Avaliar meu ambiente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
+      </div>
+      <ol class="linha-tempo" aria-label="Fases da transição">
+        <li><b>2026</b><span>Ano de teste: CBS e IBS destacados nos documentos fiscais.</span></li>
+        <li><b>2027</b><span>CBS em vigor; PIS e Cofins deixam de existir.</span></li>
+        <li><b>2029</b><span>Começa a redução de ICMS e ISS, que vai até 2032.</span></li>
+        <li><b>2033</b><span>Fim do ICMS e do ISS. O novo sistema vale por inteiro.</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="secao claro" id="segmentos" aria-labelledby="t-segmentos" style="padding-top:0">
+  <div class="wrap">
+    <div class="secao__cabeca">
+      <div><span class="olho mono">Segmentos</span><h2 id="t-segmentos" style="margin-top:14px">Experiência no seu setor.</h2></div>
+      <p>Do pequeno negócio à manufatura avançada, com as práticas de cada segmento já configuradas.</p>
+    </div>
+    <div class="segmentos">
+      <a class="segmento sobe" style="--i:0" href="#contato"><i aria-hidden="true"></i>Manufatura</a>
+      <a class="segmento sobe" style="--i:1" href="#contato"><i aria-hidden="true"></i>Distribuição</a>
+      <a class="segmento sobe" style="--i:2" href="#contato"><i aria-hidden="true"></i>Serviços</a>
+      <a class="segmento sobe" style="--i:3" href="#contato"><i aria-hidden="true"></i>Construtoras</a>
+      <a class="segmento sobe" style="--i:4" href="#contato"><i aria-hidden="true"></i>Agro</a>
+      <a class="segmento sobe" style="--i:5" href="#contato"><i aria-hidden="true"></i>Logística</a>
+      <a class="segmento sobe" style="--i:6" href="#contato"><i aria-hidden="true"></i>Varejo</a>
+      <a class="segmento sobe" style="--i:7" href="#contato"><i aria-hidden="true"></i>Educacional</a>
+      <a class="segmento sobe" style="--i:8" href="#contato"><i aria-hidden="true"></i>Saúde</a>
+      <a class="segmento sobe" style="--i:9" href="#contato"><i aria-hidden="true"></i>Hotelaria</a>
+      <a class="segmento sobe" style="--i:10" href="#contato"><i aria-hidden="true"></i>Recursos humanos</a>
+      <a class="segmento sobe" style="--i:11" href="#contato"><i aria-hidden="true"></i>Micro empresas</a>
+    </div>
+  </div>
+</section>
+
+<section class="escuro" aria-label="Por que a ASR">
+  <div class="wrap">
+    <div class="porque">
+      <div class="sobe" style="--i:0"><span class="mono">Homologação</span><h3>Canal Homologado TOTVS</h3><p>Acesso direto à TOTVS e às atualizações do Protheus, com a responsabilidade de um canal oficial.</p></div>
+      <div class="sobe" style="--i:1"><span class="mono">Continuidade</span><h3>Suporte que não para</h3><p>Horário comercial de segunda a sexta e plantão 24/7 em fins de semana e feriados.</p></div>
+      <div class="sobe" style="--i:2"><span class="mono">Desde 2008</span><h3>Uma equipe do começo ao fim</h3><p>Quem implanta é quem sustenta e desenvolve. O conhecimento do seu projeto fica dentro de casa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="secao claro" id="contato" aria-labelledby="t-contato">
+  <div class="wrap contato">
+    <div class="contato__lado">
+      <span class="olho mono">Contato</span>
+      <h2 id="t-contato" style="margin-top:14px">Conte onde o seu ERP precisa render mais.</h2>
+      <p>Um especialista da ASR responde já sabendo qual sistema você usa e o que precisa.</p>
+      <ul class="canais">
+        <li><a href="tel:+5511979967825"><span class="mono">Comercial</span><b>(11) 97996-7825</b></a></li>
+        <li><a href="tel:+551126595360"><span class="mono">Suporte</span><b>(11) 2659-5360</b></a></li>
+        <li><a href="https://wa.me/5511979967825" target="_blank" rel="noopener"><span class="mono">WhatsApp</span><b>Iniciar conversa</b></a></li>
+      </ul>
+    </div>
+
+    <form id="form" novalidate aria-label="Fale com um especialista">
+      <div class="campos campos--2">
+        <div><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name"></div>
+        <div><label for="empresa">Empresa</label><input id="empresa" name="empresa" autocomplete="organization"></div>
+        <div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div><label for="tel">Telefone</label><input id="tel" name="telefone" type="tel" autocomplete="tel"></div>
+      </div>
+      <fieldset>
+        <legend>Qual ERP vocês usam hoje?</legend>
+        <div class="opcoes">
+          <label><input type="radio" name="erp" value="protheus"><span>Protheus</span></label>
+          <label><input type="radio" name="erp" value="outro-totvs"><span>Outro TOTVS</span></label>
+          <label><input type="radio" name="erp" value="outro"><span>Outro ERP</span></label>
+          <label><input type="radio" name="erp" value="nenhum"><span>Ainda não temos</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Do que vocês precisam?</legend>
+        <div class="opcoes">
+          <label><input type="checkbox" name="precisa" value="implantacao"><span>Implantação</span></label>
+          <label><input type="checkbox" name="precisa" value="suporte"><span>Suporte</span></label>
+          <label><input type="checkbox" name="precisa" value="reforma"><span>Reforma tributária</span></label>
+          <label><input type="checkbox" name="precisa" value="consultoria"><span>Consultoria</span></label>
+          <label><input type="checkbox" name="precisa" value="desenvolvimento"><span>Desenvolvimento</span></label>
+          <label><input type="checkbox" name="precisa" value="integracao"><span>Integrações</span></label>
+        </div>
+      </fieldset>
+      <div><label for="msg">Conte um pouco do cenário</label><textarea id="msg" name="mensagem" placeholder="Quantos usuários, quais módulos, o que está travando"></textarea></div>
+      <button class="btn btn--ciano" type="submit">Enviar para um especialista <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+      <p class="form__ok" role="status">Este é um modelo: o formulário ainda não envia. No site final, o pedido chega ao comercial com essas respostas.</p>
+      <p class="form__nota">Respondemos em horário comercial. Seus dados são usados só para este contato.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div class="rodape__grade">
+      <div><img src="assets/logo.webp" width="480" height="138" alt="ASR Consult" loading="lazy"><p style="margin-top:14px;max-width:34ch">Canal Homologado TOTVS. Implantação, suporte e consultoria em Protheus desde 2008.</p></div>
+      <div><h4 class="mono">Atendimento</h4><p>Segunda a sexta, das 8h às 18h<br>Fins de semana e feriados: suporte 24/7</p></div>
+      <div><h4 class="mono">Contato</h4><ul><li><a href="tel:+5511979967825">Comercial (11) 97996-7825</a></li><li><a href="tel:+551126595360">Suporte (11) 2659-5360</a></li><li>São Paulo, SP · 03165-003</li></ul></div>
+      <div><h4 class="mono">Redes</h4><ul><li><a href="https://www.instagram.com/asrconsultoficialtotvs/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/company/asrconsult" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.facebook.com/totvsasrconsultoficial/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    </div>
+    <div class="rodape__fim">
+      <span>ASR Consult · CNPJ 13.250.313/0001-40</span>
+      <span>Modelo de página sugerido por <a href="https://haloconsulting.com.br/" target="_blank" rel="noopener" class="halo-credit"><svg viewBox="0 0 32 32" width="20" height="20" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F8F3EB" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="modelo-tag mono"><i aria-hidden="true"></i>Modelo · sugestão Halo Company</div>
+<a class="whats" href="https://wa.me/5511979967825" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg></a>
+
+<script>
+(function () {
+  var itens = document.querySelectorAll('.sobe');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visivel'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
+    itens.forEach(function (el) { io.observe(el); });
+  } else { itens.forEach(function (el) { el.classList.add('visivel'); }); }
+  var f = document.getElementById('form');
+  f.addEventListener('submit', function (e) { e.preventDefault(); f.classList.add('enviado'); });
+})();
+</script>
+</body>
+</html>
