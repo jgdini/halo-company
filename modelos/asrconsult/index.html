@@ -186,6 +186,14 @@ form.enviado .form__ok { display: block; }
 .whats { position: fixed; right: 16px; bottom: 16px; z-index: 30; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: grid; place-items: center; box-shadow: 0 10px 30px -8px rgba(0,0,0,.45); }
 .whats svg { width: 26px; height: 26px; fill: #fff; }
 
+/* Showreel */
+.reel { background: var(--n900); padding: 0 0 72px; }
+.reel__quadro { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--linha-e2); background: var(--n950); aspect-ratio: 16 / 9; box-shadow: 0 40px 80px -40px rgba(0,0,0,.7); }
+.reel__quadro video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.reel__legenda { display: flex; justify-content: space-between; gap: 16px; margin-top: 16px; color: var(--texto-e2); }
+.reel__som { display: inline-flex; align-items: center; gap: 8px; }
+.reel__som i { width: 6px; height: 6px; border-radius: 50%; background: var(--ciano); }
+
 @media (min-width: 640px) {
   .numeros dl { grid-template-columns: repeat(4, 1fr); }
   .servicos { grid-template-columns: 1fr 1fr; }
@@ -199,6 +207,7 @@ form.enviado .form__ok { display: block; }
   .hero .wrap { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: 64px; padding-top: 96px; padding-bottom: 96px; }
   .numeros div { padding: 34px 40px; }
   .numeros div:first-child { padding-left: 0; }
+  .reel { padding-bottom: 112px; }
   .secao { padding: 120px 0; }
   .secao__cabeca { grid-template-columns: 1fr 1fr; align-items: end; gap: 40px; }
   .servicos { grid-template-columns: repeat(3, 1fr); }
@@ -282,6 +291,17 @@ form.enviado .form__ok { display: block; }
         <div><dt class="mono">Estados atendidos</dt><dd>11</dd></div>
       </dl>
     </div>
+  </div>
+</section>
+
+<section class="reel" aria-label="A ASR em 15 segundos">
+  <div class="wrap">
+    <div class="reel__quadro">
+      <video id="reel" muted loop playsinline preload="none" poster="assets/reel-capa.webp" aria-label="Vídeo de apresentação da ASR Consult">
+        <source data-src-hd="assets/reel-1080.mp4" data-src="assets/reel-720.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="reel__legenda mono"><span>A ASR em 15 segundos</span><span class="reel__som"><i aria-hidden="true"></i>Canal Homologado TOTVS · desde 2008</span></div>
   </div>
 </section>
 
@@ -448,6 +468,18 @@ form.enviado .form__ok { display: block; }
     var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('visivel'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
     itens.forEach(function (el) { io.observe(el); });
   } else { itens.forEach(function (el) { el.classList.add('visivel'); }); }
+  // Vídeo: escolhe o tamanho pela tela e só carrega/toca quando aparece.
+  var v = document.getElementById('reel');
+  if (v) {
+    var fonte = v.querySelector('source');
+    var hd = (window.innerWidth * (window.devicePixelRatio || 1)) > 1400;
+    var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var carregado = false;
+    var liga = function () { if (!carregado) { fonte.src = hd ? fonte.getAttribute('data-src-hd') : fonte.getAttribute('data-src'); v.load(); carregado = true; } v.play().catch(function () {}); };
+    if (!reduz && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) liga(); else if (carregado) v.pause(); }); }, { threshold: 0.25 }).observe(v);
+    } else if (reduz) { v.setAttribute('controls', ''); fonte.src = fonte.getAttribute('data-src'); v.load(); }
+  }
   var f = document.getElementById('form');
   f.addEventListener('submit', function (e) { e.preventDefault(); f.classList.add('enviado'); });
 })();
