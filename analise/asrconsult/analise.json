@@ -1,0 +1,206 @@
+{
+  "mes": "NOVEMBRO 2026",
+  "pdf": false,
+  "titulo": "O que o mercado de ERP encontra quando procura a <em>ASR Consult</em>.",
+  "lede": "Uma leitura feita só com informação pública: o site, o Google e uma empresa do mesmo setor.",
+  "negocio": [
+    ["Vende", "implantação, suporte e consultoria em TOTVS Protheus, fábrica de software e treinamento"],
+    ["Para", "empresas de manufatura, distribuição, serviços, construção, agro, varejo e outros segmentos"],
+    ["Posição", "“Canal Homologado TOTVS”, desde 2008, em 11 estados"]
+  ],
+  "flags": {
+    "tituloDizOQueFaz": false,
+    "botaoDeContatoNoProduto": true,
+    "ondeComprar": null,
+    "formularioQualifica": false
+  },
+  "resumo": [
+    {
+      "rotulo": "Velocidade no celular",
+      "valor": "59<small style=\"font-size:.5em\">/100</small>",
+      "nota": "De 50 a 89, o Google diz que precisa melhorar."
+    },
+    {
+      "rotulo": "Até o conteúdo aparecer",
+      "valor": "38 s",
+      "nota": "O Google considera bom até 2,5 s."
+    },
+    {
+      "rotulo": "Certificado de segurança",
+      "valor": "Vencido",
+      "nota": "Desde 21/10/2026. O navegador mostra “Não seguro”."
+    },
+    {
+      "rotulo": "Textos publicados no site",
+      "valor": "0",
+      "nota": "EthosX: 34 artigos no blog."
+    }
+  ],
+  "achados": [
+    [
+      "O site aparece como “Não seguro”",
+      "O certificado de segurança venceu em 21/10/2026 e não foi renovado. O endereço com https não abre."
+    ],
+    [
+      "Todas as páginas têm o mesmo título",
+      "As 8 páginas que conferimos se chamam “ASR Consult - Canal Homologado TOTVS”, e nenhuma tem descrição. O Google não sabe qual página responde a qual busca."
+    ],
+    [
+      "O Google não recebe o mapa do site",
+      "Os endereços do mapa do site (sitemap.xml) e das regras para buscadores (robots.txt) dão erro."
+    ],
+    [
+      "Página inicial pesada",
+      "8 MB, com 35 imagens em PNG. No celular, o conteúdo principal leva 38 s para aparecer."
+    ],
+    [
+      "A primeira tela não diz o que a ASR faz",
+      "Abre com um carrossel de segmentos, em texto claro sobre foto. Os números da empresa (2008, 11 estados, 1.000 projetos) só aparecem mais abaixo."
+    ],
+    [
+      "Contato só por telefone e WhatsApp",
+      "Não há formulário. A EthosX pergunta, antes da primeira conversa, se a empresa usa ERP, qual e qual a necessidade."
+    ]
+  ],
+  "leituras": {
+    "velocidade": "<b>As duas são lentas no celular, mas a diferença está no tempo de espera.</b> O conteúdo principal da EthosX aparece em 2,3 s; o da ASR, em 38 s.",
+    "conteudo": "<b>A ASR não tem blog; a EthosX tem 34 artigos.</b> No Instagram, a ASR tem 760 seguidores e 142 posts; a EthosX, 1.591 e 800.",
+    "sinais": "<b>A EthosX tem o básico para o Google: cadeado, mapa do site, título por página e dados estruturados.</b> A ASR não tem nenhum dos quatro, e o servidor roda PHP 5.6, versão sem atualização de segurança desde 2018.",
+    "mercado": "<b>O mercado pesquisa implantação, consultoria e reforma tributária no Protheus.</b> A ASR oferece tudo isso e não tem texto sobre nenhum desses temas. A EthosX já escreve sobre eles."
+  },
+  "mercado": {
+    "kpis": [
+      {
+        "rotulo": "Variações de busca encontradas",
+        "valor": "214",
+        "nota": "Sugestões reais do Google, a partir de 15 temas"
+      },
+      {
+        "rotulo": "Sobre reforma tributária no Protheus",
+        "valor": "19",
+        "nota": "Configuração, parâmetros, NFS-e, atualização"
+      },
+      {
+        "rotulo": "Textos da ASR sobre esses temas",
+        "valor": "0",
+        "nota": "O site não tem área de textos"
+      },
+      {
+        "rotulo": "Artigos no blog da EthosX",
+        "valor": "34",
+        "nota": "ERP, consultoria, automação, tecnologia"
+      }
+    ],
+    "graficos": [
+      {
+        "titulo": "Buscas por tema",
+        "nota": "Variações encontradas no Google, sem vagas, salários e cursos",
+        "linhas": [
+          ["Implantação de ERP", 22, false],
+          ["Consultoria ERP", 21, false],
+          ["Consultoria Protheus", 19, false],
+          ["Reforma tributária no Protheus", 19, false],
+          ["Consultoria TOTVS", 16, false],
+          ["Treinamento Protheus", 13, false],
+          ["Implantação Protheus", 9, false],
+          ["Suporte Protheus", 8, false]
+        ]
+      },
+      {
+        "titulo": "Textos publicados no site",
+        "nota": "Blog ou notícias de cada empresa",
+        "linhas": [
+          ["EthosX", 34],
+          ["ASR Consult", 0]
+        ]
+      }
+    ],
+    "colunas": ["ASR Consult", "EthosX"],
+    "temas": [
+      ["Reforma tributária", "atualização protheus reforma tributária", [null, 2]],
+      ["Implantação de ERP", "implantação de erp passo a passo", [null, 2]],
+      ["Consultoria Protheus", "consultoria erp protheus", [null, 2]],
+      ["Suporte Protheus", "suporte ams protheus", [null, 1]],
+      ["BI no Protheus", "power bi protheus", [null, 1]],
+      ["Treinamento Protheus", "treinamento protheus rh", [null, 0]],
+      ["Fluig", "fluig totvs para que serve", [null, 0]]
+    ],
+    "notaTemas": "Textos que explicam o tema, contados por nós pelos títulos. ✕ nenhum · – o site não tem área de textos. Na ASR, esses serviços aparecem só como página de solução, sem texto que responda as dúvidas.",
+    "fazemBem": [
+      [
+        "EthosX",
+        "Diz na abertura o que faz e há quanto tempo: “implanta, sustenta e evolui ERP há mais de 15 anos”. Mostra logos de clientes como Haribo, Jadlog e Sem Parar e oferece um diagnóstico gratuito de 30 minutos."
+      ]
+    ],
+    "tituloPerguntas": "Perguntas que o mercado de ERP digita",
+    "perguntasMostrar": [
+      "o que é implantação de erp",
+      "quanto custa implantação de um erp",
+      "implantação de erp passo a passo",
+      "atualização protheus reforma tributária",
+      "parametros reforma tributaria protheus",
+      "fluig totvs para que serve",
+      "fluig totvs como funciona",
+      "como ser parceiro totvs"
+    ]
+  },
+  "sinaisManuais": [
+    ["Cadeado (https) funcionando", [false, true]],
+    ["Título diferente em cada página", [false, true]],
+    ["Formulário de contato", [false, true]]
+  ],
+  "outrasMarcas": ["SAP", "Sankhya"],
+  "buscasMostrar": ["consultoria protheus", "implantação protheus", "suporte protheus", "consultoria erp"],
+  "modernizar": [
+    ["Segurança", "Certificado vencido, site sem cadeado", "Cadeado ativo, com renovação automática"],
+    ["Primeira tela", "Carrossel de segmentos, texto claro sobre foto", "Uma frase sobre o que a ASR faz, com 2008, 11 estados e 1.000 projetos já visíveis"],
+    ["Páginas", "Mesmo título em todas, sem descrição", "Título e descrição próprios para cada solução e segmento"],
+    ["Base técnica", "PHP 5.6, sem mapa do site", "Base atual, com mapa do site e dados estruturados para o Google e as IAs"],
+    ["Imagens", "35 PNG, 8 MB na página inicial", "Imagens leves (WebP), carregando só quando aparecem"],
+    ["Contato", "Telefone e WhatsApp", "Formulário que pergunta ERP atual, módulos e necessidade"]
+  ],
+  "oportunidades": [
+    {
+      "titulo": "Recuperar o cadeado",
+      "fazer": "Renovar o certificado, deixar a renovação automática e levar todo acesso para https.",
+      "impacto": "alto",
+      "esforco": "baixo"
+    },
+    {
+      "titulo": "Um site do tamanho da ASR",
+      "fazer": "Primeira tela com o que a ASR faz e os números da empresa, e uma página com título próprio para cada solução e segmento.",
+      "impacto": "alto",
+      "esforco": "médio"
+    },
+    {
+      "titulo": "Ser a resposta sobre Protheus",
+      "fazer": "Textos a partir do que o mercado pesquisa: reforma tributária, implantação, suporte e treinamento.",
+      "impacto": "alto",
+      "esforco": "contínuo"
+    }
+  ],
+  "perguntas": [
+    "Quem chega ao site, e por qual busca?",
+    "Quantos contatos chegam por mês, e por onde?",
+    "Quais soluções vocês querem vender mais?",
+    "Quanto tempo leva a primeira resposta?"
+  ],
+  "metodo": [
+    "Usamos só informação pública. Não tivemos acesso a tráfego, vendas nem a nenhum sistema da ASR Consult.",
+    "Notas: Lighthouse, ferramenta do Google, rodado em nosso computador em 09/11/2026, com 3 rodadas no celular e 3 no computador, e o valor do meio. O PageSpeed Insights on-line usa a mesma ferramenta e pode dar alguns pontos de diferença.",
+    "A comparação olha só a página inicial de cada empresa. Os títulos foram conferidos em 8 páginas da ASR.",
+    "Concorrente: EthosX, indicada na nossa conversa. Se houver outras mais próximas, incluímos.",
+    "Certificado de segurança: validade lida direto no servidor em 09/11/2026.",
+    "Buscas: 214 sugestões do Google ao digitar, no Brasil, a partir de 15 temas do setor. Mostram que a busca existe; não medimos quantas pessoas buscam nem a posição de cada site. Tiramos da contagem por tema as buscas sobre vagas, salários e cursos.",
+    "Conteúdo: títulos lidos no blog da EthosX. Os 34 artigos aparecem com a mesma data (13/08/2026), provavelmente a da mudança de site; por isso não comparamos frequência de publicação. A contagem por tema foi feita por nós, pelos títulos.",
+    "Instagram: números públicos de cada perfil. Não analisamos as publicações."
+  ],
+  "proximo": {
+    "titulo": "Próximo passo: uma conversa de 30 minutos.",
+    "texto": "Vocês nos contam quais soluções querem vender mais e para quem. Mostramos o mapa completo de buscas do setor e decidimos juntos o caminho para o novo site.",
+    "contatos": [
+      ["João Dini", "(11) 98953-1711"],
+      ["Amanda Takahashi", "(15) 99642-3577"]
+    ]
+  }
+}

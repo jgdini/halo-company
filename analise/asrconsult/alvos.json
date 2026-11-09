@@ -1,0 +1,50 @@
+{
+  "empresa": {
+    "nome": "ASR Consult",
+    "url": "http://www.asrconsult.com.br/"
+  },
+  "concorrentes": [
+    {
+      "nome": "EthosX",
+      "url": "https://ethosx.com/"
+    }
+  ],
+  "mercado": {
+    "sementes": [
+      "consultoria protheus",
+      "implantação protheus",
+      "suporte protheus",
+      "consultoria totvs",
+      "canal homologado totvs",
+      "parceiro totvs",
+      "consultoria erp",
+      "implantação de erp",
+      "fluig totvs",
+      "protheus reforma tributária",
+      "protheus e-social",
+      "power bi protheus",
+      "fábrica de software protheus",
+      "treinamento protheus",
+      "mapeamento de processos erp"
+    ],
+    "marcas": [
+      "TOTVS",
+      "EthosX",
+      "SAP",
+      "Sankhya",
+      "Senior",
+      "Omie",
+      "Oracle NetSuite",
+      "Microsiga"
+    ],
+    "epoca": "reforma tributária|2027|fim de ano|virada"
+  },
+  "buscas": [
+    "consultoria protheus",
+    "implantação protheus",
+    "suporte protheus",
+    "consultoria totvs são paulo",
+    "parceiro totvs",
+    "consultoria erp"
+  ]
+}

@@ -12,7 +12,7 @@ const mediana = (v) => { const s = v.filter((x) => x != null).sort((a, b) => a -
 
 function rodar(url, desktop) {
   const saida = join(tmpdir(), `lh-${Date.now()}-${Math.random().toString(36).slice(2)}.json`);
-  const args = ['-y', 'lighthouse', url, '--quiet', '--chrome-flags=--headless=new', '--output=json', `--output-path=${saida}`, '--max-wait-for-load=60000'];
+  const args = ['-y', 'lighthouse', url, '--quiet', '"--chrome-flags=--headless=new --disable-features=HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,HttpsFirstModeV2ForTypicallySecureUsers"', '--output=json', `--output-path=${saida}`, '--max-wait-for-load=60000'];
   if (desktop) args.push('--preset=desktop');
   return new Promise((ok) => execFile('npx', args, { shell: true, timeout: 240000 }, async () => {
     try {

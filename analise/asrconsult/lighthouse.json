@@ -1,0 +1,92 @@
+{
+  "medidoEm": "2026-11-09T20:48:15.955Z",
+  "itens": {
+    "ASR Consult": {
+      "celular": {
+        "desempenho": 59,
+        "acessibilidade": 83,
+        "boasPraticas": 74,
+        "seo": 82,
+        "lcpSeg": 38,
+        "fcpSeg": 3.2,
+        "tbtMs": 46,
+        "cls": 0,
+        "pesoMB": 8,
+        "requisicoes": 41,
+        "terceiros": 2,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          59,
+          59,
+          59
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-11-09T21:10:23.064Z"
+      },
+      "computador": {
+        "desempenho": 68,
+        "acessibilidade": 80,
+        "boasPraticas": 78,
+        "seo": 82,
+        "lcpSeg": 3.5,
+        "fcpSeg": 0.8,
+        "tbtMs": 0,
+        "cls": 0.103,
+        "pesoMB": 8.1,
+        "requisicoes": 58,
+        "terceiros": 2,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          68,
+          68,
+          68
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-11-09T21:12:58.667Z"
+      }
+    },
+    "EthosX": {
+      "celular": {
+        "desempenho": 47,
+        "acessibilidade": 87,
+        "boasPraticas": 77,
+        "seo": 100,
+        "lcpSeg": 2.3,
+        "fcpSeg": 2.3,
+        "tbtMs": 1589,
+        "cls": 0.253,
+        "pesoMB": 4.8,
+        "requisicoes": 44,
+        "terceiros": 13,
+        "rodadas": 3,
+        "desempenhoRodadas": [
+          46,
+          47,
+          47
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-11-09T20:56:17.770Z"
+      },
+      "computador": {
+        "desempenho": 85,
+        "acessibilidade": 91,
+        "boasPraticas": 77,
+        "seo": 100,
+        "lcpSeg": 0.7,
+        "fcpSeg": 0.7,
+        "tbtMs": 141,
+        "cls": 0.124,
+        "pesoMB": 4.8,
+        "requisicoes": 44,
+        "terceiros": 13,
+        "rodadas": 2,
+        "desempenhoRodadas": [
+          83,
+          85
+        ],
+        "fonte": "lighthouse local",
+        "medidoEm": "2026-11-09T20:58:26.183Z"
+      }
+    }
+  }
+}

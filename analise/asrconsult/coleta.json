@@ -1,0 +1,65 @@
+{
+ "coletadoEm": "2026-11-09T20:48:14.623Z",
+ "itens": [
+  {
+   "papel": "empresa",
+   "nome": "ASR Consult",
+   "url": "http://www.asrconsult.com.br/",
+   "sinais": {
+    "falhou": false,
+    "status": 200,
+    "enderecoFinal": "http://www.asrconsult.com.br/",
+    "respostaHtmlSeg": 0.8,
+    "htmlKB": 44,
+    "titulo": "ASR Consult - Canal Homologado TOTVS",
+    "descricao": null,
+    "h1": [],
+    "gerador": null,
+    "viewport": true,
+    "dadosEstruturados": [],
+    "temFAQ": false,
+    "llmsTxt": false,
+    "sitemap": false,
+    "robotsTxt": false,
+    "elementor": 0,
+    "jquery": true,
+    "whatsapp": true,
+    "formulario": false
+   },
+   "celular": null,
+   "computador": null
+  },
+  {
+   "papel": "concorrente",
+   "nome": "EthosX",
+   "url": "https://ethosx.com/",
+   "sinais": {
+    "falhou": false,
+    "status": 200,
+    "enderecoFinal": "https://ethosx.com/",
+    "respostaHtmlSeg": 0.1,
+    "htmlKB": 4,
+    "titulo": "EthosX | Consultoria ERP e TOTVS Protheus",
+    "descricao": "Consultoria especializada em TOTVS Protheus e ERP. Implantação, sustentação e evolução de sistemas há mais de 15 anos. Fale com um especialista.",
+    "h1": [
+     "ERP que funciona. Operações que escalam."
+    ],
+    "gerador": null,
+    "viewport": true,
+    "dadosEstruturados": [
+     "WebSite",
+     "Organization"
+    ],
+    "temFAQ": false,
+    "llmsTxt": false,
+    "sitemap": true,
+    "robotsTxt": true,
+    "elementor": 0,
+    "jquery": false,
+    "whatsapp": true,
+    "formulario": true
+   },
+   "celular": null
+  }
+ ]
+}

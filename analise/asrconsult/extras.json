@@ -1,0 +1,193 @@
+{
+  "coletadoEm": "2026-11-09T20:58:28.433Z",
+  "estrutura": {
+    "ASR Consult": {
+      "servidor": "Apache",
+      "linguagem": "PHP/5.6.40",
+      "sistema": null,
+      "semWwwAbre": false,
+      "semWwwErro": "CERT_HAS_EXPIRED",
+      "httpRedirecionaParaHttps": false,
+      "scripts": 13,
+      "folhasDeEstilo": 7,
+      "plugins": [],
+      "tema": [],
+      "imagens": 37,
+      "imagensSemDescricao": 2,
+      "imagensPorFormato": {
+        "png": 35,
+        "jpg": 2
+      },
+      "imagensComCarregamentoSobDemanda": 35,
+      "carrossel": true,
+      "jquery": true,
+      "menu": [],
+      "mapaDoSite": {
+        "enderecos": 0,
+        "emHttp": 0,
+        "ultimaAtualizacao": null,
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": null,
+        "fonte": null,
+        "secoes": []
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/asrconsultoficialtotvs/",
+        "facebook": "facebook.com/totvsasrconsultoficial/",
+        "linkedin": "linkedin.com/company/asrconsult",
+        "youtube": null,
+        "tiktok": null
+      }
+    },
+    "EthosX": {
+      "servidor": "nginx",
+      "linguagem": null,
+      "sistema": null,
+      "semWwwAbre": true,
+      "semWwwErro": null,
+      "httpRedirecionaParaHttps": true,
+      "scripts": 3,
+      "folhasDeEstilo": 2,
+      "plugins": [],
+      "tema": [],
+      "imagens": 0,
+      "imagensSemDescricao": 0,
+      "imagensPorFormato": {},
+      "imagensComCarregamentoSobDemanda": 0,
+      "carrossel": false,
+      "jquery": false,
+      "menu": [],
+      "mapaDoSite": {
+        "enderecos": 15,
+        "emHttp": 0,
+        "ultimaAtualizacao": "2026-09-24",
+        "geradoPor": null
+      },
+      "blog": {
+        "ultimo": "2026-08-13",
+        "fonte": "https://ethosx.com/blog (34 artigos; todos com a mesma data, provável migração)",
+        "secoes": [
+          "ERP",
+          "Cloud",
+          "Inovação",
+          "Tecnologia",
+          "Consultoria",
+          "Automação"
+        ]
+      },
+      "redes": {
+        "instagram": "https://www.instagram.com/ethosxconsultoria/",
+        "facebook": null,
+        "linkedin": "https://www.linkedin.com/company/ethoxsconsultoria",
+        "youtube": null,
+        "tiktok": null
+      }
+    }
+  },
+  "instagram": {
+    "ASR Consult": {
+      "usuario": "asrconsultoficialtotvs",
+      "status": 200,
+      "nome": "ASR CONSULT Homologada TOTVS (&#064;asrconsultoficialtotvs) • Instagram photos and videos",
+      "seguidores": 760,
+      "seguindo": 2240,
+      "posts": 142,
+      "descricaoPublica": "760 Followers, 2,240 Following, 142 Posts - See Instagram photos and videos from ASR CONSULT Homologada TOTVS (&#064;asrconsultoficialtotvs)"
+    },
+    "EthosX": {
+      "usuario": "ethosxconsultoria",
+      "status": 200,
+      "seguidores": 1591,
+      "seguindo": 143,
+      "posts": 800,
+      "fonte": "lido no Chrome em 09/11/2026"
+    }
+  },
+  "buscas": [
+    {
+      "termo": "consultoria protheus",
+      "sugestoes": [
+        "consultoria protheus",
+        "consultoria protheus sp",
+        "consultoria protheus totvs",
+        "consultoria protheus campinas",
+        "consultoria protheus rh",
+        "consultoria protheus curitiba",
+        "protheus consultoria química",
+        "protheus consultoria quimica ltda",
+        "consultoria erp protheus",
+        "mais consultoria protheus"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "implantação protheus",
+      "sugestoes": [
+        "implantação protheus",
+        "implantação nfse protheus",
+        "implantação totvs protheus",
+        "implantação reinf protheus",
+        "implantação wms protheus",
+        "implantação fci protheus",
+        "implantação ativo fixo protheus",
+        "implantação meu rh protheus"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "suporte protheus",
+      "sugestoes": [
+        "suporte protheus",
+        "suporte protheus totvs",
+        "suporte protheus vagas",
+        "suporte protheus telefone",
+        "analista suporte protheus",
+        "suporte erp protheus",
+        "curso suporte protheus",
+        "suporte tecnico protheus",
+        "suporte ams protheus",
+        "suporte totvs protheus telefone"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "consultoria totvs são paulo",
+      "sugestoes": [],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "parceiro totvs",
+      "sugestoes": [
+        "parceiro totvs",
+        "parceiro homologado totvs",
+        "seja um parceiro totvs",
+        "como ser parceiro totvs"
+      ],
+      "marcasQueAparecem": []
+    },
+    {
+      "termo": "consultoria erp",
+      "sugestoes": [
+        "consultoria erp",
+        "consultoria erp upseller",
+        "consultoria erp protheus",
+        "consultoria erp totvs",
+        "consultoria erp sankhya",
+        "consultoria erp sap",
+        "consultoria erp tiny",
+        "consultoria erp olist",
+        "consultoria erp que es",
+        "erpserv consultoria"
+      ],
+      "marcasQueAparecem": []
+    }
+  ],
+  "buscaPelaMarca": [
+    "asr consult",
+    "asr consult suporte em ti ltda",
+    "asr consult patrick reichert",
+    "asr unavailable consult handbook"
+  ]
+}

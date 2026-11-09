@@ -1,0 +1,1671 @@
+{
+ "coletadoEm": "2026-11-09T21:01:57.254Z",
+ "sementes": [
+  "consultoria protheus",
+  "implantação protheus",
+  "suporte protheus",
+  "consultoria totvs",
+  "canal homologado totvs",
+  "parceiro totvs",
+  "consultoria erp",
+  "implantação de erp",
+  "fluig totvs",
+  "protheus reforma tributária",
+  "protheus e-social",
+  "power bi protheus",
+  "fábrica de software protheus",
+  "treinamento protheus",
+  "mapeamento de processos erp"
+ ],
+ "consultasSemResposta": 0,
+ "total": 214,
+ "contagem": {
+  "pergunta": 6,
+  "comparacao": 0,
+  "compra": 1,
+  "epoca": 0
+ },
+ "porMarca": {
+  "ASR Consult": 0,
+  "EthosX": 0,
+  "TOTVS": 94,
+  "SAP": 2,
+  "Sankhya": 1,
+  "Senior": 0,
+  "Omie": 0,
+  "Oracle NetSuite": 0,
+  "Microsiga": 0
+ },
+ "exemplosPorMarca": {
+  "ASR Consult": [],
+  "EthosX": [],
+  "TOTVS": [
+   "consultoria erp totvs protheus",
+   "fluig totvs para que serve",
+   "fluig totvs como funciona",
+   "consultoria erp totvs",
+   "totvs fluig plataforma movimentar solicitação",
+   "fluig totvs cruzeiro do sul",
+   "totvs fluig plataforma assinatura de ponto",
+   "consultoria protheus totvs",
+   "implantação totvs protheus",
+   "suporte protheus totvs",
+   "consultoria totvs rm",
+   "consultoria totvs protheus",
+   "consultoria totvs datasul",
+   "consultoria totvs fluig",
+   "consultoria totvs moda",
+   "consultoria homologada totvs",
+   "boa consultoria totvs",
+   "parceiro homologado totvs",
+   "como ser parceiro totvs",
+   "fluig totvs login",
+   "fluig totvs spdm",
+   "fluig totvs maua",
+   "fluig totvs universal",
+   "fluig totvs entrar",
+   "fluig totvs identity",
+   "fluig totvs com br",
+   "totvs fluig no code",
+   "o que e totvs fluig",
+   "totvs fluig plataforma home",
+   "fluig totvs o que é",
+   "power bi totvs protheus",
+   "treinamento protheus totvs",
+   "suporte totvs protheus telefone",
+   "fluig totvs curso",
+   "totvs fluig plataforma home login",
+   "prime consultoria totvs",
+   "totvs fluig plataforma iniciar solicitações",
+   "totvs fluig dev start",
+   "totvs fluig plataforma central de tarefas",
+   "totvs fluig plataforma consultar solicitações",
+   "totvs fluig plataforma documentos",
+   "totvs fluig atacadao dia a dia",
+   "consultoria totvs",
+   "crm consultoria totvs",
+   "consultoria tributária totvs",
+   "canal homologado totvs",
+   "parceiro totvs",
+   "fluig totvs",
+   "totvs fluig preço",
+   "fluig totvs api",
+   "totvs fluig documentação",
+   "totvs fluig forum",
+   "totvs fluig ged",
+   "fluig totvs rm",
+   "fluig totvs tdn",
+   "totvs fluig voyager 2.0",
+   "reforma tributária totvs protheus",
+   "moove consultoria totvs",
+   "totvs fluig academy",
+   "bpm fluig totvs",
+   "fluig da totvs",
+   "totvs fluig icon",
+   "fluig totvs logo",
+   "fluig totvs mackenzie",
+   "fluig totvs oeste",
+   "fluig totvs supera",
+   "treinamento fluig totvs",
+   "totvs fluig voyager",
+   "consultoria em totvs",
+   "seja um parceiro totvs",
+   "totvs fluig app",
+   "totvs fluig developer",
+   "totvs fluig plataforma",
+   "fluig totvs sicoob",
+   "totvs fluig vagas",
+   "totvs protheus reforma tributária",
+   "ethos consultoria totvs",
+   "pvt consultoria totvs",
+   "totvs fluig analytics",
+   "fluig totvs com",
+   "totvs fluig download",
+   "totvs fluig plataforma - iniciar processo de",
+   "totvs fluig plataforma movimentar solicitação login",
+   "fluig totvs suporte",
+   "vagas erp consultoria totvs",
+   "totvs fluig atualização",
+   "instalação fluig totvs",
+   "my fluig totvs",
+   "totvs fluig plataforma portal do colaborador",
+   "fluig totvs sebrae",
+   "acesso fluig totvs",
+   "totvs fluig plataforma - (com) - assinatura de ponto",
+   "apresentação fluig totvs",
+   "sistema fluig totvs"
+  ],
+  "SAP": [
+   "alfa consultoria sap erp bpm e ia",
+   "consultoria erp sap"
+  ],
+  "Sankhya": [
+   "consultoria erp sankhya"
+  ],
+  "Senior": [],
+  "Omie": [],
+  "Oracle NetSuite": [],
+  "Microsiga": []
+ },
+ "buscas": [
+  {
+   "termo": "consultoria erp totvs protheus",
+   "semente": "consultoria protheus",
+   "vezes": 6,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "a implantação de sistemas erp nas organizacoes modernas",
+   "semente": "implantação de erp",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs para que serve",
+   "semente": "fluig totvs",
+   "vezes": 5,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "consultoria erp protheus",
+   "semente": "consultoria protheus",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "configurador de tributos protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 4,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "na implantação de sistemas erp a abordagem",
+   "semente": "implantação de erp",
+   "vezes": 4,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "protheus consultoria quimica ltda",
+   "semente": "consultoria protheus",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp que es",
+   "semente": "consultoria erp",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "argos consultoria erp & ti ltda",
+   "semente": "consultoria erp",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de erp em uma empresa",
+   "semente": "implantação de erp",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de erp passo a passo",
+   "semente": "implantação de erp",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs como funciona",
+   "semente": "fluig totvs",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "protheus reforma tributária configurações mínimas",
+   "semente": "protheus reforma tributária",
+   "vezes": 3,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp totvs",
+   "semente": "consultoria totvs",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "analista de implantação erp salario",
+   "semente": "implantação de erp",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "consultor de implantação erp salario",
+   "semente": "implantação de erp",
+   "vezes": 3,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma movimentar solicitação",
+   "semente": "fluig totvs",
+   "vezes": 3,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs cruzeiro do sul",
+   "semente": "fluig totvs",
+   "vezes": 3,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma assinatura de ponto",
+   "semente": "fluig totvs",
+   "vezes": 3,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus sp",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus totvs",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus campinas",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus rh",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "protheus consultoria química",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "mais consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação nfse protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação totvs protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação reinf protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação fci protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "suporte protheus totvs",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "suporte protheus vagas",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "suporte erp protheus",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "suporte ams protheus",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs rm",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs protheus",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs datasul",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs fluig",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs moda",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria homologada totvs",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "boa consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "parceiro homologado totvs",
+   "semente": "parceiro totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "como ser parceiro totvs",
+   "semente": "parceiro totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "consultoria erp upseller",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp sankhya",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp olist",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria para erp",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "alfa consultoria sap erp bpm e ia",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação erp tiny",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação erp vagas",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultor de implantação erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "analista de implantação erp maxiprod",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de erp o que é",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "quanto custa implantação de um erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "fluig totvs login",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs spdm",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs maua",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs universal",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs entrar",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs identity",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs com br",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig no code",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que e totvs fluig",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "totvs fluig plataforma home",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs o que é",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "atualização protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "parametros reforma tributaria protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "power bi totvs protheus",
+   "semente": "power bi protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento protheus totvs",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento protheus gratis",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento protheus financeiro",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento protheus rh",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento sistema protheus",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "modulo treinamento protheus",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento erp protheus",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento pcp protheus",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus curitiba",
+   "semente": "consultoria protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "implantação ativo fixo protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "implantação meu rh protheus",
+   "semente": "implantação protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "analista suporte protheus",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "suporte totvs protheus telefone",
+   "semente": "suporte protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp sap",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "erp para consultoria empresarial",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "analista de implantação erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "vagas consultor de implantação erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "projetos de implantação de erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs curso",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma home login",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "atualizações protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "nfse protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "curso protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento smartview protheus",
+   "semente": "treinamento protheus",
+   "vezes": 2,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "prime consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp tiny",
+   "semente": "consultoria erp",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma iniciar solicitações",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "curso implantação de sistemas erp",
+   "semente": "implantação de erp",
+   "vezes": 2,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig dev start",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma central de tarefas",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 5,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma consultar solicitações",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma documentos",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig atacadao dia a dia",
+   "semente": "fluig totvs",
+   "vezes": 2,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "boa consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria de protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "global consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "harpia consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "prox consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "upduo consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação protheus",
+   "semente": "implantação protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "suporte protheus",
+   "semente": "suporte protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "analista de suporte protheus junior salario",
+   "semente": "suporte protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "crm consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria tributária totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "canal homologado totvs",
+   "semente": "canal homologado totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "parceiro totvs",
+   "semente": "parceiro totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "control consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria de erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria em erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria de implantação erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o'que é consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação do erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de sistema erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de um erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "o que é implantação de erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "pergunta"
+   ]
+  },
+  {
+   "termo": "fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig preço",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": [
+    "compra"
+   ]
+  },
+  {
+   "termo": "fluig totvs api",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig documentação",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig forum",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig ged",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs rm",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs tdn",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig voyager 2.0",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "eventos reforma tributaria protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "reforma tributária no protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "reforma tributária totvs protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "reforma tributaria v1 30 protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "esocial protheus",
+   "semente": "protheus e-social",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "power bi protheus",
+   "semente": "power bi protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "power bi com protheus",
+   "semente": "power bi protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "power bi e protheus",
+   "semente": "power bi protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "integração protheus power bi",
+   "semente": "power bi protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "power bi no protheus",
+   "semente": "power bi protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento protheus",
+   "semente": "treinamento protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento de protheus",
+   "semente": "treinamento protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento smart view protheus",
+   "semente": "treinamento protheus",
+   "vezes": 1,
+   "pos": 0,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria em protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "sms consultoria protheus",
+   "semente": "consultoria protheus",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "implantação configurador de tributos protheus",
+   "semente": "implantação protheus",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "moove consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "argos consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "erp consultoria empresarial",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "integra consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "analista de implantação de erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig academy",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "bpm fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig da totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig icon",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs logo",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs mackenzie",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs oeste",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs supera",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig voyager",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "dere reforma tributária protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "pacotes reforma tributaria protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "reforma tributária protheus tdn",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento ativo fixo protheus",
+   "semente": "treinamento protheus",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "treinamento configurador de tributos protheus",
+   "semente": "treinamento protheus",
+   "vezes": 1,
+   "pos": 1,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria em totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "seja um parceiro totvs",
+   "semente": "parceiro totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "implantação de erps",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig app",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig developer",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs sicoob",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig vagas",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "totvs protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "nfe reforma tributária protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 2,
+   "grupos": []
+  },
+  {
+   "termo": "suporte protheus telefone",
+   "semente": "suporte protheus",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "ethos consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "pvt consultoria totvs",
+   "semente": "consultoria totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "consultoria de sistemas erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "consultor de implantação de erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig analytics",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs com",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig download",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma - iniciar processo de",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma movimentar solicitação login",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs suporte",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "cronograma reforma tributária protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "tabelas reforma tributaria protheus",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 3,
+   "grupos": []
+  },
+  {
+   "termo": "implantação wms protheus",
+   "semente": "implantação protheus",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "synesis consultoria erp",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "vagas erp consultoria totvs",
+   "semente": "consultoria erp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "analista de implantação de erp salario",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig atualização",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "instalação fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "my fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma portal do colaborador",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "fluig totvs sebrae",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 4,
+   "grupos": []
+  },
+  {
+   "termo": "curso suporte protheus",
+   "semente": "suporte protheus",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "cronograma de implantação de sistema erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "acesso fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "tdn protheus reforma tributária",
+   "semente": "protheus reforma tributária",
+   "vezes": 1,
+   "pos": 6,
+   "grupos": []
+  },
+  {
+   "termo": "suporte tecnico protheus",
+   "semente": "suporte protheus",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "projeto de implantação de sistema erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "totvs fluig plataforma - (com) - assinatura de ponto",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 7,
+   "grupos": []
+  },
+  {
+   "termo": "fases de implantação de um sistema erp",
+   "semente": "implantação de erp",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "apresentação fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 8,
+   "grupos": []
+  },
+  {
+   "termo": "sistema fluig totvs",
+   "semente": "fluig totvs",
+   "vezes": 1,
+   "pos": 9,
+   "grupos": []
+  }
+ ],
+ "conteudo": {
+  "textos": [],
+  "paginas": [],
+  "fonte": [
+   "sem API do WordPress: preencher à mão a partir do mapa do site"
+  ]
+ }
+}

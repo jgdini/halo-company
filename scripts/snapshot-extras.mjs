@@ -112,7 +112,7 @@ if (!soCaptura) out.buscaPelaMarca = await sugestoes(alvos.empresa.nome.toLowerC
 await mkdir(`${pasta}/img`, { recursive: true });
 // SEM_CAPTURA=1 pula as capturas de tela (mantém as que já existem).
 if (!process.env.SEM_CAPTURA) {
-const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
+const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new', args: ['--disable-features=HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,HttpsFirstModeV2ForTypicallySecureUsers'] });
 for (const [nome, alvo] of [['atual', alvos.empresa], ...(alvos.modelo ? [['modelo', alvos.modelo]] : [])]) {
   for (const [tipo, w, h] of [['computador', 1440, 900], ['celular', 390, 844]]) {
     const p = await b.newPage();
