@@ -323,6 +323,67 @@ form.enviado .form__ok { display: block; }
   .suporte__grade { grid-template-columns: .9fr 1.1fr; gap: 72px; }
 }
 
+
+/* Proposta */
+.proposta { background: linear-gradient(180deg, var(--n950), var(--n900)); color: var(--texto-e); padding: 88px 0 96px; border-top: 1px solid var(--linha-e); }
+.proposta .secao__cabeca p { color: var(--texto-e2); }
+.prop-grade { display: grid; gap: 18px; }
+.preco { position: relative; border-radius: 18px; padding: 32px 26px; overflow: hidden; border: 1.5px solid transparent;
+  background: linear-gradient(var(--n850), var(--n850)) padding-box, conic-gradient(from var(--ang), rgba(28,200,242,.2) 0deg, rgba(28,200,242,.2) 220deg, var(--ciano) 300deg, rgba(28,200,242,.2) 360deg) border-box; }
+@media (prefers-reduced-motion: no-preference) { .preco { animation: girar 7s linear infinite; } }
+.preco__rot { color: var(--ciano); }
+.preco__valor { margin-top: 12px; display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.preco__valor small { font-size: 1.2rem; font-weight: 700; color: var(--texto-e2); }
+.preco__valor b { font-size: clamp(3rem, 9vw, 4.6rem); font-weight: 800; letter-spacing: -.045em; line-height: 1; color: var(--branco); }
+.preco__cond { margin-top: 14px; display: inline-flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 10px; background: var(--ciano-fundo); color: var(--branco); font-weight: 600; font-size: .95rem; }
+.preco__cond svg { width: 18px; height: 18px; color: var(--ciano); flex: none; }
+.inclui { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 12px; }
+.inclui li { display: grid; grid-template-columns: 24px 1fr; gap: 12px; color: var(--texto-e2); }
+.inclui svg { width: 20px; height: 20px; color: var(--ciano); margin-top: 2px; }
+.inclui b { color: var(--branco); font-weight: 600; }
+.nao-inclui { margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--linha-e2); color: var(--texto-e2); font-size: .92rem; display: grid; grid-template-columns: 24px 1fr; gap: 12px; }
+.nao-inclui svg { width: 20px; height: 20px; color: #ffc46b; }
+.opcional { border-radius: 18px; padding: 30px 26px; background: rgba(15,45,70,.45); border: 1px solid var(--linha-e2); }
+.opcional__tag { display: inline-flex; padding: 5px 10px; border-radius: 6px; background: rgba(255,196,107,.14); color: #ffc46b; }
+.opcional h3 { margin: 14px 0 8px; font-size: 1.45rem; }
+.opcional p { margin: 0; color: var(--texto-e2); }
+.opcional__precos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.opcional__precos div { padding: 16px; border-radius: 12px; background: var(--n900); border: 1px solid var(--linha-e); }
+.opcional__precos span { display: block; color: var(--texto-e2); }
+.opcional__precos b { display: block; margin-top: 6px; font-size: 1.6rem; font-weight: 800; letter-spacing: -.03em; color: var(--branco); }
+.opcional__precos b small { font-size: .55em; color: var(--texto-e2); font-weight: 600; }
+.fluxo { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 8px; counter-reset: f; }
+.fluxo li { counter-increment: f; display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; color: var(--texto-e2); font-size: .94rem; }
+.fluxo li::before { content: counter(f); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; background: var(--ciano-fundo); color: var(--ciano); font-family: "Plex Mono", monospace; font-size: .75rem; }
+.fluxo b { color: var(--branco); font-weight: 600; }
+.opcional__obs { margin-top: 16px !important; font-size: .88rem; }
+
+/* Questionário dentro da proposta */
+.questionario { margin-top: 26px; border-radius: 18px; background: var(--papel); color: var(--tinta); padding: 30px 22px; display: grid; gap: 22px; }
+.questionario h3 { font-size: 1.5rem; }
+.questionario > header p { margin: 8px 0 0; color: var(--tinta-2); }
+.q-bloco { display: grid; gap: 14px; padding-top: 18px; border-top: 1px solid var(--linha-c); }
+.q-bloco h4 { margin: 0; font-size: .95rem; color: #066A88; font-weight: 700; }
+.questionario textarea { min-height: 76px; }
+.questionario input, .questionario textarea { background: var(--branco); border-color: #cfdae4; }
+.questionario .opcoes span { background: var(--branco); }
+.questionario form { display: block; background: none; border: 0; padding: 0; box-shadow: none; border-radius: 0; }
+.links-gosto { display: grid; gap: 8px; }
+.q-enviar { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.q-ok { display: none; padding: 14px 16px; border-radius: 10px; background: var(--ciano-fundo); color: var(--tinta); font-weight: 600; }
+.q-ok.on { display: block; }
+.q-erro { display: none; padding: 14px 16px; border-radius: 10px; background: rgba(255,122,138,.15); color: #8a1c2b; font-weight: 600; }
+.q-erro.on { display: block; }
+
+@media (min-width: 1000px) {
+  .proposta { padding: 120px 0 130px; }
+  .prop-grade { grid-template-columns: 1.15fr .85fr; align-items: start; gap: 22px; }
+  .preco { padding: 44px 42px; }
+  .opcional { padding: 36px 34px; }
+  .questionario { padding: 44px 48px; }
+  .q-duas { grid-template-columns: 1fr 1fr; }
+}
+
 /* Showreel */
 .reel { background: var(--n900); padding: 0 0 72px; }
 .reel__quadro { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--linha-e2); background: var(--n950); aspect-ratio: 16 / 9; box-shadow: 0 40px 80px -40px rgba(0,0,0,.7); }
@@ -383,6 +444,7 @@ form.enviado .form__ok { display: block; }
       <li><a href="#reforma">Reforma tributária</a></li>
       <li><a href="#segmentos">Segmentos</a></li>
       <li><a href="#contato">Contato</a></li>
+      <li><a href="#proposta">Proposta</a></li>
     </ul>
     <div class="topo__acoes">
       <a class="topo__suporte" href="tel:+551126595360"><span class="mono">Suporte</span><b>(11) 2659-5360</b></a>
@@ -662,6 +724,109 @@ form.enviado .form__ok { display: block; }
 </section>
 </main>
 
+
+<section class="proposta" id="proposta" aria-labelledby="t-proposta">
+  <div class="wrap">
+    <div class="secao__cabeca">
+      <div><span class="olho mono">Proposta Halo Company</span><h2 id="t-proposta" class="palavras" style="margin-top:14px">Este site, pronto para a ASR.</h2></div>
+      <p>O layout desta página é a nossa proposta. Se fizer sentido para vocês, mantemos ele e ajustamos o que pedirem no questionário abaixo.</p>
+    </div>
+
+    <div class="prop-grade">
+      <article class="preco sobe" aria-label="Investimento no site">
+        <span class="preco__rot mono">Investimento</span>
+        <div class="preco__valor"><small>R$</small><b>7.850,00</b></div>
+        <div class="preco__cond"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Pagamento único, 30 dias após a entrega</div>
+        <ul class="inclui">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Site completo no layout desta página</b>, com os ajustes combinados no questionário.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Área do blog com login e senha</b>, para a equipe da ASR publicar os próprios textos.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>30 dias de suporte após o go-live</b>, para ajustes e dúvidas depois que o site entrar no ar.</span></li>
+        </ul>
+        <div class="nao-inclui"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span><b style="color:var(--branco)">Hospedagem por conta da ASR.</b> A contratação do provedor fica com o cliente, no nome da empresa. Ajudamos a escolher e a configurar.</span></div>
+      </article>
+
+      <aside class="opcional sobe" style="--i:1" aria-label="Opcional: blog automático">
+        <span class="opcional__tag mono">Opcional</span>
+        <h3>Blog que se escreve sozinho</h3>
+        <p>O mesmo sistema que usamos na Halo: textos novos toda semana, sobre o que o mercado de ERP pesquisa, publicados só depois que o gestor aprova.</p>
+        <div class="opcional__precos">
+          <div><span class="mono">Setup</span><b>R$ 1.000</b></div>
+          <div><span class="mono">Mensal</span><b>R$ 350<small>/mês</small></b></div>
+        </div>
+        <ol class="fluxo">
+          <li><span><b>2 posts por semana</b>, escritos a partir das buscas do setor (Protheus, reforma tributária, implantação).</span></li>
+          <li><span>O gestor recebe o texto por e-mail e <b>aprova ou pede ajuste</b> num clique.</span></li>
+          <li><span>Aprovado, o post <b>entra no ar sozinho</b>, já otimizado para o Google e as IAs.</span></li>
+        </ol>
+        <p class="opcional__obs">A tela do blog com login e senha já está na proposta principal. O opcional é a automação dos textos.</p>
+      </aside>
+    </div>
+
+    <div class="questionario sobe" id="questionario">
+      <header>
+        <span class="olho mono">Para começarmos</span>
+        <h3 style="margin-top:10px">Responda aqui mesmo, sem cadastro.</h3>
+        <p>As respostas chegam direto para a Halo. Leva uns 5 minutos.</p>
+      </header>
+      <form id="form-proposta" novalidate>
+        <div style="display:grid;gap:22px">
+          <div class="q-bloco">
+            <h4>Quem responde</h4>
+            <div class="campos q-duas" style="display:grid;gap:14px">
+              <div><label for="q-nome">Nome</label><input id="q-nome" autocomplete="name"></div>
+              <div><label for="q-cargo">Cargo</label><input id="q-cargo" autocomplete="organization-title"></div>
+            </div>
+          </div>
+          <div class="q-bloco">
+            <h4>Sobre o negócio</h4>
+            <div><label for="q-vender">Quais soluções vocês querem vender mais?</label><textarea id="q-vender" placeholder="Ex.: implantação de Protheus, suporte, reforma tributária"></textarea></div>
+            <div><label for="q-cliente">Quem é o cliente ideal? (segmento, porte, região)</label><textarea id="q-cliente"></textarea></div>
+            <div class="q-duas" style="display:grid;gap:14px">
+              <div><label for="q-contatos">Quantos contatos chegam por mês, e por onde?</label><textarea id="q-contatos" placeholder="Ex.: 20 por mês, a maioria por indicação e WhatsApp"></textarea></div>
+              <div><label for="q-resposta">Quanto tempo leva a primeira resposta a um contato?</label><textarea id="q-resposta"></textarea></div>
+            </div>
+            <div><label for="q-resultados">Têm resultados reais de clientes para os gráficos? (ganho de produtividade, erros, tempo de fechamento, chamados)</label><textarea id="q-resultados"></textarea></div>
+          </div>
+          <div class="q-bloco">
+            <h4>Sobre o site</h4>
+            <fieldset>
+              <legend>O que acharam do layout desta página?</legend>
+              <div class="opcoes">
+                <label><input type="radio" name="q-layout" value="Manter o layout proposto"><span>Manter o layout proposto</span></label>
+                <label><input type="radio" name="q-layout" value="Manter, com ajustes"><span>Manter, com ajustes</span></label>
+                <label><input type="radio" name="q-layout" value="Quero outra direção"><span>Quero outra direção</span></label>
+              </div>
+            </fieldset>
+            <div><label for="q-ajustes">Se pedir ajustes: o que mudar?</label><textarea id="q-ajustes"></textarea></div>
+            <div>
+              <label for="q-site1">Sites que vocês gostam (até 3 links)</label>
+              <div class="links-gosto">
+                <input id="q-site1" type="url" inputmode="url" placeholder="https://">
+                <input id="q-site2" type="url" inputmode="url" placeholder="https://" aria-label="Segundo site">
+                <input id="q-site3" type="url" inputmode="url" placeholder="https://" aria-label="Terceiro site">
+              </div>
+            </div>
+            <div><label for="q-gosto">O que gostam nesses sites?</label><textarea id="q-gosto" placeholder="Ex.: as cores, os vídeos, como mostram os números"></textarea></div>
+            <fieldset>
+              <legend>Blog automático (opcional)</legend>
+              <div class="opcoes">
+                <label><input type="radio" name="q-blog" value="Quero incluir"><span>Quero incluir</span></label>
+                <label><input type="radio" name="q-blog" value="Agora não"><span>Agora não</span></label>
+                <label><input type="radio" name="q-blog" value="Quero entender melhor"><span>Quero entender melhor</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="q-enviar">
+            <button class="btn btn--ciano" type="submit" id="q-botao">Enviar respostas para a Halo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          </div>
+          <p class="q-ok" id="q-ok" role="status">Recebemos as respostas. Obrigado! A Halo entra em contato em seguida.</p>
+          <p class="q-erro" id="q-erro" role="alert">Não conseguimos enviar agora. Tente de novo ou chame o João no (11) 98953-1711.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
 <footer class="rodape">
   <div class="wrap">
     <div class="rodape__grade">
@@ -796,6 +961,43 @@ form.enviado .form__ok { display: block; }
         else if (!e.isIntersecting && rodando) { clearInterval(rodando); rodando = null; } }); }, { threshold: 0.2 });
       ioC.observe(lista);
     }
+  }
+
+
+  // Questionário da proposta: envia para a planilha de briefings da Halo
+  var fp = document.getElementById('form-proposta');
+  if (fp) {
+    var val = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+    var marcado = function (nome) { var el = fp.querySelector('input[name="' + nome + '"]:checked'); return el ? el.value : ''; };
+    window.__montaProposta = function () {
+      var sites = [val('q-site1'), val('q-site2'), val('q-site3')].filter(Boolean).join('\n');
+      return {
+        tipoProjeto: 'Proposta de site (modelo ASR)', empresa: 'ASR Consult', nome: val('q-nome') + (val('q-cargo') ? ' (' + val('q-cargo') + ')' : ''),
+        secoes: [
+          { titulo: 'Sobre o negócio', respostas: [
+            { pergunta: 'Soluções que querem vender mais', resposta: val('q-vender') },
+            { pergunta: 'Cliente ideal', resposta: val('q-cliente') },
+            { pergunta: 'Contatos por mês e canais', resposta: val('q-contatos') },
+            { pergunta: 'Tempo da primeira resposta', resposta: val('q-resposta') },
+            { pergunta: 'Resultados reais de clientes', resposta: val('q-resultados') } ] },
+          { titulo: 'Sobre o site', respostas: [
+            { pergunta: 'Layout proposto', resposta: marcado('q-layout') },
+            { pergunta: 'Ajustes pedidos', resposta: val('q-ajustes') },
+            { pergunta: 'Sites de referência', resposta: sites },
+            { pergunta: 'O que gostam nos sites de referência', resposta: val('q-gosto') },
+            { pergunta: 'Blog automático', resposta: marcado('q-blog') } ] }
+        ]
+      };
+    };
+    fp.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var botao = document.getElementById('q-botao'), ok = document.getElementById('q-ok'), erro = document.getElementById('q-erro');
+      botao.disabled = true; botao.style.opacity = '.6'; erro.classList.remove('on');
+      fetch('https://script.google.com/macros/s/AKfycbxoCRJXmJVA2KGLaE7OzkgMrnydWBkSmXOimTmV5oo7kqEpx9ASDLq8Ms9eD9aPBYo/exec', {
+        method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(window.__montaProposta())
+      }).then(function () { ok.classList.add('on'); botao.style.display = 'none'; })
+        .catch(function () { erro.classList.add('on'); botao.disabled = false; botao.style.opacity = '1'; });
+    });
   }
 
   var f = document.getElementById('form');
