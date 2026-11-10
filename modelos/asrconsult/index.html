@@ -66,9 +66,28 @@ h2 { font-size: clamp(1.8rem, 4.6vw, 3rem); }
 .hero { position: relative; overflow: hidden; background: radial-gradient(1100px 600px at 85% 10%, rgba(28,200,242,.13), transparent 60%), linear-gradient(180deg, var(--n950), var(--n900)); color: var(--texto-e); }
 .hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(var(--linha-e) 1px, transparent 1px), linear-gradient(90deg, var(--linha-e) 1px, transparent 1px); background-size: 64px 64px; mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 10%, transparent 70%); opacity: .5; pointer-events: none; }
 .hero .wrap { position: relative; display: grid; gap: 48px; padding-top: 64px; padding-bottom: 56px; }
-.selo { display: inline-flex; align-items: center; gap: 12px; padding: 6px 12px 6px 6px; border: 1px solid var(--linha-e2); border-radius: 999px; background: rgba(10,34,54,.6); }
-.selo img { width: 54px; height: auto; border-radius: 999px; background: #fff; padding: 3px 6px; }
-.selo span { color: var(--texto-e2); }
+@property --ang { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+.selo { position: relative; display: inline-flex; align-items: center; gap: 16px; padding: 10px 26px 10px 10px; border-radius: 999px; overflow: hidden;
+  border: 1.5px solid transparent;
+  background: linear-gradient(var(--n850), var(--n850)) padding-box,
+    conic-gradient(from var(--ang), rgba(28,200,242,.25) 0deg, rgba(28,200,242,.25) 200deg, var(--ciano) 280deg, #fff 310deg, var(--ciano) 330deg, rgba(28,200,242,.25) 360deg) border-box;
+  box-shadow: 0 0 0 6px rgba(28,200,242,.06), 0 18px 40px -18px rgba(28,200,242,.55); }
+.selo img { width: 96px; height: auto; border-radius: 999px; background: #fff; padding: 5px 9px; position: relative; z-index: 1; }
+.selo__txt { position: relative; z-index: 1; display: grid; line-height: 1.2; }
+.selo__txt b { font-size: 1.18rem; font-weight: 700; color: var(--branco); letter-spacing: -.01em; display: inline-flex; align-items: center; gap: 7px; }
+.selo__txt b svg { width: 20px; height: 20px; color: var(--ciano); flex: none; }
+.selo__txt span { color: var(--texto-e2); }
+.selo::after { content: ""; position: absolute; top: 0; bottom: 0; left: -40%; width: 30%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.22), transparent); transform: skewX(-20deg) translateX(-120%); pointer-events: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .selo { animation: girar 5s linear infinite, chega .9s var(--ease) both; }
+  .selo::after { animation: brilho 4.5s ease-in-out 1.2s infinite; }
+  .selo__txt b svg { animation: confirma .6s var(--ease) both .9s; }
+}
+@media (max-width: 639px) { .selo { gap: 12px; padding: 8px 16px 8px 8px; } .selo img { width: 64px; padding: 4px 7px; } .selo__txt b { font-size: .95rem; } .selo__txt .mono { font-size: .62rem; } }
+@keyframes girar { to { --ang: 360deg; } }
+@keyframes brilho { 0% { transform: skewX(-20deg) translateX(-120%); } 35%, 100% { transform: skewX(-20deg) translateX(560%); } }
+@keyframes chega { from { opacity: 0; transform: translateY(10px) scale(.96); } to { opacity: 1; transform: none; } }
+@keyframes confirma { from { transform: scale(0) rotate(-30deg); opacity: 0; } to { transform: none; opacity: 1; } }
 .hero h1 { margin-top: 26px; font-size: clamp(2.2rem, 7vw, 4.3rem); text-wrap: balance; font-weight: 700; letter-spacing: -.035em; line-height: 1.02; }
 .hero h1 em { font-style: normal; color: var(--ciano); }
 .hero__apoio { margin: 24px 0 0; max-width: 54ch; color: var(--texto-e2); font-size: 1.06rem; }
@@ -88,11 +107,13 @@ h2 { font-size: clamp(1.8rem, 4.6vw, 3rem); }
 .painel__rodape i { width: 7px; height: 7px; border-radius: 50%; background: #3EE08F; flex: none; }
 
 /* Números */
-.numeros { border-top: 1px solid var(--linha-e); background: var(--n900); color: var(--texto-e); }
-.numeros dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
-.numeros div { padding: 26px 20px; border-right: 1px solid var(--linha-e); border-bottom: 1px solid var(--linha-e); }
-.numeros dt { order: 2; color: var(--texto-e2); margin-top: 6px; }
-.numeros dd { margin: 0; font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 700; letter-spacing: -.03em; line-height: 1; }
+.numeros { position: relative; background: var(--n900); color: var(--texto-e); padding: 0 0 56px; }
+.hero .numeros .wrap { display: block; padding-top: 0; padding-bottom: 0; }
+.numeros dl { margin: 0 auto; max-width: 1100px; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--linha-e2); border-radius: 16px; overflow: hidden;
+  background: linear-gradient(180deg, rgba(15,45,70,.7), rgba(10,34,54,.55)); box-shadow: 0 30px 70px -40px rgba(0,0,0,.8); }
+.numeros div { padding: 30px 18px; text-align: center; align-items: center; border-right: 1px solid var(--linha-e); border-bottom: 1px solid var(--linha-e); }
+.numeros dt { order: 2; color: var(--texto-e2); margin-top: 10px; }
+.numeros dd { margin: 0; font-size: clamp(2.4rem, 6.4vw, 3.9rem); font-weight: 800; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
 .numeros dd small { color: var(--ciano); font-size: .6em; margin-right: 2px; }
 .numeros div { display: flex; flex-direction: column-reverse; }
 
@@ -321,8 +342,8 @@ form.enviado .form__ok { display: block; }
   .wrap { padding: 0 40px; }
   .hero h1 { font-size: clamp(2.6rem, 4.4vw, 4.3rem); }
   .hero .wrap { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); align-items: center; gap: 64px; padding-top: 96px; padding-bottom: 96px; }
-  .numeros div { padding: 34px 40px; }
-  .numeros div:first-child { padding-left: 0; }
+  .numeros div { padding: 42px 24px; border-bottom: 0; }
+  .numeros div:last-child { border-right: 0; }
   .reel { padding-bottom: 112px; }
   .secao { padding: 120px 0; }
   .secao__cabeca { grid-template-columns: 1fr 1fr; align-items: end; gap: 40px; }
@@ -374,7 +395,7 @@ form.enviado .form__ok { display: block; }
 <section class="hero" aria-labelledby="titulo">
   <div class="wrap">
     <div>
-      <span class="selo"><img src="assets/canaltotvs.png" width="368" height="163" alt="Canal Homologado TOTVS"><span class="mono">Canal Homologado TOTVS · desde 2008</span></span>
+      <span class="selo"><img src="assets/canaltotvs.png" width="368" height="163" alt="Canal Homologado TOTVS"><span class="selo__txt"><b>Canal Homologado TOTVS <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 2.1 3.2-.3.9 3.1 2.8 1.6-1.2 3 1.2 3-2.8 1.6-.9 3.1-3.2-.3L12 22l-2.4-2.1-3.2.3-.9-3.1-2.8-1.6 1.2-3-1.2-3 2.8-1.6.9-3.1 3.2.3z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></b><span class="mono">Parceiro oficial · desde 2008</span></span></span>
       <h1 id="titulo">O Protheus da sua empresa implantado, <em>sustentado e evoluindo.</em></h1>
       <p class="hero__apoio">Implantação, suporte N1 e N2, consultoria e desenvolvimento em TOTVS Protheus para empresas de manufatura, distribuição, serviços, construção e agro, em 11 estados.</p>
       <div class="hero__acoes">
