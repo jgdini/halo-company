@@ -186,6 +186,122 @@ form.enviado .form__ok { display: block; }
 .whats { position: fixed; right: 16px; bottom: 16px; z-index: 30; width: 54px; height: 54px; border-radius: 50%; background: #25D366; display: grid; place-items: center; box-shadow: 0 10px 30px -8px rgba(0,0,0,.45); }
 .whats svg { width: 26px; height: 26px; fill: #fff; }
 
+
+/* Barra de progresso da leitura */
+.progresso { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 40; background: transparent; pointer-events: none; }
+.progresso i { display: block; height: 100%; width: 100%; background: linear-gradient(90deg, var(--ciano), var(--ciano-claro)); transform-origin: left center; transform: scaleX(0); }
+
+/* Títulos palavra por palavra */
+.palavras .w { display: inline-block; }
+@media (prefers-reduced-motion: no-preference) {
+  .palavras .w { opacity: 0; filter: blur(8px); transform: translateY(.25em); transition: opacity .7s var(--ease), filter .7s var(--ease), transform .7s var(--ease); transition-delay: calc(var(--w) * 55ms); }
+  .palavras.visivel .w { opacity: 1; filter: none; transform: none; }
+}
+
+/* Resultados */
+.resultados { background: var(--n900); color: var(--texto-e); padding: 40px 0 96px; position: relative; overflow: hidden; }
+.resultados::before { content: ""; position: absolute; inset: 0; background: radial-gradient(900px 500px at 15% 0%, rgba(28,200,242,.08), transparent 60%); pointer-events: none; }
+.res-grade { position: relative; display: grid; gap: 14px; }
+.res-card { position: relative; background: linear-gradient(180deg, rgba(15,45,70,.55), rgba(10,34,54,.55)); border: 1px solid var(--linha-e); border-radius: 14px; padding: 24px 22px; overflow: hidden; transition: border-color .3s, transform .5s var(--ease); }
+.res-card:hover { border-color: rgba(28,200,242,.45); transform: translateY(-3px); }
+.res-card__topo { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; color: var(--texto-e2); }
+.res-kpi { margin-top: 10px; font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -.04em; line-height: 1; color: var(--branco); font-variant-numeric: tabular-nums; }
+.res-kpi small { font-size: .5em; color: var(--ciano); font-weight: 700; margin-left: 4px; }
+.res-card p { margin: 10px 0 0; color: var(--texto-e2); font-size: .92rem; }
+.res-tag { display: inline-flex; align-items: center; gap: 6px; color: var(--ciano); }
+.res-tag i { width: 6px; height: 6px; border-radius: 50%; background: var(--ciano); }
+/* Gráfico de linha */
+.grafico { margin-top: 18px; width: 100%; height: auto; display: block; overflow: visible; }
+.grafico .grade-l { stroke: rgba(150,190,225,.12); stroke-width: 1; }
+.grafico .antes { fill: none; stroke: #4f6a84; stroke-width: 2.5; stroke-dasharray: 6 7; }
+.grafico .depois { fill: none; stroke: var(--ciano); stroke-width: 3.5; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.grafico .area { fill: url(#gradArea); opacity: 0; }
+.grafico text { fill: #7f98b0; font-family: "Plex Mono", monospace; font-size: 11px; letter-spacing: .06em; }
+.grafico .ponto { fill: var(--branco); stroke: var(--ciano); stroke-width: 3; opacity: 0; }
+.legenda-g { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 10px; color: var(--texto-e2); }
+.legenda-g span { display: inline-flex; align-items: center; gap: 8px; }
+.legenda-g i { width: 18px; height: 3px; border-radius: 2px; background: var(--ciano); }
+.legenda-g i.cinza { background: repeating-linear-gradient(90deg, #4f6a84 0 5px, transparent 5px 9px); }
+.ativo .grafico .depois { stroke-dashoffset: 0; transition: stroke-dashoffset 2.2s cubic-bezier(.65,0,.35,1) .2s; }
+.ativo .grafico .area { opacity: 1; transition: opacity 1.4s ease 1.2s; }
+.ativo .grafico .ponto { opacity: 1; transition: opacity .3s ease 2.2s; }
+/* Barras */
+.barras { margin-top: 18px; height: 120px; display: flex; align-items: flex-end; gap: 6px; padding-bottom: 1px; border-bottom: 1px solid var(--linha-e); }
+.barras i { flex: 1; height: var(--h); border-radius: 4px 4px 1px 1px; background: linear-gradient(180deg, #ff7a8a, rgba(255,122,138,.25)); transform: scaleY(0); transform-origin: bottom; }
+.barras i:nth-last-child(-n+6) { background: linear-gradient(180deg, var(--ciano), rgba(28,200,242,.2)); }
+.ativo .barras i { transform: scaleY(1); transition: transform .9s var(--ease); transition-delay: calc(var(--i) * 70ms); }
+.barras-leg { display: flex; justify-content: space-between; margin-top: 8px; color: #7f98b0; }
+/* Medidor */
+.medidor { position: relative; width: 150px; height: 150px; margin: 14px auto 0; }
+.medidor svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.medidor .trilho { fill: none; stroke: rgba(150,190,225,.14); stroke-width: 12; }
+.medidor .valor { fill: none; stroke: var(--ciano); stroke-width: 12; stroke-linecap: round; stroke-dasharray: 0 100; }
+.ativo .medidor .valor { stroke-dasharray: 87 100; transition: stroke-dasharray 1.8s cubic-bezier(.65,0,.35,1) .2s; }
+.medidor b { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2.2rem; font-weight: 800; letter-spacing: -.03em; }
+/* Fechamento do mês */
+.fecha { margin-top: 18px; display: grid; gap: 12px; }
+.fecha div { display: grid; grid-template-columns: 70px 1fr 54px; align-items: center; gap: 10px; color: var(--texto-e2); }
+.fecha .trilha { height: 12px; border-radius: 6px; background: rgba(150,190,225,.1); overflow: hidden; }
+.fecha .trilha i { display: block; height: 100%; width: var(--w); border-radius: 6px; background: #4f6a84; transform: scaleX(0); transform-origin: left; }
+.fecha .depois-f .trilha i { background: linear-gradient(90deg, var(--ciano), var(--ciano-claro)); }
+.ativo .fecha .trilha i { transform: scaleX(1); transition: transform 1.4s var(--ease) .3s; }
+.ativo .fecha .depois-f .trilha i { transition-delay: .9s; }
+.fecha b { color: var(--branco); font-variant-numeric: tabular-nums; text-align: right; }
+.nota-ilustrativa { position: relative; margin-top: 18px; color: #7f98b0; font-size: .8rem; }
+
+/* Suporte ao vivo */
+.suporte { background: var(--n950); color: var(--texto-e); }
+.suporte__grade { display: grid; gap: 40px; align-items: center; }
+.suporte__lista { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 14px; }
+.suporte__lista li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; color: var(--texto-e2); }
+.suporte__lista svg { width: 22px; height: 22px; color: var(--ciano); margin-top: 2px; }
+.suporte__lista b { color: var(--branco); font-weight: 600; }
+.central { border: 1px solid var(--linha-e2); border-radius: 14px; background: linear-gradient(180deg, rgba(15,45,70,.6), rgba(7,26,42,.9)); overflow: hidden; box-shadow: 0 40px 80px -40px rgba(0,0,0,.8); }
+.central__topo { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--linha-e); color: var(--texto-e2); }
+.ao-vivo { display: inline-flex; align-items: center; gap: 8px; color: #3ee08f; }
+.ao-vivo i { width: 8px; height: 8px; border-radius: 50%; background: #3ee08f; animation: piscar 1.6s ease-in-out infinite; }
+@keyframes piscar { 50% { opacity: .3; } }
+.chamados { list-style: none; margin: 0; padding: 0; position: relative; height: 296px; overflow: hidden; }
+.chamado { position: absolute; left: 0; right: 0; height: 74px; padding: 12px 18px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; border-bottom: 1px solid var(--linha-e); transition: transform .7s var(--ease), opacity .5s ease; }
+.chamado__t { font-weight: 600; font-size: .95rem; color: var(--branco); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chamado__m { color: #7f98b0; grid-column: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.chamado__s { grid-row: span 2; align-self: center; padding: 6px 12px; border-radius: 999px; font-size: .75rem; font-weight: 600; white-space: nowrap; transition: background .4s, color .4s; }
+.s-aberto { background: rgba(255,190,90,.14); color: #ffc46b; }
+.s-analise { background: rgba(28,200,242,.14); color: var(--ciano-claro); }
+.s-resolvido { background: rgba(62,224,143,.14); color: #5ef0a6; }
+.central__rodape { display: grid; grid-template-columns: 1fr 1fr 1fr; border-top: 1px solid var(--linha-e); }
+.central__rodape div { padding: 14px 18px; border-right: 1px solid var(--linha-e); }
+.central__rodape div:last-child { border-right: 0; }
+.central__rodape b { display: block; font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em; color: var(--branco); font-variant-numeric: tabular-nums; }
+.central__rodape span { color: #7f98b0; }
+
+/* Faixa contínua */
+.faixa { background: var(--ciano); color: var(--n950); overflow: hidden; padding: 16px 0; transform: rotate(-1.2deg); margin: 0 -2%; width: 104%; }
+.faixa__trilho { display: flex; gap: 0; width: max-content; }
+.faixa__grupo { display: flex; align-items: center; flex: none; }
+.faixa__grupo span { font-weight: 800; font-size: 1.35rem; letter-spacing: -.02em; padding: 0 22px; white-space: nowrap; }
+.faixa__grupo i { width: 9px; height: 9px; border-radius: 2px; background: var(--n950); transform: rotate(45deg); flex: none; }
+@media (prefers-reduced-motion: no-preference) { .faixa__trilho { animation: correr 32s linear infinite; } }
+@keyframes correr { to { transform: translateX(-50%); } }
+.faixa-caixa { overflow: hidden; padding: 26px 0; background: var(--papel); }
+
+/* Linha da reforma desenhada pela rolagem */
+.linha-tempo li { position: relative; opacity: .45; transition: opacity .5s; }
+.linha-tempo li::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 2px; background: var(--ciano); transform: scaleX(0); transform-origin: left; transition: transform .9s var(--ease); }
+.linha-tempo li.on::before { transform: scaleX(1); }
+.linha-tempo li.on { opacity: 1; }
+.linha-tempo li.on b { text-shadow: 0 0 18px rgba(28,200,242,.5); }
+
+@media (min-width: 640px) {
+  .res-grade { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1000px) {
+  .resultados { padding: 64px 0 130px; }
+  .res-grade { grid-template-columns: 1.5fr 1fr 1fr; grid-template-rows: auto auto; }
+  .res-card--grande { grid-row: span 2; padding: 32px 30px; }
+  .suporte__grade { grid-template-columns: .9fr 1.1fr; gap: 72px; }
+}
+
 /* Showreel */
 .reel { background: var(--n900); padding: 0 0 72px; }
 .reel__quadro { position: relative; border-radius: 14px; overflow: hidden; border: 1px solid var(--linha-e2); background: var(--n950); aspect-ratio: 16 / 9; box-shadow: 0 40px 80px -40px rgba(0,0,0,.7); }
@@ -236,6 +352,7 @@ form.enviado .form__ok { display: block; }
 </head>
 <body>
 
+<div class="progresso" aria-hidden="true"><i id="progresso"></i></div>
 <header class="topo">
   <div class="wrap">
     <a class="marca" href="#" aria-label="ASR Consult, início"><img src="assets/logo.webp" width="480" height="138" alt="ASR Consult"></a>
@@ -285,30 +402,82 @@ form.enviado .form__ok { display: block; }
   <div class="numeros">
     <div class="wrap">
       <dl>
-        <div><dt class="mono">Projetos entregues</dt><dd><small>+</small>1.000</dd></div>
-        <div><dt class="mono">Atendimentos por ano</dt><dd><small>+</small>5.000</dd></div>
-        <div><dt class="mono">Início das atividades</dt><dd>2008</dd></div>
-        <div><dt class="mono">Estados atendidos</dt><dd>11</dd></div>
+        <div><dt class="mono">Projetos entregues</dt><dd><small>+</small><span data-conta="1000">1.000</span></dd></div>
+        <div><dt class="mono">Atendimentos por ano</dt><dd><small>+</small><span data-conta="5000">5.000</span></dd></div>
+        <div><dt class="mono">Início das atividades</dt><dd><span data-conta="2008" data-de="1990" data-sem-milhar>2008</span></dd></div>
+        <div><dt class="mono">Estados atendidos</dt><dd><span data-conta="11">11</span></dd></div>
       </dl>
     </div>
   </div>
 </section>
 
-<section class="reel" aria-label="A ASR em 15 segundos">
+<section class="reel" aria-label="A ASR em 20 segundos">
   <div class="wrap">
     <div class="reel__quadro">
       <video id="reel" muted loop playsinline preload="none" poster="assets/reel-capa.webp" aria-label="Vídeo de apresentação da ASR Consult">
         <source data-src-hd="assets/reel-1080.mp4" data-src="assets/reel-720.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="reel__legenda mono"><span>A ASR em 15 segundos</span><span class="reel__som"><i aria-hidden="true"></i>Canal Homologado TOTVS · desde 2008</span></div>
+    <div class="reel__legenda mono"><span>A ASR em 20 segundos</span><span class="reel__som"><i aria-hidden="true"></i>Canal Homologado TOTVS · desde 2008</span></div>
+  </div>
+</section>
+
+
+<section class="resultados" id="resultados" aria-labelledby="t-resultados">
+  <div class="wrap">
+    <div class="secao__cabeca" style="position:relative">
+      <div><span class="olho mono">Resultados</span><h2 id="t-resultados" class="palavras" style="margin-top:14px">O que muda quando a ASR assume o seu Protheus.</h2></div>
+      <p>Menos retrabalho, menos erro e um sistema que acompanha a operação. É assim que um ERP bem cuidado aparece nos números.</p>
+    </div>
+    <div class="res-grade">
+      <article class="res-card res-card--grande anima" aria-label="Produtividade da equipe no ERP">
+        <div class="res-card__topo"><span class="mono">Produtividade da equipe no ERP</span><span class="res-tag mono"><i></i>12 meses</span></div>
+        <div class="res-kpi"><span data-conta="38" data-prefixo="+">+38</span><small>%</small></div>
+        <p>Rotinas automatizadas e usuários treinados fazem mais no mesmo turno.</p>
+        <svg class="grafico" viewBox="0 0 600 270" role="img" aria-label="Linha de produtividade subindo ao longo de 12 meses com a ASR">
+          <defs><linearGradient id="gradArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1CC8F2" stop-opacity=".35"/><stop offset="1" stop-color="#1CC8F2" stop-opacity="0"/></linearGradient></defs>
+          <line class="grade-l" x1="0" y1="60" x2="600" y2="60"/><line class="grade-l" x1="0" y1="120" x2="600" y2="120"/><line class="grade-l" x1="0" y1="180" x2="600" y2="180"/><line class="grade-l" x1="0" y1="240" x2="600" y2="240"/>
+          <path class="area" d="M0,200 C80,198 130,186 190,170 S300,128 370,108 S500,62 600,46 L600,240 L0,240 Z"/>
+          <path class="antes" d="M0,200 C150,199 300,197 450,196 S560,195 600,195"/>
+          <path class="depois" pathLength="1" d="M0,200 C80,198 130,186 190,170 S300,128 370,108 S500,62 600,46"/>
+          <circle class="ponto" cx="600" cy="46" r="7"/>
+          <text x="0" y="262">JAN</text><text x="150" y="262">ABR</text><text x="300" y="262">JUL</text><text x="450" y="262">OUT</text><text x="568" y="262">DEZ</text>
+        </svg>
+        <div class="legenda-g mono"><span><i></i>Com a ASR</span><span><i class="cinza"></i>Sem acompanhamento</span></div>
+      </article>
+
+      <article class="res-card anima" aria-label="Erros de lançamento por mês">
+        <div class="res-card__topo"><span class="mono">Erros de lançamento</span><span class="res-tag mono"><i></i>por mês</span></div>
+        <div class="res-kpi"><span data-conta="62" data-prefixo="−">−62</span><small>%</small></div>
+        <div class="barras" aria-hidden="true">
+          <i style="--h:92%;--i:0"></i><i style="--h:100%;--i:1"></i><i style="--h:88%;--i:2"></i><i style="--h:95%;--i:3"></i><i style="--h:84%;--i:4"></i><i style="--h:90%;--i:5"></i>
+          <i style="--h:70%;--i:6"></i><i style="--h:58%;--i:7"></i><i style="--h:49%;--i:8"></i><i style="--h:42%;--i:9"></i><i style="--h:37%;--i:10"></i><i style="--h:34%;--i:11"></i>
+        </div>
+        <div class="barras-leg mono"><span>Antes</span><span>Com a ASR</span></div>
+      </article>
+
+      <article class="res-card anima" aria-label="Chamados resolvidos no primeiro contato">
+        <div class="res-card__topo"><span class="mono">Resolvidos no 1º contato</span><span class="res-tag mono"><i></i>suporte</span></div>
+        <div class="medidor"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="trilho" cx="60" cy="60" r="50" pathLength="100"/><circle class="valor" cx="60" cy="60" r="50" pathLength="100"/></svg><b><span data-conta="87" data-sufixo="%">87%</span></b></div>
+      </article>
+
+      <article class="res-card anima" aria-label="Dias para fechar o mês">
+        <div class="res-card__topo"><span class="mono">Fechamento do mês</span><span class="res-tag mono"><i></i>dias úteis</span></div>
+        <div class="fecha">
+          <div><span class="mono">Antes</span><span class="trilha"><i style="--w:100%"></i></span><b>12 dias</b></div>
+          <div class="depois-f"><span class="mono">Com ASR</span><span class="trilha"><i style="--w:42%"></i></span><b><span data-conta="5">5</span> dias</b></div>
+        </div>
+        <p>Cadastros limpos e integrações no lugar encurtam o fechamento.</p>
+      </article>
+    </div>
+    <p class="nota-ilustrativa mono">Números ilustrativos para apresentação. No site final, entram os resultados reais de clientes da ASR.</p>
   </div>
 </section>
 
 <section class="secao claro" id="servicos" aria-labelledby="t-servicos">
   <div class="wrap">
     <div class="secao__cabeca">
-      <div><span class="olho mono">O que fazemos</span><h2 id="t-servicos" style="margin-top:14px">Do primeiro módulo ao suporte do dia a dia.</h2></div>
+      <div><span class="olho mono">O que fazemos</span><h2 id="t-servicos" class="palavras" style="margin-top:14px">Do primeiro módulo ao suporte do dia a dia.</h2></div>
       <p>Uma equipe só cuida do projeto inteiro: implanta, treina quem vai usar, mantém o sistema rodando e desenvolve o que o padrão não cobre.</p>
     </div>
     <div class="servicos">
@@ -322,10 +491,34 @@ form.enviado .form__ok { display: block; }
   </div>
 </section>
 
+
+<section class="secao suporte" id="suporte" aria-labelledby="t-suporte">
+  <div class="wrap suporte__grade">
+    <div>
+      <span class="olho mono">Suporte</span>
+      <h2 id="t-suporte" class="palavras" style="margin-top:14px">Suporte que resolve, não que só abre chamado.</h2>
+      <ul class="suporte__lista">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>N1 e N2 com quem conhece o seu ambiente.</b> A mesma equipe que implantou atende.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Plantão 24/7</b> em fins de semana e feriados, com linha direta.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Causa resolvida na raiz.</b> O erro que volta vira correção, não chamado novo.</span></li>
+      </ul>
+    </div>
+    <div class="central" aria-label="Exemplo de central de suporte">
+      <div class="central__topo"><span class="mono">Central de suporte ASR</span><span class="ao-vivo mono"><i aria-hidden="true"></i>Ao vivo · exemplo</span></div>
+      <ul class="chamados" id="chamados" aria-live="off"></ul>
+      <div class="central__rodape">
+        <div><b><span data-conta="18">18</span> min</b><span class="mono">1ª resposta</span></div>
+        <div><b><span data-conta="87" data-sufixo="%">87%</span></b><span class="mono">no 1º contato</span></div>
+        <div><b><span data-conta="98" data-sufixo="%">98%</span></b><span class="mono">dentro do prazo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="secao escuro" id="solucoes" aria-labelledby="t-solucoes">
   <div class="wrap">
     <div class="secao__cabeca">
-      <div><span class="olho mono">Soluções</span><h2 id="t-solucoes" style="margin-top:14px">O Protheus conectado ao resto da empresa.</h2></div>
+      <div><span class="olho mono">Soluções</span><h2 id="t-solucoes" class="palavras" style="margin-top:14px">O Protheus conectado ao resto da empresa.</h2></div>
       <p>Integrações e ferramentas que levam o ERP para a fábrica, o financeiro, o RH e as decisões da diretoria.</p>
     </div>
     <div class="solucoes">
@@ -342,16 +535,21 @@ form.enviado .form__ok { display: block; }
   </div>
 </section>
 
+
+<div class="faixa-caixa" aria-hidden="true">
+  <div class="faixa"><div class="faixa__trilho"><div class="faixa__grupo"><span>Protheus &amp; SOC</span><i></i><span>e-Ponto</span><i></i><span>DDA entre bancos</span><i></i><span>PIX</span><i></i><span>ACD Indústria 4.0</span><i></i><span>Power BI</span><i></i><span>Fluig</span><i></i><span>LGPD</span><i></i><span>Backoffice TOTVS</span><i></i><span>Reforma tributária</span><i></i></div><div class="faixa__grupo"><span>Protheus &amp; SOC</span><i></i><span>e-Ponto</span><i></i><span>DDA entre bancos</span><i></i><span>PIX</span><i></i><span>ACD Indústria 4.0</span><i></i><span>Power BI</span><i></i><span>Fluig</span><i></i><span>LGPD</span><i></i><span>Backoffice TOTVS</span><i></i><span>Reforma tributária</span><i></i></div></div></div>
+</div>
+
 <section class="secao claro" id="reforma" aria-labelledby="t-reforma">
   <div class="wrap">
     <div class="reforma sobe">
       <div style="position:relative;z-index:1">
         <span class="olho mono">Reforma tributária</span>
-        <h2 id="t-reforma" style="margin-top:14px">A reforma tributária já chegou ao seu Protheus.</h2>
+        <h2 id="t-reforma" class="palavras" style="margin-top:14px">A reforma tributária já chegou ao seu Protheus.</h2>
         <p>Cadastros, notas, preços e apuração mudam a cada fase da transição. A ASR revisa o ambiente, acompanha as atualizações da TOTVS e testa antes de cada etapa.</p>
         <div class="hero__acoes"><a class="btn btn--ciano" href="#contato">Avaliar meu ambiente <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a></div>
       </div>
-      <ol class="linha-tempo" aria-label="Fases da transição">
+      <ol class="linha-tempo" id="linha-tempo" aria-label="Fases da transição">
         <li><b>2026</b><span>Ano de teste: CBS e IBS destacados nos documentos fiscais.</span></li>
         <li><b>2027</b><span>CBS em vigor; PIS e Cofins deixam de existir.</span></li>
         <li><b>2029</b><span>Começa a redução de ICMS e ISS, que vai até 2032.</span></li>
@@ -364,7 +562,7 @@ form.enviado .form__ok { display: block; }
 <section class="secao claro" id="segmentos" aria-labelledby="t-segmentos" style="padding-top:0">
   <div class="wrap">
     <div class="secao__cabeca">
-      <div><span class="olho mono">Segmentos</span><h2 id="t-segmentos" style="margin-top:14px">Experiência no seu setor.</h2></div>
+      <div><span class="olho mono">Segmentos</span><h2 id="t-segmentos" class="palavras" style="margin-top:14px">Experiência no seu setor.</h2></div>
       <p>Do pequeno negócio à manufatura avançada, com as práticas de cada segmento já configuradas.</p>
     </div>
     <div class="segmentos">
@@ -398,7 +596,7 @@ form.enviado .form__ok { display: block; }
   <div class="wrap contato">
     <div class="contato__lado">
       <span class="olho mono">Contato</span>
-      <h2 id="t-contato" style="margin-top:14px">Conte onde o seu ERP precisa render mais.</h2>
+      <h2 id="t-contato" class="palavras" style="margin-top:14px">Conte onde o seu ERP precisa render mais.</h2>
       <p>Um especialista da ASR responde já sabendo qual sistema você usa e o que precisa.</p>
       <ul class="canais">
         <li><a href="tel:+5511979967825"><span class="mono">Comercial</span><b>(11) 97996-7825</b></a></li>
@@ -480,6 +678,105 @@ form.enviado .form__ok { display: block; }
       new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) liga(); else if (carregado) v.pause(); }); }, { threshold: 0.25 }).observe(v);
     } else if (reduz) { v.setAttribute('controls', ''); fonte.src = fonte.getAttribute('data-src'); v.load(); }
   }
+
+  // ---- Movimento ----
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fmt = function (n, semMilhar) { return semMilhar ? String(n) : n.toLocaleString('pt-BR'); };
+
+  // Títulos: quebra em palavras
+  document.querySelectorAll('.palavras').forEach(function (h) {
+    var i = 0;
+    (function quebra(no) {
+      Array.prototype.slice.call(no.childNodes).forEach(function (c) {
+        if (c.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(function (parte) {
+            if (!parte) return;
+            if (/^\s+$/.test(parte)) { frag.appendChild(document.createTextNode(parte)); return; }
+            var w = document.createElement('span'); w.className = 'w'; w.style.setProperty('--w', i++); w.textContent = parte; frag.appendChild(w);
+          });
+          no.replaceChild(frag, c);
+        } else if (c.nodeType === 1) quebra(c);
+      });
+    })(h);
+  });
+
+  // Contadores
+  function conta(el) {
+    var alvo = +el.getAttribute('data-conta'), de = +(el.getAttribute('data-de') || 0);
+    var pre = el.getAttribute('data-prefixo') || '', suf = el.getAttribute('data-sufixo') || '', sm = el.hasAttribute('data-sem-milhar');
+    if (reduz) { el.textContent = pre + fmt(alvo, sm) + suf; return; }
+    var t0 = null, dur = 1700;
+    function passo(t) { if (!t0) t0 = t; var u = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(2, -10 * u);
+      el.textContent = pre + fmt(Math.round(de + (alvo - de) * (u === 1 ? 1 : e)), sm) + suf; if (u < 1) requestAnimationFrame(passo); }
+    el.textContent = pre + fmt(de, sm) + suf; requestAnimationFrame(passo);
+  }
+  var vigia = function (alvos, fn, limiar) {
+    if (!('IntersectionObserver' in window) || reduz) { alvos.forEach(fn); return; }
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { fn(e.target); io.unobserve(e.target); } }); }, { threshold: limiar || 0.3 });
+    alvos.forEach(function (a) { io.observe(a); });
+  };
+  vigia(Array.prototype.slice.call(document.querySelectorAll('[data-conta]')), conta, 0.6);
+  vigia(Array.prototype.slice.call(document.querySelectorAll('.anima')), function (el) { el.classList.add('ativo'); }, 0.35);
+  vigia(Array.prototype.slice.call(document.querySelectorAll('.palavras')), function (el) { el.classList.add('visivel'); }, 0.5);
+
+  // Barra de progresso e linha da reforma, pela rolagem
+  var barra = document.getElementById('progresso'), linha = document.getElementById('linha-tempo');
+  var marcos = linha ? linha.querySelectorAll('li') : [];
+  var agendado = false;
+  function rolagem() {
+    agendado = false;
+    var h = document.documentElement, max = h.scrollHeight - h.clientHeight;
+    if (barra) barra.style.transform = 'scaleX(' + (max > 0 ? h.scrollTop / max : 0).toFixed(4) + ')';
+    if (linha) {
+      var r = linha.getBoundingClientRect(), vh = window.innerHeight;
+      var p = Math.max(0, Math.min(1, (vh * 0.75 - r.top) / (r.height + vh * 0.2)));
+      if (reduz) p = 1;
+      for (var i = 0; i < marcos.length; i++) marcos[i].classList.toggle('on', p >= (i + 0.35) / marcos.length);
+    }
+  }
+  window.addEventListener('scroll', function () { if (!agendado) { agendado = true; requestAnimationFrame(rolagem); } }, { passive: true });
+  rolagem();
+
+  // Central de suporte: chamados chegando (exemplo)
+  var lista = document.getElementById('chamados');
+  if (lista) {
+    var base = [
+      ['NF-e rejeitada no faturamento', 'Fiscal · Protheus'], ['Folha de pagamento não fecha o cálculo', 'RH · Protheus'],
+      ['Boleto DDA não importou no financeiro', 'Financeiro · DDA'], ['Painel de vendas sem dados de ontem', 'Controladoria · Power BI'],
+      ['Aprovação de compra parada no fluxo', 'Processos · Fluig'], ['Coletor não baixa a ordem de produção', 'Indústria · ACD'],
+      ['Batida de ponto duplicada', 'RH · e-Ponto'], ['Ajuste de CBS e IBS na nota de saída', 'Fiscal · Reforma tributária']
+    ];
+    var ROT = { 0: ['Aberto', 's-aberto'], 1: ['Em análise', 's-analise'], 2: ['Resolvido', 's-resolvido'] };
+    var n = 48210, prox = 0, linhas = [];
+    function cria() {
+      var b = base[prox++ % base.length], li = document.createElement('li');
+      li.className = 'chamado';
+      li.innerHTML = '<span class="chamado__t"></span><span class="chamado__s"></span><span class="chamado__m mono"></span>';
+      li.querySelector('.chamado__t').textContent = b[0];
+      li.querySelector('.chamado__m').textContent = '#' + (n++) + ' · ' + b[1];
+      li._e = 0; pinta(li); return li;
+    }
+    function pinta(li) { var s = li.querySelector('.chamado__s'); s.textContent = ROT[li._e][0]; s.className = 'chamado__s ' + ROT[li._e][1]; }
+    function arruma() { linhas.forEach(function (li, i) { li.style.transform = 'translateY(' + (i * 74) + 'px)'; li.style.opacity = i > 3 ? 0 : 1; }); }
+    for (var k = 0; k < 4; k++) { var li0 = cria(); li0._e = Math.min(2, k); pinta(li0); linhas.push(li0); lista.appendChild(li0); }
+    arruma();
+    var ciclo = function () {
+      linhas.forEach(function (li) { if (li._e < 2) { li._e++; pinta(li); } });
+      var novo = cria(); novo.style.transform = 'translateY(-74px)'; novo.style.opacity = 0; lista.insertBefore(novo, lista.firstChild);
+      linhas.unshift(novo);
+      requestAnimationFrame(function () { requestAnimationFrame(arruma); });
+      if (linhas.length > 5) { var velho = linhas.pop(); setTimeout(function () { velho.remove(); }, 800); }
+    };
+    if (!reduz) {
+      var rodando = null;
+      var ioC = new IntersectionObserver(function (es) { es.forEach(function (e) {
+        if (e.isIntersecting && !rodando) rodando = setInterval(ciclo, 2400);
+        else if (!e.isIntersecting && rodando) { clearInterval(rodando); rodando = null; } }); }, { threshold: 0.2 });
+      ioC.observe(lista);
+    }
+  }
+
   var f = document.getElementById('form');
   f.addEventListener('submit', function (e) { e.preventDefault(); f.classList.add('enviado'); });
 })();
