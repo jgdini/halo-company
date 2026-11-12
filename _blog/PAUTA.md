@@ -18,7 +18,7 @@ O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` c
 - [ ] Agência, equipe interna ou um time de sócios: o que muda para a sua empresa · autor: Halo Company · tema: Posicionamento
 - [ ] Como aparecer no ChatGPT e no Gemini quando perguntam pela sua área · autor: João Dini · tema: Site
 - [ ] Branding para indústria: o que o comprador técnico precisa ver antes de cotar · autor: Halo Company · tema: Branding
-- [ ] Rebranding: quando vale e quando é só trocar o logo · autor: Amanda Takahashi · tema: Branding
+- [x] Rebranding: quando vale e quando é só trocar o logo · autor: Amanda Takahashi · tema: Branding (2026-12-08)
 - [ ] Site ou landing page: quando usar cada um · autor: João Dini · tema: Site
 - [ ] O dono deve aparecer? Marca pessoal do empresário sem virar influencer · autor: Amanda Takahashi · tema: Posicionamento
 - [ ] LinkedIn para indústria: o que publicar · autor: Amanda Takahashi · tema: Redes
