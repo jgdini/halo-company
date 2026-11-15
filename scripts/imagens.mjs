@@ -19,12 +19,10 @@ for (const nome of ['antigo-celular-topo', 'novo-celular-topo']) {
 // Capturas longas dos sites (a imagem rola dentro do cartão ao passar o mouse)
 const sites = {
   'veiculo-judicial': 'https://veiculojudicial.com.br/',
-  'marcelo-lusardo': 'https://liderdetravessias.com.br/',
-  'marcelo-lusardo-landing': 'https://marcelolusardo.com.br/',
   drlsys: 'https://drlsys.com/'
 };
 const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: 'new' });
-// Com nomes na linha de comando, captura só esses (ex.: node scripts/imagens.mjs marcelo-lusardo).
+// Com nomes na linha de comando, captura só esses (ex.: node scripts/imagens.mjs drlsys).
 const so = process.argv.slice(2);
 for (const [nome, url] of Object.entries(sites)) {
   if (so.length && !so.includes(nome)) continue;

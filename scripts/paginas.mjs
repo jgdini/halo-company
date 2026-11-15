@@ -18,10 +18,9 @@ export const PAGINAS = [
   { slug: 'marketing-para-industrias', menu: 'Indústrias', nome: 'Marketing para indústrias', resumo: 'Site, captação na fábrica e LinkedIn para o comprador que pesquisa antes de cotar.' },
   { slug: 'marketing-para-clinicas', menu: 'Clínicas', nome: 'Marketing para clínicas', resumo: 'Conteúdo, tráfego e treinamento da recepção: do anúncio ao paciente agendado.' },
   { slug: 'blog', menu: 'Blog', nome: 'Blog', resumo: 'Respostas diretas para o que o empresário pergunta sobre marketing, site, vídeo e tráfego.' },
-  { slug: 'cases', menu: 'Cases', nome: 'Cases', resumo: 'Hanaoka, Veículo Judicial, Marcelo Lusardo e DRLSYS: o que fizemos e o que mudou.' },
+  { slug: 'cases', menu: 'Cases', nome: 'Cases', resumo: 'Hanaoka, Veículo Judicial e DRLSYS: o que fizemos e o que mudou.' },
   { slug: 'cases/hanaoka', menu: 'Case Hanaoka', nome: 'Case Hanaoka', resumo: 'Indústria química desde 1985: estratégia, captação e site novo em dois idiomas.', rodape: false },
   { slug: 'cases/veiculo-judicial', menu: 'Case Veículo Judicial', nome: 'Case Veículo Judicial', resumo: 'Os leilões judiciais do país numa busca só, com o custo total estimado de cada veículo.', rodape: false },
-  { slug: 'cases/marcelo-lusardo', menu: 'Case Marcelo Lusardo', nome: 'Case Marcelo Lusardo', resumo: 'Site e landing page para quem vai estudar, trabalhar e viver na Austrália.', rodape: false },
   { slug: 'cases/drlsys', menu: 'Case DRLSYS', nome: 'Case DRLSYS', resumo: 'Infraestrutura de TI em Cotia: do briefing ao site no ar em menos de uma semana.', rodape: false }
 ];
 const MENU = ['criacao-de-sites', 'video-institucional', 'marketing-para-industrias', 'marketing-para-clinicas', 'cases', 'blog'];
@@ -257,7 +256,6 @@ const conteudo = [
       <div class="cartoes">
         <a class="cartao" href="/cases/hanaoka/"><small>Indústria química</small><h3>Hanaoka</h3><p>Site novo em português e inglês, com catálogo e blog. No PageSpeed do Google, versão computador: 90 em desempenho e 100 em acessibilidade, boas práticas e SEO.</p><span class="seta">Ver o case</span></a>
         <a class="cartao" href="/cases/veiculo-judicial/"><small>Plataforma de busca</small><h3>Veículo Judicial</h3><p>Reúne os veículos de leilão judicial publicados por leiloeiros oficiais de todo o país. Mais de 6 mil seguidores no @rubensleilao depois do lançamento.</p><span class="seta">Ver o case</span></a>
-        <a class="cartao" href="/cases/marcelo-lusardo/"><small>Site e landing page · Brasil e Austrália</small><h3>Marcelo Lusardo</h3><p>Site do ecossistema Austrália Sem Fronteiras e landing page própria, com valores em reais e em dólar australiano.</p><span class="seta">Ver o case</span></a>
         <a class="cartao" href="/cases/drlsys/"><small>Site institucional</small><h3>DRLSYS</h3><p>Empresa de infraestrutura de TI. Do briefing ao site no ar em menos de uma semana.</p><span class="seta">Ver o case</span></a>
       </div>
     </div>
@@ -618,62 +616,7 @@ const conteudo = [
     ['Por que pensar o Instagram junto com o site?', 'Porque o lançamento precisa de audiência. O site entrega o produto; o Instagram traz as pessoas e mostra quem está por trás.']
   ],
   chamada: ['Sua ideia precisa de mais do que um site?', 'No diagnóstico entendemos o negócio e dizemos se o caminho é site, landing page ou plataforma.'],
-  veja: ['cases/hanaoka', 'cases/marcelo-lusardo', 'criacao-de-sites']
-},
-/* ------------------------------------------------------------------ */
-{
-  slug: 'cases/marcelo-lusardo',
-  nome: 'Case Marcelo Lusardo',
-  sobre: 'o case',
-  titulo: 'Case Marcelo Lusardo: site e landing page Austrália Sem Fronteiras | Halo Company',
-  descricao: 'Site e landing page do ecossistema Austrália Sem Fronteiras, de Marcelo Lusardo, para brasileiros que querem estudar, trabalhar e viver na Austrália. Projeto internacional da Halo Company, com valores em reais e em dólar australiano.',
-  h1: 'Marcelo Lusardo: site e landing page para quem vai <em>para a Austrália</em>.',
-  apoio: 'Site do Austrália Sem Fronteiras e landing page do ecossistema de Marcelo Lusardo, que leva brasileiros da dúvida ao visto aprovado. Cliente do outro lado do mundo, atendido on-line.',
-  link2: '<a class="link-fio" href="https://liderdetravessias.com.br/" target="_blank" rel="noopener">Abrir o site ↗</a>',
-  schema: (url) => ({ '@type': 'Article', '@id': url + '#case', headline: 'Case Marcelo Lusardo: site e landing page Austrália Sem Fronteiras', about: { '@type': 'Person', name: 'Marcelo Lusardo', url: 'https://marcelolusardo.com.br/' }, author: empresa, publisher: empresa, inLanguage: 'pt-BR', mainEntityOfPage: url, dateModified: HOJE }),
-  corpo: `
-  <section class="secao" aria-labelledby="dois-titulo">
-    <div class="wrap">
-      <div class="cabeca">
-        <h2 id="dois-titulo" class="titulo">Dois endereços, dois trabalhos.</h2>
-        <p class="cabeca__apoio">O site apresenta a mentoria e a comunidade. A landing page apresenta o ecossistema inteiro, com uma ação só no fim.</p>
-      </div>
-      <div class="lado">
-        <figure><div class="tela-site tela-site--baixa"><span class="projeto__barra" aria-hidden="true"><i></i><i></i><i></i><b>liderdetravessias.com.br</b></span><img src="/assets/img/projeto-marcelo-lusardo.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Site Austrália Sem Fronteiras, de Marcelo Lusardo"></div><figcaption><b>Site.</b> Mentoria, comunidade e plano para estudar, trabalhar e viver na Austrália.</figcaption></figure>
-        <figure><div class="tela-site tela-site--baixa"><span class="projeto__barra" aria-hidden="true"><i></i><i></i><i></i><b>marcelolusardo.com.br</b></span><img src="/assets/img/projeto-marcelo-lusardo-landing.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Landing page do ecossistema Austrália Sem Fronteiras"></div><figcaption><b>Landing page.</b> Mentorias, imigração, carreira, networking e educação num único ecossistema.</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="secao claro" aria-labelledby="fez-titulo">
-    <div class="wrap">
-      <div class="cabeca">
-        <h2 id="fez-titulo" class="titulo">O que fizemos.</h2>
-      </div>
-      ${fios3([
-        ['garanca', 'Mensagem', 'Do sonho ao plano', 'O texto fala com quem ainda está no Brasil, cheio de dúvidas, e mostra um caminho em etapas até a vida na Austrália.'],
-        ['acafrao', 'Duas moedas', 'Reais e dólar australiano', 'Valores nas duas moedas e cotação ao vivo, para quem está no Brasil e para quem já está lá.'],
-        ['celeste', 'Site', 'Rápido e encontrável', 'Páginas leves, escritas para o Google e organizadas para as IAs citarem o ecossistema quando alguém pergunta como ir para a Austrália.']
-      ])}
-    </div>
-  </section>
-
-  <section class="secao" aria-labelledby="prova-titulo">
-    <div class="wrap duas">
-      <h2 id="prova-titulo" class="titulo-2">Quem está por trás.</h2>
-      <div class="prosa">
-        <p>Marcelo Lusardo trabalha com intercâmbio e migração para a Austrália. Segundo a Expert Education, são <strong>23 anos de mercado e mais de 200 mil vistos aprovados</strong>.</p>
-        <p>O projeto mostra que a distância não atrapalha: estratégia, texto, site e ajustes aconteceram on-line, com o cliente do outro lado do mundo.</p>
-      </div>
-    </div>
-  </section>`,
-  faq: [
-    ['Por que um site e uma landing page separados?', 'Porque fazem trabalhos diferentes. O site apresenta a mentoria para quem chega pelo Google ou por indicação. A landing page recebe quem vem de campanha e tem uma ação só.'],
-    ['Vocês atendem clientes fora do Brasil?', 'Sim. O projeto do Marcelo Lusardo foi feito on-line, com o cliente na Austrália.'],
-    ['Dá para ter preços em duas moedas?', 'Dá. No projeto do Marcelo, os valores aparecem em reais e em dólar australiano, com cotação ao vivo.']
-  ],
-  chamada: ['Seu público está longe?', 'Atendemos o Brasil todo e clientes fora do país. O diagnóstico é on-line.'],
-  veja: ['cases/veiculo-judicial', 'cases/drlsys', 'criacao-de-sites']
+  veja: ['cases/hanaoka', 'cases/drlsys', 'criacao-de-sites']
 },
 /* ------------------------------------------------------------------ */
 {
@@ -727,17 +670,16 @@ const conteudo = [
   nome: 'Cases',
   sobre: 'os cases',
   titulo: 'Cases da Halo Company: sites, vídeo e estratégia',
-  descricao: 'Cases da Halo Company: Hanaoka (indústria química), Veículo Judicial (plataforma de leilões), Marcelo Lusardo (Austrália Sem Fronteiras) e DRLSYS (TI em Cotia). O que fizemos e o que mudou em cada um.',
+  descricao: 'Cases da Halo Company: Hanaoka (indústria química), Veículo Judicial (plataforma de leilões) e DRLSYS (TI em Cotia). O que fizemos e o que mudou em cada um.',
   h1: 'O que já fizemos, e <em>o que mudou</em>.',
-  apoio: 'Uma indústria química de 40 anos, uma plataforma de leilões, um projeto entre Brasil e Austrália e uma empresa de TI de Cotia. Cada um com um problema diferente.',
-  schema: (url) => ({ '@type': 'CollectionPage', '@id': url + '#cases', name: 'Cases da Halo Company', url, publisher: empresa, hasPart: ['hanaoka', 'veiculo-judicial', 'marcelo-lusardo', 'drlsys'].map((c) => ({ '@type': 'Article', url: `${SITE}/cases/${c}/` })) }),
+  apoio: 'Uma indústria química de 40 anos, uma plataforma de leilões e uma empresa de TI de Cotia. Cada um com um problema diferente.',
+  schema: (url) => ({ '@type': 'CollectionPage', '@id': url + '#cases', name: 'Cases da Halo Company', url, publisher: empresa, hasPart: ['hanaoka', 'veiculo-judicial', 'drlsys'].map((c) => ({ '@type': 'Article', url: `${SITE}/cases/${c}/` })) }),
   corpo: `
   <section class="secao" aria-label="Lista de cases">
     <div class="wrap">
       <div class="casos">
         <a class="caso" href="/cases/hanaoka/"><div class="caso__img"><img src="/assets/img/hanaoka-novo-desktop-topo-720.webp" width="1440" height="900" loading="lazy" decoding="async" alt="Site novo da Hanaoka"></div><small>Indústria química · Estratégia, captação e site</small><h2>Hanaoka</h2><p>Fabricante de ácidos e sais de alta pureza desde 1985. Site novo em português e inglês, captação na fábrica e LinkedIn mensal.</p><span class="seta">Ver o case</span></a>
         <a class="caso" href="/cases/veiculo-judicial/"><div class="caso__img"><img src="/assets/img/projeto-veiculo-judicial.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Página inicial do Veículo Judicial"></div><small>Plataforma de busca · Site e lançamento</small><h2>Veículo Judicial</h2><p>Os leilões judiciais do país numa busca só. Mais de 6 mil seguidores no @rubensleilao depois do lançamento.</p><span class="seta">Ver o case</span></a>
-        <a class="caso" href="/cases/marcelo-lusardo/"><div class="caso__img"><img src="/assets/img/projeto-marcelo-lusardo-landing.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Landing page Austrália Sem Fronteiras"></div><small>Projeto internacional · Site e landing page</small><h2>Marcelo Lusardo</h2><p>Site e landing page para brasileiros que vão estudar, trabalhar e viver na Austrália.</p><span class="seta">Ver o case</span></a>
         <a class="caso" href="/cases/drlsys/"><div class="caso__img"><img src="/assets/img/projeto-drlsys.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Site da DRLSYS"></div><small>Infraestrutura de TI · Site institucional</small><h2>DRLSYS</h2><p>Do briefing ao site no ar em menos de uma semana.</p><span class="seta">Ver o case</span></a>
       </div>
     </div>
@@ -745,7 +687,7 @@ const conteudo = [
   faq: [
     ['Vocês têm cases de clínicas?', 'A Bia tem experiência com grandes clínicas odontológicas, em trabalhos anteriores à Halo. Os cases de clínica da Halo entram aqui assim que forem publicados com a aprovação dos clientes.'],
     ['Posso falar com um cliente?', 'Pode pedir no diagnóstico. Quando o cliente autoriza, colocamos vocês em contato.'],
-    ['Os números dos cases são de vocês ou do cliente?', 'As notas do PageSpeed foram medidas por nós na ferramenta do Google. Os números de mercado, como os do Marcelo Lusardo, são do próprio cliente e aparecem atribuídos a ele.']
+    ['Os números dos cases são de vocês ou do cliente?', 'As notas do PageSpeed foram medidas por nós na ferramenta do Google. Números de mercado informados pelo cliente aparecem atribuídos a ele.']
   ],
   chamada: ['Quer ser o próximo case?', 'Começa com um diagnóstico com os três sócios.'],
   veja: ['criacao-de-sites', 'video-institucional', 'marketing-para-industrias']
