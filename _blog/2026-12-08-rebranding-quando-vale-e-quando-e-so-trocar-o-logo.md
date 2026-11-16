@@ -1,8 +1,8 @@
 ---
 titulo: Rebranding: quando vale e quando é só trocar o logo
 descricao: Trocar o logo não é rebranding. Veja a diferença, os sinais de que a sua marca ficou para trás e por onde começar antes de mexer no desenho.
-data: 2026-12-08
-status: rascunho
+data: 2026-11-16
+status: aprovado
 autor: Amanda Takahashi
 tema: Branding
 resumo: Trocar o logo muda o desenho da marca. Rebranding muda o que a empresa diz, para quem fala e como aparece em todos os pontos de contato: Instagram, site, vídeo e atendimento. Vale fazer quando a empresa mudou e a imagem não acompanhou. E começa pelo posicionamento, não pelo símbolo.
