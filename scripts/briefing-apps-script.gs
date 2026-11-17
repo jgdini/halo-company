@@ -26,6 +26,7 @@ function doPost(e) {
     if (d.tipo === 'aplicacao') return aplicacao(d);
     if (d.tipo === 'revisao') return revisao(d);
     if (d.tipo === 'leadEvento') return leadEvento(d);
+    if (d.tipo === 'sorteioRegistro') return sorteioRegistro(d);
     var linhas = [];
     d.secoes.forEach(function (s) { s.respostas.forEach(function (r) { linhas.push(r); }); });
 
@@ -203,6 +204,47 @@ function leadEvento(d) {
   var limpa = function (v) { return String(v == null ? '' : v).replace(/^[=+\-@]/, "'$&").slice(0, 500); };
   var aba = planilhaDoEvento(d.evento).getSheetByName('Cadastros');
   aba.appendRow([new Date()].concat(CAMPOS_EVENTO.map(function (c) { return limpa(d[c[0]]); })));
+  // Número da sorte = posição do cadastro na planilha (0001, 0002...)
+  return saida({ ok: true, numero: ('000' + (aba.getLastRow() - 1)).slice(-4) });
+}
+
+/**
+ * Sorteio ao vivo (/asrerpsummit/sorteio/?chave=...): a página pede a lista e grava cada ganhador.
+ * Troque a chave abaixo antes do evento e use a mesma no endereço da página.
+ */
+var SORTEIO_CHAVE = 'troque-esta-chave';
+
+function doGet(e) {
+  var p = (e && e.parameter) || {};
+  var saida = function (o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); };
+  if (p.acao !== 'sorteio' || !EVENTOS[p.evento] || p.chave !== SORTEIO_CHAVE) return saida({ ok: false });
+  var id = PropertiesService.getScriptProperties().getProperty('evento_' + p.evento);
+  if (!id) return saida({ ok: true, participantes: [] });
+  var aba = SpreadsheetApp.openById(id).getSheetByName('Cadastros');
+  var dados = aba.getDataRange().getValues();
+  var cab = dados.shift();
+  var col = function (nome) { return cab.indexOf(nome); };
+  var cN = col('Nome'), cE = col('E-mail'), cW = col('WhatsApp'), cEmp = col('Empresa'), cIg = col('Tocou em seguir no Instagram'), cLi = col('Tocou em seguir no LinkedIn');
+  var vistos = {}, lista = [];
+  dados.forEach(function (l, i) {
+    if (cIg >= 0 && (l[cIg] !== 'Sim' || l[cLi] !== 'Sim')) return;
+    var chave = String(l[cE]).toLowerCase().trim() || String(l[cW]).replace(/\D/g, '');
+    var zap = String(l[cW]).replace(/\D/g, '');
+    if (vistos[chave] || (zap && vistos[zap])) return;   // repetido: vale o primeiro cadastro
+    vistos[chave] = vistos[zap] = true;
+    var partes = String(l[cN]).trim().split(/\s+/);
+    lista.push({ numero: ('000' + (i + 1)).slice(-4), nome: partes[0] + (partes.length > 1 ? ' ' + partes[partes.length - 1].charAt(0) + '.' : ''), empresa: String(l[cEmp]) });
+  });
+  return saida({ ok: true, participantes: lista });
+}
+
+function sorteioRegistro(d) {
+  var saida = function (o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); };
+  if (!EVENTOS[d.evento] || d.chave !== SORTEIO_CHAVE) return saida({ ok: false });
+  var planilha = planilhaDoEvento(d.evento);
+  var aba = planilha.getSheetByName('Sorteios') || planilha.insertSheet('Sorteios');
+  if (!aba.getLastRow()) aba.appendRow(['Sorteado em', 'Prêmio', 'Ordem', 'Número da sorte', 'Nome', 'Empresa', 'Participantes válidos']).setFrozenRows(1);
+  aba.appendRow([new Date(), String(d.premio).slice(0, 200), String(d.ordem), "'" + String(d.numero), String(d.nome), String(d.empresa), Number(d.total) || '']);
   return saida({ ok: true });
 }
 

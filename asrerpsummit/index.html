@@ -100,6 +100,8 @@ fieldset { border: 0; margin: 0; padding: 0; }
 .erro.on { display: block; }
 .ok { display: none; text-align: center; padding: 18px 6px 6px; }
 .ok.on { display: block; }
+.numero { margin: 0 0 14px !important; font-weight: 600; color: var(--tinta) !important; }
+.numero strong { display: inline-block; margin-left: 6px; padding: 4px 12px; border-radius: 8px; background: var(--n850); color: #fff; letter-spacing: .12em; }
 .ok b { display: block; font-size: 1.5rem; letter-spacing: -.02em; margin: 8px 0 6px; }
 .ok p { margin: 0 0 18px; color: var(--tinta-2); }
 .ok .acoes { justify-content: center; margin-top: 0; }
@@ -261,6 +263,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
         <div class="ok" id="ok" role="status" tabindex="-1">
           <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
           <b>Cadastro feito. Boa sorte!</b>
+          <p class="numero" id="numero" hidden>Seu número da sorte: <strong id="numero-v"></strong></p>
           <p>Fique de olho no Instagram e no LinkedIn da ASR para acompanhar o resultado.</p>
           <div class="acoes">
             <a class="btn btn--linha" href="https://www.instagram.com/asrconsultoficialtotvs/" target="_blank" rel="noopener">Instagram</a>
@@ -345,15 +348,17 @@ fieldset { border: 0; margin: 0; padding: 0; }
       segueInstagram: 'Sim', segueLinkedin: 'Sim', origem: location.href, site: val('f-site')
     };
     botao.disabled = true; botao.textContent = 'Enviando…';
-    fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
-      .then(function () {
-        document.getElementById('area-form').hidden = true;
-        var ok = document.getElementById('ok'); ok.classList.add('on'); ok.focus();
-      })
-      .catch(function () {
-        botao.disabled = false; botao.textContent = 'Quero concorrer';
-        mostraErro('Não conseguimos enviar agora. Confira a internet e tente de novo.');
-      });
+    var sucesso = function (numero) {
+      if (numero) { document.getElementById('numero-v').textContent = numero; document.getElementById('numero').hidden = false; }
+      document.getElementById('area-form').hidden = true;
+      var ok = document.getElementById('ok'); ok.classList.add('on'); ok.focus();
+    };
+    if (!navigator.onLine) { botao.disabled = false; botao.textContent = 'Quero concorrer'; return mostraErro('Sem internet. Confira a conexão e tente de novo.'); }
+    // Lê a resposta para mostrar o número da sorte. Se a leitura falhar, o cadastro já foi enviado: mostra o sucesso sem número.
+    fetch(ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { sucesso(d && d.numero); })
+      .catch(function () { sucesso(null); });
   });
 
   // Vídeo só toca quando aparece na tela

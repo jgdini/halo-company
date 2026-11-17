@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorteio ASR · ERP Summit</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#040B22">
+<link rel="preload" href="../assets/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Jakarta"; src: url("../assets/jakarta.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+:root { --n950: #040B22; --n900: #061430; --n850: #0A1C42; --n800: #102A5A; --ciano: #00DBFF; --ciano-claro: #8CEEFF; --roxo: #A44DFF; --violeta: #3333FF; --branco: #FFFFFF; --texto: #E9F1F8; --texto-2: #A3B3D6; --linha: rgba(140,238,255,.16); }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; color: var(--texto); font: 400 18px/1.5 "Jakarta", system-ui, sans-serif; overflow-x: hidden;
+  background: radial-gradient(900px 600px at 80% -10%, rgba(164,77,255,.30), transparent 70%), radial-gradient(800px 600px at -10% 110%, rgba(0,219,255,.18), transparent 70%), var(--n950); }
+:focus-visible { outline: 3px solid var(--ciano); outline-offset: 3px; }
+.tela { min-height: 100%; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; padding: 24px 16px; max-width: 1400px; margin: 0 auto; }
+
+.topo { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.topo img { width: 150px; height: auto; }
+.topo .ev { font-weight: 700; color: var(--ciano-claro); }
+.aviso { display: none; padding: 10px 14px; border-radius: 10px; background: rgba(242,193,78,.14); border: 1px solid rgba(242,193,78,.45); color: #F7D88E; font-weight: 600; font-size: .9rem; }
+.aviso.on { display: block; }
+
+.palco { display: grid; gap: 24px; align-items: stretch; }
+.premio { border-radius: 24px; background: var(--n900); border: 1px solid var(--linha); padding: 24px; display: grid; gap: 16px; align-content: center; text-align: center; }
+.premio .foto { background: #fff; border-radius: 18px; padding: 18px; display: grid; place-items: center; }
+.premio .foto img { width: min(320px, 100%); height: auto; }
+.premio h1 { margin: 0; font-size: clamp(1.6rem, 3.2vw, 2.6rem); line-height: 1.05; letter-spacing: -.035em; color: var(--branco); }
+.premio p { margin: 0; color: var(--texto-2); }
+
+.urna { border-radius: 24px; background: linear-gradient(180deg, var(--n850), var(--n900)); border: 1px solid var(--linha); padding: 28px 22px; display: grid; gap: 22px; align-content: center; position: relative; overflow: hidden; }
+.cont { display: flex; gap: 10px; flex-wrap: wrap; }
+.cont div { padding: 10px 14px; border-radius: 12px; background: rgba(4,11,34,.6); border: 1px solid var(--linha); }
+.cont b { color: var(--branco); font-size: 1.3rem; margin-right: 6px; }
+.cont span { color: var(--texto-2); font-size: .9rem; }
+
+.visor { border-radius: 20px; background: var(--n950); border: 2px solid rgba(0,219,255,.35); padding: 26px 20px; min-height: 220px; display: grid; align-content: center; justify-items: center; text-align: center; gap: 8px; }
+.visor .num { font: 800 clamp(1rem, 2vw, 1.3rem)/1 "Jakarta"; letter-spacing: .2em; color: var(--ciano); }
+.visor .nome { font-size: clamp(2.2rem, 6vw, 4.6rem); font-weight: 800; letter-spacing: -.045em; line-height: 1; color: var(--branco); }
+.visor .emp { font-size: clamp(1rem, 2vw, 1.4rem); color: var(--texto-2); }
+.visor.girando .nome { filter: blur(1.2px); }
+.visor.ganhou { border-color: var(--ciano); box-shadow: 0 0 0 6px rgba(0,219,255,.12); }
+.visor .selo { display: none; padding: 6px 14px; border-radius: 999px; background: var(--ciano); color: var(--n950); font-weight: 800; font-size: .95rem; }
+.visor.ganhou .selo { display: inline-block; }
+
+.botoes { display: flex; gap: 12px; flex-wrap: wrap; }
+button { font: inherit; cursor: pointer; }
+.btn { min-height: 60px; padding: 0 28px; border-radius: 14px; border: 0; font-weight: 800; font-size: 1.15rem; }
+.btn--sortear { background: var(--ciano); color: var(--n950); flex: 1 1 220px; }
+.btn--sortear:disabled { opacity: .5; cursor: not-allowed; }
+.btn--sec { background: transparent; color: var(--branco); border: 1.5px solid rgba(140,238,255,.4); font-size: 1rem; }
+
+.ganhadores { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.ganhadores li { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border-radius: 12px; background: rgba(4,11,34,.6); border: 1px solid var(--linha); }
+.ganhadores .o { font-weight: 800; color: var(--ciano); }
+.ganhadores b { color: var(--branco); }
+.ganhadores small { color: var(--texto-2); }
+
+.rodape { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: var(--texto-2); font-size: .85rem; }
+.halo-credit { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; }
+.halo-nome { font-size: 15px; font-weight: 800; letter-spacing: -.02em; color: #F5F7FA; }
+.halo-nome small { font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; opacity: .7; margin-left: 2px; }
+
+#confete { position: fixed; inset: 0; pointer-events: none; z-index: 5; }
+
+@media (min-width: 980px) {
+  .tela { padding: 32px 40px; }
+  .palco { grid-template-columns: .8fr 1.2fr; }
+  .urna { padding: 40px; }
+}
+</style>
+</head>
+<body>
+<div class="tela">
+  <header class="topo">
+    <img src="../assets/logo.webp" width="480" height="138" alt="ASR Consult">
+    <span class="ev">Sorteio ASR · ERP Summit 2027</span>
+  </header>
+
+  <main class="palco">
+    <section class="premio" aria-labelledby="p-nome">
+      <div class="foto"><img src="../assets/premio.webp" width="424" height="369" alt="Apple Watch branco"></div>
+      <h1 id="p-nome">Apple Watch SE</h1>
+      <p>Prêmio da ASR para quem se cadastrou no estande e segue a ASR no Instagram e no LinkedIn.</p>
+    </section>
+
+    <section class="urna" aria-label="Sorteio">
+      <p class="aviso" id="aviso"></p>
+      <div class="cont">
+        <div><b id="n-total">0</b><span>participantes válidos</span></div>
+        <div><b id="n-rest">0</b><span>ainda concorrendo</span></div>
+      </div>
+      <div class="visor" id="visor" aria-live="polite">
+        <span class="selo">Ganhador</span>
+        <span class="num" id="v-num">Nº ----</span>
+        <span class="nome" id="v-nome">Pronto para sortear</span>
+        <span class="emp" id="v-emp">Aperte o botão ou a barra de espaço</span>
+      </div>
+      <div class="botoes">
+        <button class="btn btn--sortear" id="sortear" type="button">Sortear</button>
+        <button class="btn btn--sec" id="limpar" type="button" hidden>Zerar simulação</button>
+      </div>
+      <ol class="ganhadores" id="ganhadores" aria-label="Sorteados"></ol>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>Cada pessoa concorre uma vez. Cadastros repetidos e sem as duas redes ficam de fora.</span>
+    <span>Desenvolvido por <a class="halo-credit" href="https://haloconsulting.com.br/" target="_blank" rel="noopener" aria-label="Halo Company"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F8F3EB" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></span>
+  </footer>
+</div>
+<canvas id="confete" aria-hidden="true"></canvas>
+
+<script>
+(function () {
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxoCRJXmJVA2KGLaE7OzkgMrnydWBkSmXOimTmV5oo7kqEpx9ASDLq8Ms9eD9aPBYo/exec';
+  var EVENTO = 'asr-erpsummit-2027';
+  var q = new URLSearchParams(location.search);
+  var CHAVE = q.get('chave');
+  var PREMIO = q.get('premio') || 'Apple Watch SE';
+  var DEMO = !CHAVE;
+  var calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.getElementById('p-nome').textContent = PREMIO;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var aviso = $('aviso'), visor = $('visor'), btn = $('sortear');
+  var todos = [], restantes = [], ordem = 0;
+
+  // Participantes fictícios para simular (nenhum é pessoa real)
+  var FICT = ['Ana Souza|Metalúrgica Alfa', 'Bruno Lima|Grupo Horizonte', 'Carla Mendes|Distribuidora Sul', 'Diego Rocha|Plásticos Nova Era', 'Elisa Prado|Têxtil Aurora', 'Fábio Nunes|Alimentos Serra', 'Gabriela Reis|Logística Ponto', 'Henrique Alves|Farma Vida', 'Isabela Costa|Construtora Base', 'João Pedro Silva|Auto Peças Rota', 'Karina Duarte|Química Pura', 'Lucas Martins|Agro Campo Verde', 'Mariana Teixeira|Embalagens Max', 'Nicolas Freitas|Móveis Lar', 'Olívia Barros|Cosméticos Flor', 'Paulo Ribeiro|Transportes Via', 'Renata Gomes|Indústria Polo', 'Sérgio Castro|Eletro Forte', 'Tatiana Moura|Varejo Central', 'Vinícius Araújo|Tech Sistemas', 'Amanda Pires|Laticínios Bom Dia', 'Caio Fernandes|Vidros Claros', 'Daniela Cardoso|Papel & Cia', 'Eduardo Melo|Bebidas Fonte', 'Fernanda Dias|Têxtil Aurora', 'Gustavo Lopes|Metalúrgica Alfa', 'Helena Vieira|Hotel Vista Alegre', 'Igor Monteiro|Atacado Brasil', 'Juliana Azevedo|Química Pura', 'Leonardo Batista|Engenharia Prisma'];
+  function demo() {
+    return FICT.map(function (s, i) {
+      var p = s.split('|'), n = p[0].split(' ');
+      return { numero: ('000' + (i + 1)).slice(-4), nome: n[0] + ' ' + n[n.length - 1].charAt(0) + '.', empresa: p[1] };
+    });
+  }
+
+  function atualiza() { $('n-total').textContent = todos.length; $('n-rest').textContent = restantes.length; btn.disabled = !restantes.length; }
+  function mostra(p) { $('v-num').textContent = 'Nº ' + p.numero; $('v-nome').textContent = p.nome; $('v-emp').textContent = p.empresa; }
+  function aleatorio(n) { var a = new Uint32Array(1), lim = Math.floor(4294967296 / n) * n; do { crypto.getRandomValues(a); } while (a[0] >= lim); return a[0] % n; }
+
+  function carrega() {
+    if (DEMO) {
+      aviso.textContent = 'Modo simulação: participantes fictícios. Nada é gravado.';
+      aviso.classList.add('on'); $('limpar').hidden = false;
+      todos = demo(); restantes = todos.slice(); atualiza(); return;
+    }
+    $('v-nome').textContent = 'Carregando…';
+    fetch(ENDPOINT + '?acao=sorteio&evento=' + EVENTO + '&chave=' + encodeURIComponent(CHAVE))
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d.ok) throw new Error('chave');
+        todos = d.participantes; restantes = todos.slice(); atualiza();
+        $('v-nome').textContent = todos.length ? 'Pronto para sortear' : 'Ainda sem cadastros';
+      })
+      .catch(function () { aviso.textContent = 'Não consegui ler a planilha. Confira a chave no endereço e a internet.'; aviso.classList.add('on'); $('v-nome').textContent = 'Sem conexão'; });
+  }
+
+  function registra(p) {
+    if (DEMO) return;
+    fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ tipo: 'sorteioRegistro', evento: EVENTO, chave: CHAVE, premio: PREMIO, ordem: ordem, numero: p.numero, nome: p.nome, empresa: p.empresa, total: todos.length }) });
+  }
+
+  function sorteia() {
+    if (!restantes.length || btn.disabled) return;
+    btn.disabled = true; visor.classList.remove('ganhou'); visor.classList.add('girando');
+    var idx = aleatorio(restantes.length), ganhador = restantes[idx];
+    var fim = function () {
+      restantes.splice(idx, 1); ordem++;
+      visor.classList.remove('girando'); visor.classList.add('ganhou'); mostra(ganhador);
+      var li = document.createElement('li');
+      li.innerHTML = '<span class="o">' + ordem + 'º</span><span><b></b> <small></small></span><small>Nº ' + ganhador.numero + '</small>';
+      li.querySelector('b').textContent = ganhador.nome; li.querySelector('span small').textContent = ganhador.empresa;
+      $('ganhadores').appendChild(li);
+      btn.textContent = 'Sortear suplente'; atualiza(); registra(ganhador); confete();
+    };
+    if (calmo || restantes.length < 2) return fim();
+    // Passa os nomes cada vez mais devagar e para no sorteado
+    var passos = 38, k = 0;
+    (function gira() {
+      k++;
+      mostra(k < passos ? restantes[aleatorio(restantes.length)] : ganhador);
+      if (k >= passos) return fim();
+      setTimeout(gira, 40 + Math.pow(k / passos, 3) * 420);
+    })();
+  }
+
+  // Confete simples nas cores da ASR
+  function confete() {
+    if (calmo) return;
+    var c = $('confete'), ctx = c.getContext('2d'), W = c.width = innerWidth, H = c.height = innerHeight;
+    var cores = ['#00DBFF', '#A44DFF', '#3333FF', '#FFFFFF', '#8CEEFF'], ps = [];
+    for (var i = 0; i < 160; i++) ps.push({ x: W / 2, y: H * .45, vx: (Math.random() - .5) * 18, vy: -Math.random() * 16 - 4, r: Math.random() * 6 + 3, c: cores[i % cores.length], a: Math.random() * 6 });
+    var t = 0;
+    (function anima() {
+      ctx.clearRect(0, 0, W, H); t++;
+      ps.forEach(function (p) { p.vy += .45; p.x += p.vx; p.y += p.vy; p.a += .2; ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.fillRect(-p.r, -p.r / 2, p.r * 2, p.r); ctx.restore(); });
+      if (t < 150) requestAnimationFrame(anima); else ctx.clearRect(0, 0, W, H);
+    })();
+  }
+
+  btn.addEventListener('click', sorteia);
+  document.addEventListener('keydown', function (e) { if ((e.code === 'Space' || e.code === 'Enter') && document.activeElement === document.body) { e.preventDefault(); sorteia(); } });
+  $('limpar').addEventListener('click', function () {
+    restantes = todos.slice(); ordem = 0; $('ganhadores').innerHTML = ''; visor.classList.remove('ganhou');
+    $('v-num').textContent = 'Nº ----'; $('v-nome').textContent = 'Pronto para sortear'; $('v-emp').textContent = 'Aperte o botão ou a barra de espaço';
+    btn.textContent = 'Sortear'; atualiza();
+  });
+  carrega();
+})();
+</script>
+</body>
+</html>
