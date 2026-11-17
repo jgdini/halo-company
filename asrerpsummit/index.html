@@ -182,7 +182,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
   <section class="secao" aria-labelledby="t-asr">
     <div class="wrap grade">
       <div>
-        <span class="olho mono">Quem é a ASR</span>
         <h2 id="t-asr">Do primeiro módulo ao suporte do dia a dia.</h2>
         <p class="apoio">A ASR cuida do Protheus da sua empresa de ponta a ponta, com consultores certificados e suporte em contrato.</p>
         <ul class="servicos">
@@ -205,21 +204,18 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
   <section class="secao cadastro" id="cadastro" aria-labelledby="t-cad">
     <div class="wrap">
-      <span class="olho mono">Prêmios ASR</span>
       <h2 id="t-cad">Cadastre-se e concorra.</h2>
       <p class="apoio">Dois passos: siga a ASR no Instagram e no LinkedIn e preencha seus dados. Os prêmios e as regras estão no estande da ASR.</p>
 
       <div class="cartao">
         <div id="area-form">
-          <p class="passo">Passo 1</p>
-          <h3>Siga a ASR nas duas redes *</h3>
+          <h3>1. Siga a ASR nas duas redes *</h3>
           <p>Toque em cada botão, siga a ASR e volte para esta página.</p>
           <div class="seguir" id="seguir">
             <a id="s-ig" href="https://www.instagram.com/asrconsultoficialtotvs/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><b>Instagram</b><small>@asrconsultoficialtotvs</small></span><span class="acao">Seguir</span></a>
             <a id="s-li" href="https://www.linkedin.com/company/asrconsulthomologadatotvs/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></span><span><b>LinkedIn</b><small>ASR Consult</small></span><span class="acao">Seguir</span></a>
           </div>
-          <p class="passo">Passo 2</p>
-          <h3>Seus dados</h3>
+          <h3>2. Seus dados</h3>
           <p>Campos com * são obrigatórios.</p>
           <form id="form" novalidate>
             <div class="duas">
@@ -277,7 +273,6 @@ fieldset { border: 0; margin: 0; padding: 0; }
 
   <section class="secao" id="siga" aria-labelledby="t-siga">
     <div class="wrap">
-      <span class="olho mono">Siga a ASR</span>
       <h2 id="t-siga">Acompanhe a ASR depois do evento.</h2>
       <p class="apoio">Novidades do Protheus, da reforma tributária e dos bastidores da ASR.</p>
       <div class="redes">
@@ -335,7 +330,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
     var faltam = ['ig', 'li'].filter(function (k) { return !segue[k]; });
     if (faltam.length) {
       faltam.forEach(function (k) { document.getElementById('s-' + k).classList.add('falta'); });
-      return mostraErro('Para concorrer, siga a ASR no ' + (faltam.length === 2 ? 'Instagram e no LinkedIn' : faltam[0] === 'ig' ? 'Instagram' : 'LinkedIn') + ' (passo 1).', 's-' + faltam[0]);
+      return mostraErro('Para concorrer, siga a ASR no ' + (faltam.length === 2 ? 'Instagram e no LinkedIn' : faltam[0] === 'ig' ? 'Instagram' : 'LinkedIn') + ' (passo 1 acima).', 's-' + faltam[0]);
     }
     if (!val('f-nome')) return mostraErro('Preencha o seu nome.', 'f-nome');
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('f-email'))) return mostraErro('Confira o e-mail.', 'f-email');
