@@ -25,6 +25,7 @@ function doPost(e) {
     var d = JSON.parse(e.postData.contents);
     if (d.tipo === 'aplicacao') return aplicacao(d);
     if (d.tipo === 'revisao') return revisao(d);
+    if (d.tipo === 'leadEvento') return leadEvento(d);
     var linhas = [];
     d.secoes.forEach(function (s) { s.respostas.forEach(function (r) { linhas.push(r); }); });
 
@@ -162,4 +163,58 @@ function aplicacao(d) {
   if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(limpa(d.email))) opcoes.replyTo = limpa(d.email);
   MailApp.sendEmail(AVISAR_APLICACAO, 'Nova aplicação: ' + (limpa(d.empresa) || limpa(d.nome) || 'site'), 'Nova aplicação pelo site da Halo Company. Abra em HTML para ver os dados.', opcoes);
   return ContentService.createTextOutput(JSON.stringify({ ok: true })).setMimeType(ContentService.MimeType.JSON);
+}
+
+/**
+ * Cadastros de landing pages de evento feitas para clientes (ex.: /asrerpsummit/).
+ * Cada evento grava numa PLANILHA SEPARADA, criada sozinha no primeiro cadastro, para compartilhar
+ * com o cliente (leitor) sem expor as outras abas da Halo. O link da planilha fica no Registro de execuções
+ * e em Arquivo > Propriedades do projeto; o João também pode rodar mostrarPlanilhasDeEvento().
+ * Só eventos listados aqui são aceitos.
+ */
+var EVENTOS = {
+  'asr-erpsummit-2027': 'Leads ASR Consult · ERP Summit 2027'
+};
+var CAMPOS_EVENTO = [
+  ['nome', 'Nome'], ['email', 'E-mail'], ['whatsapp', 'WhatsApp'], ['empresa', 'Empresa'], ['cargo', 'Cargo'],
+  ['erp', 'ERP usado hoje'], ['interesses', 'Interesse'], ['consentimento', 'Aceitou o regulamento e a política de privacidade'],
+  ['contato', 'Aceita contato da ASR'], ['origem', 'Origem']
+];
+
+function planilhaDoEvento(evento) {
+  var props = PropertiesService.getScriptProperties();
+  var id = props.getProperty('evento_' + evento);
+  if (id) return SpreadsheetApp.openById(id);
+  var nova = SpreadsheetApp.create(EVENTOS[evento]);
+  var aba = nova.getSheets()[0].setName('Cadastros');
+  aba.appendRow(['Recebido em'].concat(CAMPOS_EVENTO.map(function (c) { return c[1]; })));
+  aba.setFrozenRows(1);
+  aba.getRange(1, 1, 1, CAMPOS_EVENTO.length + 1).setFontWeight('bold');
+  props.setProperty('evento_' + evento, nova.getId());
+  MailApp.sendEmail(AVISAR_APLICACAO, 'Planilha criada: ' + EVENTOS[evento],
+    'Primeiro cadastro recebido. A planilha do evento é: ' + nova.getUrl() + '\n\nCompartilhe com o cliente como Leitor para ele acompanhar em tempo real.');
+  return nova;
+}
+
+function leadEvento(d) {
+  var saida = function (o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); };
+  if (!EVENTOS[d.evento]) return saida({ ok: false, erro: 'evento' });
+  if (d.site) return saida({ ok: true });   // campo-isca preenchido: robô
+  var limpa = function (v) { return String(v == null ? '' : v).replace(/^[=+\-@]/, "'$&").slice(0, 500); };
+  var aba = planilhaDoEvento(d.evento).getSheetByName('Cadastros');
+  aba.appendRow([new Date()].concat(CAMPOS_EVENTO.map(function (c) { return limpa(d[c[0]]); })));
+  return saida({ ok: true });
+}
+
+// Rode uma vez pelo editor (Executar) para criar a planilha da ASR antes do evento e já compartilhar.
+function criarPlanilhaASR() {
+  Logger.log(planilhaDoEvento('asr-erpsummit-2027').getUrl());
+}
+
+function mostrarPlanilhasDeEvento() {
+  var props = PropertiesService.getScriptProperties();
+  Object.keys(EVENTOS).forEach(function (ev) {
+    var id = props.getProperty('evento_' + ev);
+    Logger.log(ev + ': ' + (id ? SpreadsheetApp.openById(id).getUrl() : 'ainda sem cadastros'));
+  });
 }
