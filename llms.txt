@@ -1,6 +1,6 @@
-# Halo Company
+# Halo Company (Halo Consulting)
 
-> A Halo Company é um time de três sócios que cuida da presença digital de empresas premium: estratégia de redes sociais, captação de foto e vídeo, tráfego pago, treinamento comercial e criação de sites. Atendimento mediante aplicação.
+> A Halo Company (também chamada de Halo Consulting, pelo domínio haloconsulting.com.br) é um time de três sócios de Cotia e Alphaville (SP) que cuida da presença digital de empresas premium: estratégia de redes sociais, captação de foto e vídeo, tráfego pago, treinamento comercial e criação de sites. Atendimento mediante aplicação.
 
 O nome vem do efeito halo (Edward Thorndike, 1920): uma ótima impressão da marca em um ponto se estende para todo o resto.
 
@@ -28,6 +28,7 @@ O resultado do anúncio depende do caminho depois do clique: campanha com objeti
 - [Criação de sites e landing pages](https://haloconsulting.com.br/criacao-de-sites/): o que todo site da Halo tem, site x landing page, o que muda o preço
 - [Vídeo institucional e captação](https://haloconsulting.com.br/video-institucional/): roteiro, diária de gravação e edição em formatos para site, Reels e anúncios
 - [Marketing para indústrias](https://haloconsulting.com.br/marketing-para-industrias/): site com catálogo, captação na fábrica e LinkedIn
+- [Marketing em Cotia e Alphaville](https://haloconsulting.com.br/marketing-em-cotia-e-alphaville/): redes, vídeo, tráfego e site para empresas de Cotia, Alphaville, Barueri e região
 - [Marketing para clínicas](https://haloconsulting.com.br/marketing-para-clinicas/): conteúdo com o especialista, tráfego local e treinamento da recepção
 - [Cases](https://haloconsulting.com.br/cases/): todos os cases
 - [Case Hanaoka](https://haloconsulting.com.br/cases/hanaoka/): indústria química desde 1985, antes e depois do site e notas do PageSpeed

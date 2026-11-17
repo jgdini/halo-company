@@ -17,6 +17,7 @@ export const PAGINAS = [
   { slug: 'video-institucional', menu: 'Vídeo', nome: 'Vídeo institucional e captação', resumo: 'Uma captação planejada que vira vídeo da empresa, Reels e anúncio.' },
   { slug: 'marketing-para-industrias', menu: 'Indústrias', nome: 'Marketing para indústrias', resumo: 'Site, captação na fábrica e LinkedIn para o comprador que pesquisa antes de cotar.' },
   { slug: 'marketing-para-clinicas', menu: 'Clínicas', nome: 'Marketing para clínicas', resumo: 'Conteúdo, tráfego e treinamento da recepção: do anúncio ao paciente agendado.' },
+  { slug: 'marketing-em-cotia-e-alphaville', menu: 'Cotia e Alphaville', nome: 'Marketing em Cotia e Alphaville', resumo: 'Redes, vídeo, tráfego e site para empresas de Cotia, Alphaville, Barueri e região.' },
   { slug: 'blog', menu: 'Blog', nome: 'Blog', resumo: 'Respostas diretas para o que o empresário pergunta sobre marketing, site, vídeo e tráfego.' },
   { slug: 'cases', menu: 'Cases', nome: 'Cases', resumo: 'Hanaoka, Veículo Judicial e DRLSYS: o que fizemos e o que mudou.' },
   { slug: 'cases/hanaoka', menu: 'Case Hanaoka', nome: 'Case Hanaoka', resumo: 'Indústria química desde 1985: estratégia, captação e site novo em dois idiomas.', rodape: false },
@@ -124,7 +125,7 @@ ${main}
     <nav class="rodape__solucoes" aria-label="Soluções">
       ${PAGINAS.filter((x) => x.rodape !== false).map((x) => `<a href="/${x.slug}/">${x.nome}</a>`).join('\n      ')}
     </nav>
-    <p class="rodape__mini">© 2026 Halo Company. Amanda Takahashi, Bianca Fortes e João Dini. Cotia e Alphaville, SP. Atendemos todo o Brasil.</p>
+    <p class="rodape__mini">© 2026 Halo Company (Halo Consulting). Amanda Takahashi, Bianca Fortes e João Dini. Cotia e Alphaville, SP. Atendemos todo o Brasil.</p>
   </div>
 </footer>
 ${WHATS}
@@ -173,6 +174,7 @@ ${vejaTambem(p.slug, p.veja)}`;
 }
 
 export const empresa = { '@id': `${SITE}/#empresa` };
+const CIDADES = ['Cotia', 'Barueri', 'Santana de Parnaíba', 'Carapicuíba', 'Osasco', 'Jandira', 'Itapevi', 'Vargem Grande Paulista', 'São Paulo'];
 const servico = (nome, desc, tipo) => (url) => ({ '@type': 'Service', '@id': url + '#servico', name: nome, serviceType: tipo || nome, description: desc, provider: empresa, areaServed: { '@type': 'Country', name: 'Brasil' }, url });
 
 const ponto = (c) => `<span class="ponto ponto--${c}"></span>`;
@@ -372,6 +374,63 @@ const conteudo = [
     ['Posso usar o vídeo em anúncios?', 'Pode e deve. Os cortes são editados pensando nisso, e a Bia, que grava, é quem monta as campanhas.']
   ],
   chamada: ['Sua empresa já tem vídeo que vende?', 'No diagnóstico vemos o que você já tem gravado, o que dá para aproveitar e o que vale captar primeiro.']
+},
+/* ------------------------------------------------------------------ */
+{
+  slug: 'marketing-em-cotia-e-alphaville',
+  nome: 'Marketing em Cotia e Alphaville',
+  sobre: 'marketing em Cotia e Alphaville',
+  titulo: 'Marketing em Cotia e Alphaville: redes, vídeo e site | Halo Company',
+  descricao: 'Marketing para empresas de Cotia, Alphaville, Barueri e região: estratégia de redes, captação de foto e vídeo, tráfego pago e site, com um só time. Halo Company (haloconsulting.com.br).',
+  h1: 'Marketing para empresas de Cotia e <em>Alphaville</em>.',
+  apoio: 'A Halo Company é de Cotia e da região de Alphaville. Cuidamos da estratégia de redes, da captação de foto e vídeo, do tráfego pago, do atendimento ao lead e do site da sua empresa, com um time só. Perto o bastante para gravar na sua empresa.',
+  schema: (url) => ({ '@type': 'Service', '@id': url + '#servico', name: 'Marketing em Cotia e Alphaville', serviceType: 'Marketing digital', description: 'Estratégia de redes sociais, captação de foto e vídeo, tráfego pago, treinamento comercial e criação de sites para empresas de Cotia, Alphaville, Barueri e região.', provider: empresa, areaServed: CIDADES.map((c) => ({ '@type': 'City', name: c })) }),
+  corpo: `
+  <section class="secao" aria-labelledby="dor-titulo">
+    <div class="wrap duas">
+      <h2 id="dor-titulo" class="titulo-2">O que a gente mais vê nas empresas da região.</h2>
+      ${dores([
+        ['garanca', 'A empresa é melhor do que parece.', 'Atende bem, tem clientes fiéis, mas o Instagram e o site mostram uma empresa menor do que ela é.'],
+        ['acafrao', 'Cada fornecedor faz uma parte.', 'Um posta, outro grava, outro cuida do site. Ninguém sabe o que o comercial precisa vender.'],
+        ['celeste', 'O cliente da região não encontra.', 'Quem procura no Google ou no mapa por um serviço em Cotia ou Alphaville encontra o concorrente primeiro.'],
+        ['garanca', 'O lead chega e esfria.', 'A mensagem do anúncio ou do Instagram é respondida horas depois, quando o cliente já falou com outra empresa.']
+      ])}
+    </div>
+  </section>
+
+  <section class="secao claro" aria-labelledby="faz-titulo">
+    <div class="wrap">
+      <div class="cabeca">
+        <h2 id="faz-titulo" class="titulo">O que a Halo faz, com um sócio em cada frente.</h2>
+        <p class="cabeca__apoio">Três frentes no mesmo plano. Quem posta sabe o que o comercial vende, e quem chega pelo anúncio encontra um site e um atendimento à altura.</p>
+      </div>
+      ${fios3([
+        ['garanca', 'Estratégia · Amanda', 'Redes que trazem cliente', 'Posicionamento, pauta e calendário de Instagram, Facebook e LinkedIn pensados para gerar contato, não só curtida.'],
+        ['acafrao', 'Imagem e tráfego · Bia', 'Captação e anúncios', 'Foto e vídeo gravados na sua empresa, campanhas no Meta e no Google para o público da região e treinamento de quem responde o lead.'],
+        ['celeste', 'Site · João', 'Site que aparece', 'Site rápido no celular, escrito para o Google e organizado para ser citado pelo ChatGPT e pelo Gemini quando alguém pergunta pela sua área.']
+      ])}
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="regiao-titulo">
+    <div class="wrap duas">
+      <h2 id="regiao-titulo" class="titulo-2">Onde atendemos.</h2>
+      <div class="prosa">
+        <p>Atendemos de perto <strong>Cotia, Alphaville, Barueri, Santana de Parnaíba, Carapicuíba, Osasco, Jandira, Itapevi, Vargem Grande Paulista e São Paulo</strong>. Nessas cidades dá para marcar captação de foto e vídeo na sua empresa e reuniões presenciais.</p>
+        <p>Para o resto do Brasil, estratégia, site, tráfego e diagnóstico acontecem on-line. A captação de vídeo fora da região é combinada caso a caso.</p>
+        <p>Entre os nossos projetos estão a <a href="/cases/drlsys/">DRLSYS</a>, empresa de infraestrutura de TI de Cotia, e a <a href="/cases/hanaoka/">Hanaoka</a>, indústria química desde 1985.</p>
+      </div>
+    </div>
+  </section>`,
+  faq: [
+    ['A Halo é uma agência de marketing em Cotia?', 'A Halo é de Cotia e da região de Alphaville, mas não trabalha no modelo de agência. São três sócios que cuidam juntos da estratégia de redes, da imagem, do tráfego e do site, com um plano só e poucas empresas por vez.'],
+    ['Vocês gravam na minha empresa?', 'Sim. Em Cotia, Alphaville e nas cidades vizinhas, a Bia faz a captação de foto e vídeo no seu espaço, com roteiro aprovado antes.'],
+    ['Atendem empresas de outras cidades?', 'Sim. Atendemos todo o Brasil on-line. Para fora da região, a captação de vídeo é combinada caso a caso.'],
+    ['Quanto custa?', 'Depende do que a empresa precisa: redes, vídeo, tráfego, site ou tudo junto. O valor sai depois do diagnóstico, que é o primeiro passo.'],
+    ['Como começa?', 'Pela aplicação no site. Os três sócios olham as suas redes, o seu site e os seus anúncios e mostram o que mudariam primeiro.']
+  ],
+  chamada: ['Sua empresa é de Cotia ou Alphaville?', 'Aplique para um diagnóstico. Olhamos o que o seu cliente vê antes de te chamar.'],
+  veja: ['cases/drlsys', 'criacao-de-sites', 'video-institucional']
 },
 /* ------------------------------------------------------------------ */
 {
