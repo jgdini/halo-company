@@ -177,7 +177,7 @@ var EVENTOS = {
 };
 var CAMPOS_EVENTO = [
   ['nome', 'Nome'], ['email', 'E-mail'], ['whatsapp', 'WhatsApp'], ['empresa', 'Empresa'], ['cargo', 'Cargo'],
-  ['erp', 'ERP usado hoje'], ['interesses', 'Interesse'], ['consentimento', 'Aceitou o regulamento e a política de privacidade'],
+  ['erp', 'ERP usado hoje'], ['interesses', 'Interesse'], ['segueInstagram', 'Tocou em seguir no Instagram'], ['segueLinkedin', 'Tocou em seguir no LinkedIn'], ['consentimento', 'Aceitou o regulamento e a política de privacidade'],
   ['contato', 'Aceita contato da ASR'], ['origem', 'Origem']
 ];
 

@@ -107,6 +107,20 @@ fieldset { border: 0; margin: 0; padding: 0; }
 .ok svg.check { width: 54px; height: 54px; color: #1a9e78; margin: 0 auto; }
 .regras { margin: 14px 0 0; font-size: .8rem; color: var(--tinta-2); }
 
+/* Passo 1: seguir */
+.passo { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 800; color: var(--violeta); margin: 0 0 6px; }
+.seguir { display: grid; gap: 10px; margin: 12px 0 26px; }
+.seguir a { display: grid; grid-template-columns: 38px 1fr auto; gap: 10px; align-items: center; padding: 12px; border-radius: 14px; border: 1.5px solid #c9d5e1; background: #fff; text-decoration: none; color: var(--tinta); }
+.seguir .ico { width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center; background: linear-gradient(135deg, var(--violeta), var(--roxo)); color: #fff; }
+.seguir .ico svg { width: 22px; height: 22px; }
+.seguir b { display: block; font-size: .98rem; }
+.seguir a > span:nth-child(2) { min-width: 0; }
+.seguir small { color: var(--tinta-2); font-size: .76rem; overflow-wrap: anywhere; }
+.seguir .acao { padding: 9px 12px; border-radius: 999px; background: var(--n850); color: #fff; font-weight: 700; font-size: .86rem; white-space: nowrap; }
+.seguir a.feito { border-color: #1a9e78; background: #effaf6; }
+.seguir a.feito .acao { background: #1a9e78; }
+.seguir a.falta { border-color: #d6455f; }
+
 /* Siga */
 .redes { display: grid; gap: 12px; margin-top: 22px; }
 .rede { display: grid; grid-template-columns: 46px 1fr auto; gap: 14px; align-items: center; padding: 16px; border-radius: 14px; background: var(--n900); border: 1px solid var(--linha); text-decoration: none; }
@@ -120,9 +134,13 @@ fieldset { border: 0; margin: 0; padding: 0; }
 /* Rodapé Halo */
 .rodape { padding: 34px 0 44px; border-top: 1px solid var(--linha); color: var(--texto-2); font-size: .88rem; }
 .rodape .wrap { display: grid; gap: 14px; }
-.halo { display: grid; gap: 6px; padding: 18px; border-radius: 14px; background: rgba(10,28,66,.55); border: 1px solid var(--linha); }
-.halo b { color: var(--branco); }
-.halo a { color: var(--ciano-claro); font-weight: 700; }
+.halo { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.halo-credit { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: inherit; font-weight: 600; }
+.halo-sym { transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+.halo-credit:hover .halo-sym, .halo-credit:focus-visible .halo-sym { transform: rotate(120deg); }
+.halo-nome { font-size: 15px; font-weight: 800; letter-spacing: -.02em; color: #F5F7FA; }
+.halo-nome small { font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; opacity: .7; margin-left: 2px; }
+@media (prefers-reduced-motion: reduce) { .halo-sym { transition: none; } }
 
 @media (min-width: 760px) {
   .hero { padding: 84px 0 72px; }
@@ -189,10 +207,18 @@ fieldset { border: 0; margin: 0; padding: 0; }
     <div class="wrap">
       <span class="olho mono">Prêmios ASR</span>
       <h2 id="t-cad">Cadastre-se e concorra.</h2>
-      <p class="apoio">Leva menos de um minuto. Os prêmios e as regras estão no estande da ASR.</p>
+      <p class="apoio">Dois passos: siga a ASR no Instagram e no LinkedIn e preencha seus dados. Os prêmios e as regras estão no estande da ASR.</p>
 
       <div class="cartao">
         <div id="area-form">
+          <p class="passo">Passo 1</p>
+          <h3>Siga a ASR nas duas redes *</h3>
+          <p>Toque em cada botão, siga a ASR e volte para esta página.</p>
+          <div class="seguir" id="seguir">
+            <a id="s-ig" href="https://www.instagram.com/asrconsultoficialtotvs/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><b>Instagram</b><small>@asrconsultoficialtotvs</small></span><span class="acao">Seguir</span></a>
+            <a id="s-li" href="https://www.linkedin.com/company/asrconsulthomologadatotvs/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM10 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></span><span><b>LinkedIn</b><small>ASR Consult</small></span><span class="acao">Seguir</span></a>
+          </div>
+          <p class="passo">Passo 2</p>
           <h3>Seus dados</h3>
           <p>Campos com * são obrigatórios.</p>
           <form id="form" novalidate>
@@ -239,7 +265,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
         <div class="ok" id="ok" role="status" tabindex="-1">
           <svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
           <b>Cadastro feito. Boa sorte!</b>
-          <p>Enquanto isso, siga a ASR para acompanhar o resultado e as novidades.</p>
+          <p>Fique de olho no Instagram e no LinkedIn da ASR para acompanhar o resultado.</p>
           <div class="acoes">
             <a class="btn btn--linha" href="https://www.instagram.com/asrconsultoficialtotvs/" target="_blank" rel="noopener">Instagram</a>
             <a class="btn btn--linha" href="https://www.linkedin.com/company/asrconsulthomologadatotvs/" target="_blank" rel="noopener">LinkedIn</a>
@@ -275,10 +301,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
 <footer class="rodape">
   <div class="wrap">
     <p style="margin:0">© 2027 ASR Consult · Canal homologado TOTVS · <a href="https://www.asrconsult.com.br/" target="_blank" rel="noopener">asrconsult.com.br</a></p>
-    <div class="halo">
-      <span>Página desenvolvida pela <b>Halo Company</b>, que também cria o novo site da ASR.</span>
-      <span>Estratégia, imagem e site para empresas premium. <a href="https://haloconsulting.com.br/?utm_source=asrerpsummit&amp;utm_medium=rodape" target="_blank" rel="noopener">Conheça a Halo ↗</a></span>
-    </div>
+    <p class="halo" style="margin:0"><span>Desenvolvido por</span><a class="halo-credit" href="https://haloconsulting.com.br/?utm_source=asrerpsummit&amp;utm_medium=rodape" target="_blank" rel="noopener" aria-label="Halo Company"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" class="halo-sym"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F8F3EB" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
   </div>
 </footer>
 
@@ -289,6 +312,17 @@ fieldset { border: 0; margin: 0; padding: 0; }
   var val = function (id) { return document.getElementById(id).value.trim(); };
   var mostraErro = function (m, campo) { erro.textContent = m; erro.classList.add('on'); if (campo) document.getElementById(campo).focus(); };
 
+  // Passo 1: marca cada rede como seguida quando a pessoa toca no botão (fica salvo se a página recarregar)
+  var segue = {};
+  var guarda = function (k, v) { try { localStorage.setItem('asr-segue-' + k, v); } catch (e) {} };
+  var lido = function (k) { try { return localStorage.getItem('asr-segue-' + k) === '1'; } catch (e) { return false; } };
+  ['ig', 'li'].forEach(function (k) {
+    var a = document.getElementById('s-' + k);
+    var marca = function () { segue[k] = true; a.classList.add('feito'); a.classList.remove('falta'); a.querySelector('.acao').textContent = 'Seguindo ✓'; };
+    if (lido(k)) marca();
+    a.addEventListener('click', function () { guarda(k, '1'); marca(); });
+  });
+
   // Máscara simples de WhatsApp
   document.getElementById('f-whats').addEventListener('input', function (e) {
     var d = e.target.value.replace(/\D/g, '').slice(0, 11);
@@ -298,6 +332,11 @@ fieldset { border: 0; margin: 0; padding: 0; }
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
     erro.classList.remove('on');
+    var faltam = ['ig', 'li'].filter(function (k) { return !segue[k]; });
+    if (faltam.length) {
+      faltam.forEach(function (k) { document.getElementById('s-' + k).classList.add('falta'); });
+      return mostraErro('Para concorrer, siga a ASR no ' + (faltam.length === 2 ? 'Instagram e no LinkedIn' : faltam[0] === 'ig' ? 'Instagram' : 'LinkedIn') + ' (passo 1).', 's-' + faltam[0]);
+    }
     if (!val('f-nome')) return mostraErro('Preencha o seu nome.', 'f-nome');
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('f-email'))) return mostraErro('Confira o e-mail.', 'f-email');
     if (val('f-whats').replace(/\D/g, '').length < 10) return mostraErro('Confira o WhatsApp, com DDD.', 'f-whats');
@@ -308,7 +347,7 @@ fieldset { border: 0; margin: 0; padding: 0; }
       tipo: 'leadEvento', evento: 'asr-erpsummit-2027',
       nome: val('f-nome'), email: val('f-email'), whatsapp: val('f-whats'), empresa: val('f-empresa'), cargo: val('f-cargo'),
       erp: val('f-erp'), interesses: interesses, consentimento: 'Sim', contato: document.getElementById('f-contato').checked ? 'Sim' : 'Não',
-      origem: location.href, site: val('f-site')
+      segueInstagram: 'Sim', segueLinkedin: 'Sim', origem: location.href, site: val('f-site')
     };
     botao.disabled = true; botao.textContent = 'Enviando…';
     fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(dados) })
