@@ -19,9 +19,10 @@ export const PAGINAS = [
   { slug: 'marketing-para-clinicas', menu: 'Clínicas', nome: 'Marketing para clínicas', resumo: 'Conteúdo, tráfego e treinamento da recepção: do anúncio ao paciente agendado.' },
   { slug: 'marketing-em-cotia-e-alphaville', menu: 'Cotia e Alphaville', nome: 'Marketing em Cotia e Alphaville', resumo: 'Redes, vídeo, tráfego e site para empresas de Cotia, Alphaville, Barueri e região.' },
   { slug: 'blog', menu: 'Blog', nome: 'Blog', resumo: 'Respostas diretas para o que o empresário pergunta sobre marketing, site, vídeo e tráfego.' },
-  { slug: 'cases', menu: 'Cases', nome: 'Cases', resumo: 'Hanaoka, Veículo Judicial e DRLSYS: o que fizemos e o que mudou.' },
+  { slug: 'cases', menu: 'Cases', nome: 'Cases', resumo: 'Hanaoka, Veículo Judicial, Contabilidade 2000 e DRLSYS: o que fizemos e o que mudou.' },
   { slug: 'cases/hanaoka', menu: 'Case Hanaoka', nome: 'Case Hanaoka', resumo: 'Indústria química desde 1985: estratégia, captação e site novo em dois idiomas.', rodape: false },
   { slug: 'cases/veiculo-judicial', menu: 'Case Veículo Judicial', nome: 'Case Veículo Judicial', resumo: 'Os leilões judiciais do país numa busca só, com o custo total estimado de cada veículo.', rodape: false },
+  { slug: 'cases/contabilidade-2000', menu: 'Case Contabilidade 2000', nome: 'Case Contabilidade 2000', resumo: 'Escritório de contabilidade em Cotia desde 1999: site com nota 100 em tudo no PageSpeed.', rodape: false },
   { slug: 'cases/drlsys', menu: 'Case DRLSYS', nome: 'Case DRLSYS', resumo: 'Infraestrutura de TI em Cotia: do briefing ao site no ar em menos de uma semana.', rodape: false }
 ];
 const MENU = ['criacao-de-sites', 'video-institucional', 'marketing-para-industrias', 'marketing-para-clinicas', 'cases', 'blog'];
@@ -258,6 +259,7 @@ const conteudo = [
       <div class="cartoes">
         <a class="cartao" href="/cases/hanaoka/"><small>Indústria química</small><h3>Hanaoka</h3><p>Site novo em português e inglês, com catálogo e blog. No PageSpeed do Google, versão computador: 90 em desempenho e 100 em acessibilidade, boas práticas e SEO.</p><span class="seta">Ver o case</span></a>
         <a class="cartao" href="/cases/veiculo-judicial/"><small>Plataforma de busca</small><h3>Veículo Judicial</h3><p>Reúne os veículos de leilão judicial publicados por leiloeiros oficiais de todo o país. Mais de 6 mil seguidores no @rubensleilao depois do lançamento.</p><span class="seta">Ver o case</span></a>
+        <a class="cartao" href="/cases/contabilidade-2000/"><small>Site · Escritório de contabilidade</small><h3>Contabilidade 2000</h3><p>Escritório em Cotia desde 1999. Nota 100 em desempenho, acessibilidade, boas práticas e SEO no PageSpeed do Google, versão computador.</p><span class="seta">Ver o case</span></a>
         <a class="cartao" href="/cases/drlsys/"><small>Site institucional</small><h3>DRLSYS</h3><p>Empresa de infraestrutura de TI. Do briefing ao site no ar em menos de uma semana.</p><span class="seta">Ver o case</span></a>
       </div>
     </div>
@@ -418,7 +420,7 @@ const conteudo = [
       <div class="prosa">
         <p>Atendemos de perto <strong>Cotia, Alphaville, Barueri, Santana de Parnaíba, Carapicuíba, Osasco, Jandira, Itapevi, Vargem Grande Paulista e São Paulo</strong>. Nessas cidades dá para marcar captação de foto e vídeo na sua empresa e reuniões presenciais.</p>
         <p>Para o resto do Brasil, estratégia, site, tráfego e diagnóstico acontecem on-line. A captação de vídeo fora da região é combinada caso a caso.</p>
-        <p>Entre os nossos projetos estão a <a href="/cases/drlsys/">DRLSYS</a>, empresa de infraestrutura de TI de Cotia, e a <a href="/cases/hanaoka/">Hanaoka</a>, indústria química desde 1985.</p>
+        <p>Entre os nossos projetos estão a <a href="/cases/contabilidade-2000/">Contabilidade 2000</a>, escritório de contabilidade de Cotia desde 1999 com site nota 100 no PageSpeed, a <a href="/cases/drlsys/">DRLSYS</a>, empresa de infraestrutura de TI de Cotia, e a <a href="/cases/hanaoka/">Hanaoka</a>, indústria química desde 1985.</p>
       </div>
     </div>
   </section>`,
@@ -430,7 +432,7 @@ const conteudo = [
     ['Como começa?', 'Pela aplicação no site. Os três sócios olham as suas redes, o seu site e os seus anúncios e mostram o que mudariam primeiro.']
   ],
   chamada: ['Sua empresa é de Cotia ou Alphaville?', 'Aplique para um diagnóstico. Olhamos o que o seu cliente vê antes de te chamar.'],
-  veja: ['cases/drlsys', 'criacao-de-sites', 'video-institucional']
+  veja: ['cases/contabilidade-2000', 'cases/drlsys', 'criacao-de-sites']
 },
 /* ------------------------------------------------------------------ */
 {
@@ -679,6 +681,70 @@ const conteudo = [
 },
 /* ------------------------------------------------------------------ */
 {
+  slug: 'cases/contabilidade-2000',
+  nome: 'Case Contabilidade 2000',
+  sobre: 'o case',
+  titulo: 'Case Contabilidade 2000: site 100 no PageSpeed | Halo Company',
+  descricao: 'Site da Contabilidade 2000, escritório de contabilidade em Cotia desde 1999: nota 100 em desempenho, acessibilidade, boas práticas e SEO no PageSpeed do Google, versão computador.',
+  h1: 'Contabilidade 2000: nota <em>100</em> em tudo no PageSpeed.',
+  apoio: 'Escritório de contabilidade em Cotia desde 1999, com mais de 700 empresas atendidas. Um site de uma página, rápido, escrito para quem procura contador na cidade e organizado para o Google e as IAs.',
+  link2: '<a class="link-fio" href="https://www.contabilidade2000.com.br/" target="_blank" rel="noopener">Abrir o site ↗</a>',
+  schema: (url) => ({ '@type': 'Article', '@id': url + '#case', headline: 'Case Contabilidade 2000: site 100 no PageSpeed', about: { '@type': 'AccountingService', name: 'Contabilidade 2000', url: 'https://www.contabilidade2000.com.br/' }, author: empresa, publisher: empresa, inLanguage: 'pt-BR', mainEntityOfPage: url, dateModified: HOJE }),
+  corpo: `
+  <section class="secao" aria-labelledby="nota-titulo">
+    <div class="wrap">
+      <div class="cabeca">
+        <h2 id="nota-titulo" class="titulo">As quatro notas no máximo.</h2>
+        <p class="cabeca__apoio">PageSpeed Insights do Google, versão computador, medido em 17 de novembro de 2026.</p>
+      </div>
+      <div class="numeros">
+        <div><strong>100</strong><span>Desempenho</span></div>
+        <div><strong>100</strong><span>Acessibilidade</span></div>
+        <div><strong>100</strong><span>Boas práticas</span></div>
+        <div><strong>100</strong><span>SEO</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao claro" aria-labelledby="fez-titulo">
+    <div class="wrap">
+      <div class="cabeca">
+        <h2 id="fez-titulo" class="titulo">O que fizemos.</h2>
+      </div>
+      ${fios3([
+        ['garanca', 'Mensagem', 'Contabilidade em Cotia desde 1999', 'O título diz o serviço, a cidade e o tempo de casa. As provas vêm logo abaixo: mais de 700 empresas atendidas e a nota 5,0 no Google.'],
+        ['acafrao', 'Busca local', 'Feito para quem procura contador na cidade', 'Serviços, bairros atendidos e perguntas frequentes escritos com as palavras que as pessoas buscam, e dados da empresa organizados para o Google e as IAs.'],
+        ['celeste', 'Velocidade', 'Leve de propósito', 'Uma página só, fontes e imagens otimizadas e o mapa do Google carregando apenas no clique. O site abre rápido e o contato pelo WhatsApp fica sempre à mão.']
+      ])}
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="tela-titulo">
+    <div class="wrap">
+      <h2 id="tela-titulo" class="titulo-2" style="margin-bottom:36px">O site no ar.</h2>
+      <div class="tela-site"><span class="projeto__barra" aria-hidden="true"><i></i><i></i><i></i><b>contabilidade2000.com.br</b></span><img src="/assets/img/projeto-contabilidade-2000.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Site da Contabilidade 2000, escritório de contabilidade em Cotia"></div>
+    </div>
+  </section>
+
+  <section class="secao" aria-labelledby="pq-titulo">
+    <div class="wrap duas">
+      <h2 id="pq-titulo" class="titulo-2">Por que isso importa.</h2>
+      <div class="prosa">
+        <p>Um escritório em Cotia desde 1999 já tem a confiança dos clientes. O que faltava era um site à altura: que abrisse rápido no celular, dissesse o que o escritório faz e aparecesse para quem procura contabilidade em Cotia.</p>
+        <p>Nota 100 no PageSpeed não é enfeite. Página rápida e bem escrita é o que o Google e as IAs preferem mostrar, e é o que faz o visitante chamar no WhatsApp em vez de voltar para a busca.</p>
+      </div>
+    </div>
+  </section>`,
+  faq: [
+    ['O que é o PageSpeed?', 'É a ferramenta do Google que mede a velocidade e a qualidade técnica de um site, de 0 a 100, em desempenho, acessibilidade, boas práticas e SEO.'],
+    ['Todo site da Halo tira 100?', 'Buscamos a nota máxima em todos, mas o resultado depende do conteúdo e do que o site precisa carregar. Um site de uma página, como este, chega lá mais fácil do que uma loja ou uma plataforma.'],
+    ['Vocês fazem site para escritórios de serviço?', 'Sim. Contabilidade, advocacia, consultoria e outros serviços profissionais, sempre com foco em quem procura o serviço na cidade.']
+  ],
+  chamada: ['Seu site está à altura da sua empresa?', 'No diagnóstico medimos o seu site no PageSpeed e mostramos o que mudaríamos primeiro.'],
+  veja: ['cases/drlsys', 'marketing-em-cotia-e-alphaville', 'criacao-de-sites']
+},
+/* ------------------------------------------------------------------ */
+{
   slug: 'cases/drlsys',
   nome: 'Case DRLSYS',
   sobre: 'o case',
@@ -729,16 +795,17 @@ const conteudo = [
   nome: 'Cases',
   sobre: 'os cases',
   titulo: 'Cases da Halo Company: sites, vídeo e estratégia',
-  descricao: 'Cases da Halo Company: Hanaoka (indústria química), Veículo Judicial (plataforma de leilões) e DRLSYS (TI em Cotia). O que fizemos e o que mudou em cada um.',
+  descricao: 'Cases da Halo Company: Hanaoka (indústria química), Veículo Judicial (plataforma de leilões), Contabilidade 2000 (contabilidade em Cotia) e DRLSYS (TI em Cotia). O que fizemos e o que mudou em cada um.',
   h1: 'O que já fizemos, e <em>o que mudou</em>.',
-  apoio: 'Uma indústria química de 40 anos, uma plataforma de leilões e uma empresa de TI de Cotia. Cada um com um problema diferente.',
-  schema: (url) => ({ '@type': 'CollectionPage', '@id': url + '#cases', name: 'Cases da Halo Company', url, publisher: empresa, hasPart: ['hanaoka', 'veiculo-judicial', 'drlsys'].map((c) => ({ '@type': 'Article', url: `${SITE}/cases/${c}/` })) }),
+  apoio: 'Uma indústria química de 40 anos, uma plataforma de leilões, um escritório de contabilidade de Cotia desde 1999 e uma empresa de TI. Cada um com um problema diferente.',
+  schema: (url) => ({ '@type': 'CollectionPage', '@id': url + '#cases', name: 'Cases da Halo Company', url, publisher: empresa, hasPart: ['hanaoka', 'veiculo-judicial', 'contabilidade-2000', 'drlsys'].map((c) => ({ '@type': 'Article', url: `${SITE}/cases/${c}/` })) }),
   corpo: `
   <section class="secao" aria-label="Lista de cases">
     <div class="wrap">
       <div class="casos">
         <a class="caso" href="/cases/hanaoka/"><div class="caso__img"><img src="/assets/img/hanaoka-novo-desktop-topo-720.webp" width="1440" height="900" loading="lazy" decoding="async" alt="Site novo da Hanaoka"></div><small>Indústria química · Estratégia, captação e site</small><h2>Hanaoka</h2><p>Fabricante de ácidos e sais de alta pureza desde 1985. Site novo em português e inglês, captação na fábrica e LinkedIn mensal.</p><span class="seta">Ver o case</span></a>
         <a class="caso" href="/cases/veiculo-judicial/"><div class="caso__img"><img src="/assets/img/projeto-veiculo-judicial.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Página inicial do Veículo Judicial"></div><small>Plataforma de busca · Site e lançamento</small><h2>Veículo Judicial</h2><p>Os leilões judiciais do país numa busca só. Mais de 6 mil seguidores no @rubensleilao depois do lançamento.</p><span class="seta">Ver o case</span></a>
+        <a class="caso" href="/cases/contabilidade-2000/"><div class="caso__img"><img src="/assets/img/projeto-contabilidade-2000.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Site da Contabilidade 2000"></div><small>Contabilidade · Site</small><h2>Contabilidade 2000</h2><p>Escritório em Cotia desde 1999. Nota 100 em tudo no PageSpeed do Google, versão computador.</p><span class="seta">Ver o case</span></a>
         <a class="caso" href="/cases/drlsys/"><div class="caso__img"><img src="/assets/img/projeto-drlsys.webp" width="720" height="3240" loading="lazy" decoding="async" alt="Site da DRLSYS"></div><small>Infraestrutura de TI · Site institucional</small><h2>DRLSYS</h2><p>Do briefing ao site no ar em menos de uma semana.</p><span class="seta">Ver o case</span></a>
       </div>
     </div>

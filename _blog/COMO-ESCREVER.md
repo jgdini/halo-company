@@ -38,7 +38,7 @@ Todo texto novo entra com `status: rascunho`. A aprovação acontece na página 
 - Sem travessão (—). Use ponto, vírgula ou dois-pontos.
 - Sem jargão de marketing: "alavancar", "potencializar", "transformar seu negócio", "estratégias robustas", "no cenário atual". Sem emojis.
 - **Nunca invente número, estatística, pesquisa, cliente ou depoimento.** Só use número com fonte conferível e link para ela. Na dúvida, explique do que o valor depende em vez de dar um valor.
-- Pode citar os cases reais da Halo, só com o que está nas páginas de case do site: Hanaoka (/cases/hanaoka/), Veículo Judicial (/cases/veiculo-judicial/), DRLSYS (/cases/drlsys/).
+- Pode citar os cases reais da Halo, só com o que está nas páginas de case do site: Hanaoka (/cases/hanaoka/), Veículo Judicial (/cases/veiculo-judicial/), Contabilidade 2000 (/cases/contabilidade-2000/), DRLSYS (/cases/drlsys/).
 - Faça 1 a 3 links internos quando fizer sentido: /criacao-de-sites/, /video-institucional/, /marketing-para-industrias/, /cases/.
 - Termine com uma lista prática (perguntas para levar à reunião, checklist, próximos passos). Não termine com "conclusão".
 - Não escreva sobre clínicas ou saúde enquanto a Halo não tiver um case de clínica. Prefira exemplos de indústria, serviços e especialistas, onde há case.

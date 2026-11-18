@@ -2,7 +2,7 @@
 
 O agente semanal pega o primeiro tema com `[ ]`, escreve o texto e marca `[x]` com a data. Para mudar a ordem ou incluir temas, edite esta lista. Origem dos temas: `planejamento/buscas-halo/PLANO-PAGINAS.md` (buscas reais sugeridas pelo Google).
 
-**Foco (04/11/2026):** posicionamento, branding e site, onde a Halo tem case (Hanaoka, Veículo Judicial, DRLSYS). Sem textos sobre clínicas enquanto a Halo não tiver um case de clínica.
+**Foco (04/11/2026):** posicionamento, branding e site, onde a Halo tem case (Hanaoka, Veículo Judicial, Contabilidade 2000, DRLSYS). Sem textos sobre clínicas enquanto a Halo não tiver um case de clínica.
 
 - [x] Quanto custa uma agência de marketing (e por que a Halo não é uma) (2026-11-03)
 - [x] Quanto investir em tráfego pago no começo (2026-10-27)

@@ -397,7 +397,7 @@ section { position: relative; }
 
 /* Outros projetos */
 .projetos { padding: 0 0 clamp(88px, 12vw, 160px); }
-.projetos__lista { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); }
+.projetos__lista { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(20px, 3vw, 40px); }
 .projeto { display: block; text-decoration: none; color: inherit; }
 .projeto__janela { border-radius: 14px; overflow: hidden; background: var(--anil-claro); border: 1px solid var(--linha); box-shadow: 0 30px 60px -30px rgba(0, 0, 0, .7); transition: transform .6s var(--ease), border-color .4s; }
 .projeto:hover .projeto__janela, .projeto:focus-visible .projeto__janela { transform: translateY(-6px); border-color: rgba(245, 239, 230,.3); }
