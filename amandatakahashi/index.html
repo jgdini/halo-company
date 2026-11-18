@@ -118,6 +118,15 @@ img{display:block;max-width:100%}
 .capa .pe{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.24em;text-transform:uppercase}
 .contracapa{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:22px;padding:50px}
 .contracapa::before{background:linear-gradient(270deg, rgba(0,0,0,.45), rgba(255,255,255,.06) 3%, rgba(0,0,0,.15) 5%, transparent 9%)}
+/* guarda: papel magenta estampado no verso da contracapa */
+.guarda{align-items:center;justify-content:center;gap:18px;text-align:center;
+  background:
+    radial-gradient(circle at 25% 25%, rgba(246,215,195,.10) 0 2px, transparent 2.5px) 0 0/28px 28px,
+    radial-gradient(circle at 75% 75%, rgba(246,215,195,.07) 0 2px, transparent 2.5px) 0 0/28px 28px,
+    radial-gradient(ellipse at 70% 30%, var(--cor2), var(--cor) 60%, #4a0f2c)}
+.guarda::before{background:linear-gradient(90deg, rgba(0,0,0,.4), transparent 8%)}
+.guarda .mono{opacity:.55}
+.guarda__txt{font-family:var(--serif);font-style:italic;font-size:30px}
 .mono{font-family:var(--serif);font-size:96px;line-height:1;font-style:italic}
 
 /* páginas internas */
@@ -172,11 +181,6 @@ img{display:block;max-width:100%}
 .trio figure{aspect-ratio:9/16;border-radius:5px;overflow:hidden;box-shadow:0 8px 18px rgba(40,10,20,.22)}
 .trio img{width:100%;height:100%;object-fit:cover}
 
-.depo{padding:18px 0;border-top:1px solid #d9cbbf}
-.depo:last-of-type{border-bottom:1px solid #d9cbbf}
-.depo q{display:block;font-family:var(--serif);font-size:23px;line-height:1.15;quotes:"“" "”"}
-.depo p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cor2);font-weight:600;margin:10px 0 0}
-.depo p span{display:block;letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--tinta2);font-size:12.5px}
 
 .botoes{display:flex;flex-direction:column;gap:9px;margin-top:4px}
 .btn{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14.5px;
@@ -432,25 +436,8 @@ kbd{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 
               </div>
               <p class="num">11</p>
             </article>
-            <article class="face verso pg papel">
-              <div class="cab"><span>Feedback</span><span>12</span></div>
-              <h2>O que as marcas <em>me mandam</em> depois.</h2>
-              <div class="depo">
-                <q>Em menos de uma semana tivemos um crescimento considerável no alcance da nossa página e em pedidos de venda.</q>
-                <p>Coelho Verduras<span>Equipe de marketing</span></p>
-              </div>
-              <div class="depo">
-                <q>Em menos de 24 horas já tenho 400 novos leads para abordar graças ao seu vídeo.</q>
-                <p>Dra. Ingrid Moreira<span>Especialista em harmonização facial</span></p>
-              </div>
-              <p class="num">12</p>
-            </article>
-          </div>
-
-          <!-- folha 7 -->
-          <div class="folha">
-            <article class="face frente pg papel" id="contato" tabindex="-1">
-              <div class="cab"><span>Parcerias</span><span>13</span></div>
+            <article class="face verso pg papel" id="contato" tabindex="-1">
+              <div class="cab"><span>Parcerias</span><span>12</span></div>
               <p class="chapeu">Por que me escolher</p>
               <h2>Vamos fazer uma publi que <em>vende</em>?</h2>
               <p>Vídeo autoral, que entretém e passa confiança, para uma comunidade que compra o que eu indico.</p>
@@ -460,8 +447,16 @@ kbd{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 
                 <a class="btn claro" href="https://www.instagram.com/amandatakahashi_/" target="_blank" rel="noopener">Instagram @amandatakahashi_ <span aria-hidden="true">↗</span></a>
                 <a class="btn claro" href="https://www.tiktok.com/@amandatakahashi_" target="_blank" rel="noopener">TikTok @amandatakahashi_ <span aria-hidden="true">↗</span></a>
               </div>
-              <p class="num">13</p>
+              <p class="num">12</p>
             </article>
+          </div>
+
+          <!-- folha 7: guarda (verso da contracapa) e contracapa -->
+          <div class="folha">
+            <section class="face frente capa guarda" aria-label="Fim do mídia kit">
+              <span class="mono foil" aria-hidden="true">AT</span>
+              <p class="guarda__txt foil">Obrigada por folhear.</p>
+            </section>
             <section class="face verso capa contracapa" aria-label="Contracapa">
               <span class="mono foil" aria-hidden="true">AT</span>
               <span class="sobre foil">Amanda Takahashi</span>
