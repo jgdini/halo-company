@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amanda Takahashi · Criadora de conteúdo | Mídia kit</title>
+<meta name="description" content="Mídia kit de Amanda Takahashi, criadora de conteúdo de lifestyle em São Paulo: 38,7 mil seguidores, reels com 12 milhões de visualizações e publis para iFood, Natura, Samsung e outras marcas.">
+<meta name="theme-color" content="#140d0c">
+<link rel="canonical" href="https://haloconsulting.com.br/amandatakahashi/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237c1f4c'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='32' fill='%23f6d7c3'%3EAT%3C/text%3E%3C/svg%3E">
+<meta property="og:url" content="https://haloconsulting.com.br/amandatakahashi/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Amanda Takahashi · Mídia kit">
+<meta property="og:description" content="Um caderno para folhear: números, vídeos virais, marcas e como fechar uma parceria com a Amanda.">
+<meta property="og:image" content="https://haloconsulting.com.br/amandatakahashi/assets/img/amanda-retrato.webp">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="preload" as="image" href="assets/img/mesa.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Amanda Takahashi",
+    "jobTitle": "Criadora de conteúdo",
+    "description": "Criadora de conteúdo nipo-brasileira de lifestyle, beleza e bem-estar, baseada em São Paulo.",
+    "image": "https://haloconsulting.com.br/amandatakahashi/assets/img/amanda-retrato.webp",
+    "url": "https://haloconsulting.com.br/amandatakahashi/",
+    "email": "contato.amandatakahashi@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressCountry": "BR" },
+    "sameAs": ["https://www.instagram.com/amandatakahashi_/", "https://www.tiktok.com/@amandatakahashi_"],
+    "knowsAbout": ["Lifestyle", "Beleza", "Autoestima", "Bem-estar", "Viagens", "Marketing de influência"]
+  }
+}
+</script>
+<style>
+:root{
+  --W:440px; --H:600px;
+  --papel:#f4eee6; --papel2:#ece2d8;
+  --tinta:#211618; --tinta2:#5e4c4e;
+  --cor:#7c1f4c; --cor2:#a8336a; --rose:#e8c3a8;
+  --mesa:#140d0c;
+  --serif:"Instrument Serif", "Times New Roman", serif;
+  --sans:"Hanken Grotesk", system-ui, sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--mesa);color:#f1e6dc;font-family:var(--sans);-webkit-text-size-adjust:100%}
+body{background:var(--mesa);overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+
+/* ---------- cena ---------- */
+.rolagem{position:relative}
+.palco{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;perspective:1800px;perspective-origin:50% 30%}
+.mesa{position:absolute;inset:-12%;transform:rotateX(14deg);transform-origin:50% 60%;
+  background:#2a1a12 url("assets/img/mesa.webp") 50% 40%/cover no-repeat}
+/* escurece a madeira e cria a luz da luminária sobre o livro */
+.mesa::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 46% 42% at 50% 52%, rgba(255,214,170,.10), transparent 70%),
+    radial-gradient(ellipse 60% 55% at 50% 52%, rgba(20,12,10,.30) 20%, rgba(12,7,6,.88) 100%),
+    linear-gradient(rgba(25,14,10,.45), rgba(25,14,10,.45))}
+
+/* objetos reais (fotos de banco de imagens) */
+.obj{position:absolute;z-index:1;pointer-events:none}
+.obj img{width:100%;height:auto}
+.xicara{left:calc(50% + 33vw);top:20%;width:230px;
+  -webkit-mask-image:radial-gradient(circle closest-side at 52% 48%, #000 80%, transparent 86%);mask-image:radial-gradient(circle closest-side at 52% 48%, #000 80%, transparent 86%);
+  filter:brightness(.85) saturate(.9)}
+.ramo{left:calc(50% - 50vw);top:6%;width:430px;transform:rotate(14deg);
+  -webkit-mask-image:radial-gradient(ellipse 55% 48% at 52% 52%, #000 45%, transparent 75%);mask-image:radial-gradient(ellipse 55% 48% at 52% 52%, #000 45%, transparent 75%);
+  filter:brightness(.85)}
+.lente{left:calc(50% - 44vw);top:58%;width:190px;transform:rotate(-18deg);
+  -webkit-mask-image:radial-gradient(ellipse 44% 46% at 53% 50%, #000 70%, transparent 100%);mask-image:radial-gradient(ellipse 44% 46% at 53% 50%, #000 70%, transparent 100%);
+  filter:brightness(.9) contrast(1.05)}
+
+/* ---------- livro ---------- */
+.livro-pos{position:absolute;left:50%;top:50%;z-index:2;width:0;height:0}
+.livro{position:absolute;left:calc(var(--W) * -1);top:calc(var(--H) / -2);width:calc(var(--W) * 2);height:var(--H);
+  transform:scale(var(--s,1)) translateX(var(--cam,-220px));perspective:2600px;will-change:transform}
+.sombra{position:absolute;left:50%;top:0;width:var(--W);height:100%;border-radius:4px;box-shadow:0 30px 60px rgba(0,0,0,.75), 0 6px 14px rgba(0,0,0,.6)}
+.sombra.esq{left:0;opacity:0}
+/* sombra que a folha em movimento projeta na página de baixo */
+.lanca{position:absolute;top:0;width:var(--W);height:100%;pointer-events:none;opacity:0}
+.lanca.dir{left:50%;background:linear-gradient(90deg, rgba(20,8,6,.55), rgba(20,8,6,.22) calc(var(--alc,.5) * 60%), transparent calc(var(--alc,.5) * 100%))}
+.lanca.esq{left:0;background:linear-gradient(270deg, rgba(20,8,6,.55), rgba(20,8,6,.22) calc(var(--alc,.5) * 60%), transparent calc(var(--alc,.5) * 100%))}
+.livro{cursor:pointer}
+.livro a{cursor:pointer}
+.folha{position:absolute;left:50%;top:0;width:var(--W);height:var(--H);transform-origin:0 50%;transform-style:preserve-3d}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;
+  background:var(--papel);color:var(--tinta);border-radius:0 3px 3px 0}
+.verso{transform:rotateY(180deg);border-radius:3px 0 0 3px}
+.face::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;
+  background:linear-gradient(90deg, rgba(60,40,25,.28), rgba(60,40,25,.06) 5%, transparent 12%)}
+.verso::before{background:linear-gradient(270deg, rgba(60,40,25,.28), rgba(60,40,25,.06) 5%, transparent 12%)}
+/* luz que corre pela folha enquanto ela vira (dá a sensação de papel curvando) */
+.face::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:4;opacity:var(--luz,0);
+  background:linear-gradient(90deg, rgba(0,0,0,.05), rgba(0,0,0,.42) var(--faixa,50%), rgba(255,255,255,.10) calc(var(--faixa,50%) + 14%), rgba(0,0,0,.18))}
+.verso::after{background:linear-gradient(270deg, rgba(0,0,0,.08), rgba(255,255,255,.22) var(--faixa,50%), rgba(0,0,0,.20) calc(var(--faixa,50%) + 16%), rgba(0,0,0,.05))}
+.papel{background:var(--papel) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23p)'/%3E%3C/svg%3E")}
+
+/* capa em tecido magenta com gravação rosé */
+.capa{background:
+   repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 3px),
+   repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 1px, transparent 1px 3px),
+   radial-gradient(ellipse at 30% 20%, var(--cor2), var(--cor) 55%, #4a0f2c);
+  color:var(--rose);display:flex;flex-direction:column;justify-content:space-between;padding:54px 46px 44px 58px}
+.capa::before{background:linear-gradient(90deg, rgba(0,0,0,.45), rgba(255,255,255,.06) 3%, rgba(0,0,0,.15) 5%, transparent 9%)}
+.foil{background:linear-gradient(100deg,#c79a83,#fbe3d2 38%,#d6a990 60%,#f6d7c3 85%,#c79a83);-webkit-background-clip:text;background-clip:text;color:transparent}
+.capa .sobre{font-size:11px;letter-spacing:.32em;text-transform:uppercase}
+.capa h1{font-family:var(--serif);font-weight:400;font-size:80px;line-height:.9;letter-spacing:-.01em;margin-top:96px}
+.capa h1 em{display:block;font-style:italic}
+.capa .linha{height:1px;width:64px;background:var(--rose);opacity:.6;margin:26px 0 18px}
+.capa p{font-size:15px;line-height:1.45;max-width:270px;color:#f6dccb}
+.capa .pe{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+.contracapa{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:22px;padding:50px}
+.contracapa::before{background:linear-gradient(270deg, rgba(0,0,0,.45), rgba(255,255,255,.06) 3%, rgba(0,0,0,.15) 5%, transparent 9%)}
+.mono{font-family:var(--serif);font-size:96px;line-height:1;font-style:italic}
+
+/* páginas internas */
+.pg{padding:46px 44px 40px 52px;display:flex;flex-direction:column}
+.verso.pg{padding:46px 52px 40px 44px}
+.cab{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--tinta2);margin-bottom:30px}
+.num{margin-top:auto;padding-top:12px;font-size:12px;color:var(--tinta2);font-family:var(--serif);font-style:italic}
+.frente .num{text-align:right}
+.chapeu{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cor2);font-weight:600;margin-bottom:14px}
+.pg h2{font-family:var(--serif);font-weight:400;font-size:40px;line-height:1.02;letter-spacing:-.01em;margin-bottom:18px}
+.pg h2 em{font-style:italic;color:var(--cor2)}
+.pg p{font-size:15px;line-height:1.55;color:#3d2e30;margin-bottom:12px}
+.pg .peq{font-size:12.5px;color:var(--tinta2);line-height:1.45}
+.assina{font-family:var(--serif);font-style:italic;font-size:34px;color:var(--cor2);margin-top:6px}
+.foto{padding:0}
+.foto img{width:100%;height:100%;object-fit:cover}
+.foto figcaption{position:absolute;left:0;right:0;bottom:0;padding:80px 34px 26px 30px;font-size:12.5px;color:#f8efe8;
+  background:linear-gradient(transparent,rgba(30,8,18,.8))}
+.foto figcaption b{display:block;font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.05;margin-bottom:4px}
+
+/* números */
+.numeros{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #d9cbbf}
+.numeros div{padding:16px 0 14px;border-bottom:1px solid #d9cbbf}
+.numeros div:nth-child(odd){padding-right:14px;border-right:1px solid #d9cbbf}
+.numeros div:nth-child(even){padding-left:18px}
+.numeros b{display:block;font-family:var(--serif);font-weight:400;font-size:42px;line-height:1;color:var(--tinta)}
+.numeros span{display:block;font-size:12px;line-height:1.35;color:var(--tinta2);margin-top:6px}
+
+/* reel em destaque */
+.viral{display:grid;grid-template-columns:186px 1fr;gap:22px;align-items:center;flex:1}
+.reel{position:relative;display:block;aspect-ratio:9/16;border-radius:6px;overflow:hidden;box-shadow:0 10px 24px rgba(40,10,20,.28);text-decoration:none;background:#222}
+.reel img{width:100%;height:100%;object-fit:cover}
+.reel .selo{position:absolute;left:7px;bottom:7px;right:7px;font-size:11px;padding:6px 8px;border-radius:30px;background:rgba(15,8,10,.72);color:#fff;text-align:center;backdrop-filter:blur(4px)}
+.reel.play::after{content:"";position:absolute;left:50%;top:44%;width:44px;height:44px;margin:-22px;border-radius:50%;
+  background:rgba(255,255,255,.9) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%237c1f4c'/%3E%3C/svg%3E") 55% 50%/22px no-repeat}
+.pg .big{white-space:nowrap;font-family:var(--serif);font-size:70px;line-height:.85;letter-spacing:-.02em;color:var(--cor)}
+.big small{display:block;font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta2);margin-top:10px}
+.viral blockquote{font-family:var(--serif);font-size:22px;line-height:1.15;margin:18px 0 10px}
+.meta{font-size:12px;line-height:1.5;color:var(--tinta2)}
+
+/* grade de virais */
+.grade6{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 10px}
+.grade6 .reel{aspect-ratio:3/4}
+.grade6 figcaption{font-size:11.5px;line-height:1.3;color:var(--tinta2);margin-top:6px}
+.grade6 figcaption b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;color:var(--tinta);line-height:1}
+
+/* marcas */
+.marcas{list-style:none;columns:2;column-gap:20px;border-top:1px solid #d9cbbf}
+.marcas li{break-inside:avoid;font-family:var(--serif);font-size:30px;line-height:1;padding:12px 0;border-bottom:1px solid #d9cbbf}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:auto}
+.trio figure{aspect-ratio:9/16;border-radius:5px;overflow:hidden;box-shadow:0 8px 18px rgba(40,10,20,.22)}
+.trio img{width:100%;height:100%;object-fit:cover}
+
+.depo{padding:18px 0;border-top:1px solid #d9cbbf}
+.depo:last-of-type{border-bottom:1px solid #d9cbbf}
+.depo q{display:block;font-family:var(--serif);font-size:23px;line-height:1.15;quotes:"“" "”"}
+.depo p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cor2);font-weight:600;margin:10px 0 0}
+.depo p span{display:block;letter-spacing:.04em;text-transform:none;font-weight:400;color:var(--tinta2);font-size:12.5px}
+
+.botoes{display:flex;flex-direction:column;gap:11px;margin-top:4px}
+.btn{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 20px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14.5px;
+  background:var(--cor);color:#fff3f6;transition:background .2s}
+.btn:hover{background:var(--cor2)}
+.btn.claro{background:transparent;color:var(--tinta);box-shadow:inset 0 0 0 1.5px var(--tinta)}
+.btn.claro:hover{background:var(--tinta);color:var(--papel)}
+.halo-credit{display:inline-flex;align-items:center;gap:7px;text-decoration:none;color:#f6e6dc;font-size:13px}
+.halo-nome{font-weight:600;letter-spacing:-.01em}.halo-nome small{font-weight:400;opacity:.75}
+
+/* ---------- interface ---------- */
+.topo-ui{position:fixed;left:0;right:0;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(16px,3vw,36px);pointer-events:none}
+.topo-ui > *{pointer-events:auto}
+.marca{font-family:var(--serif);font-size:22px;text-decoration:none;color:#f6ebe2}
+.marca em{color:var(--rose)}
+.fale{font-size:13px;font-weight:600;text-decoration:none;padding:10px 18px;border-radius:999px;background:#f6ebe2;color:#1d1213}
+.fale:hover{background:#fff}
+.chamada{position:fixed;z-index:9;left:clamp(16px,3vw,36px);top:96px;max-width:420px;pointer-events:none}
+.chamada p{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);margin-bottom:12px}
+.chamada strong{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,46px);line-height:1.02;color:#f6ebe2}
+.chamada strong em{color:var(--rose)}
+.controles{position:fixed;z-index:10;left:50%;bottom:22px;transform:translateX(-50%);display:flex;align-items:center;gap:6px;padding:6px;border-radius:999px;
+  background:rgba(20,13,12,.72);backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.controles button{width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:#f6ebe2;font-size:18px;cursor:pointer}
+.controles button:hover:not(:disabled){background:rgba(255,255,255,.1)}
+.controles button:disabled{opacity:.3;cursor:default}
+.controles output{white-space:nowrap;min-width:124px;text-align:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#e3d3c6}
+.som{position:relative}
+.som .onda{display:none}.som[aria-pressed="true"] .onda{display:inline}.som[aria-pressed="true"] .mudo{display:none}
+kbd{display:inline-grid;place-items:center;min-width:26px;height:26px;padding:0 6px;border-radius:6px;font:600 13px/1 var(--sans);color:#1d1213;
+  background:linear-gradient(#fbf3ec,#e6d6ca);box-shadow:0 2px 0 #a8897a, 0 3px 8px rgba(0,0,0,.35)}
+.dica{position:fixed;z-index:9;right:clamp(16px,3vw,36px);bottom:26px;display:flex;flex-direction:column;align-items:flex-end;gap:7px;font-size:12px;color:#d9c6b8;text-align:right}
+.dica__teclas{display:flex;align-items:center;gap:6px;font-weight:500}
+.dica__teclas kbd + kbd{margin-right:4px}
+.dica__extra{font-size:11px;color:#a8958a}
+.dica__toque{display:none}
+/* aviso que aparece quando o livro abre pela primeira vez */
+.aviso{position:fixed;z-index:11;left:50%;top:86px;transform:translate(-50%,-12px);display:flex;align-items:center;gap:7px;padding:10px 16px 10px 12px;border-radius:999px;
+  background:rgba(250,240,232,.95);color:#1d1213;font-size:13.5px;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,.4);opacity:0;pointer-events:none;transition:opacity .4s, transform .4s}
+.aviso kbd{min-width:24px;height:24px;font-size:12px}
+.aviso.on{opacity:1;transform:translate(-50%,0)}
+.aviso.on kbd:last-of-type{animation:tecla 1.2s ease-in-out .3s 2}
+@keyframes tecla{0%,100%{transform:none}40%{transform:translateY(2px);box-shadow:0 0 0 #a8897a}}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+.rodape{position:relative;z-index:2;padding:48px 20px 56px;text-align:center;color:#b6a196;font-size:13px;background:var(--mesa)}
+.rodape p + p{margin-top:10px}
+
+@media (max-width: 759px){
+  .chamada{top:78px;max-width:300px}
+  .chamada strong{font-size:28px}
+  .obj,.dica__teclas,.dica__extra,.aviso{display:none}
+  .dica{left:0;right:0;bottom:78px;align-items:center;text-align:center}
+  .dica__toque{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+  .controles{bottom:16px}
+  .controles output{min-width:100px}
+}
+@media (prefers-reduced-motion: reduce){ .aviso.on kbd{animation:none} }
+</style>
+</head>
+<body>
+
+<header class="topo-ui">
+  <a class="marca" href="#" aria-label="Amanda Takahashi, voltar à capa">Amanda <em>Takahashi</em></a>
+  <a class="fale" href="#contato">Fechar parceria</a>
+</header>
+
+<div class="chamada" id="chamada" aria-hidden="true">
+  <p>Mídia kit para folhear</p>
+  <strong>Publi sem cara de <em>publi</em>.</strong>
+</div>
+
+<main>
+<section class="rolagem" id="rolagem" aria-label="Mídia kit em formato de livro">
+  <div class="palco">
+    <div class="mesa">
+      <div class="obj ramo" data-p="0.6" aria-hidden="true"><img src="assets/img/ramo.webp" alt="" width="640" height="341"></div>
+      <div class="obj xicara" data-p="1.1" aria-hidden="true"><img src="assets/img/xicara.webp" alt="" width="700" height="700"></div>
+      <div class="obj lente" data-p="1.4" aria-hidden="true"><img src="assets/img/lente.webp" alt="" width="300" height="350"></div>
+
+      <div class="livro-pos">
+        <div class="livro" id="livro">
+          <div class="sombra esq" id="sombraEsq"></div>
+          <div class="sombra" id="sombraDir"></div>
+          <div class="lanca esq" id="lancaEsq"></div>
+          <div class="lanca dir" id="lancaDir"></div>
+
+          <!-- folha 0 -->
+          <div class="folha">
+            <section class="face frente capa" aria-label="Capa">
+              <span class="sobre foil">Mídia kit · 2026</span>
+              <div>
+                <h1 class="foil">Amanda <em>Takahashi</em></h1>
+                <div class="linha"></div>
+                <p>Criadora de conteúdo de lifestyle, beleza e vida real. São Paulo.</p>
+              </div>
+              <div class="pe foil"><span>@amandatakahashi_</span><span>Role para abrir</span></div>
+            </section>
+            <figure class="face verso foto">
+              <img src="assets/img/amanda-retrato.webp" alt="Retrato de Amanda Takahashi sorrindo, de cabelo preto e solto" width="900" height="1220">
+              <figcaption><b>Amanda Takahashi</b>26 anos, nipo-brasileira, São Paulo</figcaption>
+            </figure>
+          </div>
+
+          <!-- folha 1 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Sobre mim</span><span>01</span></div>
+              <h2>O meu conteúdo funciona porque <em>é real</em>.</h2>
+              <p>Mostro a minha vida como ela é: meu marido, nossos cachorros, a nossa casa, viagens, beleza e bem-estar. Agora também o caminho dos 17 kg que perdi, sem neura.</p>
+              <p>Quem me acompanha não só segue. Comenta, pergunta e compra.</p>
+              <p>Gravo para Instagram e TikTok com linguagem natural e imagem bem cuidada. Por isso as minhas publis não têm cara de publi.</p>
+              <p class="assina">Amanda</p>
+              <p class="num">1</p>
+            </article>
+            <article class="face verso pg papel">
+              <div class="cab"><span>Números</span><span>02</span></div>
+              <p class="chapeu">Instagram @amandatakahashi_</p>
+              <h2>Alcance de quem <em>conversa</em> com o público.</h2>
+              <div class="numeros">
+                <div><b>38,7 mil</b><span>seguidores (novembro de 2026)</span></div>
+                <div><b>12 mi</b><span>visualizações no reel mais visto</span></div>
+                <div><b>1,38 mi</b><span>visualizações em 30 dias (27/2 a 28/3)</span></div>
+                <div><b>124 mil</b><span>interações no mesmo período</span></div>
+              </div>
+              <p class="peq" style="margin-top:14px">Engajamento acima de 6%. 78% das visualizações vêm de quem ainda não me segue: o conteúdo chega a gente nova.</p>
+              <p class="num">2</p>
+            </article>
+          </div>
+
+          <!-- folha 2 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Viral</span><span>03</span></div>
+              <p class="chapeu">O reel mais visto</p>
+              <div class="viral">
+                <a class="reel play" href="https://www.instagram.com/reel/DdZR3suS8sk/" target="_blank" rel="noopener" aria-label="Assistir ao reel Maridos no Instagram (abre em nova aba)">
+                  <img src="assets/img/viral-DdZR3suS8sk.webp" alt="Amanda de óculos e moletom vermelho, com o texto Quer um café?" width="480" height="853" loading="lazy" decoding="async">
+                  <span class="selo">Ver no Instagram ↗</span>
+                </a>
+                <div>
+                  <p class="big">12 mi<small>visualizações</small></p>
+                  <blockquote>“Maridos…”</blockquote>
+                  <p class="meta">820 mil curtidas<br>3.508 comentários<br>Setembro de 2026</p>
+                </div>
+              </div>
+              <p class="num">3</p>
+            </article>
+            <article class="face verso pg papel">
+              <div class="cab"><span>Viral</span><span>04</span></div>
+              <p class="chapeu">Nostalgia que vira conversa</p>
+              <div class="viral">
+                <a class="reel play" href="https://www.instagram.com/reel/DLdnSCEvfOG/" target="_blank" rel="noopener" aria-label="Assistir ao reel sobre o Danoninho Ice no Instagram (abre em nova aba)">
+                  <img src="assets/img/viral-DLdnSCEvfOG.webp" alt="Amanda no carro fazendo careta e sinal de paz" width="480" height="853" loading="lazy" decoding="async">
+                  <span class="selo">Ver no Instagram ↗</span>
+                </a>
+                <div>
+                  <p class="big">10,8 mi<small>visualizações</small></p>
+                  <blockquote>“Quem lembra do Danoninho Ice?”</blockquote>
+                  <p class="meta">962 mil curtidas<br>12 mil comentários<br>Junho de 2025</p>
+                </div>
+              </div>
+              <p class="num">4</p>
+            </article>
+          </div>
+
+          <!-- folha 3 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Mais virais</span><span>05</span></div>
+              <p class="chapeu">Acima de 100 mil visualizações</p>
+              <div class="grade6">
+                <figure><a class="reel" href="https://www.instagram.com/reel/DWXLj31DwYA/" target="_blank" rel="noopener" aria-label="Reel com o cachorro, 938 mil visualizações"><img src="assets/img/viral-DWXLj31DwYA.webp" alt="" width="480" height="853" loading="lazy" decoding="async"></a><figcaption><b>938 mil</b>Collab com os cachorros</figcaption></figure>
+                <figure><a class="reel" href="https://www.instagram.com/reel/DYFviDESVSK/" target="_blank" rel="noopener" aria-label="Reel Papo de Undaiá, 580 mil visualizações"><img src="assets/img/viral-DYFviDESVSK.webp" alt="" width="480" height="853" loading="lazy" decoding="async"></a><figcaption><b>580 mil</b>“Papo de Undaiá”</figcaption></figure>
+                <figure><a class="reel" href="https://www.instagram.com/reel/DZLa1F0OlZG/" target="_blank" rel="noopener" aria-label="Reel coisinhas de rockeiro, 340 mil visualizações"><img src="assets/img/viral-DZLa1F0OlZG.webp" alt="" width="480" height="853" loading="lazy" decoding="async"></a><figcaption><b>340 mil</b>Vida de casal</figcaption></figure>
+                <figure><a class="reel" href="https://www.instagram.com/reel/DfkTwkISTH9/" target="_blank" rel="noopener" aria-label="Reel tadala de mulher, 271 mil visualizações"><img src="assets/img/viral-DfkTwkISTH9.webp" alt="" width="480" height="853" loading="lazy" decoding="async"></a><figcaption><b>271 mil</b>Trend do momento</figcaption></figure>
+                <figure><a class="reel" href="https://www.instagram.com/reel/DLaJNTctdnN/" target="_blank" rel="noopener" aria-label="Reel com Raphael Mattos, 262 mil visualizações"><img src="assets/img/viral-DLaJNTctdnN.webp" alt="" width="360" height="640" loading="lazy" decoding="async"></a><figcaption><b>262 mil</b>No palco com Raphael Mattos</figcaption></figure>
+                <figure><a class="reel" href="https://www.instagram.com/reel/DK-LcrZvWMh/" target="_blank" rel="noopener" aria-label="Entrevista com Joel Jota, 165 mil visualizações"><img src="assets/img/viral-DK-LcrZvWMh.webp" alt="" width="360" height="640" loading="lazy" decoding="async"></a><figcaption><b>165 mil</b>Entrevista com Joel Jota</figcaption></figure>
+              </div>
+              <p class="num">5</p>
+            </article>
+            <article class="face verso pg papel">
+              <div class="cab"><span>Publi</span><span>06</span></div>
+              <p class="chapeu">O famoso “fui pego pela publi”</p>
+              <div class="viral">
+                <a class="reel play" href="https://www.instagram.com/reel/DYSHzMhyNmN/" target="_blank" rel="noopener" aria-label="Assistir à publi da Keeta no Instagram (abre em nova aba)">
+                  <img src="assets/img/viral-DYSHzMhyNmN.webp" alt="Amanda mostrando um combo de lanche, publi da Keeta" width="480" height="853" loading="lazy" decoding="async">
+                  <span class="selo">Ver no Instagram ↗</span>
+                </a>
+                <div>
+                  <p class="big">4,4 mi<small>visualizações</small></p>
+                  <blockquote>Publi da Keeta na chegada do app ao Brasil.</blockquote>
+                  <p class="meta">Maio de 2026</p>
+                </div>
+              </div>
+              <p class="peq">Publi que parece conversa entre amigas segura a atenção até o cupom.</p>
+              <p class="num">6</p>
+            </article>
+          </div>
+
+          <!-- folha 4 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Marcas</span><span>07</span></div>
+              <h2>Marcas com quem <em>já trabalhei</em>.</h2>
+              <ul class="marcas">
+                <li>iFood</li><li>Natura</li><li>Samsung</li><li>Keeta</li>
+                <li>Vestcasa</li><li>Alares</li><li>Miracle Belt</li><li>Academia Gaviões</li>
+              </ul>
+              <p class="peq" style="margin-top:16px">Funciona para várias categorias: comida, beleza, tecnologia, casa, moda e academia.</p>
+              <p class="num">7</p>
+            </article>
+            <figure class="face verso foto">
+              <img src="assets/img/amanda-lilas.webp" alt="Amanda de vestido lilás e bolsa rosa, arrumando o cabelo" width="900" height="1473" loading="lazy" decoding="async" style="object-position:50% 20%">
+              <figcaption><b>Beleza e autoestima</b>Maquiagem, cabelo, procedimentos e looks</figcaption>
+            </figure>
+          </div>
+
+          <!-- folha 5 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Temas</span><span>09</span></div>
+              <p class="chapeu">Beleza e autoestima</p>
+              <h2>Falo de beleza como quem <em>conta para a amiga</em>.</h2>
+              <p>Arrume-se comigo, look do shopping, harmonização sem exagero. O conteúdo responde a dúvida que a seguidora teria vergonha de perguntar.</p>
+              <div class="trio">
+                <figure><img src="assets/img/kit-806ccd.webp" alt="Close do rosto da Amanda" width="360" height="640" loading="lazy" decoding="async"></figure>
+                <figure><img src="assets/img/kit-61fa77.webp" alt="Amanda falando sobre harmonização facial" width="360" height="640" loading="lazy" decoding="async"></figure>
+                <figure><img src="assets/img/kit-2402b2.webp" alt="Amanda no vídeo Salve o look do shopping comigo" width="360" height="640" loading="lazy" decoding="async"></figure>
+              </div>
+              <p class="num">9</p>
+            </article>
+            <figure class="face verso foto">
+              <img src="assets/img/amanda-sf.webp" alt="Amanda em São Francisco com a ponte Golden Gate ao fundo" width="900" height="1171" loading="lazy" decoding="async">
+              <figcaption><b>Lifestyle, música e viagens</b>Casa, casamento, cachorros e o mundo</figcaption>
+            </figure>
+          </div>
+
+          <!-- folha 6 -->
+          <div class="folha">
+            <article class="face frente pg papel">
+              <div class="cab"><span>Temas</span><span>11</span></div>
+              <p class="chapeu">Lifestyle e trends</p>
+              <h2>E se a sua marca entrar <em>na trend</em>?</h2>
+              <p>Viagem, rotina de casal, música no carro. Uso a trend da semana para colocar o produto no meio de uma história que as pessoas já querem ver.</p>
+              <div class="trio">
+                <figure><img src="assets/img/kit-526ede.webp" alt="Entrada de uma pousada com caminho de pedras" width="360" height="640" loading="lazy" decoding="async"></figure>
+                <figure><img src="assets/img/kit-8113a0.webp" alt="Amanda e o marido cantando no carro" width="360" height="640" loading="lazy" decoding="async"></figure>
+                <figure><img src="assets/img/kit-3173c9.webp" alt="Amanda sentada no carro com uma bolsa de couro" width="360" height="640" loading="lazy" decoding="async"></figure>
+              </div>
+              <p class="num">11</p>
+            </article>
+            <article class="face verso pg papel">
+              <div class="cab"><span>Feedback</span><span>12</span></div>
+              <h2>O que as marcas <em>me mandam</em> depois.</h2>
+              <div class="depo">
+                <q>Em menos de uma semana tivemos um crescimento considerável no alcance da nossa página e em pedidos de venda.</q>
+                <p>Coelho Verduras<span>Equipe de marketing</span></p>
+              </div>
+              <div class="depo">
+                <q>Em menos de 24 horas já tenho 400 novos leads para abordar graças ao seu vídeo.</q>
+                <p>Dra. Ingrid Moreira<span>Especialista em harmonização facial</span></p>
+              </div>
+              <p class="num">12</p>
+            </article>
+          </div>
+
+          <!-- folha 7 -->
+          <div class="folha">
+            <article class="face frente pg papel" id="contato" tabindex="-1">
+              <div class="cab"><span>Parcerias</span><span>13</span></div>
+              <p class="chapeu">Por que me escolher</p>
+              <h2>Vamos fazer uma publi que <em>vende</em>?</h2>
+              <p>Se a sua marca quer conteúdo que entretém e passa confiança, a gente combina. Você leva vídeo autoral e a confiança de uma comunidade que compra o que eu indico.</p>
+              <div class="botoes">
+                <a class="btn" href="mailto:contato.amandatakahashi@gmail.com?subject=Parceria%20com%20a%20Amanda">contato.amandatakahashi@gmail.com <span aria-hidden="true">→</span></a>
+                <a class="btn claro" href="https://www.instagram.com/amandatakahashi_/" target="_blank" rel="noopener">Instagram @amandatakahashi_ <span aria-hidden="true">↗</span></a>
+                <a class="btn claro" href="https://www.tiktok.com/@amandatakahashi_" target="_blank" rel="noopener">TikTok @amandatakahashi_ <span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="num">13</p>
+            </article>
+            <section class="face verso capa contracapa" aria-label="Contracapa">
+              <span class="mono foil" aria-hidden="true">AT</span>
+              <span class="sobre foil">Amanda Takahashi</span>
+              <span>Desenvolvido por <a class="halo-credit" href="https://haloconsulting.com.br/" target="_blank" rel="noopener" aria-label="Halo Company, site da empresa"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F1E6D6" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></span>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<nav class="controles" aria-label="Folhear o mídia kit">
+  <button type="button" id="ant" aria-label="Página anterior (seta para a esquerda)" title="Página anterior (←)">←</button>
+  <output id="pag" aria-live="polite">Capa</output>
+  <button type="button" id="prox" aria-label="Próxima página (seta para a direita)" title="Próxima página (→)">→</button>
+  <button type="button" id="som" class="som" aria-pressed="false" aria-label="Ligar som de página" title="Som de página">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="onda" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path class="mudo" d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+</nav>
+<div class="dica" id="dica">
+  <span class="dica__teclas"><kbd>←</kbd><kbd>→</kbd> use as setas do teclado</span>
+  <span class="dica__toque">Deslize para cima para folhear</span>
+  <span class="dica__extra">ou role a página · clique na página para virar</span>
+</div>
+<div class="aviso" id="aviso" role="status" aria-live="polite"><kbd>←</kbd><kbd>→</kbd> Vire as páginas pelo teclado</div>
+
+<footer class="rodape">
+  <p>© 2026 Amanda Takahashi · Criadora de conteúdo · <a href="mailto:contato.amandatakahashi@gmail.com">contato.amandatakahashi@gmail.com</a></p>
+  <p>Fotos da mesa: Unsplash · Desenvolvido por <a class="halo-credit" href="https://haloconsulting.com.br/" target="_blank" rel="noopener" aria-label="Halo Company, site da empresa"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><g transform="rotate(-90 16 16)" fill="none" stroke-width="3.2" stroke-linecap="round"><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E0506F" stroke-dasharray="86 214"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#E7C493" stroke-dasharray="86 214" stroke-dashoffset="-100"/><circle cx="16" cy="16" r="11" pathLength="300" stroke="#F1E6D6" stroke-dasharray="86 214" stroke-dashoffset="-200"/></g></svg><span class="halo-nome">halo <small>company</small></span></a></p>
+</footer>
+
+<script>
+(() => {
+  const W = 440, H = 600;
+  const rolagem = document.getElementById('rolagem');
+  const livro = document.getElementById('livro');
+  const folhas = [...document.querySelectorAll('.folha')];
+  const L = folhas.length;
+  const chamada = document.getElementById('chamada');
+  const dica = document.getElementById('dica');
+  const pag = document.getElementById('pag');
+  const btnAnt = document.getElementById('ant'), btnProx = document.getElementById('prox');
+  const sombraEsq = document.getElementById('sombraEsq'), sombraDir = document.getElementById('sombraDir');
+  const objs = [...document.querySelectorAll('.obj')];
+  const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const VH_POR_UNIDADE = 0.75;
+  // rótulo de cada página dupla (índice = folhas já viradas)
+  const nomes = ['Capa', 'Sobre mim', 'Números', 'Virais', 'Publi e marcas', 'Beleza', 'Lifestyle', 'Parcerias', 'Contracapa'];
+
+  let celular, linha, total, paradas;
+
+  // linha do tempo: pausa / virar folha / (no celular) deslizar para a página da direita
+  function montar() {
+    celular = innerWidth < 760;
+    linha = []; let u = 0;
+    const add = (tipo, dur, extra) => { linha.push({ tipo, ini: u, fim: u + dur, ...extra }); u += dur; };
+    add('pausa', 0.5, { cam: -0.5 });
+    for (let k = 0; k < L; k++) {
+      const a = celular ? -0.5 : (k === 0 ? -0.5 : 0);
+      const b = celular ? 0.5 : (k === L - 1 ? 0.5 : 0);
+      add('vira', 1, { k, a, b });
+      if (k < L - 1) {
+        if (celular) { add('pausa', 0.35, { cam: 0.5 }); add('pan', 0.6, { a: 0.5, b: -0.5 }); }
+        add('pausa', 0.5, { cam: celular ? -0.5 : 0 });
+      }
+    }
+    add('pausa', 0.5, { cam: 0.5 });
+    total = u;
+    paradas = linha.filter(s => s.tipo === 'pausa').map(s => s.ini + (s.fim - s.ini) * 0.5);
+    rolagem.style.height = `calc(100svh + ${total * VH_POR_UNIDADE * 100}svh)`;
+    escala();
+  }
+
+  function escala() {
+    const vw = innerWidth, vh = innerHeight;
+    const s = celular ? Math.min((vw * 0.9) / W, (vh * 0.72) / H)
+                      : Math.min((vw * 0.7) / (W * 2), (vh * 0.78) / H);
+    livro.style.setProperty('--s', s.toFixed(4));
+  }
+
+  const suave = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+  function estado(u) {
+    const ang = new Array(L).fill(0); let cam = -0.5;
+    for (const s of linha) {
+      if (s.tipo === 'vira') ang[s.k] = u >= s.fim ? 180 : u <= s.ini ? 0 : suave((u - s.ini) / (s.fim - s.ini)) * 180;
+      if (u >= s.ini && u <= s.fim) {
+        const t = suave(Math.min(1, Math.max(0, (u - s.ini) / (s.fim - s.ini))));
+        cam = s.tipo === 'pausa' ? s.cam : s.a + (s.b - s.a) * t;
+      }
+    }
+    if (u > total) cam = 0.5;
+    return { ang, cam };
+  }
+
+  let alvo = 0, atual = 0, ultimoTopo = -1, ultimaBase = -1, rodando = false, ultimasViradas = -1, avisou = false;
+  const lancaDir = document.getElementById('lancaDir'), lancaEsq = document.getElementById('lancaEsq');
+  const aviso = document.getElementById('aviso'), btnSom = document.getElementById('som');
+
+  // aviso das setas do teclado, uma vez, quando o livro abre (só com mouse/teclado)
+  function mostrarAviso() {
+    avisou = true;
+    if (celular || !matchMedia('(pointer:fine)').matches) return;
+    aviso.classList.add('on');
+    setTimeout(() => aviso.classList.remove('on'), 4200);
+  }
+
+  // som de folha de papel, gerado na hora (sem arquivo de áudio); desligado por padrão
+  let somLigado = false, ctx = null, ultimoSom = 0;
+  try { somLigado = localStorage.getItem('somPagina') === '1'; } catch (e) {}
+  const marcarSom = () => { btnSom.setAttribute('aria-pressed', somLigado); btnSom.setAttribute('aria-label', somLigado ? 'Desligar som de página' : 'Ligar som de página'); };
+  marcarSom();
+  btnSom.addEventListener('click', () => {
+    somLigado = !somLigado; marcarSom();
+    try { localStorage.setItem('somPagina', somLigado ? '1' : '0'); } catch (e) {}
+    if (somLigado) tocarPagina(true);
+  });
+  function tocarPagina(forcar) {
+    if (!somLigado) return;
+    const agora = performance.now();
+    if (!forcar && agora - ultimoSom < 140) return;
+    ultimoSom = agora;
+    try {
+      ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
+      if (ctx.state === 'suspended') ctx.resume();
+      const dur = 0.32, n = Math.floor(ctx.sampleRate * dur);
+      const buf = ctx.createBuffer(1, n, ctx.sampleRate), d = buf.getChannelData(0);
+      for (let i = 0; i < n; i++) { const t = i / n; d[i] = (Math.random() * 2 - 1) * Math.pow(Math.sin(Math.PI * Math.min(1, t * 1.6)), 2) * (1 - t); }
+      const src = ctx.createBufferSource(); src.buffer = buf;
+      const bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 0.8;
+      bp.frequency.setValueAtTime(900, ctx.currentTime); bp.frequency.exponentialRampToValueAtTime(3800, ctx.currentTime + dur);
+      const g = ctx.createGain(); g.gain.value = 0.35;
+      src.connect(bp).connect(g).connect(ctx.destination); src.start();
+    } catch (e) {}
+  }
+  function lerScroll() {
+    const r = rolagem.getBoundingClientRect();
+    const corrida = rolagem.offsetHeight - innerHeight;
+    const p = corrida > 0 ? -r.top / corrida : 0;
+    alvo = Math.min(1, Math.max(0, Number.isFinite(p) ? p : 0)) * total;
+    if (!rodando) { rodando = true; requestAnimationFrame(quadro); }
+  }
+
+  function pintar(u) {
+    const { ang, cam } = estado(u);
+    livro.style.setProperty('--cam', (cam * W).toFixed(1) + 'px');
+    let viradas = 0, emMov = -1;
+    folhas.forEach((f, k) => {
+      const a = ang[k];
+      const s = Math.sin(a * Math.PI / 180);
+      if (a >= 90) viradas++;
+      if (a > 0.5 && a < 179.5) emMov = k;
+      // a folha sobe um pouco e "entorta" enquanto vira
+      f.style.transform = s > 0.001 ? `rotateY(${-a}deg) translateZ(${(s * 26).toFixed(1)}px) skewY(${(s * (a < 90 ? -1.6 : 1.6)).toFixed(2)}deg)` : `rotateY(${-a}deg)`;
+      f.style.zIndex = 2 * (a < 90 ? L - k : L + k);
+      f.style.setProperty('--luz', (s * 0.85).toFixed(3));
+      f.style.setProperty('--faixa', (15 + (a / 180) * 70).toFixed(1) + '%');
+    });
+    // sombra da folha em movimento sobre a página que está embaixo
+    lancaDir.style.opacity = 0; lancaEsq.style.opacity = 0;
+    if (emMov >= 0) {
+      const a = ang[emMov], s = Math.sin(a * Math.PI / 180);
+      const z = 2 * (a < 90 ? L - emMov : L + emMov) - 1;
+      const alvoSombra = a < 90 ? (emMov < L - 1 ? lancaDir : null) : (emMov > 0 ? lancaEsq : null);
+      if (alvoSombra) {
+        alvoSombra.style.zIndex = z;
+        alvoSombra.style.opacity = (s * 0.9).toFixed(3);
+        alvoSombra.style.setProperty('--alc', (0.25 + Math.abs(Math.cos(a * Math.PI / 180)) * 0.75).toFixed(3));
+      }
+    }
+    // som quando uma folha passa do meio
+    if (ultimasViradas !== -1 && viradas !== ultimasViradas) tocarPagina();
+    ultimasViradas = viradas;
+    if (viradas >= 1 && !avisou) mostrarAviso();
+    // a sombra acompanha a primeira folha pousando à esquerda e a última saindo da direita
+    sombraEsq.style.opacity = Math.max(0, (ang[0] - 120) / 60).toFixed(3);
+    sombraDir.style.opacity = Math.min(1, (180 - ang[L - 1]) / 60).toFixed(3);
+    // só a página de cima de cada lado recebe clique e foco
+    const topoDir = ang.findIndex(a => a < 90);
+    const topoEsq = topoDir === -1 ? L - 1 : topoDir - 1;
+    if (topoDir !== ultimoTopo || topoEsq !== ultimaBase) {
+      folhas.forEach((f, k) => {
+        const [fr, vs] = f.children;
+        fr.inert = k !== topoDir; vs.inert = k !== topoEsq;
+      });
+      ultimoTopo = topoDir; ultimaBase = topoEsq;
+    }
+    const fora = Math.min(1, u / 0.9);
+    chamada.style.opacity = 1 - fora; chamada.style.transform = `translateY(${-fora * 20}px)`;
+    // no computador a dica das setas fica sempre visível (mais discreta depois da capa); no celular some
+    dica.style.opacity = celular ? 1 - fora : (1 - fora * 0.45).toFixed(2);
+    pag.textContent = nomes[Math.min(viradas, nomes.length - 1)];
+    btnAnt.disabled = u < 0.05; btnProx.disabled = u > total - 0.3;
+  }
+
+  function quadro() {
+    if (!Number.isFinite(atual)) atual = alvo;
+    const d = alvo - atual;
+    const parado = reduz || Math.abs(d) < 0.001;
+    atual = parado ? alvo : atual + d * 0.14;
+    pintar(atual);
+    if (parado) rodando = false; else requestAnimationFrame(quadro);
+  }
+
+  function irPara(u) {
+    const corrida = rolagem.offsetHeight - innerHeight;
+    const y = rolagem.offsetTop + (u / total) * corrida;
+    scrollTo({ top: y, behavior: reduz ? 'auto' : 'smooth' });
+  }
+  // cada toque vai para a próxima/anterior posição de leitura (pausa), nunca para a mesma
+  const pausas = () => linha.filter(s => s.tipo === 'pausa');
+  const meio = s => s.ini + (s.fim - s.ini) * 0.5;
+  const proxima = () => { const s = pausas().find(s => s.ini > alvo + 0.01); irPara(s ? meio(s) : total); };
+  const anterior = () => { const s = [...pausas()].reverse().find(s => s.fim < alvo - 0.01); irPara(s ? meio(s) : 0); };
+  btnProx.addEventListener('click', proxima);
+  btnAnt.addEventListener('click', anterior);
+  addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); proxima(); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); anterior(); }
+  });
+  // clicar na página da direita avança, na da esquerda volta (links continuam funcionando)
+  livro.addEventListener('click', e => {
+    if (e.target.closest('a,button')) return;
+    const r = livro.getBoundingClientRect();
+    // no celular só uma página aparece por vez: tocar sempre avança
+    (celular || e.clientX > r.left + r.width / 2 ? proxima : anterior)();
+  });
+  document.querySelectorAll('a[href="#contato"]').forEach(a => a.addEventListener('click', e => {
+    e.preventDefault(); irPara(paradas[paradas.length - 2]);
+  }));
+  document.querySelector('.marca').addEventListener('click', e => { e.preventDefault(); irPara(0); });
+
+  // leve paralaxe nos objetos da mesa
+  if (!reduz && matchMedia('(pointer:fine)').matches) {
+    addEventListener('pointermove', e => {
+      const x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
+      objs.forEach(o => { const p = +o.dataset.p; o.style.translate = `${-x * 18 * p}px ${-y * 14 * p}px`; });
+    });
+  }
+
+  addEventListener('scroll', lerScroll, { passive: true });
+  addEventListener('resize', () => { montar(); lerScroll(); });
+  montar(); lerScroll(); atual = alvo; pintar(atual);
+})();
+</script>
+</body>
+</html>
